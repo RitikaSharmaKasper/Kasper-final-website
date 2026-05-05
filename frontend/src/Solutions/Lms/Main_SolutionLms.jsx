@@ -1,0 +1,32 @@
+import React from "react";
+import Hero from "./Solutions_Heros/Hero";
+import Footer from "./Solution_Footer/Footer";
+import Features from "./Solution_Features/Solutions_features/Features";
+import Contact from "./Contact/Contact";
+
+
+
+
+const Main_SolutionLms = () => {
+  return (
+<>
+<Hero/>
+
+<div style={{background:"white"}}>
+<Features/>
+
+
+{/*  */}
+
+<Contact/>
+
+
+</div>
+
+
+</>
+  
+  );
+};
+
+export default Main_SolutionLms;

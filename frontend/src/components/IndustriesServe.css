@@ -1,0 +1,302 @@
+.Industries-main-div{
+    width: 1440px;
+height: 579px;
+margin:60px auto;  
+
+  padding:60px 0;
+opacity: 1;
+gap: 24px;
+
+}
+.Industries-main-div p{
+    font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+
+line-height: 135%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+.industry-imagediv{
+  margin-top:25px;
+  display:flex;
+  flex-wrap:wrap;          /* next line me chali jayengi */
+  justify-content:center;  /* last row center karega */
+  gap:39px;
+
+  width:1149px;
+  margin:25px auto;
+
+opacity: 1;
+gap: 39px;
+}
+
+.industry-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.industry-card img{
+  width:250px;
+  height:150px;
+   transition: transform 0.4s ease;
+  border-radius:4px;
+}
+
+.industry-card p{
+  position:absolute;
+ font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+width: 132px;
+height: 16px;
+top: 128px;
+left: 13px;
+z-index:4;
+  white-space: nowrap;
+color:rgba(255, 255, 255, 1);
+opacity: 1;
+
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.industry-card::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:60px;
+  border-radius:4px;
+  background: linear-gradient(to top, rgba(73, 73, 73, 0.7), transparent);
+}
+.industry-card img:hover{
+transform :scale(1.4);
+
+}
+
+
+
+
+/* ════════════════════════════════════════
+   INDUSTRIES RESPONSIVE — All Screen Sizes
+   ════════════════════════════════════════ */
+
+/* ══ Base fix ══ */
+.Industries-main-div {
+  width: 100% !important;
+  max-width: 1440px !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+}
+
+.industry-imagediv {
+  width: 100% !important;
+  max-width: 1149px !important;
+  box-sizing: border-box !important;
+}
+
+/* ══ LARGE DESKTOP (1280px+) ══ */
+@media (min-width: 1280px) {
+  .Industries-main-div {
+    padding: 2px 0 !important;
+    margin: 60px auto !important;
+    gap: 24px !important;
+  }
+  .Industries-main-div p {
+    font-size: 20px !important;
+  }
+  .industry-imagediv {
+    gap: 39px !important;
+    margin: -18px auto !important;
+  }
+  .industry-card img {
+    width: 250px !important;
+    height: 150px !important;
+  }
+  .industry-card p {
+    font-size: 16px !important;
+    top: 128px !important;
+    left: 13px !important;
+  }
+}
+
+/* ══ SMALL DESKTOP (1025px – 1279px) ══ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .Industries-main-div {
+    padding: 4px 24px !important;
+    margin: 48px auto !important;
+  }
+  .Industries-main-div p {
+    font-size: 18px !important;
+  }
+  .industry-imagediv {
+    gap: 28px !important;
+    max-width: 960px !important;
+  }
+  .industry-card img {
+    width: 210px !important;
+    height: 130px !important;
+  }
+  .industry-card p {
+    font-size: 14px !important;
+    top: 108px !important;
+    left: 10px !important;
+  }
+}
+
+/* ══ TABLET (768px – 1024px) ══ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Industries-main-div {
+    padding: 3px 20px !important;
+    margin: 40px auto !important;
+  }
+  .Industries-main-div p {
+    font-size: 17px !important;
+  }
+  .industry-imagediv {
+    gap: 20px !important;
+    max-width: 100% !important;
+    padding: 0 16px !important;
+  }
+  .industry-card img {
+    width: 180px !important;
+    height: 112px !important;
+  }
+  .industry-card p {
+    font-size: 13px !important;
+    top: 90px !important;
+    left: 10px !important;
+    width: auto !important;
+  }
+  .industry-card::after {
+    height: 48px !important;
+  }
+}
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .Industries-main-div {
+    padding: 28px 12px !important;
+    margin: 28px auto !important;
+    gap: 16px !important;
+  }
+  .Industries-main-div p {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    padding: 0 12px !important;
+  }
+  .industry-imagediv {
+    gap: 14px !important;
+    max-width: 100% !important;
+    padding: 0 12px !important;
+    margin: 16px auto !important;
+  }
+  .industry-card img {
+    width: 150px !important;
+    height: 95px !important;
+  }
+  .industry-card p {
+    font-size: 11px !important;
+    top: 74px !important;
+    left: 8px !important;
+    width: auto !important;
+    white-space: nowrap !important;
+  }
+  .industry-card::after {
+    height: 38px !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .Industries-main-div {
+    padding: 24px 10px !important;
+    margin: 24px auto !important;
+  }
+  .Industries-main-div p {
+    font-size: 14px !important;
+    padding: 0 10px !important;
+  }
+  .industry-imagediv {
+    gap: 12px !important;
+    padding: 0 10px !important;
+    margin: 14px auto !important;
+  }
+  .industry-card img {
+    width: 160px !important;
+    height: 94px !important;
+  }
+  .industry-card p {
+    font-size: 10px !important;
+    top: 68px !important;
+    left: 7px !important;
+  }
+  .industry-card::after {
+    height: 34px !important;
+  }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .Industries-main-div {
+    padding: 20px 8px !important;
+    margin: 20px auto !important;
+  }
+  .Industries-main-div p {
+    font-size: 13px !important;
+    padding: 0 8px !important;
+  }
+  .industry-imagediv {
+    gap: 10px !important;
+    padding: 0 8px !important;
+    margin: 12px auto !important;
+  }
+  .industry-card img {
+    width: 125px !important;
+    height: 78px !important;
+  }
+  .industry-card p {
+    font-size: 10px !important;
+    top: 58px !important;
+    left: 6px !important;
+  }
+  .industry-card::after {
+    height: 30px !important;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .Industries-main-div {
+    padding: 16px 6px !important;
+    margin: 16px auto !important;
+  }
+  .Industries-main-div p {
+    font-size: 12px !important;
+    padding: 0 6px !important;
+  }
+  .industry-imagediv {
+    gap: 8px !important;
+    padding: 0 6px !important;
+    margin: 10px auto !important;
+  }
+  .industry-card img {
+    width: 110px !important;
+    height: 68px !important;
+  }
+  .industry-card p {
+    font-size: 9px !important;
+    top: 50px !important;
+    left: 5px !important;
+  }
+  .industry-card::after {
+    height: 26px !important;
+  }
+}

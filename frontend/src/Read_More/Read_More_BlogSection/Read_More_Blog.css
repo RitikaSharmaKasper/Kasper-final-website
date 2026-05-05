@@ -1,0 +1,237 @@
+/* Main Container */
+.Blog_section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  gap: 40px;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* Table of Contents */
+.Blog_Table_of_content {
+  width: 280px;
+  position: sticky;
+  top: 100px;
+  left: 0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  border: 1px solid #f0f0f0;
+  flex-shrink: 0;
+  align-self: flex-start;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.table-heading {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: rgba(0, 6, 61, 1);
+  margin-bottom: 10px; /* FIXED (10x → 10px) */
+  position: relative;
+}
+
+.table-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+}
+
+.table_data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-item {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #4a4a4a;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  word-break: break-word;
+}
+
+.content-item:hover,
+.content-item:active {
+  color: rgba(0, 6, 61, 1);
+}
+
+/* Blog Content */
+.Blog_Content_details {
+  flex: 1;
+  width: calc(100% - 320px);
+  min-height: 800px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.blog-paragraph {
+  font-family: "Sora", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Image */
+.image_section {
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.image_section img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image_section img:hover {
+  transform: scale(1.02);
+}
+
+/* Blog Description */
+.blog-description {
+  font-family: "Sora", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.blog-description p,
+.blog-description li {
+  font-size: 18px;
+
+}
+
+.blog-description h2 {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(0, 6, 61, 1);
+
+  scroll-margin-top: 100px;
+}
+
+.blog-description h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(0, 6, 61, 0.9);
+ 
+}
+
+/* Code Blocks */
+.blog-description pre {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.blog-description code {
+  background: #f1f3f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ===== MOBILE RESPONSIVE FIX ===== */
+@media (max-width: 991px) {
+  .Blog_section {
+    flex-direction: column !important;
+    gap: 30px;
+    padding: 20px 15px;
+  }
+
+  .Blog_Table_of_content {
+    width: 100%;
+    position: relative;
+    top: 0;
+    max-height: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .Blog_Content_details {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  .blog-paragraph,
+  .blog-description p,
+  .blog-description li {
+    font-size: 16px; 
+    line-height: 1.6;
+  }
+
+  .blog-description h2 {
+    font-size: 20px;
+  }
+
+  .blog-description h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Blog_section {
+    padding: 15px 10px;
+    gap: 20px;
+  }
+
+  .Blog_Table_of_content {
+    padding: 15px;
+  }
+
+  .table-heading {
+    font-size: 16px;
+  }
+
+  .content-item {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .Blog_Content_details {
+    padding: 15px;
+  }
+
+  .blog-paragraph,
+  .blog-description p,
+  .blog-description li {
+    font-size: 14px;
+  }
+}

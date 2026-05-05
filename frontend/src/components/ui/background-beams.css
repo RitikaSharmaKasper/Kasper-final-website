@@ -1,0 +1,50 @@
+/* --- Desktop --- */
+.beams-dimensions {
+ 
+  max-width: 4000px; 
+  height: 995px;    
+}
+
+/* --- Large Screens (Up to 2000px) --- */
+
+/* --- Specific Range: 1800px to 1990px --- */
+@media (max-width: 1900px) and (min-width: 1800px) {
+  .beams-dimensions {
+    height: 900px;
+  }
+}
+
+/* --- Specific Range: 1000px to 1700px --- */
+@media (max-width: 1850px) and (min-width: 1000px) {
+  .beams-dimensions {
+    height: 750px;
+  }
+}
+
+/* --- Standard Laptops (Up to 1200px) --- */
+@media (max-width: 1200px) {
+  .beams-dimensions {
+    height: 780px;
+  }
+}
+
+/* --- Small Laptops / Tablets (Up to 900px) --- */
+@media (max-width: 900px) {
+  .beams-dimensions {
+    height: 700px;
+  }
+}
+
+/* --- Mobile Landscape / Large Phones (Up to 768px) --- */
+@media (max-width: 768px) {
+  .beams-dimensions {
+    height: 557px;
+  }
+}
+
+/* --- Standard Mobile (Up to 480px) --- */
+@media (max-width: 480px) {
+  .beams-dimensions {
+    height: 799px;
+  }
+}

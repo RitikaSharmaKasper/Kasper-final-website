@@ -1,0 +1,144 @@
+@import "tailwindcss";
+@import "bootstrap/dist/css/bootstrap.min.css";
+html, body {
+  margin: 0;
+  padding: 0;
+   /* stops vertical scroll */
+   height:100%;
+   font-family: Inter;
+
+  overflow-x: hidden;   /* optional: stops horizontal scroll */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ==========================================================================
+   GLOBAL RESPONSIVENESS FIXES (Targeting Services & Heroes)
+   ========================================================================== */
+
+/* Hero Title Scaling */
+.hero-heading h1, .hero-inner h1, .hero h1 {
+  font-size: clamp(26px, 6vw, 60px) !important;
+  line-height: 1.2 !important;
+  padding-top: clamp(15px, 5vw, 70px) !important;
+  text-align: center !important;
+}
+
+/* Hero Paragraph Scaling */
+.hero_Paragraph p, .hero-inner p, .hero p {
+  font-size: clamp(14px, 2vw, 18px) !important;
+  line-height: 1.6 !important;
+  margin-top: 15px !important;
+  text-align: center !important;
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Hero Actions & Buttons */
+.hero-actions, .mt-7.flex {
+  margin-top: clamp(20px, 4vw, 40px) !important;
+}
+
+.btnn-outline {
+  width: auto !important;
+  min-width: clamp(120px, 15vw, 160px) !important;
+  height: clamp(40px, 8vw, 56px) !important;
+  padding: 0 20px !important;
+  font-size: clamp(14px, 1.5vw, 16px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+}
+
+/* Key Features Section */
+.features-section, .why-choose {
+  padding: clamp(40px, 8vw, 80px) 16px !important;
+}
+
+.features-heading, .why-main-heading {
+  font-size: clamp(22px, 4vw, 36px) !important;
+  font-weight: 600 !important;
+  margin-bottom: clamp(30px, 5vw, 60px) !important;
+  text-align: center !important;
+}
+
+.features-wrapper {
+  gap: clamp(15px, 3vw, 30px) !important;
+  justify-content: center !important;
+}
+
+.feature-card-item {
+  width: clamp(280px, 100%, 360px) !important;
+  min-height: 180px !important;
+  height: auto !important;
+  padding: 24px !important;
+  flex: 1 1 300px !important; /* Allow growing and shrinking */
+  max-width: 380px !important;
+}
+
+.feature-card-title {
+  font-size: clamp(16px, 2vw, 18px) !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+}
+
+.feature-card-description {
+  font-size: clamp(14px, 1.8vw, 15px) !important;
+  width: 100% !important;
+  line-height: 1.6 !important;
+}
+
+/* Integrated Business Section */
+.why-container {
+  gap: clamp(30px, 5vw, 80px) !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+}
+
+.why-feature h4 {
+  font-size: clamp(17px, 2.5vw, 21px) !important;
+  font-weight: 600 !important;
+}
+
+.why-feature p {
+  font-size: clamp(14px, 2vw, 16px) !important;
+  line-height: 1.6 !important;
+}
+
+/* Blog Cards Normalization */
+.blog-heading {
+  font-size: clamp(22px, 4vw, 32px) !important;
+}
+
+.blog-card {
+  min-height: 400px !important;
+  height: auto !important;
+}
+
+.title-blog {
+  font-size: clamp(16px, 2vw, 19px) !important;
+  font-weight: 600 !important;
+  height: auto !important;
+}
+
+.date-content p, .blog-meta {
+  font-size: 14px !important; /* Fixed the 5px font size bug */
+}
+
+/* Small screen adjustments */
+@media (max-width: 480px) {
+  .hero-inner, .features_content, .why_choose-content {
+    width: 100% !important;
+    padding: 0 5px !important;
+  }
+  
+  .why-left img {
+    max-width: 100% !important;
+  }
+  
+  .feature-card-item {
+     margin: 0 auto !important;
+  }
+}

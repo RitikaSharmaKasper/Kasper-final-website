@@ -1,0 +1,213 @@
+/* ================= MAIN CONTAINER ================= */
+.contact {
+  max-width: 1600px;
+  margin: 0 auto !important; 
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;      
+  justify-content: space-between; 
+  gap: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ================= IMAGE CONTAINER ================= */
+.contact-right {
+  flex: 1.5;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  order: 2;     
+  margin-top: 20px;
+}
+
+.contact-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* ================= FORM CONTAINER ================= */
+.contact-left {
+  flex: 1;
+  max-width: 550px;          
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.contact-left h2 {
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.contact-left p {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-with-icon input {
+  width: 100%;
+  height: 46px;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 48px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* ================= POPUP OVERLAY ================= */
+.popup-overlay {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999 !important;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.contact-popup-container {
+  background: white;
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  animation: modalIn 0.3s ease-out;
+}
+
+@keyframes modalIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f1f5f9;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  transition: all 0.2s;
+}
+
+.popup-close-btn:hover {
+  background: #e2e8f0;
+  color: #ef4444;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .contact { padding: 60px 40px; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+  .contact-left {
+    align-items: center;
+    text-align: center;
+  }
+  .contact-right {
+    order: -1;
+    max-width: 300px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .contact-popup-container {
+    padding: 10px;
+    border-radius: 16px;
+  }
+  .popup-overlay {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact { padding: 30px 15px; }
+  .contact-left h2 { font-size: 20px; }
+  .contact-left p { font-size: 14px; }
+  .input-with-icon input { height: 42px; }
+  .submit-btn { height: 44px; }
+}

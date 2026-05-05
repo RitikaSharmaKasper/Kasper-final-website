@@ -1,0 +1,49 @@
+.profile-page input,
+.profile-page textarea,
+.profile-page button 
+{
+  display: block;
+  width: 100%;
+}
+.profile-page label {
+  color: black;
+}
+.pimage-container{
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.pimage-container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.css-1biilgt {
+  margin-left: 0px!important;
+}
+
+@media(max-width:1000px) {
+  .userinf{
+    font-size: 22px;
+  }
+  .profilepageview{
+   flex-direction: column;
+  }
+  .profile-page{
+    width: 100%!important;
+  }
+  .css-92faza-MuiTypography-root {
+    line-height: 1.5rem!important;
+  }
+ 
+}
+
+@media(max-width:760px) {
+  .css-o5pur2 {
+    padding: 2px;
+  }
+
+}

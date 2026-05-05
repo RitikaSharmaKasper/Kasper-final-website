@@ -1,0 +1,115 @@
+/* ================= GLOBAL RESET ================= */
+* {
+  box-sizing: border-box;
+}
+
+/* ================= FEATURES SECTION (LAPTOP - 3 CARDS) ================= */
+.features-section {
+  width: 100%;
+  display: flex;
+  padding: 70px 40px;
+  background: #ffffff;
+  justify-content: center;
+}
+
+.features_content {
+  width: 100%;
+  max-width: 1149px;
+}
+
+.features-wrapper {
+  width: 100%;
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.feature-card-item {
+  /* LAPTOP: 3 CARDS */
+  flex: 0 0 calc((100% - 60px) / 3); 
+  max-width: calc((100% - 60px) / 3);
+  min-width: 0; 
+  min-height: 150px;
+  background: #FCFCFC;
+  border: 1px solid #F0F0F0;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* ============================================================
+   RESPONSIVE — TABLET (Including 768px)
+   Covers from 601px up to 1024px
+   ============================================================ */
+@media (max-width: 1024px) {
+  
+  /* FORCE 2 CARDS PER ROW */
+  .features-wrapper {
+    gap: 20px !important;
+    flex-direction: row !important; /* Ensure it stays horizontal */
+  }
+
+  .feature-card-item {
+    /* Math: (Total width - 1 gap of 20px) / 2 */
+    flex: 0 0 calc((100% - 20px) / 2) !important;
+    max-width: calc((100% - 20px) / 2) !important;
+  }
+
+  .blog-card {
+    flex: 0 0 calc((100% - 20px) / 2) !important;
+    max-width: 48% !important;
+  }
+
+  /* Why Choose: Keep 2 columns if space permits, or stack if too tight */
+  .why-container {
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — MOBILE (600px and below)
+   This is where it finally switches to 1 column
+   ============================================================ */
+@media (max-width: 600px) {
+
+  /* MOBILE: 1 CARD FULL WIDTH */
+  .features-wrapper {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+  }
+
+  .feature-card-item {
+    flex: 0 0 100% !important; 
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .why-container {
+    grid-template-columns: 1fr; /* Stack Why Choose */
+  }
+
+  .blog-card {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .visibility-text h2 {
+    font-size: 24px;
+  }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 480px) {
+  .features-section {
+    padding: 40px 20px;
+  }
+  .feature-card-item {
+    padding: 16px;
+  }
+}

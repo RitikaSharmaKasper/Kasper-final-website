@@ -1,0 +1,242 @@
+.valued-clients p{
+  display:flex;
+  justify-content:center;
+  font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+  align-items:center;
+  padding:40px 0;
+}
+
+.valued-clients{
+    gap:40px;
+border-top:1px dashed hsla(0, 0%, 88%, 1);
+  border-bottom:1px dashed  hsla(0, 0%, 88%, 1);
+  padding:15px;
+
+   width:70%;
+    margin:auto;
+   padding:20px 70px 40px 20px; /* bottom space */
+  box-sizing:border-box;
+ overflow:hidden;
+
+margin-bottom:50px;
+}
+.clients-slider{
+  display:flex;
+  align-items:center;
+ 
+  Width: 1,440px;
+
+Height:150px;
+  margin:20px auto;
+
+  gap:20px;
+  margin-top:20px;
+margin-bottom:20px;
+}
+
+.fixed-logo{
+  height:50px;
+  flex-shrink:0;
+}
+
+.scroll-wrapper{
+  overflow:hidden;
+  flex:1;
+}
+
+.clients-track{
+  display:flex;
+  gap:50px; width:max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.clients-track img{
+      height: 85px;
+    min-width: 200px;
+  object-fit:contain;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+.scroll-wrapper:hover .clients-track{
+  animation-play-state: paused;
+}
+.clients-track:hover{
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* ════════════════════════════════════════
+   VALUED CLIENTS RESPONSIVE
+   ════════════════════════════════════════ */
+
+/* ══ LARGE DESKTOP (1280px+) ══ */
+@media (min-width: 1280px) {
+  .valued-clients {
+    width: 70% !important;
+    padding: 20px 70px 40px 20px !important;
+  }
+  .clients-track img {
+    height: 85px !important;
+    min-width: 200px !important;
+  }
+  .fixed-logo {
+    height: 50px !important;
+  }
+}
+
+/* ══ SMALL DESKTOP (1025px – 1279px) ══ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .valued-clients {
+    width: 80% !important;
+    padding: 16px 40px 32px 16px !important;
+  }
+  .clients-track img {
+    height: 70px !important;
+    min-width: 160px !important;
+  }
+  .fixed-logo {
+    height: 44px !important;
+  }
+  .valued-clients p {
+    font-size: 15px !important;
+    padding: 32px 0 !important;
+  }
+}
+
+/* ══ TABLET (768px – 1024px) ══ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .valued-clients {
+    width: 90% !important;
+    padding: 14px 24px 28px 14px !important;
+    gap: 24px !important;
+  }
+  .valued-clients p {
+    font-size: 14px !important;
+    padding: 24px 0 !important;
+  }
+  .clients-slider {
+    height: auto !important;
+    gap: 14px !important;
+    margin: 14px auto !important;
+  }
+  .clients-track {
+    gap: 36px !important;
+  }
+  .clients-track img {
+    height: 60px !important;
+    min-width: 130px !important;
+  }
+  .fixed-logo {
+    height: 38px !important;
+  }
+}
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .valued-clients {
+    width: 95% !important;
+    padding: 12px 12px 24px 12px !important;
+    gap: 16px !important;
+    margin-bottom: 32px !important;
+  }
+  .valued-clients p {
+    font-size: 13px !important;
+    padding: 18px 0 !important;
+  }
+  .clients-slider {
+    height: auto !important;
+    gap: 10px !important;
+    margin: 10px auto !important;
+  }
+  .clients-track {
+    gap: 28px !important;
+  }
+  .clients-track img {
+    height: 48px !important;
+    min-width: 100px !important;
+  }
+  .fixed-logo {
+    height: 32px !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .valued-clients {
+    width: 96% !important;
+    padding: 10px 10px 20px 10px !important;
+  }
+  .valued-clients p {
+    font-size: 12px !important;
+    padding: 14px 0 !important;
+  }
+  .clients-track img {
+    height: 42px !important;
+    min-width: 90px !important;
+  }
+  .clients-track {
+    gap: 22px !important;
+  }
+  .fixed-logo {
+    height: 28px !important;
+  }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .valued-clients {
+    width: 98% !important;
+    padding: 8px 8px 16px 8px !important;
+  }
+  .valued-clients p {
+    font-size: 11px !important;
+    padding: 12px 0 !important;
+  }
+  .clients-track img {
+    height: 36px !important;
+    min-width: 80px !important;
+  }
+  .clients-track {
+    gap: 18px !important;
+  }
+  .fixed-logo {
+    height: 24px !important;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .valued-clients p {
+    font-size: 10px !important;
+    padding: 10px 0 !important;
+  }
+  .clients-track img {
+    height: 30px !important;
+    min-width: 70px !important;
+  }
+  .clients-track {
+    gap: 14px !important;
+  }
+  .fixed-logo {
+    height: 22px !important;
+  }
+}

@@ -1,0 +1,520 @@
+
+.group:hover .group-hover\:block {
+    display: block;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-demo {
+    background-color: #FA4028;
+}
+
+.btn-mun {
+    background-color: #0c8ce9
+}
+
+@media (max-width: 768px) {
+    .nav-links-mobile {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+    }
+} 
+
+dl, ol, ul {
+    margin-top: 18px;
+    margin-bottom: 1rem;
+}
+
+
+  
+.menu {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  width: 76px;    
+  height: 32px;
+  color: #00063D;
+  font-family: "Sora", sans-serif;
+
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 100%;
+  text-decoration: none;
+  white-space: nowrap; 
+}
+
+
+.menu-div {
+  display: flex;
+  align-items: center;
+   font-family: Sora;
+  gap: 30px; 
+  width: auto; 
+}
+
+/* --- Base logic for the Mobile Menu Links --- */
+@media (max-width: 767px) {
+  .menu-div {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    z-index: 100;
+    display: none; 
+  }
+
+  
+  .menu-div.flex {
+    display: flex !important;
+  }
+}
+
+/* @media (max-width: 767px) {
+  
+  nav div.md\:flex {
+    display: flex !important; 
+    gap: 8px;
+  }
+} */
+
+/* 
+@media (max-width: 600px) and (min-width: 200px) {
+  nav div.md\:flex button {
+    width: 85px !important;
+    height: 32px !important;
+    font-size: 11px !important;
+    padding: 0 !important;
+  } */
+/* } */
+.nav-logo{
+  margin-top:-31px;
+}
+/* navbar */
+.main-nav{
+  width: 1920px;
+height: 70px;
+background-color: white;
+}
+
+.btn-munc, .btn-demo {
+  padding: 5px 15px;       
+  font-size: 1.1rem;    
+  font-weight: 400;      
+ 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+
+.btn-munc {
+  background-color: #3b82f6; 
+  color: white; 
+
+  margin-right: 10px;
+}
+
+.btn-munc:hover {
+  background-color: #1d4ed8; 
+}
+
+
+.btn-demo {
+  background-color: #ea580c; 
+  color: white;  margin-left:10px;
+  margin-right:15px;
+}
+
+.btn-demo:hover {
+  background-color: #c2410c; 
+}
+
+/* Responsive */
+/* ════════════════════════════════════════
+   RESPONSIVE — append at bottom of Navbar.css
+   ════════════════════════════════════════ */
+/* ════════════════════════════════════════
+   FULLY RESPONSIVE — All Screen Sizes
+   ════════════════════════════════════════ */
+
+/* ── Base fix ── */
+.main-nav {
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+}
+
+/* ══════════════════════════════
+   LARGE DESKTOP (1280px+)
+   ══════════════════════════════ */
+@media (min-width: 1280px) {
+  .main-nav {
+    height: 70px !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+  .nav-logo {
+    height: 70px !important;
+    margin-top: -31px !important;
+  }
+  .btn-munc, .btn-demo {
+    padding: 7px 15px !important;
+    font-size: 1.1rem !important;
+  }
+  .menu {
+    font-size: 17px !important;
+  }
+  .menu-div {
+    gap: 70px !important;
+  }
+}
+
+/* ══════════════════════════════
+   SMALL DESKTOP / LAPTOP (1025px – 1279px)
+   ══════════════════════════════ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .main-nav {
+    height: 68px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+  .nav-logo {
+    height: 60px !important;
+    margin-top: -22px !important;
+  }
+
+  .btn-munc, .btn-demo {
+    padding: 5px 13px !important;
+    font-size: 1rem !important;
+  }
+  .menu {
+    font-size: 15px !important;
+    width: auto !important;
+  }
+  .menu-div {
+    gap: 25px !important;
+  }
+}
+@media (min-width: 425px) {
+  .btn-munc{
+    padding: 1px 10px !important;
+    width:95px;
+    font-size: 0.75rem !important;
+  }
+}
+/* ══════════════════════════════
+   TABLET LANDSCAPE (1024px)
+   ══════════════════════════════ */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-nav {
+    height: 62px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .nav-logo {
+    height: 48px !important;
+    margin-top: -12px !important;
+  }
+
+    .btn-munc {
+        padding: 0px 27px;
+        font-size: 0.85rem !important;
+        margin: 6px 4px !important;
+    }
+
+
+
+    .btn-demo {
+        padding: 0px 27px;
+        font-size: 0.85rem !important;
+        margin: 6px 4px !important;
+    }
+
+
+
+  .menu {
+    font-size: 13px !important;
+    width: auto !important;
+  }
+  .menu-div {
+    gap: 13px !important;
+  }
+  /* hide buttons inside hamburger on tablet — desktop buttons are visible */
+  .mobile-menu-buttons {
+    display: none !important;
+    
+  }
+  .try-tag{
+    margin-left:-10px;
+  }
+
+
+.mobile-menu-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+}
+@media(width:1024px)
+{.btn-munc, .btn-demo {
+   
+    padding:10px 24px;
+    font-size: 0.85rem !important;
+    margin: 0 4px !important;
+  }
+
+}
+.mobile-menu-buttons .btn-munc,
+.mobile-menu-buttons .btn-demo {
+  width: 169px;        /* same width for both */
+  height: 42px;        /* same height for both */
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ══════════════════════════════
+   MOBILE (max 767px)
+   ══════════════════════════════ */
+@media (max-width: 767px) {
+  .main-nav {
+    height: 58px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .nav-logo {
+    height: 38px !important;
+    margin-top: 0 !important;
+  }
+
+  /* dropdown position matches nav height */
+  .menu-div {
+    top: 58px !important;
+    padding: 12px 0 !important;
+  }
+
+  .menu-div.flex {
+    display: flex !important;
+  }
+
+
+
+
+
+
+
+
+  
+
+  /* each nav item full width with separator */
+  .menu-div li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .menu-div li:last-child {
+    border-bottom: none;
+  }
+
+  .menu {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 15px !important;
+    justify-content: center !important;
+    padding: 4px 0 !important;
+  }
+
+  
+
+  /* show buttons inside hamburger */
+  .mobile-menu-buttons {
+    display: flex !important;
+    width: 100% !important;
+    gap: 12px !important;
+    padding: 14px 20px 8px !important;
+    border-top: 1px solid #f0f0f0 !important;
+    margin-top: 4px !important;
+    box-sizing: border-box !important;
+    border-bottom: none !important;
+  }
+
+  .mobile-menu-buttons .btn-munc,
+  .mobile-menu-buttons .btn-demo {
+    flex: 1 !important;
+    padding: 8px 0 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+  }
+}
+
+/* ══════════════════════════════
+   SMALL PHONES (max 480px)
+   ══════════════════════════════ */
+@media (max-width: 480px) {
+  .main-nav {
+    height: 54px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+    .nav-logo {
+        height: 45px !important;
+        margin-top: -20px !important;
+    }
+
+  .menu-div {
+    top: 54px !important;
+  }
+  .menu {
+    font-size: 14px !important;
+  }
+  .mobile-menu-buttons .btn-munc,
+  .mobile-menu-buttons .btn-demo {
+    font-size: 12px !important;
+  
+  }
+}
+
+/* ══════════════════════════════
+   EXTRA SMALL PHONES (max 360px)
+   ══════════════════════════════ */
+@media (max-width: 360px) {
+  .main-nav {
+    height: 50px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .nav-logo {
+    height: 30px !important;
+    margin-top: 0 !important;
+  }
+  .menu-div {
+    top: 50px !important;
+  }
+  .menu {
+    font-size: 13px !important;
+  }
+  .mobile-menu-buttons .btn-munc,
+  .mobile-menu-buttons .btn-demo {
+    font-size: 11px !important;
+    padding: 8px 0 !important;
+  }
+}
+/* default hidden on desktop */
+.mobile-menu-buttons {
+  display: none !important;
+}
+
+/* show only on mobile inside hamburger */
+@media (max-width: 767px) {
+  .mobile-menu-buttons {
+    display: flex !important;
+    width: 100% !important;
+    gap: 12px !important;
+    padding: 14px 20px 8px !important;
+    border-top: 1px solid #f0f0f0 !important;
+    margin-top: 4px !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobile-menu-buttons .btn-munc,
+  .mobile-menu-buttons .btn-demo {
+    flex: 1 !important;
+    padding: 8px 0 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+  }
+}
+
+
+
+
+
+
+
+
+/* Styling for the clicked/active link */
+.active-green {
+    background-color: #7DFFA0 !important; /* Tailwind green-500 color */
+    color: rgb(59, 59, 59) !important;
+    border-radius: 6px;
+    padding: 15px 11px;
+    transition: all 0.3s ease;
+}
+
+/* Ensure the hover doesn't conflict with the background color */
+.active-green:hover {
+    background-color: #7dffA0 !important; }
+
+
+
+/* Make sure the text color stays white for the icon inside active links */
+.active-green .menu svg {
+    color: white;
+}
+
+
+@media (max-width: 2560px) {
+    .active-green {
+        padding: 22px 65px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .active-green {
+        padding: 22px 65px;
+        font-size: 0.95rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .active-green {
+        padding: 22px 47px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .active-green {
+       
+        padding: 6px 8px; 
+        width: 100%; /* Mobile menu mein poori width cover karega */
+        border-radius: 4px;
+        justify-content: flex-start; /* Text ko left align karne ke liye */
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 424px) {
+    .active-green {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+}

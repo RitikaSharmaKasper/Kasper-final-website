@@ -1,0 +1,457 @@
+.Main-review-div{
+width: 1431px;
+height: 983px;
+margin:0 auto;
+opacity: 1;
+gap: 20px;
+padding:60px 0;
+
+
+}
+
+.review-heading .heading-p{
+    text-align:center;
+font-size:20px;
+margin-bottom:40px;
+
+  font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+
+line-height: 135%;
+letter-spacing: 0%;
+
+
+}
+.review-container{
+display:grid;
+position: relative;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+height:650px;
+margin-top:10px;
+overflow:hidden;
+}
+
+.review-column{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.scroll-up{
+animation:scrollUp 30s linear infinite;
+}
+
+.scroll-down{
+animation:scrollDown 30s linear infinite;
+}
+
+@keyframes scrollUp{
+0%{transform:translateY(0)}
+100%{transform:translateY(-50%)}
+}
+
+@keyframes scrollDown{
+0%{transform:translateY(-50%)}
+100%{transform:translateY(0)}
+}
+
+
+.review-container:hover .review-column{
+animation-play-state: paused;
+} 
+
+
+.review-container::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:50px;
+
+background:linear-gradient(to bottom, #f7f5f5, transparent);
+
+z-index:2;
+pointer-events:none;
+}
+.review-container::after{
+content:"";
+position:absolute;
+bottom:0;   /* IMPORTANT */
+left:0;
+width:100%;
+height:50px;
+
+background:linear-gradient(to top, #f7f5f5, transparent);
+
+z-index:2;
+pointer-events:none;
+}
+
+
+/* ════════════════════════════════════════
+   REVIEWS RESPONSIVE — All Screen Sizes
+   ════════════════════════════════════════ */
+
+/* ══ Base fix ══ */
+.Main-review-div {
+  width: 100% !important;
+  max-width: 1431px !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* ══ LARGE DESKTOP (1280px+) ══ */
+@media (min-width: 1280px) {
+  .Main-review-div {
+    padding: 1px 40px !important;
+    margin: 0 auto !important;
+  }
+  .review-heading .heading-p {
+    font-size: 20px !important;
+    margin-bottom: 40px !important;
+  }
+  .review-container {
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 20px !important;
+    height: 650px !important;
+  }
+}
+
+/* ══ SMALL DESKTOP (1025px – 1279px) ══ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .Main-review-div {
+    padding: 1px 32px !important;
+  }
+  .review-heading .heading-p {
+    font-size: 18px !important;
+    margin-bottom: 32px !important;
+  }
+  .review-container {
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 16px !important;
+    height: 580px !important;
+  }
+}
+
+/* ══ TABLET LANDSCAPE (900px – 1024px) ══ */
+@media (min-width: 900px) and (max-width: 1024px) {
+  .Main-review-div {
+    padding: 2px 24px !important;
+  }
+  .review-heading .heading-p {
+    font-size: 17px !important;
+    margin-bottom: 28px !important;
+  }
+  .review-container {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 14px !important;
+    height: 520px !important;
+  }
+  /* hide 5th column on 4-col layout */
+  .review-column:nth-child(5) {
+    display: none !important;
+  }
+}
+
+/* ══ TABLET PORTRAIT (768px – 899px) ══ */
+@media (min-width: 768px) and (max-width: 899px) {
+  .Main-review-div {
+    padding: 3px 20px !important;
+  }
+  .review-heading .heading-p {
+    font-size: 16px !important;
+    margin-bottom: 24px !important;
+  }
+  .review-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 14px !important;
+    height: 500px !important;
+  }
+  .review-column:nth-child(4),
+  .review-column:nth-child(5) {
+    display: none !important;
+  }
+}
+
+/* ══ MOBILE ALL SIZES — COMPLETE FIX ══ */
+@media (max-width: 767px) {
+  .Main-review-div {
+    padding: 28px 10px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .review-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+    height: 480px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .review-column:nth-child(3),
+  .review-column:nth-child(4),
+  .review-column:nth-child(5) {
+    display: none !important;
+  }
+
+  .review-column:nth-child(1),
+  .review-column:nth-child(2) {
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;       /* KEY — prevents column overflow */
+    overflow: hidden !important;
+  }
+
+  /* target every possible card class name */
+  .review-column .review-card,
+  .review-column > div,
+  .review-column > article,
+  .review-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* force all text inside cards to wrap */
+  .review-card p,
+  .review-card span,
+  .review-card h3,
+  .review-card h4 {
+    word-break: break-word !important;
+    white-space: normal !important;
+    overflow: hidden !important;
+    font-size: 11px !important;
+  }
+
+  /* force all images inside cards to fit */
+  .review-card img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .Main-review-div {
+    padding: 24px 10px !important;
+  }
+  .review-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+    height: 500px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .review-column:nth-child(1),
+  .review-column:nth-child(2) {
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+  }
+  .review-column .review-card,
+  .review-column > div,
+  .review-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .review-card p,
+  .review-card span,
+  .review-card h3,
+  .review-card h4 {
+    font-size: 11px !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+  }
+  .review-container::before,
+  .review-container::after {
+    height: 36px !important;
+  }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .Main-review-div {
+    padding: 20px 8px !important;
+  }
+  .review-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px !important;
+    height: 440px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .review-column:nth-child(1),
+  .review-column:nth-child(2) {
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+  .review-column .review-card,
+  .review-column > div,
+  .review-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .review-card p,
+  .review-card span,
+  .review-card h3,
+  .review-card h4 {
+    font-size: 10px !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+  }
+  .review-container::before,
+  .review-container::after {
+    height: 30px !important;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .Main-review-div {
+    padding: 16px 6px !important;
+  }
+  .review-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 5px !important;
+    height: 400px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .review-column:nth-child(1),
+  .review-column:nth-child(2) {
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+  .review-column .review-card,
+  .review-column > div,
+  .review-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .review-card p,
+  .review-card span,
+  .review-card h3,
+  .review-card h4 {
+    font-size: 9px !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+  }
+  .review-container::before,
+  .review-container::after {
+    height: 26px !important;
+  }
+}
+
+
+
+/* ══ MOBILE — FASTER SCROLL SPEED ══ */
+@media (max-width: 767px) {
+  .review-column.scroll-up {
+    animation: scrollUp 22s linear infinite !important;
+  }
+  .review-column.scroll-down {
+    animation: scrollDown 22s linear infinite !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .review-column.scroll-up {
+    animation: scrollUp 25s linear infinite !important;
+  }
+  .review-column.scroll-down {
+    animation: scrollDown 25s linear infinite !important;
+  }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .review-column.scroll-up {
+    animation: scrollUp 20s linear infinite !important;
+  }
+  .review-column.scroll-down {
+    animation: scrollDown 20s linear infinite !important;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .review-column.scroll-up {
+    animation: scrollUp 25s linear infinite !important;
+  }
+  .review-column.scroll-down {
+    animation: scrollDown  25s linear infinite !important;
+  }
+}
+
+/* ══ SAMSUNG S20 & SIMILAR ANDROID (360px – 390px) ══ */
+@media (max-width: 390px) and (min-width: 360px) {
+  .review-container {
+    height: 520px !important;
+  }
+  .review-column.scroll-up {
+    animation: scrollUp 20s linear infinite !important;
+  }
+  .review-column.scroll-down {
+    animation: scrollDown 20s linear infinite !important;
+  }
+}
+
+
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 389px) {
+  .Main-review-div {
+    padding: 24px 10px !important;
+  }
+  .review-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+    height: 600px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .review-column:nth-child(1),
+  .review-column:nth-child(2) {
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+  }
+  .review-column .review-card,
+  .review-column > div,
+  .review-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .review-card p,
+  .review-card span,
+  .review-card h3,
+  .review-card h4 {
+    font-size: 11px !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+  }
+  .review-container::before,
+  .review-container::after {
+    height: 36px !important;
+  }
+}

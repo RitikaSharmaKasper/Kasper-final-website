@@ -1,0 +1,9 @@
+.no-hover-change {
+  background-color: #0d6efd; /* Bootstrap primary */
+  color: white;
+}
+
+.no-hover-change:hover {
+  background-color: #0d6efd; /* Keep it same on hover */
+  color: white;
+}

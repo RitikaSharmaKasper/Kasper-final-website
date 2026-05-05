@@ -1,0 +1,421 @@
+/* ================= HERO SECTION ================= */
+.hero-solutions {
+  background: linear-gradient(180deg, #FFFFFF 0%, #D1E5FF 100%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  font-family: "Sora", sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 90px 20px 0;
+  margin-top:-104px;
+}
+
+.hero-inner{
+  margin-top:105px;
+  
+}
+/* ── Large laptops / small desktops (1024px–1279px) ── */
+@media (max-width: 1279px) {
+  .hero-solutions {
+    margin-top: -120px;
+  }
+}
+
+/* ── Laptops / landscape tablets (768px–1023px) ── */
+@media (max-width: 1023px) {
+  .hero-solutions {
+    margin-top: -100px;
+  }
+}
+
+/* ── Tablets portrait — iPad, iPad Air (768px) ── */
+@media (max-width: 768px) {
+  .hero-solutions {
+    margin-top: -80px;
+  }
+}
+
+/* ── Large phones / iPhone Plus & Pro Max (430px–767px) ── */
+@media (max-width: 767px) {
+  .hero-solutions {
+    margin-top: -70px;
+  }
+}
+
+/* ── iPhone 14 Pro / 13 / 12 (390px–429px) ── */
+@media (max-width: 429px) {
+  .hero-solutions {
+    margin-top: -87px;
+  }
+}
+
+/* ── iPhone SE / small Androids / 375px iPhones ── */
+@media (max-width: 425px) {
+  .hero-solutions {
+    margin-top: -105px;
+  }
+}
+
+/* ── iPhone SE 1st gen / very small phones (320px–374px) ── */
+@media (max-width: 374px) {
+  .hero-solutions {
+    margin-top: -40px;
+  }
+}
+
+.hero-inner {
+  max-width: 935px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  top: 0;
+}
+
+/* Tags */
+.hero-tags {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 494px;
+  max-width: 100%;
+}
+
+.hero-tags span {
+  background: rgba(235, 255, 229, 1);
+  color: rgba(27, 103, 0, 1);
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* Title */
+.hero-title {
+  width: 923px;
+  max-width: 100%;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: #1b1270;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Description */
+.hero-desc {
+  width: 935px;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(0, 6, 61, 1);
+}
+
+
+
+/* ── Laptops / landscape tablets (768px–1023px) ── */
+@media (max-width: 1023px) {
+  .hero-desc {
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ── Tablets portrait — iPad, iPad Air (768px) ── */
+@media (max-width: 768px) {
+  .hero-desc {
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+/* ── Large phones / iPhone Plus & Pro Max (430px–767px) ── */
+@media (max-width: 767px) {
+  .hero-desc {
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* ── iPhone 14 Pro / 13 / 12 (390px–429px) ── */
+@media (max-width: 429px) {
+  .hero-desc {
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* ── iPhone SE / small Androids / 375px–425px ── */
+@media (max-width: 425px) {
+  .hero-desc {
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+/* ── iPhone SE 1st gen / very small phones (320px–374px) ── */
+@media (max-width: 374px) {
+  .hero-desc {
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 13px;
+    line-height: 140%;
+  }
+}
+
+
+.html {
+  scroll-behavior: smooth;
+}
+
+/* Buttons container */
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+}
+
+/* Try Demo button */
+.btn-outline {
+  width: 109px;
+  height: 40px;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 6, 61, 1);
+  background-color: #E9EDF5;
+  color: rgba(0, 6, 61, 1);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.btn-outline:hover {
+  background: rgba(0, 6, 61, 1);
+  color: white;
+}
+
+/* Contact Us button */
+.btn-primary {
+  width: 124px;
+  height: 40px;
+  padding: 12px 16px;
+  border: none;
+  background: #ff4d2d;
+  color: white;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.btn-primary:hover {
+  background: #c7270b;
+}
+
+/* Button text */
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-content i,
+.btn-content svg {
+  display: none;
+}
+
+/* Dashboard container */
+.hero-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Dashboard image */
+.hero-dashboard img {
+  height: auto;
+  max-width: 1245px;
+  display: block;
+  border-radius: 14px 14px 0 0;
+  object-fit: cover;
+  object-position: center;
+  border-top: 14px solid rgba(229, 229, 229, 1);
+  border-left: 14px solid rgba(229, 229, 229, 1);
+  border-right: 14px solid rgba(229, 229, 229, 1);
+  border-bottom: none;
+  margin-top: 20px;
+}
+
+/* ================= TABLET (1024px) ================= */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 140px 20px 0;
+  }
+
+  .hero-title {
+    font-size: 40px;
+    white-space: normal;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    line-height: 135%;
+  }
+
+  .hero-tags {
+    width: auto;
+    gap: 14px;
+  }
+
+  .hero-dashboard img {
+    max-width: 90%;
+    border-top-width: 12px;
+    border-left-width: 12px;
+    border-right-width: 12px;
+  }
+
+  /* Buttons smaller on tablet */
+  .btn-outline {
+    width: 100px;
+    height: 36px;
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+
+  .btn-primary {
+    width: 120px;
+    height: 36px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+/* ================= MOBILE (768px) ================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 20px 0;
+  }
+
+  .hero-inner {
+    gap: 18px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    line-height: 130%;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-dashboard img {
+    max-width: 95%;
+    border-top-width: 10px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+  }
+
+  .btn-outline {
+    width: 85px;
+    height: 34px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+  
+    height: 34px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* ================= SMALL MOBILE (480px) ================= */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+  }
+
+  .hero-tags {
+    gap: 10px;
+  }
+
+  .hero-dashboard img {
+    max-width: 100%;
+    border-top-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+  }
+
+  .btn-outline,
+  .btn-primary {
+    width: auto;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,188 @@
+/* ================= MAIN SECTION ================= */
+
+.why-choose {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 40px 20px;
+  background: white;
+  text-align: center;
+}
+
+/* MAIN HEADING */
+
+.why-main-heading {
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 135%;
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgba(0,6,61,1);
+}
+
+/* ================= GRID ================= */
+
+.why-container {
+  width: 100%;
+  max-width: 1149px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+
+  align-items: center;
+  text-align: left;
+}
+
+/* ================= LEFT IMAGE ================= */
+
+.why-left {
+  display: flex;
+  justify-content: center;
+}
+
+.why-left img {
+  width: 100%;
+  max-width: 454px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* ================= RIGHT FEATURES ================= */
+
+.why-right {
+  width: 100%;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* FEATURE ROW */
+
+.why-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* ICON */
+
+.why-feature img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* TEXT */
+
+.why-feature div {
+  flex: 1;
+}
+
+/* TITLE */
+
+.why-feature h4 {
+  font-size: 18px;
+  margin-bottom: 3px;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: "Sora", sans-serif;
+  color: rgba(48,43,58,1);
+}
+
+/* DESCRIPTION */
+
+.why-feature p {
+  color: #6b7280;
+  font-size: 15px;
+  font-family: "Sora", sans-serif;
+  line-height: 1.4;
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:1024px){
+
+.why-container{
+  grid-template-columns:1fr;
+  gap:60px;
+  text-align:center;
+}
+
+.why-right{
+  align-items:flex-start;
+  text-align:left;
+}
+
+.why-left img{
+  max-width:420px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.why-choose{
+  padding:35px 16px;
+}
+
+.why-main-heading{
+  font-size:18px;
+  margin-bottom:35px;
+}
+
+.why-container{
+  gap:40px;
+}
+
+.why-right{
+  gap:14px;
+}
+
+.why-feature h4{
+  font-size:16px;
+}
+
+.why-feature p{
+  font-size:14px;
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+
+.why-main-heading{
+  font-size:16px;
+}
+
+.why-left img{
+  max-width:320px;
+}
+
+.why-feature img{
+  width:20px;
+  height:20px;
+}
+
+.why-feature h4{
+  font-size:15px;
+}
+
+.why-feature p{
+  font-size:13px;
+}
+
+}

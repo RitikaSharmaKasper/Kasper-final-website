@@ -1,0 +1,59 @@
+.blob1 {
+    position: absolute;
+    top: -1%;
+    left: -10%;
+    height: 300px;
+    width: 800px;
+    border-radius:0 50%  50% 0;
+    rotate: 60deg;
+    z-index: -1;
+    background: linear-gradient(165deg, rgba(221, 207, 12, .5), rgba(255, 0, 0, 0.515));
+    /* box-shadow: 5px 3px 15px rgba(255, 253, 253, 0.774) inset, -5px 3px 4px rgba(255, 253, 253, 0.774) inset, -8px -10px 4px rgba(255, 253, 253, 0.493) inset; */
+}
+.blob2 {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: linear-gradient(165deg, rgba(221, 207, 12, 1), rgba(255, 0, 0, 0.615));
+    box-shadow: 5px 3px 15px rgba(255, 253, 253, 0.774) inset, -5px 3px 4px rgba(255, 253, 253, 0.774) inset, -8px -10px 4px rgba(255, 253, 253, 0.493) inset;
+}
+.blob3 {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    height: 500px;
+    width: 600px;
+    border-radius: 0%;
+    z-index: -1;
+    rotate: 30deg;
+    background: linear-gradient(165deg, rgba(214, 12, 221, 0.452), rgba(0, 119, 255, 0.515));
+    box-shadow: 5px 3px 15px rgba(255, 253, 253, 0.774) inset, -5px 3px 4px rgba(255, 253, 253, 0.774) inset, -8px -10px 4px rgba(255, 253, 253, 0.493) inset;
+}
+.blob4 {
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    height:500px;
+    width: 500px;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(165deg, rgba(12, 207, 221, 0.5), rgba(255, 0, 0, 0.515));
+    box-shadow: 5px 3px 15px rgba(255, 253, 253, 0.774) inset, -5px 3px 4px rgba(255, 253, 253, 0.774) inset, -8px -10px 4px rgba(255, 253, 253, 0.493) inset;
+}
+.blob5 {
+    position: absolute;
+   bottom: -1%;
+    right: -10%;
+    height: 400px;
+    width: 400px;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(165deg, rgba(221, 207, 12, 5), rgba(255, 0, 0, 0.615));
+    box-shadow: 5px 3px 15px rgba(255, 253, 253, 0.774) inset, -5px 3px 4px rgba(255, 253, 253, 0.774) inset, -8px -10px 4px rgba(255, 253, 253, 0.493) inset;
+}
+.privicy-holder {
+    filter: blur(-20px);
+}

@@ -1,0 +1,405 @@
+.services-line {
+  position: absolute;
+  top: 120px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 98px; 
+  background: #f1f1f1;
+  z-index: 1; 
+}
+
+.services-line::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+  width: 850px; 
+  height: 2px;
+ 
+  background: #f1f1f1;
+ 
+ 
+}
+
+
+.services-line::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px; 
+  height: 60px; 
+  background: #f1f1f1;
+  
+  box-shadow: 
+    -425px 0 0 0 #f1f1f1, 
+     425px 0 0 0 #f1f1f1;
+    
+}
+.category{
+
+  
+  background: linear-gradient(270deg, #FA0064 0%, #0A6CFF 50.09%, #8907FB 100%);
+
+  background-clip: text;
+  
+
+  -webkit-background-clip: text;
+  
+
+  color: transparent;
+  
+  font-weight: bold;
+
+
+}
+.title{
+    font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+color:#3A2B2B;
+
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.description{
+    color: #7D7D7D;
+font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.button{
+    width: 113;
+height: 28;
+
+opacity: 1;
+padding-top: 6px;
+padding-right: 14px;
+padding-bottom: 6px;
+padding-left: 14px;
+gap: 8px;
+border-radius: 4px;
+border: 1px solid #CDCDCD;
+
+}
+/* Card Container */
+.service-card {
+  position: relative;
+   background:  #FAFAFA;
+  border: 1px solid #f3f4f6;
+  border-radius: 0.65rem;
+  padding: 2rem;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.content-wrapper3 {
+  transition: transform 0.5s ease;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* LEFT LINE */
+.service-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:1px;
+  height:110px;
+
+  background:linear-gradient(180deg,#FA0064 0%,#0A6CFF 50%,#8907FB 100%);
+}
+
+/* RIGHT LINE */
+.service-card::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  width:1px;
+  height:110px;
+
+  background:linear-gradient(180deg,#FA0064 0%,#0A6CFF 50%,#8907FB 100%);
+}
+
+
+
+
+.image-container-grow {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 50% - 50% divide ho gaya */
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 250px;
+  gap: 10px;
+}
+/* --- FRONT IMAGE --- */
+.front-main-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grow-img-front {
+  width: 210px;
+  left:60px;
+top:40px;
+
+  position: relative;
+  z-index: 6; /* sabse upar */
+  transition: all 0.5s ease-in-out;
+    transform: translateX(-50%) scale(1);
+
+}
+
+/* --- RIGHT SIDE LAYERS --- */
+
+.main-layers-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grow-img-main {
+  position: absolute;
+
+width: 300px;
+height: 264px;
+
+
+
+
+
+opacity: 1;
+
+  transition: all 0.6s ease;
+}
+
+/* Image 2 (behind) */
+.layer-left {
+  z-index:3;
+  width: 450px;
+height: 240px;
+top: 20px;
+left:20px;
+  transform: scale(0.89);
+  opacity: 0.7;
+}
+
+/* Image 3 (extra layer) */
+.layer-right {
+  z-index: 2;
+  width: 250px;
+height: 150px;
+top: 12px;
+left: 62px;
+
+opacity: 1;
+
+  transform: translate(15px, 15px);
+  border-radius:20px;
+
+}
+
+/* --- HOVER EFFECT --- */
+/* HOVER EFFECT */
+
+.service-card:hover .grow-img-front {
+
+  transform: translateX(-50%) scale(0.70);
+ 
+}
+
+/* Image 2 – bigger + move left to right */
+.service-card:hover .layer-left {
+  opacity: 1;
+  transform: translateX(-48px) scale(1.4);
+}
+
+/* Image 3 – move down + slightly bigger */
+.service-card:hover .layer-right {
+  transform: translate(18px, 60px) scale(1.1);
+}
+
+
+
+
+.messages-main-div img{
+
+  height: auto;
+  border-radius: 10px;
+}
+.front-main-div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.messages-main-div img{
+  width: 50px;
+ 
+}
+
+.messages-main-div{
+  position: absolute;
+  top: 10px;        /* image ke niche start */
+  left: 5px;
+  width: 300px;
+
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 10px;
+
+  opacity: 0;                 /* invisible */
+  /* niche se start */
+  transition: all 0.5s ease;
+
+  z-index: 1; /* image ke peeche */
+}
+
+.service-card:hover .messages-main-div{
+  opacity: 1;
+transform: translateY(-90px); 
+  z-index: 2;                   /* ab image ke upar */
+}
+
+/* ══ Content spacing fix — all screens ══ */
+
+/* DESKTOP (1280px+) */
+@media (min-width: 1280px) {
+  .content-wrapper {
+    padding-top: 20px !important;
+  }
+}
+
+/* SMALL DESKTOP (1025px – 1279px) */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .content-wrapper {
+    padding-top: 16px !important;
+  }
+}
+
+/* TABLET (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-wrapper {
+    padding-top: 14px !important;
+  }
+  .service-card:hover .content-wrapper {
+    transform: translateY(-14px) !important;
+  }
+}
+
+/* MOBILE (max 767px) */
+@media (max-width: 767px) {
+  .content-wrapper {
+    padding-top: 12px !important;
+  }
+  .service-card:hover .content-wrapper {
+    transform: translateY(-20px) !important;
+  }
+}
+
+/* iPHONE 14 (390px – 430px) */
+@media (max-width: 430px) and (min-width: 390px) {
+  .content-wrapper {
+    padding-top: 10px !important;
+  }
+  .service-card:hover .content-wrapper {
+    transform: translateY(-16px) !important;
+  }
+}
+
+/* SMALL PHONES (max 389px) */
+@media (max-width: 389px) {
+  .content-wrapper {
+    padding-top: 8px !important;
+  }
+  .service-card:hover .content-wrapper {
+    transform: translateY(-14px) !important;
+  }
+}
+
+
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .front-main-div {
+    padding-left: 2px !important;
+  }
+  .grow-img-front {
+    transform: translateX(-35%) scale(1) !important;
+  }
+  .service-card:hover .grow-img-front {
+    transform: translateX(-35%) scale(0.70) !important;
+  }
+  .messages-main-div {
+    left: 100% !important;
+    transform: translateX(-50%) !important;
+    width: 260px !important;
+    grid-template-columns: 42px 1fr !important;
+    gap: 9px !important;
+    top: 10px !important;
+  }
+  .messages-main-div img {
+    width: 42px !important;
+  }
+  .service-card:hover .messages-main-div {
+    transform: translateX(-50%) translateY(-90px) !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .front-main-div {
+    padding-left: 1px !important;
+  }
+  .grow-img-front {
+    transform: translateX(-30%) scale(1) !important;
+  }
+  .service-card:hover .grow-img-front {
+    transform: translateX(-30%) scale(0.70) !important;
+  }
+  .messages-main-div {
+    left: 90% !important;
+    transform: translateX(-50%) !important;
+    width: 250px !important;
+    grid-template-columns: 40px 1fr !important;
+    gap: 8px !important;
+    top: 10px !important;
+  }
+  .messages-main-div img {
+    width: 40px !important;
+  }
+  .service-card:hover .messages-main-div {
+    transform: translateX(-50%) translateY(-90px) !important;
+  }
+}

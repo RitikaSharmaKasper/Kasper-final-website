@@ -1,0 +1,245 @@
+.services-line {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 98px;
+  background: #f1f1f1;
+  z-index: 1;
+}
+
+/* Horizontal bar jo teeno cards ke upar tak jaayegi */
+.services-line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 850px;
+  height: 2px;
+
+  background: #f1f1f1;
+}
+
+/* Ye teeno vertical drops hain jo cards ke center mein girenge */
+.services-line::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 60px;
+  background: #f1f1f1;
+  box-shadow:
+    -425px 0 0 0 #f1f1f1,
+    425px 0 0 0 #f1f1f1;
+}
+/* .category {
+  background: linear-gradient(270deg, #fa0064 0%, #0a6cff 50.09%, #8907fb 100%);
+
+  background-clip: text;
+
+  -webkit-background-clip: text;
+
+  color: transparent;
+
+  font-weight: bold;
+} */
+.title {
+  font-family: Sora;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  color: #3a2b2b;
+
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.description {
+  color: #7d7d7d;
+  font-family: Sora;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.button {
+  width: 113;
+  height: 28;
+
+  opacity: 1;
+  padding-top: 6px;
+  padding-right: 14px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #cdcdcd;
+}
+/* Card Container */
+.service-card {
+  position: relative;
+  background: #fafafa;
+  border: 1px solid #f3f4f6;
+  border-radius: 0.65rem;
+  padding: 2rem;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  transition: transform 0.5s ease;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover .content-wrapper {
+  transform: translateY(-20px);
+}
+.main-service-img {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.service-card:hover .main-service-img {
+  /* Left shift - card ke andar aadhi chhupne ke liye */
+  transform: translateX(-100px) scale(1.02);
+}
+
+.image-container {
+  position: relative;
+  width: 95%;
+  height: 250px;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+
+.main-service-img {
+  width: 100%;
+  z-index: 20;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.service-card:hover .main-service-img {
+  transform: translateX(-80px, 40px) scale(1.02);
+  height: 200px;
+}
+
+.bg-decor-img {
+  position: absolute;
+  width: 60%;
+  opacity: 0;
+  z-index: 10;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  top: 10%;
+  left: 60%;
+
+  transform: translate(-50%, -50%) scale(0.2);
+  transition: transform 0.3s;
+
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover .bg-decor-img {
+  opacity: 1;
+
+  margin-top: 10px;
+  transform: translate(-150px, -40px) scale(1) rotate(0deg);
+}
+
+.message-group {
+  position: absolute;
+
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover .message-group {
+  opacity: 1;
+
+  transform: translateY(-10%) translateX(-20px);
+}
+
+.message-img {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0px 1px 5px rgba(247, 242, 242, 0.959));
+
+  transform: scale(0.2);
+  transition: all 0.2s ease;
+}
+
+.service-card:hover .message-img {
+  transform: scale(1);
+}
+
+.service-card.type-build:hover .message1 {
+  transition-delay: 0.1s;
+}
+.service-card.type-build:hover .message2 {
+  transition-delay: 0.1s;
+}
+.service-card.type-build:hover .message3 {
+  transition-delay: 0.1s;
+}
+
+
+ 
+ 
+@media (max-width: 480px) {
+  .service-card.mobile-active .content-wrapper {
+    transform: translateY(-20px);
+  }
+ 
+  .service-card.mobile-active .main-service-img {
+    transform: translateX(-80px) scale(1.02);
+    height: 200px;
+  }
+ 
+  .service-card.mobile-active .bg-decor-img {
+    opacity: 1;
+    margin-top: 10px;
+    transform: translate(-150px, -40px) scale(1) rotate(0deg);
+  }
+ 
+  .service-card.mobile-active .message-group {
+    opacity: 1;
+    transform: translateY(-10%) translateX(-20px);
+  }
+ 
+  .service-card.mobile-active .message-img {
+    transform: scale(1);
+  }
+}
+ 

@@ -1,0 +1,247 @@
+.blog-card {
+  width: 303px;
+  height: 356px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image */
+.blog-image {
+  width: 303px;
+  height: 199px;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hover Effect */
+
+.blog-image:hover img {
+  transform: scale(1.2);
+}
+
+/* Content */
+.blog-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-tag {
+  background: rgba(201, 245, 255, 1);
+  color: rgba(0, 110, 135, 1);
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  width: fit-content;
+   font-family: "Sora", sans-serif;
+}
+
+.blog-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+   font-family: "Sora", sans-serif;
+}
+
+.blog-meta {
+  font-size: 12px;
+  color: rgba(0,6,61,1);
+  font-weight: 400px;
+   font-family: "Sora", sans-serif;
+}
+
+.blog-meta span {
+  color: rgba(58, 43, 43, 0.6);
+  font-size: 12px;
+   font-weight: 400px;
+    font-family: "Sora", sans-serif;
+}
+
+
+
+
+
+/* ════════════════════════════════════════
+   BLOG CARD RESPONSIVE
+   ════════════════════════════════════════ */
+
+/* ══ Base fix — image always fills card width ══ */
+.blog-card {
+  width: 100%;
+  max-width: 303px;
+  box-sizing: border-box;
+}
+
+.blog-image {
+  width: 100%;
+  height: 199px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ══ LARGE DESKTOP (1280px+) ══ */
+@media (min-width: 1280px) {
+  .blog-card { width: 303px !important; height: 356px !important; }
+  .blog-image { width: 100% !important; height: 199px !important; }
+}
+
+/* ══ SMALL DESKTOP (1025px – 1279px) ══ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .blog-card { width: 280px !important; height: auto !important; }
+  .blog-image { width: 100% !important; height: 180px !important; }
+  .blog-content h4 { font-size: 15px !important; }
+}
+
+/* ══ TABLET (768px – 1024px) ══ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blog-card {
+    width: 260px !important;
+    height: auto !important;
+    min-height: 320px !important;
+  }
+  .blog-image { width: 100% !important; height: 165px !important; }
+  .blog-content { padding: 14px !important; gap: 8px !important; }
+  .blog-content h4 { font-size: 14px !important; }
+  .blog-tag { font-size: 11px !important; padding: 3px 8px !important; }
+  .blog-meta { font-size: 11px !important; }
+  .blog-meta span { font-size: 11px !important; }
+}
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .blog-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+  }
+  .blog-image {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .blog-content { padding: 14px !important; gap: 8px !important; }
+  .blog-content h4 { font-size: 15px !important; line-height: 1.35 !important; }
+  .blog-tag { font-size: 11px !important; padding: 3px 8px !important; }
+  .blog-meta { font-size: 11px !important; }
+  .blog-meta span { font-size: 11px !important; }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .blog-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .blog-image {
+    width: 100% !important;
+    height: 185px !important;
+  }
+  .blog-content { padding: 12px !important; gap: 8px !important; }
+  .blog-content h4 { font-size: 14px !important; }
+  .blog-tag { font-size: 11px !important; padding: 3px 8px !important; }
+  .blog-meta { font-size: 11px !important; }
+  .blog-meta span { font-size: 10px !important; }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .blog-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .blog-image {
+    width: 100% !important;
+    height: 170px !important;
+  }
+  .blog-content { padding: 10px !important; gap: 6px !important; }
+  .blog-content h4 { font-size: 13px !important; }
+  .blog-tag { font-size: 10px !important; padding: 3px 6px !important; }
+  .blog-meta { font-size: 10px !important; }
+  .blog-meta span { font-size: 10px !important; }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .blog-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .blog-image {
+    width: 100% !important;
+    height: 155px !important;
+  }
+  .blog-content { padding: 10px !important; gap: 6px !important; }
+  .blog-content h4 { font-size: 12px !important; }
+  .blog-tag { font-size: 10px !important; padding: 2px 6px !important; }
+  .blog-meta { font-size: 10px !important; }
+  .blog-meta span { font-size: 10px !important; }
+}
+
+
+
+
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .blog-card { width: 100% !important; max-width: 320px !important; height: auto !important; min-height: unset !important; margin: 0 auto !important; }
+  .blog-image { width: 100% !important; height: 170px !important; }
+  .blog-content { padding: 12px !important; gap: 6px !important; }
+  .blog-content h4 { font-size: 13px !important; line-height: 1.35 !important; }
+  .blog-tag { font-size: 10px !important; padding: 2px 4px !important; width: fit-content !important; max-width: 90px !important; }
+  .blog-meta { font-size: 10px !important; }
+  .blog-meta span { font-size: 10px !important; }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .blog-card { width: 100px !important; max-width: 100px !important; height: 190 !important; }
+  .blog-image { width: 100% !important; height: 150px !important; }
+  .blog-content { padding: 12px !important; gap: 5px !important; }
+  .blog-content h4 { font-size: 12px !important; }
+  .blog-tag { font-size: 9px !important; padding: 2px 4px !important; max-width: 70px !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
+  .blog-meta { font-size: 9px !important; }
+  .blog-meta span { font-size: 9px !important; }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .blog-card { width: 90px !important; max-width: 90px !important; height: 180 !important; }
+  .blog-image { width: 100% !important; height: 140px !important; }
+  .blog-content { padding:12px !important; gap: 4px !important; }
+  .blog-content h4 { font-size: 11px !important; }
+  .blog-tag { font-size: 9px !important; padding: 2px 4px !important; max-width: 60px !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
+  .blog-meta { font-size: 9px !important; }
+  .blog-meta span { font-size: 9px !important; }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .blog-card { width: 90px !important; max-width: 90px !important; height: 150 !important; }
+  .blog-image { width: 100% !important; height: 120px !important; }
+  .blog-content { padding: 12px !important; gap: 4px !important; }
+  .blog-content h4 { font-size: 10px !important; }
+  .blog-tag { font-size: 8px !important; padding: 2px 4px !important; max-width: 55px !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
+  .blog-meta { font-size: 9px !important; }
+  .blog-meta span { font-size: 9px !important; }
+}

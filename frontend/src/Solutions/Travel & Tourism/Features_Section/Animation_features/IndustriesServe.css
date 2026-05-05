@@ -1,0 +1,180 @@
+/* ================= GLOBAL ================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Sora",sans-serif;
+}
+
+section{
+width:100%;
+}
+
+/* ================= FEATURES SECTION ================= */
+
+.Industries-main-div{
+max-width:1440px;
+width:100%;
+margin:20px auto;
+padding:40px 50px;
+gap:24px;
+}
+
+.Industries-main-div p{
+font-weight:400;
+font-size:20px;
+color:rgba(0,6,61,1);
+line-height:135%;
+text-align:center;
+padding-bottom:50px;
+}
+
+/* IMAGE GRID */
+
+.industry-imagediv{
+margin-top:25px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:39px;
+
+max-width:1149px;
+width:100%;
+margin:25px auto;
+}
+
+/* CARD */
+
+.industry-card{
+position:relative;
+overflow:hidden;
+}
+
+/* IMAGE */
+
+.industry-card img{
+width:250px;
+height:150px;
+transition:transform 0.4s ease;
+border-radius:4px;
+object-fit:cover;
+}
+
+/* TEXT */
+
+.industry-card p{
+position:absolute;
+font-weight:400;
+font-size:15px;
+top:128px;
+left:13px;
+z-index:4;
+color:#fff;
+line-height:100%;
+}
+
+/* GRADIENT */
+
+.industry-card::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:60px;
+border-radius:4px;
+background:linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+/* HOVER */
+
+.industry-card img:hover{
+transform:scale(1.4);
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:1024px){
+
+.why-container{
+  grid-template-columns:1fr;
+  gap:60px;
+  text-align:center;
+}
+
+/* right content smaller */
+
+.why-right{
+  max-width:520px;
+  margin:auto;
+  padding:0 40px;
+}
+
+.why-feature{
+  gap:14px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.why-choose{
+  padding:35px 20px;
+}
+
+.why-main-heading{
+  font-size:18px;
+  margin-bottom:35px;
+}
+
+/* right section smaller */
+
+.why-right{
+  max-width:420px;
+  margin:auto;
+  padding:0 25px;
+  gap:14px;
+}
+
+.why-feature h4{
+  font-size:16px;
+}
+
+.why-feature p{
+  font-size:14px;
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+
+.why-main-heading{
+  font-size:16px;
+}
+
+/* more breathing space */
+
+.why-right{
+  max-width:360px;
+  padding:0 20px;
+  gap:12px;
+}
+
+.why-feature img{
+  width:20px;
+  height:20px;
+}
+
+.why-feature h4{
+  font-size:15px;
+}
+
+.why-feature p{
+  font-size:13px;
+}
+
+}

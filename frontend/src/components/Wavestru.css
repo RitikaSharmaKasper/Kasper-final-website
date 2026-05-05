@@ -1,0 +1,125 @@
+
+
+
+/* ════════════════════════════════════════
+   WAVE RESPONSIVE — All Screen Sizes
+   ════════════════════════════════════════ */
+
+/* ══ Base fix ══ */
+.wave-main-div {
+  position: relative;
+  width: 100%;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+/* icon circle */
+.icon-div {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-div img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* single hover */
+.icon-div:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* parent hover = wave animation */
+.wave-main-div:hover .icon-div {
+  animation: snakeWave 0.9s ease-in-out;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+/* wave motion from first to last */
+@keyframes snakeWave {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  30% {
+    transform: translateY(-14px) scale(1.06);
+  }
+  60% {
+    transform: translateY(6px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/* moving glowing snake line */
+/* .snake-line {
+  position: absolute;
+  top: 50%;
+  left: -220px;
+  width: 180px;
+  height: 6px;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(124, 58, 237, 0.95),
+    rgba(0, 194, 255, 0.95),
+    transparent
+  );
+  filter: blur(2px);
+  transform: translateY(-50%);
+  opacity: 0;
+  z-index: 0;
+} */
+
+/* .wave-main-div:hover .snake-line {
+  opacity: 1;
+  animation: snakeMove 2.2s linear infinite;
+}
+
+@keyframes snakeMove {
+  0% {
+    left: -220px;
+  }
+  100% {
+    left: calc(100% + 220px);
+  }
+} */
+ @media ( those-who-can-hover: hover ) {
+  .wave-main-div:hover .icon-div {
+    animation: snakeWave 0.9s ease-in-out;
+    animation-delay: calc(var(--i) * 0.1s);
+  }
+}
+
+/* For Mobile: Simple tap effect instead of complex wave */
+@media (max-width: 768px) {
+  .icon-div:active {
+    transform: scale(0.9);
+  }
+  
+  /* Prevent the snakeMove line from causing horizontal scroll */
+  .snake-line {
+    display: none; 
+  }
+} 

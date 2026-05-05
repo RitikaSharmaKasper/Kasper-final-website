@@ -1,0 +1,955 @@
+/* ================= FEATURES SECTION ================= */
+
+.features-section {
+  width: 100%;
+  display: flex;
+  padding: 70px 40px;
+  background: #ffffff;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.features_content {
+  width: 1149px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.features-heading {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  margin-bottom: 50px;
+  color: rgba(0, 6, 61, 1);
+}
+
+.features-wrapper {
+  width: 100%;
+  max-width: 1149px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.feature-card-item {
+  width: 400px;
+  height: 200px;
+  background: #FCFCFC;
+  border: 1px solid #F0F0F0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.feature-card-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #1A90FF;
+  border-radius: 8px 8px 0 0;
+}
+
+.feature-icon-box {
+  width: 40px;
+  height: 40px;
+  background: #F0F0F0;
+  border-radius: 7px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.feature-icon-box img {
+  width: 22px;
+  height: 22px;
+}
+
+.feature-card-title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(58, 43, 43, 1);
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.feature-card-description {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6B7280;
+  text-align: left;
+}
+
+/* ================= WHY CHOOSE ================= */
+
+.why-choose {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 40px 40px;
+  background: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.why-main-heading {
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 135%;
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgba(0, 6, 61, 1);
+}
+
+.why-container {
+  width: 100%;
+  max-width: 1149px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  text-align: left;
+}
+
+.why-left {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.why-left img {
+  width: 100%;
+  max-width: 454px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.why-image-wrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  transition: 0.4s ease;
+}
+
+.why-image-wrapper img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.why-right {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.why-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.why-feature img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.why-feature div {
+  flex: 1;
+}
+
+.why-feature h4 {
+  font-size: 18px;
+  margin-bottom: 3px;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: "Sora", sans-serif;
+  color: rgba(48, 43, 58, 1);
+}
+
+.why-feature p {
+  color: #6b7280;
+  font-size: 15px;
+  font-family: "Sora", sans-serif;
+  line-height: 1.4;
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ================= VISIBILITY ================= */
+
+.visibility {
+  width: 100%;
+  background: white;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.visibility-container {
+  width: 100%;
+  max-width: 1308px;
+  margin: auto;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.visibility-text h2 {
+  max-width: 1014px;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  background: linear-gradient(270deg, #FA0064 0%, #0A6CFF 50.09%, #8907FB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= FAQ ================= */
+
+.faq-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 50px 40px;
+  box-sizing: border-box;
+}
+
+.faq-content {
+  width: 960px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.FAQ h3 {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 135%;
+  text-align: center;
+  color: #00063D;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(174, 174, 174, 1);
+  background: #fff;
+  padding: 16px 24px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(28, 43, 51, 1);
+  margin: 0;
+}
+
+.faq-arrow {
+  transition: transform 0.3s ease;
+  color: gray;
+  font-size: 18px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  opacity: 0;
+  font-size: 14px;
+  color: #555;
+  margin-top: 0;
+}
+
+.faq-item:hover .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.faq-item:hover .faq-arrow {
+  transform: rotate(180deg);
+}
+
+.faq-item:hover {
+  background: #f3f4f6;
+}
+
+/* ================= BLOG SECTION ================= */
+
+.blogs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: auto;
+  padding: 50px 40px;
+  box-sizing: border-box;
+}
+
+.blog_content {
+  width: 1440px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.blogs-title {
+  text-align: left;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  color: rgba(0, 6, 61, 1);
+}
+
+.blogs-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.blog-card {
+  width: 100%;
+  max-width: 303px;
+  height: 356px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.blog-image {
+  width: 100%;
+  height: 199px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.blog-image:hover img {
+  transform: scale(1.2);
+}
+
+.blog-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-tag {
+  width: fit-content;
+  background: #dff1f3;
+  color: #007a87;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.blog-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(0, 6, 61, 1);
+}
+
+/* ================================================
+   RESPONSIVE — TABLET (≤1024px)
+   ================================================ */
+
+@media (max-width: 1024px) {
+
+  /* Features */
+  .features-section {
+    padding: 60px 30px;
+  }
+  .features_content {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .features-wrapper {
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .feature-card-item {
+    width: calc(50% - 10px);
+    height: auto;
+    padding: 22px;
+  }
+  .feature-card-title {
+    font-size: 14px;
+  }
+  .feature-card-description {
+    font-size: 13px;
+  }
+
+  /* Why Choose */
+  .why-choose {
+    padding: 40px 30px;
+  }
+  .why-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .why_choose-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .why-right {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 100%;
+  }
+  .why-left img {
+    max-width: 420px;
+  }
+
+  /* Visibility */
+  .visibility {
+    padding: 50px 30px;
+  }
+  .visibility-container {
+    gap: 40px;
+  }
+  .visibility-text h2 {
+    font-size: 32px;
+    max-width: 700px;
+  }
+
+  /* FAQ */
+  .faq-container {
+    padding: 40px 30px;
+  }
+  .faq-content {
+    width: 100%;
+  }
+  .FAQ h3 {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+  .faq-question {
+    font-size: 15px;
+  }
+  .faq-answer {
+    font-size: 13px;
+  }
+
+  /* Blog */
+  .blogs {
+    padding: 50px 30px;
+  }
+  .blogs-grid {
+    justify-content: center;
+    gap: 20px;
+  }
+  .blog-card {
+    width: calc(50% - 10px);
+    max-width: 100%;
+    height: auto;
+  }
+  .blogs-title {
+    padding-left: 0;
+  }
+}
+
+/* ================================================
+   RESPONSIVE — MOBILE (≤768px)
+   ================================================ */
+
+@media (max-width: 768px) {
+
+  /* Features */
+  .features-section {
+    padding: 50px 20px;
+  }
+  .features-heading {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .features_content {
+    width: 100%;
+    padding: 50px;
+  }
+  .features-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 0;
+    width: 100%;
+  }
+  .feature-card-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    padding: 24px 20px;
+    margin: 0;
+  }
+  .feature-card-title {
+    font-size: 14px;
+  }
+  .feature-card-description {
+    font-size: 13px;
+    width: 100%;
+  }
+  .feature-icon-box {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Why Choose */
+  .why-choose {
+    padding: 35px 20px;
+  }
+  .why_choose-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .why-main-heading {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .why-container {
+    gap: 30px;
+  }
+  .why-right {
+    gap: 14px;
+  }
+  .why-feature h4 {
+    font-size: 16px;
+  }
+  .why-feature p {
+    font-size: 14px;
+  }
+
+  /* Visibility */
+  .visibility {
+    padding: 40px 20px;
+  }
+  .visibility-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .visibility-text h2 {
+    font-size: 22px;
+    max-width: 100%;
+  }
+
+  /* FAQ */
+  .faq-container {
+    padding: 30px 20px;
+  }
+  .faq-content {
+    width: 100%;
+  }
+  .FAQ h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .faq-item {
+    padding: 14px 16px;
+  }
+  .faq-question {
+    font-size: 14px;
+  }
+  .faq-answer {
+    font-size: 13px;
+  }
+  .faq-arrow {
+    font-size: 16px;
+  }
+
+  /* Blog */
+  .blogs {
+    padding: 40px 20px;
+  }
+  .blogs-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .blog-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .blogs-title {
+    font-size: 18px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* ================================================
+   RESPONSIVE — SMALL MOBILE (≤480px)
+   ================================================ */
+
+@media (max-width: 480px) {
+
+  /* Features */
+  .features-section {
+    padding: 40px 16px;
+  }
+  .features_content {
+    width: 100%;
+    padding: 15px;
+  }
+  .features-wrapper {
+    padding: 0;
+    gap: 14px;
+    width: 100%;
+  }
+  .feature-card-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 16px;
+    margin: 0;
+  }
+  .feature-card-title {
+    font-size: 13px;
+  }
+  .feature-card-description {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .feature-icon-box {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Why Choose */
+  .why-choose {
+    padding: 30px 16px;
+  }
+  .why_choose-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .why-main-heading {
+    font-size: 16px;
+  }
+  .why-left img {
+    max-width: 100%;
+  }
+  .why-feature img {
+    width: 20px;
+    height: 20px;
+  }
+  .why-feature h4 {
+    font-size: 15px;
+  }
+  .why-feature p {
+    font-size: 13px;
+  }
+
+  /* Visibility */
+  .visibility {
+    padding: 30px 16px;
+  }
+  .visibility-text h2 {
+    font-size: 18px;
+  }
+
+  /* FAQ */
+  .faq-container {
+    padding: 24px 16px;
+  }
+  .FAQ h3 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .faq-item {
+    padding: 12px 14px;
+  }
+  .faq-question {
+    font-size: 13px;
+  }
+  .faq-answer {
+    font-size: 12px;
+  }
+  .faq-arrow {
+    font-size: 14px;
+  }
+
+  /* Blog */
+  .blogs {
+    padding: 30px 16px;
+  }
+  .blogs-title {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .blog-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .blog-image {
+    height: 150px;
+  }
+  .blog-content h4 {
+    font-size: 14px;
+  }
+  .blog-tag {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+  .blogs-grid {
+    gap: 14px;
+  }
+}
+
+/* ================================================
+   RESPONSIVE — iPHONE SE / 425px
+   ================================================ */
+
+@media (max-width: 425px) {
+
+  /* Features */
+  .features-section {
+    padding: 40px 14px;
+  }
+  .features-wrapper {
+    padding: 0;
+    gap: 12px;
+  }
+  .feature-card-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 14px;
+    margin: 0;
+  }
+
+  /* Why Choose */
+  .why-choose {
+    padding: 30px 14px;
+  }
+  .why-feature h4 {
+    font-size: 14px;
+  }
+  .why-feature p {
+    font-size: 13px;
+  }
+
+  /* Visibility */
+  .visibility {
+    padding: 30px 14px;
+  }
+  .visibility-text h2 {
+    font-size: 17px;
+  }
+
+  /* FAQ */
+  .faq-container {
+    padding: 20px 14px;
+  }
+  .faq-question {
+    font-size: 13px;
+  }
+
+  /* Blog */
+  .blogs {
+    padding: 30px 14px;
+  }
+  .blog-image {
+    height: 140px;
+  }
+  .blog-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ================================================
+   RESPONSIVE — iPHONE 12/13/14 (≤390px)
+   ================================================ */
+
+@media (max-width: 390px) {
+
+  /* Features */
+  .features-section {
+    padding: 36px 12px;
+  }
+  .features-wrapper {
+    padding: 0;
+    gap: 12px;
+  }
+  .feature-card-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 18px 12px;
+    margin: 0;
+  }
+  .feature-card-description {
+    font-size: 12px;
+  }
+
+  /* Why Choose */
+  .why-choose {
+    padding: 28px 12px;
+  }
+
+  /* Visibility */
+  .visibility {
+    padding: 28px 12px;
+  }
+  .visibility-text h2 {
+    font-size: 16px;
+  }
+
+  /* FAQ */
+  .faq-container {
+    padding: 20px 12px;
+  }
+  .faq-question {
+    font-size: 13px;
+  }
+  .faq-answer {
+    font-size: 12px;
+  }
+
+  /* Blog */
+  .blogs {
+    padding: 28px 12px;
+  }
+  .blog-image {
+    height: 130px;
+  }
+}
+
+/* ================================================
+   RESPONSIVE — VERY SMALL (≤320px)
+   ================================================ */
+
+@media (max-width: 320px) {
+
+  /* Features */
+  .features-section {
+    padding: 30px 10px;
+  }
+  .features-wrapper {
+    padding: 0;
+    gap: 10px;
+  }
+  .feature-card-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px 10px;
+    margin: 0;
+  }
+  .feature-card-title {
+    font-size: 12px;
+  }
+  .feature-card-description {
+    font-size: 12px;
+  }
+  .feature-icon-box {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Why Choose */
+  .why-choose {
+    padding: 24px 10px;
+  }
+  .why-feature h4 {
+    font-size: 14px;
+  }
+  .why-feature p {
+    font-size: 12px;
+  }
+
+  /* Visibility */
+  .visibility {
+    padding: 24px 10px;
+  }
+  .visibility-text h2 {
+    font-size: 15px;
+  }
+
+  /* FAQ */
+  .faq-container {
+    padding: 16px 10px;
+  }
+  .FAQ h3 {
+    font-size: 16px;
+  }
+  .faq-question {
+    font-size: 12px;
+  }
+  .faq-answer {
+    font-size: 11px;
+  }
+  .faq-item {
+    padding: 10px 12px;
+  }
+
+  /* Blog */
+  .blogs {
+    padding: 24px 10px;
+  }
+  .blog-image {
+    height: 120px;
+  }
+  .blog-content h4 {
+    font-size: 13px;
+  }
+  .blogs-title {
+    font-size: 15px;
+  }
+}

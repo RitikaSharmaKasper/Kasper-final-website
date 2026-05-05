@@ -1,0 +1,53 @@
+.thank-you-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f8fafc;
+  padding: 20px;
+}
+
+.thank-you-box {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.thank-you-icon {
+  font-size: 80px;
+  color: #10b981;
+  margin-bottom: 20px;
+}
+
+.thank-you-title {
+  font-family: 'Sora', sans-serif !important;
+  font-weight: 600 !important;
+  color: #00063d;
+  margin-bottom: 12px !important;
+}
+
+.thank-you-message {
+  font-family: 'Sora', sans-serif !important;
+  color: #64748b;
+  font-size: 16px !important;
+  margin-bottom: 30px !important;
+  line-height: 1.6 !important;
+}
+
+.thank-you-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.thank-you-btn {
+  font-family: 'Sora', sans-serif !important;
+  padding: 12px 24px !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+}

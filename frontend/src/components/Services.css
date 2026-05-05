@@ -1,0 +1,467 @@
+.services-line {
+  position: absolute;
+  top: 120px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 98px; 
+  background: #f1f1f1;
+  z-index: 1; 
+}
+
+/* Horizontal bar jo teeno cards ke upar tak jaayegi */
+.services-line::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Is width ko cards ke gap ke hisaab se adjust karein */
+  width: 850px; 
+  height: 2px;
+ 
+  background: #f1f1f1;
+ 
+ 
+}
+
+/* Ye teeno vertical drops hain jo cards ke center mein girenge */
+.services-line::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px; 
+  height: 60px; 
+  background: #f1f1f1;
+  box-shadow: 
+    -425px 0 0 0 #f1f1f1, 
+     425px 0 0 0 #f1f1f1;
+    
+}
+.category{
+
+  
+  background: linear-gradient(270deg, #FA0064 0%, #0A6CFF 50.09%, #8907FB 100%);
+
+  background-clip: text;
+  
+
+  -webkit-background-clip: text;
+  
+
+  color: transparent;
+  
+  font-weight: bold;
+
+
+}
+.title{
+    font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+color:#3A2B2B;
+
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.description{
+    color: #7D7D7D;
+font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.button{
+    width: 113;
+height: 28;
+
+opacity: 1;
+padding-top: 6px;
+padding-right: 14px;
+padding-bottom: 6px;
+padding-left: 14px;
+gap: 8px;
+border-radius: 4px;
+border: 1px solid #CDCDCD;
+
+}
+.services-we-offer{
+  font-family: Sora;
+  font:400;
+}
+/* Card Container */
+.service-card {
+  position: relative;
+ background: #FAFAFA;  border: 1px solid #f3f4f6;
+  border-radius: 1rem;
+  padding: 2rem;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+
+.content-wrapper {
+  transition: transform 0.5s ease;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+.service-section{
+
+  display: block;          
+  padding-top: 80px;      
+  padding-bottom: 80px;   
+  background-color: #ffffff;
+  text-align: center;     
+  position: relative;      
+  overflow: visible;      
+
+}
+
+
+.services-we-offer {
+  font-size: 1.75rem;     
+  font-weight: 400;       
+  color: #002D2D;  
+  font-family: 'sora';        
+  margin-bottom: 160px;    
+
+}
+
+
+.services-line {
+  display: none;         
+  width: 100%;             
+  height: 2px;            
+  background-color: #002D2D;
+}
+
+
+@media (min-width: 1024px) {
+  .services-line {
+    display: block;       
+  }
+}
+.service-grid-conatiner {
+  /* Container ko center karne ke liye */
+  max-width: 1280px;           /* max-w-7xl */
+  margin-left: auto;           /* mx-auto */
+  margin-right: auto;          /* mx-auto */
+  
+  /* Side padding */
+  padding-left: 24px;          /* px-6 */
+  padding-right: 24px;         /* px-6 */
+  
+  /* Layering and Position */
+  position: relative;          /* relative */
+  z-index: 10;                 /* z-10 */
+
+  /* Grid Logic (Mobile First) */
+  display: grid;               /* grid */
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid-cols-1 */
+  gap: 32px;                   /* gap-8 (8 * 4px) */
+}
+
+/* Tablet aur Desktop ke liye (md breakpoint) */
+@media (min-width: 768px) {
+  .service-grid-conatiner {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* md:grid-cols-3 */
+  }
+}
+
+
+
+
+
+
+
+/* ════════════════════════════════════════
+   SERVICES RESPONSIVE — All Screen Sizes
+   ════════════════════════════════════════ */
+
+/* ══════════════════════════════
+   LARGE DESKTOP (1280px+)
+   ══════════════════════════════ */
+@media (min-width: 1280px) {
+  .service-section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+  .services-we-offer {
+    font-size: 1.5rem !important;
+    margin-bottom: 160px !important;
+  }
+  .service-card {
+    height: 500px !important;
+  }
+  .services-line {
+    top: 120px !important;
+  }
+  .services-line::before {
+    width: 850px !important;
+  }
+  .services-line::after {
+    box-shadow: -425px 0 0 0 #f1f1f1, 425px 0 0 0 #f1f1f1 !important;
+  }
+}
+
+/* ══════════════════════════════
+   SMALL DESKTOP (1025px – 1279px)
+   ══════════════════════════════ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .services-we-offer {
+    font-size: 1.75rem !important;
+    margin-bottom: 140px !important;
+  }
+  .service-card {
+    height: 460px !important;
+    padding: 1.5rem !important;
+  }
+  .title {
+    font-size: 18px !important;
+  }
+  .description {
+    font-size: 13px !important;
+  }
+  .services-line {
+    top: 110px !important;
+  }
+  .services-line::before {
+    width: 720px !important;
+  }
+  .services-line::after {
+    box-shadow: -360px 0 0 0 #f1f1f1, 360px 0 0 0 #f1f1f1 !important;
+  }
+}
+
+/* ══════════════════════════════
+   TABLET (768px – 1024px)
+   ══════════════════════════════ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .service-section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    overflow: hidden !important;
+  }
+
+  .services-we-offer {
+    font-size: 1.75rem !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* Hide the decorative line on tablet — too wide to fit */
+  .services-line {
+    display: none !important;
+  }
+
+  .service-grid-conatiner {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    padding-left: 16px !important;
+      margin-top:10px;
+    padding-right: 16px !important;
+  }
+
+  .service-card {
+    height: auto !important;
+    min-height: 380px !important;
+    padding: 1.5rem !important;
+  }
+
+  .title {
+    font-size: 17px !important;
+  }
+
+  .description {
+    font-size: 13px !important;
+  }
+
+  .category {
+    font-size: 14px !important;
+  }
+
+  .button {
+    padding: 5px 12px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* ══════════════════════════════
+   MOBILE (max 767px)
+   ══════════════════════════════ */
+@media (max-width: 767px) {
+  .service-section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    overflow: hidden !important;
+  }
+
+  .services-we-offer {
+    font-size: 1.5rem !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Hide decorative line completely on mobile */
+  .services-line {
+    display: none !important;
+  }
+
+  .service-grid-conatiner {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+      margin-top:10px;
+  }
+
+  .service-card {
+    height: auto !important;
+    min-height: 320px !important;
+    padding: 1.25rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+  .content-wrapper {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .title {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+
+  .description {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+
+  .category {
+    font-size: 13px !important;
+  }
+
+  .button {
+    padding: 5px 12px !important;
+    font-size: 12px !important;
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+/* ══════════════════════════════
+   SMALL PHONES (max 480px)
+   ══════════════════════════════ */
+@media (max-width: 480px) {
+  .service-section {
+    padding-top: 107px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .services-we-offer {
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+  }
+
+  .service-grid-conatiner {
+    gap: 14px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    margin-top:5px;
+  }
+
+  .service-card {
+    min-height: 280px !important;
+    padding: 1rem !important;
+  }
+
+  .title {
+    font-size: 15px !important;
+  }
+
+  .description {
+    font-size: 12px !important;
+  }
+
+  .category {
+    font-size: 12px !important;
+  }
+}
+
+/* ══════════════════════════════
+   EXTRA SMALL PHONES (max 360px)
+   ══════════════════════════════ */
+@media (max-width: 360px) {
+  .services-we-offer {
+    font-size: 1.5rem !important;
+    margin-bottom: 16px !important;
+  }
+
+  .service-grid-conatiner {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    gap: 12px !important;
+  }
+
+  .service-card {
+    min-height: 260px !important;
+    padding: 0.875rem !important;
+  }
+
+  .title {
+    font-size: 14px !important;
+    
+  }
+
+  .description {
+    font-size: 11px !important;
+  }
+
+  .button {
+    font-size: 11px !important;
+    padding: 4px 10px !important;
+  }
+}
+
+/* ══ Tablet & Mobile: flex wrap so 3rd card centers ══ */
+@media (max-width: 1024px) {
+  .service-grid-conatiner {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .service-grid-conatiner > * {
+    flex: 0 0 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* ══ Mobile: 1 col full width ══ */
+@media (max-width: 767px) {
+  .service-grid-conatiner > * {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}

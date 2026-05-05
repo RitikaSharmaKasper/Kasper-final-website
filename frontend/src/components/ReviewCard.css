@@ -1,0 +1,170 @@
+
+.review-card{
+background: linear-gradient(0deg, #FFFFFF 21%, rgba(255, 255, 255, 0) 100%);
+
+width:246px;
+min-height:6px;   /* small cards */
+
+padding:16px 15px;
+border-radius:8px;
+display:flex;
+flex-direction:column;
+gap:24px;
+box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+background:rgba(244, 244, 244, 1);
+
+
+}
+.review-text{
+    font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+
+
+opacity: 1;
+
+
+font-family:Sora;
+font-weight:400;
+
+width:100%;
+word-wrap:break-word;
+overflow-wrap:break-word;
+}
+
+
+
+.review-user{
+display:flex;
+align-items:center;
+margin-top:15px;
+gap:10px;
+width: 216px;
+margin-top:-15px;
+justify-content: space-between;
+
+opacity: 1;
+
+}
+
+.review-user img{
+
+border-radius:50%;
+width: 62px;
+height: 62px;
+
+opacity: 1;
+border-radius: 50%;
+
+object-fit:cover;
+}
+.review-user span{
+    font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+width: 143px;
+height: 18px;
+
+opacity: 1;
+
+line-height: 130%;
+letter-spacing: 0%;
+
+}
+
+
+
+
+@media (max-width: 767px) {
+  .review-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    padding: 14px 12px !important;
+  }
+  .review-user {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 4px !important;
+  }
+  .review-user span {
+    width: auto !important;
+    padding-right: 4px !important;
+    font-size: 12px !important;
+  }
+  .review-user img {
+    width: 48px !important;
+    height: 48px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .review-card {
+    padding: 12px 10px !important;
+  }
+  .review-user {
+    width: 100% !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+  }
+  .review-user span {
+    width: auto !important;
+    font-size: 11px !important;
+    padding-right: 6px !important;
+  }
+  .review-user img {
+    width: 44px !important;
+    height: 44px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .review-card {
+    padding: 10px 8px !important;
+  }
+  .review-user {
+    width: 100% !important;
+    padding: 0 6px !important;
+    box-sizing: border-box !important;
+  }
+  .review-user span {
+    width: auto !important;
+    font-size: 10px !important;
+    padding-right: 6px !important;
+  }
+  .review-user img {
+    width: 40px !important;
+    height: 40px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .review-card {
+    padding: 8px 6px !important;
+  }
+  .review-user {
+    width: 100% !important;
+    padding: 0 5px !important;
+    box-sizing: border-box !important;
+  }
+  .review-user span {
+    width: auto !important;
+    font-size: 9px !important;
+    padding-right: 5px !important;
+  }
+  .review-user img {
+    width: 36px !important;
+    height: 36px !important;
+    flex-shrink: 0 !important;
+  }
+}

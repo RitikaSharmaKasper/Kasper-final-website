@@ -1,0 +1,80 @@
+/* Ensures the editor area does not have unexpected padding or overflow */
+.jodit-editor {
+    min-height: 300px;
+    max-height: 500px;
+    height: auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background-color: #fff !important;
+    padding: 10px;
+    padding-left: 20px; /* Add some padding to prevent text from being cut off */
+    padding-right: 20px; /* Similar for the right side */
+    word-wrap: break-word;
+  }
+
+  .jodit-wysiwyg {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Fix for all elements inside the editor */
+  .jodit-wysiwyg * {
+    font-size: inherit !important;
+    line-height: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    text-align: justify !important;
+  }
+  
+  /* Additional fix for removing inline styles causing layout issues */
+  .jodit-wysiwyg [style*="width: 436px"],
+  .jodit-wysiwyg [style*="margin-left: 14.3964px"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+    float: none !important;
+    box-sizing: border-box !important;
+    display: block !important;
+  }
+  
+  /* Ensure there are no overflow issues */
+  .jodit-wysiwyg {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  
+  .jodit-wysiwyg div,
+  .jodit-wysiwyg span {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    float: none !important;
+    box-sizing: border-box !important;
+    display: block !important;
+  }
+  .css-y5ltps {
+    margin-left: auto!important;
+  }
+
+  .add-form {
+  color: black !important;
+  font-weight: bold !important;
+}
+
+  
+.image-url-input {
+  color: black !important;
+}
+
+.form-check-label-custom {
+  color: black !important; 
+}
+

@@ -1,0 +1,92 @@
+.tech-section {
+  position: relative;
+  width: 100%;
+  padding: 80px 40px;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+
+.tech-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  flex-wrap: nowrap;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-icon-card {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #444;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tech-icon-card:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.tech-section:hover .tech-icon-card {
+  animation: snakeBounce 1s ease-in-out forwards;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* snake moving line */
+.snake-line {
+  position: absolute;
+  top: 50%;
+  left: -200px;
+  width: 180px;
+  height: 6px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, transparent, #7c3aed, #00c2ff, transparent);
+  filter: blur(2px);
+  transform: translateY(-50%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.tech-section:hover .snake-line {
+  opacity: 1;
+  animation: moveSnake 2.4s linear infinite;
+}
+
+/* icon wave from first to last */
+@keyframes snakeBounce {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  30% {
+    transform: translateY(-12px) scale(1.08);
+  }
+  60% {
+    transform: translateY(4px) scale(1.03);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes moveSnake {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: calc(100% + 200px);
+  }
+}

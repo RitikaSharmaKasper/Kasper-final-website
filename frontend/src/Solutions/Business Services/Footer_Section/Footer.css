@@ -1,0 +1,188 @@
+.footer {
+  background: #f1f0ee;
+  padding: 80px 0 40px;
+  font-family: "Sora", sans-serif;
+}
+
+.footer-container {
+  max-width: 1396px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* ===== TOP ===== */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 40px;
+}
+
+.footer-top-text {
+  font-size: 42px;
+  color: #00063d;
+}
+
+.footer-btn {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+/* ===== GRID ===== */
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.footer-colone,
+.footer-coltwo,
+.footer-colthree {
+  flex: 1;
+}
+
+.footer-colone h3,
+.footer-coltwo h3,
+.footer-colthree h3 {
+  margin-bottom: 12px;
+}
+
+.footer-colone li,
+.footer-coltwo li,
+.footer-colthree li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== BOTTOM ===== */
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  border-top: 1px solid #d4d4d4;
+  padding-top: 40px;
+}
+
+/* ✅ LOGO CENTER */
+.footer-brand {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-brand img {
+  width: 120px;
+}
+
+/* ===== FOLLOW ===== */
+
+.footer-follow {
+  margin-top: 40px;
+  border-top: 1px solid #d4d4d4;
+  padding-top: 20px;
+}
+
+.follow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.follow-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.follow-icons img{
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%) saturate(0%);
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+
+.follow-icons a:hover img{
+  filter: grayscale(0%) saturate(100%);
+}
+
+/* ===== COPYRIGHT ===== */
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-top-text {
+    font-size: 32px;
+  }
+
+  .footer-grid {
+    flex-wrap: wrap;
+  }
+
+  .footer-colone,
+  .footer-coltwo,
+  .footer-colthree {
+    flex: 1 1 45%;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+
+  .footer-grid {
+    display: flex;              /* 🔥 FIX */
+    flex-wrap: wrap;
+    justify-content: flex-start; /* 🔥 LEFT ALIGN */
+    gap: 80px;  
+    padding-left: 30px;   
+  
+  }
+
+  /* 🔥 Useful Links */
+  .footer-colone {
+    width: 48%;   /* half */
+  }
+
+  /* 🔥 Products */
+  .footer-coltwo {
+    width: 48%;   /* half */
+  }
+
+  /* 🔥 Services FULL WIDTH */
+  .footer-colthree {
+    width: 100%;
+    margin-top: 12px;
+    padding-left: 4px;  /* 🔥 LEFT SPACE */
+  }
+
+}

@@ -1,0 +1,645 @@
+/* ══ MAIN WRAPPER ══ */
+.About-us-img {
+  background-size: 40%;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.about-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  /* ✅ Gradient base */
+  background: linear-gradient(
+  to bottom,
+  #ffdcdc,
+  #ffebc2,
+  #ffffff
+);
+}
+
+/* ✅ image overlay */
+.about-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../assets/images2/AboutPage.jpg");
+  background-size: 30%;
+  background-repeat: repeat;
+
+  opacity: 100%; /* control visibility */
+
+  /* 🔥 optional premium effect */
+  mix-blend-mode: soft-light;
+
+  z-index: 0;
+}
+
+
+/* ✅ content above everything */
+.about-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+/* ══ HEADING TEXT ══ */
+.about-text {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+  color: rgba(0, 6, 61, 1);
+  width: 900px;
+  max-width: 90%;
+  margin-bottom: 80px;
+}
+
+/* ══ ORANGE BORDER OUTER WRAPPER ══ */
+.banner-outer-wrapper {
+  position: relative;
+  width: 1150px;
+  max-width: calc(100% - 40px);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* ══ ORANGE BACKGROUND DIV ══ */
+.banner-orange-div {
+  position: absolute;
+  top: -16px;
+  right: -12px;
+  width: calc(100% + 32px);
+  height: calc(100% + 32px);
+  z-index: 0;
+}
+
+/* ══ WHITE CARD ══ */
+.banner-white-div {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  z-index: 10;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+
+  align-items: flex-end;
+  padding: 0 64px;
+  box-sizing: border-box;
+}
+
+/* ══ BG WHITE IMAGE ══ */
+.banner-bg-white {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* ══ INNER ROW ══ */
+.banner-inner-flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ══ LEFT SIDE ══ */
+.banner-left-div {
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-shrink: 0;
+  margin-top: -12px;
+}
+
+.banner-quote-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.banner-quote-mark {
+  font-weight: 500;
+  line-height: 1;
+  color: rgba(0, 6, 61, 1);
+  flex-shrink: 0;
+  width: 85px;
+  height: 156px;
+  margin-top: -75px;
+  display: inline-flex;
+}
+
+.banner-quote-p {
+  font-family: "sora";
+  font-weight: 400;
+  font-size: 30px;
+  color: rgba(0, 6, 61, 1);
+  line-height: 1.3;
+  text-align: center;
+}
+
+.banner-author-div {
+  margin-top: 170px;
+  text-align: right;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.banner-author-name {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: rgba(0, 6, 61, 1);
+  margin: 0;
+}
+
+.banner-author-title {
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  color: #6b7280;
+  margin: 0;
+}
+.banner-quote-mark svg {
+  width: 100%; /* Makes icon fill the 45px width */
+  height: 100%; /* Makes icon fill the 45px height */
+}
+/* ══ RIGHT SIDE ══ */
+
+.banner-person-img {
+  position: absolute;
+  z-index: 10;
+  height: 700px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════ */
+
+/* ══ SMALL DESKTOP (1025px – 1279px) ══ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .About-us-img {
+    padding-top: 60px !important;
+  }
+  .about-text {
+    font-size: 38px !important;
+    width: 680px !important;
+    margin-bottom: 60px !important;
+  }
+  .banner-outer-wrapper {
+    width: 90% !important;
+  }
+  .banner-white-div {
+    height: auto !important;
+    min-height: 420px !important;
+    padding: 40px !important;
+  }
+  .banner-quote-p {
+    font-size: 22px !important;
+  }
+  .banner-quote-mark {
+    font-size: 90px !important;
+  }
+  .banner-author-name {
+    font-size: 24px !important;
+  }
+  .banner-author-title {
+    font-size: 16px !important;
+  }
+  .banner-right-div {
+    width: 380px !important;
+  }
+  .banner-person-img {
+    height: 520px !important;
+  }
+  .banner-accent-img {
+    width: 340px !important;
+    height: 370px !important;
+  }
+}
+
+/* ══ TABLET (768px – 1024px) ══ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .About-us-img {
+    padding-top: 50px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .about-text {
+    font-size: 30px !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    margin-bottom: 48px !important;
+  }
+  .banner-outer-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .banner-orange-div {
+    top: -10px !important;
+    right: -10px !important;
+    width: calc(100% + 20px) !important;
+    height: calc(100% + 20px) !important;
+  }
+  .banner-white-div {
+    height: auto !important;
+    padding: 32px 24px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .banner-inner-flex {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .banner-left-div {
+    width: 100% !important;
+    align-items: center !important;
+  }
+  .banner-quote-p {
+    font-size: 18px !important;
+    text-align: left !important;
+  }
+  .banner-quote-mark {
+    font-size: 70px !important;
+    width: 32px !important;
+    margin-top: -24px;
+  }
+  .banner-author-div {
+    text-align: center !important;
+    margin-top: 10px;
+  }
+  .banner-author-name {
+    font-size: 22px !important;
+  }
+  .banner-author-title {
+    font-size: 14px !important;
+  }
+  .banner-right-div {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  .banner-person-img {
+    height: 360px !important;
+  }
+  .banner-accent-img {
+    width: 260px !important;
+    height: 280px !important;
+  }
+}
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .About-us-img {
+    padding-top: 40px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-bottom: 32px !important;
+  }
+  .about-text {
+    font-size: 22px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 32px !important;
+  }
+  .banner-outer-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .banner-orange-div {
+    top: -8px !important;
+    right: -8px !important;
+    width: calc(100% + 16px) !important;
+    height: calc(100% + 16px) !important;
+  }
+  .banner-white-div {
+    height: auto !important;
+    padding: 24px 16px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .banner-inner-flex {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .banner-left-div {
+    width: 100% !important;
+  }
+  .banner-quote-p {
+    font-size: 15px !important;
+    text-align: left !important;
+  }
+  .banner-quote-mark {
+    font-size: 52px !important;
+    width: 24px !important;
+    margin-top: 1px !important;
+  }
+  .banner-author-div {
+    text-align: center !important;
+    margin-top: 20px !important;
+  }
+  .banner-author-name {
+    font-size: 18px !important;
+  }
+  .banner-author-title {
+    font-size: 13px !important;
+  }
+  .banner-right-div {
+    width: 100% !important;
+    height: 220px !important;
+  }
+  .banner-person-img {
+    height: 260px !important;
+  }
+  .banner-accent-img {
+    width: 200px !important;
+    height: 220px !important;
+    top: 55% !important;
+    left: 55% !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .about-text {
+    font-size: 20px !important;
+    margin-bottom: 28px !important;
+    top: 55% !important;
+    left: 55% !important;
+  }
+  .banner-white-div {
+    padding: 20px 14px !important;
+  }
+  .banner-quote-p {
+    font-size: 14px !important;
+  }
+  .banner-quote-mark {
+    font-size: 46px !important;
+  }
+  .banner-author-name {
+    font-size: 16px !important;
+  }
+  .banner-author-title {
+    font-size: 12px !important;
+  }
+  .banner-right-div {
+    height: 200px !important;
+  }
+  .banner-person-img {
+    height: 240px !important;
+  }
+  .banner-accent-img {
+    width: 180px !important;
+    height: 200px !important;
+  }
+}
+@media (max-width: 430px) and (min-width: 390px) {
+  .banner-accent-img {
+    top: 54% !important;
+    left: 56% !important;
+  }
+}
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .about-text {
+    font-size: 18px !important;
+    margin-bottom: 24px !important;
+  }
+  .banner-white-div {
+    padding: 16px 12px !important;
+  }
+  .banner-quote-p {
+    font-size: 13px !important;
+  }
+  .banner-quote-mark {
+    font-size: 40px !important;
+  }
+  .banner-author-name {
+    font-size: 15px !important;
+  }
+  .banner-author-title {
+    font-size: 11px !important;
+  }
+  .banner-right-div {
+    height: 180px !important;
+  }
+  .banner-person-img {
+    height: 210px !important;
+  }
+  .banner-accent-img {
+    width: 160px !important;
+    height: 180px !important;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .about-text {
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+  }
+  .banner-white-div {
+    padding: 14px 10px !important;
+  }
+  .banner-quote-p {
+    font-size: 12px !important;
+  }
+  .banner-quote-mark {
+    font-size: 36px !important;
+  }
+  .banner-author-name {
+    font-size: 14px !important;
+  }
+  .banner-author-title {
+    font-size: 10px !important;
+  }
+  .banner-right-div {
+    height: 160px !important;
+  }
+  .banner-person-img {
+    height: 190px !important;
+  }
+  .banner-accent-img {
+    width: 140px !important;
+    height: 160px !important;
+  }
+}
+
+/* ══ RIGHT SIDE — FIX ══ */
+.banner-right-div {
+  position: relative;
+  width: 427px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: visible !important;
+}
+
+.banner-person-img {
+  position: absolute !important;
+  z-index: 10 !important;
+  height: 432px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.banner-accent-img {
+  position: absolute !important; /* absolute so person sits on top */
+  z-index: 0 !important; /* behind person */
+  width: 435px !important;
+  height: 500px !important;
+  object-fit: contain !important;
+  top: 55% !important;
+  left: 52% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* ══ SMALL DESKTOP (1025px – 1279px) ══ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .banner-person-img {
+    height: 520px !important;
+  }
+  .banner-accent-img {
+    width: 330px !important;
+    height: 363px !important;
+    top: 55% !important;
+    left: 51% !important;
+  }
+}
+
+/* ══ TABLET (768px – 1024px) ══ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-right-div {
+    width: 100% !important;
+    height: 320px !important;
+  }
+  .banner-person-img {
+    height: 325px !important;
+  }
+  .banner-accent-img {
+    width: 260px !important;
+    height: 328px !important;
+    top: 50% !important;
+    left: 52% !important;
+  }
+
+  .banner-quote-mark {
+    font-size: 70px !important;
+    width: 32px !important;
+    margin-top: -74px;
+  }
+}
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .banner-right-div {
+    width: 100% !important;
+    height: 240px !important;
+  }
+  .banner-person-img {
+    height: 280px !important;
+  }
+  .banner-accent-img {
+    width: 200px !important;
+    height: 220px !important;
+    top: 51% !important;
+    left: 53% !important;
+  }
+
+  .about-text {
+    font-size: 22px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 52px !important;
+  }
+  .banner-quote-mark {
+    font-size: 52px !important;
+    width: 24px !important;
+    margin-top: -70px !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .banner-right-div {
+    height: 220px !important;
+  }
+  .banner-person-img {
+    height: 260px !important;
+  }
+
+  .banner-accent-img {
+    width: 217px !important;
+    height: 419px !important;
+    top: 50% !important;
+    left: 56% !important;
+  }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .banner-right-div {
+    height: 200px !important;
+  }
+  .banner-person-img {
+    height: 230px !important;
+  }
+  .banner-accent-img {
+    width: 160px !important;
+    height: 180px;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .banner-right-div {
+    height: 180px !important;
+  }
+  .banner-person-img {
+    height: 200px !important;
+  }
+  .banner-accent-img {
+    width: 140px !important;
+    height: 160px !important;
+    top: 55% !important;
+    left: 55% !important;
+  }
+}
+@media (max-width: 430px) and (min-width: 390px) {
+  .banner-person-img {
+    top: 50% !important;
+    left: 54% !important;
+  }
+}

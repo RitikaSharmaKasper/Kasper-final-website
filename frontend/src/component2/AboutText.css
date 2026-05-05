@@ -1,0 +1,412 @@
+.about-text-div{
+  width: 100%;
+  height: 100%;
+  padding: 7% 17% 7% 17% ;
+  background-color: white;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: normal;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  .about-text-div{
+    /* width: 90%; */
+    height: auto;
+    font-size: 24px;
+    /* margin-top: 100px; */
+  }
+}
+
+.content-section-leaders{
+  background-color: rgba(244, 244, 244, 1);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 80px;
+}
+
+.content-text-leaders {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 6, 61, 1);
+}
+.banner-container-leader {
+  display: flex;
+  justify-content: center;
+  gap: 96px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+.profile-card-leader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img-leader{
+  width: 240px;
+  height: 321px;
+  object-fit: cover;
+}
+
+
+.profile-name-leader {
+  margin-top: 8px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 6, 61, 1);
+}
+
+.profile-role-leader {
+  margin-top: -8px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6b7280;
+}
+
+.flex-container-leader {
+  display: flex;
+  justify-content: center;
+  gap: 136px; /* gap-34 (34 * 4px) */
+}
+
+.item-wrapper-leader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-section {
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 80px;
+
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.team-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 6, 61, 1);
+  margin: 0;
+}
+
+.flex-container-team {
+  display: flex;
+  justify-content: center;
+  gap: 48px;            /* gap-12 (12 * 4px) */
+  margin-bottom: 60px;  /* mb-15 (15 * 4px) */
+  margin-top: 40px;   
+  flex-wrap: wrap;  /* mt-10 (10 * 4px) */
+}
+
+.flex-team-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-container-team2 {
+  display: flex;
+  justify-content: center;
+  gap: 48px; /* gap-12 (12 * 4px) */
+  margin-bottom:100px;
+}
+
+.item-column-team2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   margin-bottom:20px;
+  
+}
+
+
+
+/* ════════════════════════════════════════
+   RESPONSIVE — LEADERS & TEAM SECTION
+   ════════════════════════════════════════ */
+
+/* ══ TABLET (768px – 1024px) ══ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-text-div {
+    /* width: 90% !important; */
+    height: auto !important;
+    font-size: 24px !important;
+    /* margin-top: 120px !important; */
+  }
+
+  .content-section-leaders {
+    margin-top: 50px !important;
+    padding: 30px 24px !important;
+  }
+
+  .content-text-leaders {
+    font-size: 18px !important;
+  }
+
+  .banner-container-leader {
+    gap: 40px !important;
+    margin-bottom: 40px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .profile-img-leader {
+    width: 180px !important;
+    height: 240px !important;
+  }
+
+  .profile-name-leader {
+    font-size: 17px !important;
+  }
+
+  .flex-container-leader {
+    gap: 60px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .team-section {
+    width: 100% !important;
+    margin-top: 50px !important;
+    padding: 30px 24px !important;
+  }
+
+  .flex-container-team {
+    gap: 28px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .flex-container-team2 {
+    gap: 28px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .about-text-div {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 18px !important;
+    /* margin-top: 60px !important; */
+    /* padding: 0 16px !important; */
+  }
+
+  .content-section-leaders {
+    margin-top: 40px !important;
+    padding: 24px 16px !important;
+  }
+
+  .content-text-leaders {
+    font-size: 15px !important;
+  }
+
+  .banner-container-leader {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 32px !important;
+    margin-bottom: 32px !important;
+    margin-top: 24px !important;
+  }
+
+  .profile-img-leader {
+    width: 160px !important;
+    height: 213px !important;
+  }
+
+  .profile-name-leader {
+    font-size: 16px !important;
+  }
+
+  .profile-role-leader {
+    font-size: 11px !important;
+  }
+
+  .flex-container-leader {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 32px !important;
+  }
+
+  .team-section {
+    width: 100% !important;
+    margin-top: 40px !important;
+    padding: 24px 16px !important;
+  }
+
+  .team-title {
+    font-size: 17px !important;
+  }
+
+  .flex-container-team {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    margin-bottom: 24px !important;
+    margin-top: 24px !important;
+  }
+
+  .flex-container-team2 {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    margin-bottom: 40px !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .about-text-div {
+    font-size: 16px !important;
+    /* margin-top: 50px !important; */
+    /* padding: 0 16px !important; */
+  }
+
+  .content-text-leaders {
+    font-size: 14px !important;
+  }
+
+  .profile-img-leader {
+    width: 140px !important;
+    height: 187px !important;
+  }
+
+  .profile-name-leader {
+    font-size: 15px !important;
+  }
+
+  .profile-role-leader {
+    font-size: 11px !important;
+  }
+
+  .team-title {
+    font-size: 16px !important;
+  }
+
+  .flex-container-team {
+    gap: 20px !important;
+  }
+
+  .flex-container-team2 {
+    gap: 20px !important;
+  }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .about-text-div {
+    font-size: 15px !important;
+    /* margin-top: 40px !important; */
+    /* padding: 0 14px !important; */
+  }
+
+  .content-text-leaders {
+    font-size: 13px !important;
+  }
+
+  .profile-img-leader {
+    width: 130px !important;
+    height: 174px !important;
+  }
+
+  .profile-name-leader {
+    font-size: 14px !important;
+  }
+
+  .profile-role-leader {
+    font-size: 10px !important;
+  }
+
+  .team-title {
+    font-size: 15px !important;
+  }
+
+  .flex-container-team {
+    gap: 16px !important;
+  }
+
+  .flex-container-team2 {
+    gap: 16px !important;
+    margin-bottom: 32px !important;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .about-text-div {
+    font-size: 14px !important;
+    /* margin-top: 32px !important; */
+    /* padding: 0 12px !important; */
+  }
+
+  .content-text-leaders {
+    font-size: 12px !important;
+  }
+
+  .profile-img-leader {
+    width: 120px !important;
+    height: 160px !important;
+  }
+
+  .profile-name-leader {
+    font-size: 13px !important;
+  }
+
+  .profile-role-leader {
+    font-size: 10px !important;
+  }
+
+  .team-title {
+    font-size: 14px !important;
+  }
+
+  .flex-container-team {
+    gap: 12px !important;
+  }
+
+  .flex-container-team2 {
+    gap: 12px !important;
+    margin-bottom: 24px !important;
+  }
+}
+
+
+
+.team-section {
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 80px;
+  width: 100%;        /* changed from 1920px */
+  max-width: 100%;    /* add this */
+  box-sizing: border-box;
+}

@@ -1,0 +1,354 @@
+/* ===== BASE ===== */
+
+.ServicesBlog-main-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  height: auto;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+/* ===== HEADING ===== */
+
+.ServicesBlog-heading {
+  width: 100%;
+  max-width: 1440px;
+  text-align: start;
+  padding-left: 60px;
+  font-family: Sora;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  color: rgba(0, 6, 61, 1);
+}
+
+/* ===== WRAPPER ===== */
+
+.ServicesBlog-slider-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* ===== BLOG GRID — desktop default: 4 columns ===== */
+
+.ServicesBlog-scroll {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+/* ===== BLOG CARD ===== */
+
+.ServicesBlog-card {
+  width: 100%;
+  height: 356px;
+  background: #fff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ===== IMAGE ===== */
+
+.ServicesBlog-img {
+  overflow: hidden;
+}
+
+.ServicesBlog-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.ServicesBlog-card img:hover {
+  transform: scale(1.4);
+}
+
+/* ===== CONTENT ===== */
+
+.ServicesBlog-content {
+  padding: 16px;
+}
+
+.ServicesBlog-tag {
+  background: rgba(201, 245, 255, 1);
+  padding: 4px 8px;
+  color: rgba(0, 110, 135, 1);
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* ===== TITLE ===== */
+
+.ServicesBlog-title {
+  font-family: Sora;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 7px;
+  line-height: 120%;
+}
+
+/* ===== META ===== */
+
+.ServicesBlog-meta {
+  font-family: Sora;
+  font-size: 12px;
+}
+
+.ServicesBlog-date-content p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.ServicesBlog-author {
+  color: rgba(58, 43, 43, 0.6);
+}
+
+/* =============================================================== */
+/* SMALL LAPTOP — 1024px to 1279px — GRID 4 cards                 */
+/* =============================================================== */
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .ServicesBlog-slider-wrapper {
+    padding: 0 40px;
+  }
+  .ServicesBlog-heading {
+    padding-left: 40px;
+  }
+  .ServicesBlog-scroll {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .ServicesBlog-card {
+    height: 340px;
+  }
+}
+
+/* =============================================================== */
+/* TABLET LANDSCAPE — 768px to 1023px — FLEX 2 cards              */
+/* =============================================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ServicesBlog-main-div {
+    gap: 50px;
+    padding: 50px 0;
+  }
+  .ServicesBlog-slider-wrapper {
+    padding: 0 30px;
+  }
+  .ServicesBlog-heading {
+    padding-left: 30px;
+    font-size: 18px;
+  }
+  .ServicesBlog-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .ServicesBlog-card {
+    flex: 0 0 calc(50% - 10px);
+    height: auto;
+    min-height: 320px;
+  }
+  .ServicesBlog-img img {
+    height: 160px;
+  }
+}
+
+/* =============================================================== */
+/* TABLET PORTRAIT — 600px to 767px — FLEX 2 cards                */
+/* =============================================================== */
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .ServicesBlog-main-div {
+    gap: 40px;
+    padding: 40px 0;
+  }
+  .ServicesBlog-slider-wrapper {
+    padding: 0 24px;
+  }
+  .ServicesBlog-heading {
+    padding-left: 24px;
+    font-size: 18px;
+  }
+  .ServicesBlog-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  .ServicesBlog-card {
+    flex: 0 0 calc(50% - 8px);
+    height: auto;
+    min-height: 300px;
+  }
+  .ServicesBlog-img img {
+    height: 150px;
+  }
+  .ServicesBlog-title {
+    font-size: 14px;
+  }
+}
+
+/* =============================================================== */
+/* LARGE MOBILE — 430px to 599px — FLEX 1 card                    */
+/* =============================================================== */
+
+@media (min-width: 430px) and (max-width: 599px) {
+  .ServicesBlog-main-div {
+    gap: 32px;
+    padding: 32px 0;
+  }
+  .ServicesBlog-slider-wrapper {
+    padding: 0 20px;
+  }
+  .ServicesBlog-heading {
+    padding-left: 20px;
+    font-size: 17px;
+  }
+  .ServicesBlog-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .ServicesBlog-card {
+    flex: 0 0 100%;
+    height: auto;
+    min-height: 290px;
+  }
+  .ServicesBlog-img img {
+    height: 160px;
+  }
+  .ServicesBlog-title {
+    font-size: 14px;
+  }
+}
+
+/* =============================================================== */
+/* iPhone 14 Pro Max — 428px to 430px — FLEX 1 card               */
+/* =============================================================== */
+
+@media (min-width: 428px) and (max-width: 430px) {
+  .ServicesBlog-main-div {
+    gap: 30px;
+    padding: 30px 0;
+  }
+  .ServicesBlog-slider-wrapper {
+    padding: 0 18px;
+  }
+  .ServicesBlog-heading {
+    padding-left: 18px;
+    font-size: 16px;
+  }
+  .ServicesBlog-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+  }
+  .ServicesBlog-card {
+    flex: 0 0 100%;
+    height: auto;
+    min-height: 280px;
+  }
+  .ServicesBlog-img img {
+    height: 155px;
+  }
+  .ServicesBlog-title {
+    font-size: 14px;
+  }
+}
+
+/* =============================================================== */
+/* iPhone 14 — 375px to 427px — FLEX 1 card                       */
+/* =============================================================== */
+
+@media (min-width: 375px) and (max-width: 427px) {
+  .ServicesBlog-main-div {
+    gap: 28px;
+    padding: 28px 0;
+  }
+  .ServicesBlog-slider-wrapper {
+    padding: 0 16px;
+  }
+  .ServicesBlog-heading {
+    padding-left: 16px;
+    font-size: 16px;
+  }
+  .ServicesBlog-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  .ServicesBlog-card {
+    flex: 0 0 100%;
+    height: auto;
+    min-height: 270px;
+  }
+  .ServicesBlog-img img {
+    height: 150px;
+  }
+  .ServicesBlog-title {
+    font-size: 14px;
+  }
+  .ServicesBlog-date-content p {
+    margin-top: 12px;
+  }
+}
+
+/* =============================================================== */
+/* Small iPhones — below 375px — FLEX 1 card                      */
+/* =============================================================== */
+
+@media (max-width: 374px) {
+  .ServicesBlog-main-div {
+    gap: 24px;
+    padding: 24px 0;
+  }
+  .ServicesBlog-slider-wrapper {
+    padding: 0 12px;
+  }
+  .ServicesBlog-heading {
+    padding-left: 12px;
+    font-size: 15px;
+  }
+  .ServicesBlog-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+  }
+  .ServicesBlog-card {
+    flex: 0 0 100%;
+    height: auto;
+    min-height: 250px;
+  }
+  .ServicesBlog-img img {
+    height: 140px;
+  }
+  .ServicesBlog-title {
+    font-size: 13px;
+  }
+  .ServicesBlog-tag {
+    font-size: 11px;
+  }
+  .ServicesBlog-meta {
+    font-size: 11px;
+  }
+  .ServicesBlog-date-content p {
+    margin-top: 10px;
+    font-size: 11px;
+  }
+}

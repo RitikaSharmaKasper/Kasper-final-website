@@ -1,0 +1,301 @@
+.Heros_section {
+  width: 100%;
+    background: #FFFFFF;
+  padding: 60px 80px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* TOP CONTENT */
+.hero-top {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADING */
+.hero-heading {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  /* line-height: ; */
+  color: #1b1270;
+  padding-top: 40px;
+  margin: 0;
+}
+
+/* PARAGRAPH */
+.hero-paragraph {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  color: #00063d;
+  opacity: 0.9;
+  font-weight: 400;
+  /* line-height: 1.6; */
+  margin-top: 1px;
+  max-width: 700px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 2px;
+}
+
+.hero-buttons button,
+.hero-btn {
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 6, 61, 0.15);
+  background: #fff;
+  color: #00063d;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons button:hover,
+.hero-btn:hover {
+  background: #00063d;
+  color: #fff;
+  border-color: #00063d;
+}
+/* Existing Desktop Style */
+.hero-featured {
+  margin-top: 130px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 36px;
+  align-items: stretch;
+  justify-content: center;
+  margin-left: auto;   /* Center alignment for desktop */
+  margin-right: auto;  /* Center alignment for desktop */
+}
+
+/* ================= TABLET & MOBILE (CENTER FIX) ================= */
+
+@media (max-width: 1024px) {
+  .hero-featured {
+    flex-direction: column; /* Items stack vertically */
+    align-items: center;    /* Horizontal centering */
+    text-align: center;     /* Text centering */
+    margin-top: 80px;       /* Reduced margin for smaller screens */
+    padding: 0 20px;        /* Side padding to prevent touching edges */
+    gap: 24px;
+  }
+
+  /* Agar iske andar koi cards ya images hain, unko full width ya center karne ke liye */
+  .hero-featured > div {
+    width: 100%;
+    max-width: 500px;       /* Mobile par card bahut bada na dikhe */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-featured {
+    margin-top: 50px;       /* Small mobile margin */
+    gap: 20px;
+  }
+}
+
+/* IMAGE */
+.featured-image {
+  flex: 1;
+  min-width: 0;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+/* CONTENT CARD */
+.featured-content {
+  flex: 1;
+  /* min-width: 0; */
+  width: 50%;
+  /* background: #fff; */
+  padding: 40px;
+  /* border-radius: 18px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* box-sizing: border-box; */
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); */
+}
+
+/* TAG */
+.blog-tag {
+  background: #e6f7ff;
+  color: #006e87;
+  font-size: 13px;
+  display: inline-block;
+  width: fit-content;
+  padding: 4px 10px;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 999px;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+/* TITLE */
+.featured-title {
+  font-family: "Sora", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #00063d;
+  margin: 0 0 14px;
+}
+
+/* TEXT */
+.featured-text {
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+  margin: 0 0 18px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* DATE */
+.blog-date {
+  font-size: 13px;
+  font-family: "Sora", sans-serif;
+  color: #00063d;
+  margin: 0 0 22px;
+}
+
+/* READ BUTTON */
+.read-btn {
+  margin-top: auto;
+  padding: 12px 20px;
+  border: none;
+  background: #00063d;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  width: fit-content;
+}
+
+.read-btn:hover {
+  background: #1b1270;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .Heros_section {
+    padding: 50px 40px 70px;
+  }
+
+  .hero-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-featured {
+    flex-direction: column;
+  }
+
+  .featured-image img {
+    min-height: 300px;
+    max-height: 360px;
+  }
+
+  .featured-content {
+    width: 100%;
+    padding: 32px;
+  }
+
+  .hero-heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Heros_section {
+    padding: 40px 20px 60px;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+  }
+
+  .hero-paragraph {
+    font-size: 15px;
+  }
+
+  .featured-title {
+    font-size: 22px;
+  }
+
+  .featured-content {
+    padding: 24px;
+  }
+
+  .hero-buttons {
+    gap: 10px;
+  }
+
+  .hero-buttons button,
+  .hero-btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-heading {
+    font-size: 26px;
+  }
+
+  .hero-paragraph {
+    font-size: 14px;
+  }
+
+  .featured-title {
+    font-size: 20px;
+  }
+
+  .featured-text {
+    font-size: 14px;
+    -webkit-line-clamp: 4;
+  }
+
+  .blog-tag {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}
