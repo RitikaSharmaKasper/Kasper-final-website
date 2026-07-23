@@ -1,4 +1,83 @@
 
+
+
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+
+    min-width: 76px;       /* Home jaisa chhota text 76px jaisa hi dikhega */
+    height: 32px;
+    padding: 6px 12px;     /* lambe text (About Us) ke liye extra room, isi se cutting nahi hogi */
+    box-sizing: border-box;
+
+    color: #00063D;
+    font-family: "Sora", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: visible;      /* text kabhi bhi clip nahi hoga */
+}
+
+
+.menu::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #7DFFA0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;   /* hover ke liye transition, animation nahi */
+    z-index: -1;
+    
+}
+
+/* Sirf HOVER pe green left se right fill hoga */
+.menu:hover::before {
+    transform: scaleX(1);
+}
+
+/* mouse hatte hi wapas scaleX(0) ho jayega apne aap transition ki wajah se */
+
+/* IMPORTANT: ab .active-green ko background dena band karo,
+   taaki click/active hone pe green PERSIST na kare */
+.active-green {
+    background-color: transparent !important;
+}
+.active-green::before {
+    transform: scaleX(0) !important;   /* click ke baad green turant hat jaye */
+    animation: none !important;         /* purana keyframe animation bhi disable */
+}
+
+/* lekin agar us active link pe wapas hover kiya to fir bhi green aana chahiye */
+.active-green:hover::before {
+    transform: scaleX(1) !important;
+}
+
+@keyframes fillLeftToRight {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+}
+
+
+
+
+
+
+
+
+
+
+
 .group:hover .group-hover\:block {
     display: block;
     animation: fadeIn 0.2s ease-out;
@@ -36,28 +115,13 @@ dl, ol, ul {
 
 
   
-.menu {
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  width: 76px;    
-  height: 32px;
-  color: #00063D;
-  font-family: "Sora", sans-serif;
-
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 100%;
-  text-decoration: none;
-  white-space: nowrap; 
-}
 
 
 .menu-div {
   display: flex;
   align-items: center;
    font-family: Sora;
-  gap: 30px; 
+  gap: 10px; 
   width: auto; 
 }
 
@@ -179,7 +243,7 @@ background-color: white;
     font-size: 17px !important;
   }
   .menu-div {
-    gap: 70px !important;
+    gap: 20px !important;
   }
 }
 
@@ -458,13 +522,13 @@ background-color: white;
 
 
 /* Styling for the clicked/active link */
-.active-green {
-    background-color: #7DFFA0 !important; /* Tailwind green-500 color */
+/* .active-green {
+    background-color: #7DFFA0 !important;
     color: rgb(59, 59, 59) !important;
-    border-radius: 6px;
-    padding: 15px 11px;
+   
+    padding: 12px 11px;
     transition: all 0.3s ease;
-}
+} */
 
 /* Ensure the hover doesn't conflict with the background color */
 .active-green:hover {
@@ -480,14 +544,14 @@ background-color: white;
 
 @media (max-width: 2560px) {
     .active-green {
-        padding: 22px 65px;
+       
         font-size: 0.95rem;
     }
 }
 
 @media (max-width: 1440px) {
     .active-green {
-        padding: 22px 65px;
+     
         font-size: 0.95rem;
     }
 }
@@ -495,7 +559,7 @@ background-color: white;
 
 @media (max-width: 1024px) {
     .active-green {
-        padding: 22px 47px;
+     
         font-size: 0.95rem;
     }
 }
@@ -505,7 +569,7 @@ background-color: white;
        
         padding: 6px 8px; 
         width: 100%; /* Mobile menu mein poori width cover karega */
-        border-radius: 4px;
+      
         justify-content: flex-start; /* Text ko left align karne ke liye */
         margin-bottom: 5px;
     }
@@ -514,7 +578,7 @@ background-color: white;
 
 @media (max-width: 424px) {
     .active-green {
-        padding: 10px 12px;
+    
         font-size: 0.85rem;
     }
 }

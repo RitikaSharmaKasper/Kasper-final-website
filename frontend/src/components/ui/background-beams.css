@@ -2,7 +2,7 @@
 .beams-dimensions {
  
   max-width: 4000px; 
-  height: 995px;    
+  height: 870px;    
 }
 
 /* --- Large Screens (Up to 2000px) --- */
@@ -17,14 +17,14 @@
 /* --- Specific Range: 1000px to 1700px --- */
 @media (max-width: 1850px) and (min-width: 1000px) {
   .beams-dimensions {
-    height: 750px;
+    height: 762px;
   }
 }
 
 /* --- Standard Laptops (Up to 1200px) --- */
 @media (max-width: 1200px) {
   .beams-dimensions {
-    height: 780px;
+    height: 769px;
   }
 }
 

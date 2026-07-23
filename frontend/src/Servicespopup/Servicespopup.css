@@ -159,30 +159,21 @@
   .sp-left-column{
     width:196%;
   }
-   .services-popup-modal {
-   
-    margin-top: 41px;
-}
+
 }
 @media(min-width: 1024px)
 {
   .sp-left-column{
     width:101%;
   }
-  .services-popup-modal {
-   
-    margin-top: 41px;
-}}
+}
 
 @media(min-width: 435px)
 {
   .sp-left-column{
     width:101%;
   }
-  .services-popup-modal {
-   
-    margin-top: 45px;
-}}
+}
 
 /* Peeche ka dhundla background */
 .modal-backdrop {
@@ -243,6 +234,77 @@ filter:none!important;
   .services-popup-modal { padding: 20px; width: 95%; }
 }
 
+
+
+
+
+
+
+
+/* ══════════════════════════════
+   SERVICES-POPUP-MODAL — MARGIN TOP (Solutions jaisa clean, non-overlapping)
+   ══════════════════════════════ */
+
+/* Mobile */
+@media (max-width: 767px) {
+  .services-popup-modal {
+    margin-top: 41px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services-popup-modal {
+    margin-top: 20px;
+  }
+}
+
+/* 1024px – 1279px */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .services-popup-modal {
+    margin-top: 30px !important;
+  }
+}
+
+/* 1280px – 1439px */
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .services-popup-modal {
+    margin-top: -43px !important;
+  }
+}
+
+/* 1440px – 1536px */
+@media screen and (min-width: 1440px) and (max-width: 1536px) {
+  .services-popup-modal {
+    margin-top: -46px !important;
+  }
+}
+
+/* 1537px aur upar */
+@media (min-width: 1537px) {
+  .services-popup-modal {
+    margin-top: -120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------- TABLET FIX ---------------- */
 
 @media (max-width:1024px){
@@ -279,13 +341,7 @@ filter:none!important;
 }
 
 
-@media screen and (min-width: 1024px) and (max-width: 1536px) {
-  
-  .services-popup-modal {
 
-    margin-top: -60px !important;
-  }
-}
 /* ---------------- MOBILE FIX ---------------- */
 
 @media (max-width:768px){

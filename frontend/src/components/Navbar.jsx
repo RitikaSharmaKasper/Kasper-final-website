@@ -4,7 +4,7 @@ import { Link,NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import ContactsPopup from "@/Contactspopup/Contactspopup.jsx";
 import logo from "../assets/images2/logo.jpg.png";
-
+import muncButton from  "../assets/images2/Try_Munc.png"
 import navtag from "../assets/images2/navtag.svg";
 
 // 1. Lazy load the popup components
@@ -36,12 +36,14 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleOpenPopup = (type) => {
-    setActiveTab(type);
-    setIsPopupOpen(true);
+ const handleOpenPopup = (type) => {
+    setActiveTab(type);        // green highlight turant lagayo
     setIsOpen(false);
-   
-  };
+
+    setTimeout(() => {
+        setIsPopupOpen(true);  // popup thodi der baad kholo, jab tak highlight dikh chuka ho
+    }, 100);                   // apni animation duration jitna hi rakho (tera abhi 1s hai to yahan bhi match kar)
+};
   const navLinkStyles = ({ isActive }) => {
   
     const isAnyPopupOpen = activeTab !== "";
@@ -85,10 +87,10 @@ const Navbar = () => {
             className="group relative cursor-pointer transition "
             onClick={() => handleOpenPopup("solutions")}
           >
-            <div className={`menu flex items-center justify-center px-28 py-10 rounded-md ${activeTab === "solutions" ? "active-green" : ""}`}>
+            <div className={`menu flex items-center justify-center px-28 py-10 ${activeTab === "solutions" ? "" : ""}`}>
               <span className="transition font-sora">Solutions</span>
               <svg
-                className="w-4 h-4 ml-1 shrink-0 transition-transform duration-300 group-hover:rotate-180"
+                className="w-4 h-4 ml-1 shrink-0 transition-transform duration-300 group-hover:"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -107,10 +109,10 @@ const Navbar = () => {
             className="group relative cursor-pointer transition"
             onClick={() => handleOpenPopup("services")}
           >
-            <div className={`menu flex items-center justify-center px-28 py-10 rounded-md ${activeTab === "services" ? "active-green" : ""}`}>
+            <div className={`menu flex items-center justify-center px-28 py-10 ${activeTab === "services" ? "" : ""}`}>
               <span className="transition font-sora">Services</span>
               <svg
-                className="w-4 h-4 ml-1 shrink-0 transition-transform duration-300 group-hover:rotate-180"
+                className="w-4 h-4 ml-1 shrink-0 transition-transform duration-300 group-hover:"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -139,14 +141,17 @@ const Navbar = () => {
 
           <li className="mobile-menu-buttons">
               <div className="relative inline-block">
-              <img
-                src={navtag}
-                alt="try"
-                className="absolute -top-2 -left-4 h-8 w-auto z-10"
-              />
-              <a target="#" href="https://mymunc.com/">
+               <a target="_blank" rel="noopener noreferrer" href="https://mymunc.com/">
+      <img
+        src={muncButton}
+        alt="MUN-C"
+        className="h-10 w-auto"
+      />
+    </a>
+              {/* <a target="#" href="https://mymunc.com/">
                 <button className="btn-munc w-28 h-10">MUN-C</button>
-              </a>
+              </a> */}
+            
             </div>
             <div className="relative inline-block">
               <img
@@ -169,9 +174,13 @@ const Navbar = () => {
                 alt="try"
                 className="absolute -top-2 -left-4 h-8 w-auto z-10"
               />
-              <a target="#" href="https://mymunc.com/">
-                <button className="btn-munc w-28 h-10">MUN-C</button>
-              </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://mymunc.com/">
+      <img
+        src={muncButton}
+        alt="MUN-C"
+        className="h-10 w-auto"
+      />
+    </a>
             </div>
 
             <button className="hidden md:flex btn-demo" onClick={() =>handleOpenPopup("demo")}>Get a Demo</button>
