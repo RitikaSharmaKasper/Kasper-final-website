@@ -13,7 +13,7 @@ import client7 from "../assets/images2/client7.svg"
 const ValuedClients = () => {
   return (
     <div className="valued-clients">
-  <p>Our Valued Clients</p>
+  <p className="text-[16px] font-[Sora] font-normal">Our Valued Clients</p>
 
   <div className="clients-slider">
 

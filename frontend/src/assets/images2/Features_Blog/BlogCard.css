@@ -1,4 +1,4 @@
-.Blog-main-div{
+/* .Blog-main-div{
 margin:80px auto;  
 padding:60px 0;
 opacity: 1;
@@ -10,7 +10,7 @@ gap: 42px;
 
 .blog-heading{
 text-align:center;
-font-size:20px;
+font-size:16px;
 margin-bottom:40px;
 font-family: Sora;
 font-weight: 400;
@@ -121,9 +121,7 @@ line-height: 120%;
 letter-spacing: 0%;
 }
 
-/* ════════════════════════════════════════
-   SLIDER WRAPPER & ARROWS — BASE
-   ════════════════════════════════════════ */
+
 .slider-wrapper {
   position: relative;
   width: 1296px;
@@ -132,7 +130,7 @@ letter-spacing: 0%;
   align-items: center;
 }
 
-/* ── SHARED ARROW BASE ── */
+
 .arrow-right,
 .arrow-left {
   position: absolute;
@@ -152,7 +150,7 @@ letter-spacing: 0%;
   z-index: 10;
 }
 
-/* ── LEFT = left side, RIGHT = right side ── */
+
 .arrow-left  { left: -65px; }
 .arrow-right { right: -65px; }
 
@@ -160,24 +158,24 @@ letter-spacing: 0%;
   transform: scale(1.4);
 }
 
-/* Read More button/link ki styling */
+
 .blog-read-more {
-  font-size: 14px !important;  /* Size bada karne ke liye */
-  font-weight: 400 !important; /* Bold karne ke liye */
+  font-size: 14px !important;  
+  font-weight: 400 !important; 
   color: #0A6CFF;   
   text-align: right;
-  justify-content: right;;           /* Aapka primary color */
+  justify-content: right;;       
   text-decoration: none;
   transition: 0.3s;
 }
 
 
 
-/* Mobile responsive alignment */
+
 @media (max-width: 480px) {
   .blog-read-more {
     font-size: 14px !important; 
-    text-align: right;/* Mobile par thoda adjust */
+    text-align: right;
     justify-content: right;
     text-decoration: underline;
   }
@@ -213,12 +211,10 @@ letter-spacing: 0%;
   display: none !important;
 }
 
-/* ════════════════════════════════════════
-   LARGE DESKTOP (1280px+)
-   ════════════════════════════════════════ */
+
 @media (min-width: 1280px) {
   .Blog-main-div    { padding: 0px 40px !important; margin: 80px auto !important; }
-  .blog-heading     { font-size: 20px !important; margin-bottom: 40px !important; }
+  .blog-heading     { font-size: 16px !important; margin-bottom: 40px !important; }
   .blog-scroll      { gap: 24px !important; }
   .blog-card {
     min-width: 303px !important; max-width: 303px !important;
@@ -232,12 +228,10 @@ letter-spacing: 0%;
   .arrow-right { right: -30px !important; }
 }
 
-/* ════════════════════════════════════════
-   SMALL DESKTOP (1025px – 1279px)
-   ════════════════════════════════════════ */
+
 @media (min-width: 1025px) and (max-width: 1279px) {
   .Blog-main-div  { padding: 4px 32px !important; margin: 60px auto !important; }
-  .blog-heading   { font-size: 18px !important; margin-bottom: 32px !important; }
+  .blog-heading   { font-size: 16px !important; margin-bottom: 32px !important; }
   .blog-scroll    { gap: 20px !important; }
   .blog-card {
     min-width: 270px !important; max-width: 270px !important;
@@ -250,12 +244,9 @@ letter-spacing: 0%;
   .arrow-right { right: -25px !important; }
 }
 
-/* ════════════════════════════════════════
-   TABLET (768px – 1024px)
-   ════════════════════════════════════════ */
 @media (min-width: 768px) and (max-width: 1024px) {
   .Blog-main-div  { padding: 1px 60px !important; margin: 48px auto !important; }
-  .blog-heading   { font-size: 17px !important; margin-bottom: 28px !important; }
+  .blog-heading   { font-size: 16px !important; margin-bottom: 28px !important; }
   .slider-wrapper { padding: 0 50px !important; overflow: visible !important; box-sizing: border-box !important; }
   .blog-scroll {
     gap: 18px !important;
@@ -275,7 +266,7 @@ letter-spacing: 0%;
   .date-content p { font-size: 11px !important; margin-top: 12px !important; }
   .blog-content   { padding: 12px !important; }
 
-  /* ── ARROWS — sit just outside the scroll area ── */
+
   .arrow-left,
   .arrow-right {
     width: 40px !important;
@@ -288,12 +279,10 @@ letter-spacing: 0%;
   .arrow-right { right: 4px !important; }
 }
 
-/* ════════════════════════════════════════
-   MOBILE (max 767px)
-   ════════════════════════════════════════ */
+
 @media (max-width: 767px) {
   .Blog-main-div  { padding: 24px 16px !important; margin: 32px auto !important; }
-  .blog-heading   { font-size: 15px !important; margin-bottom: 20px !important; }
+  .blog-heading   { font-size: 16px !important; margin-bottom: 20px !important; }
   .slider-wrapper { padding: 0 44px !important; overflow: visible !important; box-sizing: border-box !important; }
   .blog-scroll {
     gap: 0 !important;
@@ -314,7 +303,6 @@ letter-spacing: 0%;
   .date-content p { font-size: 11px !important; margin-top: -10px !important; }
   .blog-content   { padding: 14px !important; }
 
-  /* ── ARROWS — outside scroll, inside wrapper ── */
   .arrow-left,
   .arrow-right {
     width: 34px !important;
@@ -327,9 +315,7 @@ letter-spacing: 0%;
   .arrow-right { right: 4px !important; }
 }
 
-/* ════════════════════════════════════════
-   iPHONE 14 / LARGE PHONES (390px – 430px)
-   ════════════════════════════════════════ */
+
 @media (max-width: 430px) and (min-width: 390px) {
   .Blog-main-div  { padding: 22px 34px !important; margin: 28px auto !important; }
   .blog-heading   { font-size: 14px !important; margin-bottom: 16px !important; }
@@ -350,12 +336,10 @@ letter-spacing: 0%;
   .arrow-right { right: 4px !important; }
 }
 
-/* ════════════════════════════════════════
-   SMALL PHONES (max 389px)
-   ════════════════════════════════════════ */
+
 @media (max-width: 389px) {
   .Blog-main-div  { padding: 16px 10px !important; margin: 24px auto !important; }
-  .blog-heading   { font-size: 13px !important; margin-bottom: 14px !important; }
+  .blog-heading   { font-size: 12px !important; margin-bottom: 14px !important; }
   .slider-wrapper { padding: 0 36px !important; }
   .blog-card      { min-width: 100% !important; max-width: 100% !important; }
   .blog-img img   { height: 155px !important; }
@@ -374,9 +358,7 @@ letter-spacing: 0%;
   .arrow-right { right: 2px !important; }
 }
 
-/* ════════════════════════════════════════
-   EXTRA SMALL (max 360px)
-   ════════════════════════════════════════ */
+
 @media (max-width: 360px) {
   .Blog-main-div  { padding: 14px 8px !important; margin: 20px auto !important; }
   .blog-heading   { font-size: 12px !important; }
@@ -397,9 +379,7 @@ letter-spacing: 0%;
   .arrow-right { right: 2px !important; }
 }
 
-/* ════════════════════════════════════════
-   425px SPECIFIC FIX
-   ════════════════════════════════════════ */
+
 @media (width: 425px) {
   .slider-wrapper { padding: 0 40px !important; }
   .blog-card      { width: 100%; border-radius: 5px; padding: 5px; margin-right: 20px; }
@@ -407,7 +387,7 @@ letter-spacing: 0%;
   .arrow-right { right: 4px !important; }
 }
 
-/* Hide scrollbar */
+
 .blog-scroll-container {
   display: flex;
   gap: 20px;
@@ -417,4 +397,4 @@ letter-spacing: 0%;
 }
 .blog-scroll-container::-webkit-scrollbar {
   display: none;
-}
+} */

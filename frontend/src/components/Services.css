@@ -141,7 +141,7 @@ border: 1px solid #CDCDCD;
 
 
 .services-we-offer {
-  font-size: 1.75rem;     
+  font-size: 16px;     
   font-weight: 400;       
   color: #002D2D;  
   font-family: 'sora';        
@@ -209,14 +209,14 @@ border: 1px solid #CDCDCD;
     padding-bottom: 80px !important;
   }
   .services-we-offer {
-    font-size: 1.5rem !important;
+    font-size: 16px !important;
     margin-bottom: 160px !important;
   }
   .service-card {
     height: 500px !important;
   }
   .services-line {
-    top: 120px !important;
+    top: 105px !important;
   }
   .services-line::before {
     width: 850px !important;
@@ -231,7 +231,7 @@ border: 1px solid #CDCDCD;
    ══════════════════════════════ */
 @media (min-width: 1025px) and (max-width: 1279px) {
   .services-we-offer {
-    font-size: 1.75rem !important;
+    font-size: 16px !important;
     margin-bottom: 140px !important;
   }
   .service-card {
@@ -239,7 +239,7 @@ border: 1px solid #CDCDCD;
     padding: 1.5rem !important;
   }
   .title {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
   .description {
     font-size: 13px !important;
@@ -266,7 +266,7 @@ border: 1px solid #CDCDCD;
   }
 
   .services-we-offer {
-    font-size: 1.75rem !important;
+    font-size: 16px!important;
     margin-bottom: 40px !important;
   }
 
@@ -318,7 +318,7 @@ border: 1px solid #CDCDCD;
   }
 
   .services-we-offer {
-    font-size: 1.5rem !important;
+    font-size:16px!important;
     margin-bottom: 24px !important;
   }
 
@@ -379,7 +379,7 @@ border: 1px solid #CDCDCD;
   }
 
   .services-we-offer {
-    font-size: 1.5rem !important;
+    font-size: 14px !important;
     margin-bottom: 20px !important;
   }
 
@@ -413,7 +413,7 @@ border: 1px solid #CDCDCD;
    ══════════════════════════════ */
 @media (max-width: 360px) {
   .services-we-offer {
-    font-size: 1.5rem !important;
+    font-size: 14px !important;
     margin-bottom: 16px !important;
   }
 

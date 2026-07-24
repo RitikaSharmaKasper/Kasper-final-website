@@ -76,7 +76,9 @@ const Blogs = () => {
               </div></Link>
               
               <div className="blog-content">
-                <span className="blog-tag">{blog.user?.username}</span>
+               {blog.user?.username && (
+    <span className="blog-tag">{blog.user.username}</span>
+  )}
                 <p className="title-blog">{blog.title}</p>
                 <div className="date-content">
                   <p className="blog-meta">

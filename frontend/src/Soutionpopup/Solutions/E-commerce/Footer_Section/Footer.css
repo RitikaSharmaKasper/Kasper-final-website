@@ -30,7 +30,8 @@
 .footer-btn {
   padding: 12px 20px;
   border: 1px solid #ccc;
-  background: transparent;
+ background: white;
+  font-size:"24px";
 }
 
 /* ===== GRID ===== */

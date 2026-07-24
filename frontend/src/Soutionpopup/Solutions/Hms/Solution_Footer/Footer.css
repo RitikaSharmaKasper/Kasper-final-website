@@ -33,11 +33,11 @@ min-height: 817px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.footer-btn{
+.footer-btn { font-size:"24px";
   position: relative;
   padding: 12px 20px;
   border-radius: 4px;
-  background: transparent;
+ background: white;
   cursor: pointer;
   border: 1px solid transparent;
 }
@@ -287,7 +287,7 @@ background: rgba(245, 254, 121, 1);
   }
 
   /* smaller button on tablet */
-  .footer-btn{
+  .footer-btn { font-size:"24px";
     padding: 10px 16px;
   }
 
@@ -311,7 +311,7 @@ background: rgba(245, 254, 121, 1);
   }
 
   /* smaller button */
-  .footer-btn{
+  .footer-btn { font-size:"24px";
     padding: 8px 14px;
   }
 
@@ -364,7 +364,7 @@ background: rgba(245, 254, 121, 1);
   }
 
   /* smallest button */
-  .footer-btn{
+  .footer-btn { font-size:"24px";
     padding: 5px 15px;
   }
 

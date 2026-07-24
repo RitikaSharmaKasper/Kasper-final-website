@@ -78,8 +78,8 @@ const Design = ({service}) => {
             
             <div className="content-wrapper">
               <span className="category font-semibold mb-2">{service.category}</span>
-              <h3 className="title text-xl font-bold mb-4">{service.title}</h3>
-              <p className="description text-sm mb-6 leading-relaxed">
+              <h3 className="title text-[20px] font-bold mb-4">{service.title}</h3>
+              <p className="description text-[14px] mb-6 leading-relaxed font-normal font-[Sora]">
                 {service.desc}
               </p>
               <button className="button" onClick={() => handleOpenPopup("contact","Get in Touch")}>

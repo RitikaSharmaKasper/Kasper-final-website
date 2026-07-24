@@ -302,7 +302,7 @@ margin-top:7px;
 @media(min-width: 768px)
 {
   .sp-left-column{
-    width:196%;
+    width:100%;
   }
    
 }
@@ -530,8 +530,10 @@ margin-top:7px;
 .industrieslink:hover { text-decoration: none; color: #255cf5e0; }
 
 
-@media (min-width: 1530px) {
-  .sp-left-column {
-    margin-left: 5px; /* chhoti value, negative nahi */
-  }
-}
+ /* @media (min-width: 1530px) {
+   .sp-left-column {
+    margin-left: 5px; 
+
+  
+  } 
+}  */

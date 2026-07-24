@@ -6,6 +6,7 @@ import facebook from "../assets/images/facebook.svg";
 import link from "../assets/images/linke.svg";
 import twit from "../assets/images/twitter.svg";
 import phone from "../assets/images/phone.png.png";
+import soon from "../assets/images2/soon.svg";
 
 import { useNavigate } from "react-router-dom";
 import ContactsPopup from "@/Contactspopup/Contactspopup";
@@ -89,13 +90,13 @@ const Footer = () => {
                 Inventory Management System
               </li>
               <li onClick={() => handleNavigation("/solutions/sms")}>
-                School Management System <span className="soon-tag">SOON</span>
+               School Management System <img src={soon} alt="Soon" className="soon-icon" />
               </li>
               <li onClick={() => handleNavigation("/solutions/hms")}>
-                Hotel Management System <span className="soon-tag">SOON</span>
+                Hotel Management System <img src={soon} alt="Soon" className="soon-icon" />
               </li>
               <li onClick={() => handleNavigation("/solutions/chatapp")}>
-                Chat App <span className="soon-tag">SOON</span>
+                Chat App <img src={soon} alt="Soon" className="soon-icon" />
               </li>
             </ul>
           </div>
@@ -131,26 +132,28 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="footer-bottom">
-          <div className="footer-brand">
-            <img src={kasper} alt="Kasper Logo" />
-          </div>
+       <div className="footer-bottom">
+  <div className="footer-brand">
+    <img src={kasper} alt="Kasper Logo" />
+  </div>
 
-          <div className="footer-address">
-            <h4>Address</h4>
-            <p>
-              Office Number 503, TOWER-C, The iThum Towers, Sector 62, Noida,
-              Uttar Pradesh 201301
-            </p>
-          </div>
+  <div className="footer-right">
+    <div className="footer-address">
+      <h4>Address</h4>
+      <p>
+        Office Number 503, TOWER-C, The iThum Towers, Sector 62, Noida,
+        Uttar Pradesh 201301
+      </p>
+    </div>
 
-          <div className="footer-contact">
-            <h4>Contact Details</h4>
-            <p>info@kasperinfotech.com</p>
-            <p>sales@kasperinfotech.com</p>
-            <p>+91 800-644-8800</p>
-          </div>
-        </div>
+    <div className="footer-contact">
+      <h4>Contact Details</h4>
+      <p>info@kasperinfotech.com</p>
+      <p>sales@kasperinfotech.com</p>
+      <p>+91 800-644-8800</p>
+    </div>
+  </div>
+</div>
         {/* Follow Us */}
         {/* Follow Section */}
         <div className="footer-follow">

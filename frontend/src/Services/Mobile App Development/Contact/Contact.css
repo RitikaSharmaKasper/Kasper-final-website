@@ -632,7 +632,7 @@ textarea {
   border: none;
   outline: none;
 
-  background: transparent;
+ background: white;
   font-size: 13px;
   font-weight: 600;
   color: #333;
@@ -655,7 +655,7 @@ textarea {
   min-width: 0;  
   margin-right:-8px;     
   font-size: 14px;
-  background: transparent;
+ background: white;
   width: 100%;        
 }
 

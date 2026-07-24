@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+ import "./Footer.css";
 import kasper from "../../../assets/images/kasper.svg";
 import insta from "../../../assets/images/instaa.SVG";
 import  facebook from "../../../assets/images/faceb.svg";

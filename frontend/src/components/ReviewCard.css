@@ -51,13 +51,13 @@ opacity: 1;
 }
 
 .review-user img{
+border-radius:5%;
 
-border-radius:50%;
 width: 62px;
 height: 62px;
 
 opacity: 1;
-border-radius: 50%;
+
 
 object-fit:cover;
 }
