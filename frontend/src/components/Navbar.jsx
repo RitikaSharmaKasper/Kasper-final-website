@@ -140,18 +140,19 @@ const Navbar = () => {
           </li>
 
           <li className="mobile-menu-buttons">
-              <div className="relative inline-block">
-               <a target="_blank" rel="noopener noreferrer" href="https://mymunc.com/">
+               <div className="relative inline-block">
+              <img
+                src={navtag}
+                alt="try"
+                className="absolute -top-2 -left-4 h-8 w-auto z-10 try-tag"
+              />
+                    <a target="_blank" rel="noopener noreferrer" href="https://mymunc.com/">
       <img
         src={muncButton}
         alt="MUN-C"
         className="h-10 w-auto"
       />
     </a>
-              {/* <a target="#" href="https://mymunc.com/">
-                <button className="btn-munc w-28 h-10">MUN-C</button>
-              </a> */}
-            
             </div>
             <div className="relative inline-block">
               <img
@@ -172,7 +173,7 @@ const Navbar = () => {
               <img
                 src={navtag}
                 alt="try"
-                className="absolute -top-2 -left-4 h-8 w-auto z-10"
+                className="absolute -top-2 -left-4 h-8 w-auto z-10 try-tag"
               />
                     <a target="_blank" rel="noopener noreferrer" href="https://mymunc.com/">
       <img

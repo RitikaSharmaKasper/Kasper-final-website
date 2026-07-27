@@ -88,7 +88,7 @@
   gap: 16px;
   flex-wrap: wrap;
   width: 494px;
-  max-width: 100%;
+  max-width: 100%;margin-top:40px;
 }
 
 .hero-tags span {
@@ -110,7 +110,10 @@
   text-align: center;
   color: #1b1270;
   margin: 0;
-  white-space: nowrap;
+ word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto; /* Optional: adds hyphens for long words */
+  padding: 0 10px; /* Adds some breathing room */
 }
 
 /* Description */
@@ -340,7 +343,7 @@
     height: 36px;
     padding: 10px 14px;
     font-size: 14px;
-  }
+  }       .hero-inner{padding-top:35px;}
 }
 
 /* ================= MOBILE (768px) ================= */

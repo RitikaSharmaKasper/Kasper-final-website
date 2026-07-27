@@ -19,9 +19,9 @@ body::-webkit-scrollbar {
 
 /* Hero Title Scaling */
 .hero-heading h1, .hero-inner h1, .hero h1 {
-  font-size: clamp(26px, 6vw, 60px) !important;
+  font-size: 48px;
   line-height: 1.2 !important;
-  padding-top: clamp(15px, 5vw, 70px) !important;
+   padding-top: clamp(0px, 5vw, 1px) !important;
   text-align: center !important;
 }
 
@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 .hero_Paragraph p, .hero-inner p, .hero p {
   font-size: clamp(14px, 2vw, 18px) !important;
   line-height: 1.6 !important;
-  margin-top: 15px !important;
+  margin-top: 8px !important;
   text-align: center !important;
   max-width: 900px !important;
   margin-left: auto !important;
