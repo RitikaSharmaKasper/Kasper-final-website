@@ -70,6 +70,15 @@ const Services = () => {
 
       <div className="services-line"></div>
 
+      {/* Connector: stem → horizontal bar → 3 drops to cards */}
+      <div className="services-connector">
+        <div className="svc-stem"></div>
+        <div className="svc-hbar"></div>
+        <div className="svc-drop"></div>
+        <div className="svc-drop"></div>
+        <div className="svc-drop"></div>
+      </div>
+
       <div className="service-grid-conatiner">
         {/* Card 1: Design */}
         <Build service={services[0]} />

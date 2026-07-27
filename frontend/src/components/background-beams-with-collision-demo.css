@@ -396,21 +396,21 @@ padding-left: 16px;
 @media (min-width: 1025px) and (max-width: 1279px) {
   .Badge-container {
     margin-left: 60px !important;
-    margin-top: 80px !important;
+    margin-top: 90px !important;
   }
   .Badge-title {
-    font-size: 48px !important;
+    font-size: 42px !important;
     white-space: normal !important;
   }
   .Badge-subtitle {
     font-size: 16px !important;
   }
   .image-wrapper {
-    width: 550px !important;
-    height: auto !important;
+    width: 800px !important;
+    height: 480px !important;
   }
   .badge-image-container {
-    margin-left: 40px !important;
+    margin-left: 30px !important;
   }
 }
 
@@ -621,21 +621,22 @@ padding-left: 16px;
   }
 
   .Badge-title {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
     white-space: normal !important;
     margin-bottom: 8px !important;
-    margin-top:8px;
-    margin-right:1rem;
-    margin-left:0rem;
-   text-align: left;
-    width:600px;
+    margin-top: 8px;
+    margin-right: 1rem;
+    margin-left: 0rem;
+    text-align: left;
+    max-width: 550px;
+    width: 100%;
   }
 
   .Badge-subtitle {
     font-size: 0.92rem !important;
     margin-bottom: 20px !important;
-  
-       width:500px;
+    max-width: 500px;
+    width: 100%;
   }
 
   .Badge-actions {
@@ -643,12 +644,12 @@ padding-left: 16px;
     flex-wrap: wrap !important;
   }
 
-  .btn-outline
-  {
-    padding: 7px 47px !important;
+  .btn-outline {
+    padding: 7px 24px !important;
     font-size: 13px !important;
     min-width: unset !important;
   }
+
   .btn-primary {
     padding: 7px 14px !important;
     font-size: 13px !important;
@@ -661,20 +662,21 @@ padding-left: 16px;
   }
 
   .badge-image-container {
-  
-    flex: 0 0 auto !important;
+    flex: 1 1 0% !important;
+    margin-left: 20px !important;
   }
 
   .image-wrapper {
-    width: 700px !important;
-    height: auto !important;
-    margin-right:100rem;
-    margin-left:-5rem;
+    width: 100% !important;
+    max-width: 600px !important;
+    height: 400px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
   }
 
   .diamond-half-clip {
     width: 100% !important;
-    transform: rotate(-10deg) !important;
+    transform: rotate(-15deg) !important;
   }
 }
 /* ══ MOBILE (max 767px) ══ */

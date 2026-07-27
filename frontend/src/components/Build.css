@@ -1,90 +1,163 @@
-/* ═══ Vertical line container ═══ */
-.services-line {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 98px;
-  background: #f1f1f1;
- /* ab sirf apni khud ki height (98px) tak comet ko rakhega */
-  z-index: 1;
-}
+/* ══════════════════════════════════════════════
+   SERVICES CONNECTOR — Real HTML Elements Only
+   Total cycle: 5s
+   ══════════════════════════════════════════════
 
-/* comet jo top se bottom jayegi */
-.services-line::after {
-  content: "";
+   Flow:
+   0.0s → comet enters top of stem
+   0.5s → comet exits bottom of stem (hits horizontal bar)
+   0.5s → comet travels across horizontal bar (left to right)
+   1.5s → comet exits right edge of bar
+   1.6s → left drop comet starts
+   1.9s → center drop comet starts
+   2.2s → right drop comet starts
+   2.7s → all done, pause until 5s, then repeat
+*/
+
+/* ─── Wrapper that holds ALL connector pieces ─── */
+.services-connector {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 35px;
-  background: linear-gradient(180deg,
-    transparent 0%,
-    #fa0064 30%,
-    #0a6cff 60%,
-    #8907fb 100%
-  );
-  animation: lineDown 3.2s linear infinite;
+  height: 0;
+  pointer-events: none;
+  z-index: 5;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .services-connector { display: block; }
 }
 
-@keyframes lineDown {
-  0%           { transform: translateY(-100%); opacity: 1; }
-  45%          { transform: translateY(98px); opacity: 1; }
-  50%, 100%    { transform: translateY(98px); opacity: 0; }
-}
-
-/* ═══ Horizontal bar container ═══ */
-.services-line::before {
-  content: "";
+/* ─── 1. Vertical STEM (top → horizontal bar) ─── */
+.svc-stem {
   position: absolute;
-  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 850px;
-  height: 2px;
-  background: #f1f1f1;
-  overflow: hidden;      /* isse horizontal bhi apni 850px width tak bounded rahega */
+  top: 105px;       /* just below "Services We Offer" heading */
+  width: 2px;
+  height: 100px;
+  background: #ebebeb;
+  overflow: hidden;
 }
-.services-line::before {
+.svc-stem::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg, transparent 0%, #fa0064 40%, #0a6cff 70%, #8907fb 100%);
+  animation: cometStemDown 3.2s linear infinite;
+}
+@keyframes cometStemDown {
+  0%           { top: -50px; opacity: 1; }
+  25%          { top: 100px; opacity: 1; }
+  26%, 100%    { top: 100px; opacity: 0; }
+}
+
+/* ─── 2. Horizontal BAR (Spreads Outward from Center) ─── */
+.svc-hbar {
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 850px;
+  top: 205px;         /* stem top(105) + stem height(100) = 205px */
+  width: 870px;       /* covers all 3 cards */
   height: 2px;
-
-  background:
-    linear-gradient(90deg,
-      transparent 0%,
-      #fa0064 40%,
-      #0a6cff 60%,
-      #8907fb 100%
-    ) 0 0 / 40% 100%,
-    #f1f1f1;
-  background-repeat: no-repeat, no-repeat;
-  animation: lineAcross 3.2s linear infinite;
-  animation-delay: 0s;
+  background: #ebebeb;
+  overflow: hidden;
 }
 
-@keyframes lineAcross {
-  0%, 45%      { background-position: -60% 0, 0 0; opacity: 0; }
-  45.01%       { opacity: 1; }
-  95%          { background-position: 160% 0, 0 0; opacity: 1; }
-  100%         { background-position: 160% 0, 0 0; opacity: 0; }
+/* Left-spreading comet (Center → Left) */
+.svc-hbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(270deg, transparent 0%, #fa0064 30%, #0a6cff 65%, #8907fb 100%);
+  animation: cometSpreadLeft 3.2s linear infinite;
 }
-/* .category {
-  background: linear-gradient(270deg, #fa0064 0%, #0a6cff 50.09%, #8907fb 100%);
+@keyframes cometSpreadLeft {
+  0%, 24%     { left: 50%; transform: translateX(-50%); opacity: 0; }
+  25%         { left: 50%; transform: translateX(-50%); opacity: 1; }
+  60%         { left: -120px; transform: translateX(0); opacity: 1; }
+  61%, 100%   { left: -120px; opacity: 0; }
+}
 
-  background-clip: text;
+/* Right-spreading comet (Center → Right) */
+.svc-hbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, #fa0064 30%, #0a6cff 65%, #8907fb 100%);
+  animation: cometSpreadRight 3.2s linear infinite;
+}
+@keyframes cometSpreadRight {
+  0%, 24%     { left: 50%; transform: translateX(-50%); opacity: 0; }
+  25%         { left: 50%; transform: translateX(-50%); opacity: 1; }
+  60%         { left: 870px; transform: translateX(0); opacity: 1; }
+  61%, 100%   { left: 870px; opacity: 0; }
+}
 
-  -webkit-background-clip: text;
+/* ─── 3. Vertical DROPS (Fires AFTER middle horizontal line spreads) ─── */
+.svc-drop {
+  position: absolute;
+  top: 207px;  /* hbar top(205) + hbar height(2) */
+  width: 2px;
+  height: 60px;
+  background: #ebebeb;
+  overflow: hidden;
+}
+/* Left drop — aligns with left card center */
+.services-connector .svc-drop:nth-child(3) { left: calc(50% - 435px); transform: translateX(-50%); }
+/* Center drop — aligns with center card */
+.services-connector .svc-drop:nth-child(4) { left: 50%; transform: translateX(-50%); }
+/* Right drop — aligns with right card center */
+.services-connector .svc-drop:nth-child(5) { left: calc(50% + 435px); transform: translateX(-50%); }
 
-  color: transparent;
+.svc-drop::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(180deg, transparent 0%, #fa0064 40%, #0a6cff 70%, #8907fb 100%);
+}
 
-  font-weight: bold;
-} */
+/* All 3 bottom drops fire at 60% AFTER the middle horizontal spread finishes */
+.services-connector .svc-drop:nth-child(3)::after,
+.services-connector .svc-drop:nth-child(4)::after,
+.services-connector .svc-drop:nth-child(5)::after {
+  animation: cometDropToCards 3.2s linear infinite;
+}
+
+@keyframes cometDropToCards {
+  0%, 59%   { top: -40px; opacity: 0; }
+  60%       { top: -40px; opacity: 1; }
+  90%       { top: 60px;  opacity: 1; }
+  91%, 100% { top: 60px;  opacity: 0; }
+}
+
+/* ─── Responsive: scale bar width to card layout ─── */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .svc-stem  { top: 110px; height: 95px; }
+  .svc-hbar  { top: 205px; width: 730px; }
+  .svc-drop  { top: 207px; height: 65px; }
+  /* Scaled for smaller desktop */
+  .services-connector .svc-drop:nth-child(3) { left: calc(50% - 350px); }
+  .services-connector .svc-drop:nth-child(5) { left: calc(50% + 350px); }
+  /* update hbar comet keyframe endpoint to match new width */
+}
+
+/* ─── Hide old .services-line and .services-drops on desktop ─── */
+.services-line,
+.services-drops {
+  display: none !important;
+}
+
+
 .title {
   font-family: Sora;
   font-weight: 400;
