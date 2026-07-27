@@ -41,10 +41,69 @@ const Inside_blogs_hero = () => {
 
   // 3. Slice from the reversed array
   const currentBlogs = reversedBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
-  if (loading) {
-    return <p style={{ textAlign: "center" }}>Loading blogs...</p>;
+ 
+ if (loading || blogs.length === 0) {
+    return (
+      <div style={{ backgroundColor: "white" }}>
+        <Heros_section latestBlog={null} />
+        <div className="all-Insightsblog-sections">
+          <div
+            style={{ backgroundColor: "white" }}
+            className="InsightsInsightsblog-main-div"
+          >
+            <h1
+              style={{
+                marginBottom: "20px",
+                fontSize: "25px",
+                color: "rgba(0, 6, 61, 1)",
+              }}
+            >
+              Latest Blogs
+            </h1>
+
+            <div className="Insightsblog-scroll">
+              {/* ✅ Skeleton cards - matching your blog card structure */}
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+                <div className="Insightsblog-card Insightsblog-card-skeleton" key={i}>
+                  <div className="Insightsblog-img">
+                    <div className="skeleton skeleton-image" />
+                  </div>
+
+                  <div className="Insightsblog-content">
+                    <div className="skeleton skeleton-tag" />
+                    <div className="skeleton skeleton-title" />
+                    <div className="skeleton skeleton-title skeleton-title-short" />
+                    <div style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      marginTop: "10px"
+                    }}>
+                      <div className="skeleton skeleton-meta" />
+                      <div className="skeleton skeleton-readmore" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ✅ Skeleton pagination */}
+          <div className="pagination">
+            <button disabled>◀</button>
+            {[1, 2, 3].map((i) => (
+              <button key={i} className="skeleton-pagination" disabled>
+                {i}
+              </button>
+            ))}
+            <button disabled>▶</button>
+          </div>
+        </div>
+      </div>
+    );
   }
 
+  // ✅ Main return with actual data
   return (
     <div style={{ backgroundColor: "white" }}>
       <Heros_section latestBlog={latestBlog} />
@@ -82,8 +141,6 @@ const Inside_blogs_hero = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "space-between",
-                      // marginTop: "10px",
-                      //  border:"2px solid black"
                     }}
                   >
                     <p className="">
@@ -99,10 +156,10 @@ const Inside_blogs_hero = () => {
         </div>
 
         {/* Pagination */}
-
         <div className="pagination">
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            disabled={currentPage === 1}
           >
             ◀
           </button>
@@ -121,13 +178,17 @@ const Inside_blogs_hero = () => {
             onClick={() =>
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
+            disabled={currentPage === totalPages}
           >
             ▶
           </button>
         </div>
       </div>
     </div>
-  );
+ 
+          );
+  // ✅ Main return with actual data
+  
 };
 
 export default Inside_blogs_hero;

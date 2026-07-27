@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
-import "./BlogCard.css";
+// import "./BlogCard.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import BASE_URL from "../../../Pages/Config/Config"
@@ -34,25 +34,52 @@ const BlogCard = () => {
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = reversedBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
 
+  const getScrollAmount = () => {
+    if (!scrollRef.current) return 450;
+    const card = scrollRef.current.querySelector(".blog-card");
+    return card ? card.offsetWidth + 20 : 450;
+  };
+
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
-        left: 324, 
+        left: getScrollAmount(),
         behavior: "smooth",
       });
     }
   };
- const scrollLeft = () => {
-  if (scrollRef.current) {
-    scrollRef.current.scrollBy({
-      left: -324, // Negative value moves it to the left
-      behavior: "smooth",
-    });
-  }
-};
+
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: -getScrollAmount(),
+        behavior: "smooth",
+      });
+    }
+  };
+
   // 3. CONDITIONAL RETURN AFTER HOOKS
-  if (loading) {
-    return <p style={{ textAlign: "center" }}>Loading blogs...</p>;
+  if (loading|| blogs.length === 0) {
+    return (
+      <div className="Blog-main-div">
+        <p className="blog-heading">Insights & Blogs</p>
+        <div className="slider-wrapper">
+          <div className="blog-scroll-container">
+            {[1, 2, 3, 4].map((i) => (
+              <div className="blog-card blog-card-skeleton" key={i}>
+                <div className="skeleton skeleton-image" />
+                <div className="blog-content">
+                  <div className="skeleton skeleton-tag" />
+                  <div className="skeleton skeleton-title" />
+                  <div className="skeleton skeleton-title skeleton-title-short" />
+                  <div className="skeleton skeleton-meta" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -63,7 +90,7 @@ const BlogCard = () => {
     ❮
   </button>
         {/* 4. WRAP YOUR MAP IN A SCROLLABLE DIV WITH THE REF */}
-        <div className="blog-scroll-container" ref={scrollRef} style={{ display: 'flex', overflowX: 'auto' }}>
+        <div className="blog-scroll-container" ref={scrollRef}>
           {currentBlogs.map((blog) => (
             <div className="blog-card" key={blog._id}>
               <Link to={`/blog/${blog.slug}`} className="blog-img-link">
@@ -72,7 +99,9 @@ const BlogCard = () => {
               </div></Link>
               
               <div className="blog-content">
-                <span className="blog-tag">{blog.user?.username}</span>
+               {blog.user?.username && (
+    <span className="blog-tag">{blog.user.username}</span>
+  )}
                 <p className="title-blog">{blog.title}</p>
                 <div className="date-content">
                   <p className="blog-meta">

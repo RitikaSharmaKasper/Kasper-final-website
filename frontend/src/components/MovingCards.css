@@ -141,9 +141,11 @@
 /* ══ SMALL DESKTOP  */
 @media (min-width: 1025px) and (max-width: 1279px) {
   .card-maindiv {
+    width: calc(100% - 40px) !important;
     height: 580px !important;
     padding: 28px 20px !important;
     border-radius: 36px !important;
+    margin: 70px auto !important;
   }
   .cards-wrapper {
     width: 1800px !important;
@@ -169,27 +171,25 @@
   .center-text p { font-size: 26px !important; }
 }
 
-/* ══ TABLEet*/
+/* ══ TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .card-maindiv {
-        height: 467px !important;
-        padding: 37px 16px !important;
-        border-radius: 28px !important;
-    }
-}
+  .card-maindiv {
+    width: calc(100% - 48px) !important;
+    height: 467px !important;
+    padding: 37px 16px !important;
+    border-radius: 28px !important;
+    margin: 60px auto !important;
+  }
   .cards-wrapper {
     width: 1500px !important;
     height: 400px !important;
     gap: 18px !important;
-    left: -140px !important;
+    left: -120px !important;
   }
   .card-row {
     width: 1200px !important;
     height: 135px !important;
-    left: 120px !important;
+    left: 100px !important;
     gap: 18px !important;
   }
   .card-row img {

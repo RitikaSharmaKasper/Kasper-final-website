@@ -1,4 +1,4 @@
-.services-line {
+/* .services-line {
   position: absolute;
   top: 120px;
   left: 50%;
@@ -35,7 +35,7 @@
   box-shadow:
     -425px 0 0 0 #f1f1f1,
     425px 0 0 0 #f1f1f1;
-}
+} */
 .category {
   background: linear-gradient(270deg, #fa0064 0%, #0a6cff 50.09%, #8907fb 100%);
 

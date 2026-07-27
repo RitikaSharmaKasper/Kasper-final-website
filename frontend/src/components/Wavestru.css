@@ -1,6 +1,3 @@
-
-
-
 /* ════════════════════════════════════════
    WAVE RESPONSIVE — All Screen Sizes
    ════════════════════════════════════════ */
@@ -19,40 +16,76 @@
   overflow: hidden;
 }
 
-/* icon circle */
+/* ═══ icon circle - NO CIRCLE by default (transparent) ═══ */
 .icon-div {
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.65);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  
+  /* NO background - completely transparent */
+  background: #0000001a !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none !important;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              background 0.4s ease, 
+              box-shadow 0.4s ease;
+  transition: transform 0.3s ease, background 0.4s ease, box-shadow 0.4s ease;
 }
 
+/* ═══ icon image - GREY by default ═══ */
 .icon-div img {
   width: 48px;
   height: 48px;
   object-fit: contain;
   pointer-events: none;
+  
+  /* Convert to grayscale - grey icon only, no circle */
+  filter: grayscale(100%) brightness(0.9) ;
+  /* transition: filter 0.4s ease, transform 0.4s ease; */
+  
+  /* ⭐ CHANGED: Added bounce curve for smoother scale */
+  transition: filter 0.4s ease, transform 0.4s cubic-bezier(0.34, 0.56, 0.4, 1);
 }
 
-/* single hover */
+
+/* ═══ On hover: SHOW CIRCLE with ORIGINAL COLORS ═══ */
 .icon-div:hover {
-  transform: translateY(-8px) scale(1.08);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  /* transform: translateY(-8px) scale(1.08); */
+
+    transform: translateY(-25px) scale(1.08);
+  
+  /* Circle appears on hover with white background */
+  background: rgba(255, 255, 255, 0.95) !important;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
 }
 
-/* parent hover = wave animation */
+.icon-div:hover img {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.1);
+}
+
+/* ═══ Parent hover = wave animation ═══ */
 .wave-main-div:hover .icon-div {
   animation: snakeWave 0.9s ease-in-out;
   animation-delay: calc(var(--i) * 0.1s);
+}
+
+/* ═══ Show CIRCLE with colors during wave ═══ */
+.wave-main-div:hover .icon-div {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 10px 20px rgba(172, 170, 170, 0.233);
+}
+
+.wave-main-div:hover .icon-div img {
+  filter: grayscale(0%) brightness(1);
 }
 
 /* wave motion from first to last */
@@ -61,7 +94,9 @@
     transform: translateY(0px) scale(1);
   }
   30% {
-    transform: translateY(-14px) scale(1.06);
+    /* transform: translateY(-14px) scale(1.06); */
+      /* ⭐ CHANGED: Increased wave lift from -14px to -22px */
+    transform: translateY(-22px) scale(1.06);
   }
   60% {
     transform: translateY(6px) scale(1.02);
@@ -71,32 +106,6 @@
   }
 }
 
-/* moving glowing snake line */
-/* .snake-line {
-  position: absolute;
-  top: 50%;
-  left: -220px;
-  width: 180px;
-  height: 6px;
-  border-radius: 50px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(124, 58, 237, 0.95),
-    rgba(0, 194, 255, 0.95),
-    transparent
-  );
-  filter: blur(2px);
-  transform: translateY(-50%);
-  opacity: 0;
-  z-index: 0;
-} */
-
-/* .wave-main-div:hover .snake-line {
-  opacity: 1;
-  animation: snakeMove 2.2s linear infinite;
-}
-
 @keyframes snakeMove {
   0% {
     left: -220px;
@@ -104,22 +113,44 @@
   100% {
     left: calc(100% + 220px);
   }
-} */
- @media ( those-who-can-hover: hover ) {
+}
+
+/* ═══ Desktop hover support ═══ */
+@media (hover: hover) {
   .wave-main-div:hover .icon-div {
     animation: snakeWave 0.9s ease-in-out;
     animation-delay: calc(var(--i) * 0.1s);
   }
+  
+  /* Show CIRCLE on desktop hover */
+  .wave-main-div:hover .icon-div {
+    /* background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow:  0 5px 5px rgba(231, 229, 229, 0.233); */
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .wave-main-div:hover .icon-div img {
+    filter: grayscale(0%) brightness(1);
+  }
 }
 
-/* For Mobile: Simple tap effect instead of complex wave */
+/* ═══ Mobile: Tap effect instead of wave ═══ */
 @media (max-width: 768px) {
   .icon-div:active {
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
+    /* Show CIRCLE on tap */
+    background: rgba(255, 255, 255, 0.95) !important;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+
+    transform: translateY(-12px) scale(0.95);
+  }  
+  /* Show colors on tap/click */
+  .icon-div:active img {
+    filter: grayscale(0%) brightness(1);
   }
   
   /* Prevent the snakeMove line from causing horizontal scroll */
   .snake-line {
     display: none; 
   }
-} 
+}
