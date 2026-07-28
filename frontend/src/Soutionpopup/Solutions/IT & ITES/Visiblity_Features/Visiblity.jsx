@@ -1,6 +1,6 @@
 import React from "react";
 import "./Visiblity.css";
-import ball from "../../../assets/images/ball.svg";
+import ball from "../../../assets/images2/ball.gif.gif";
 
 const Visiblity = () => {
   return (

@@ -72,7 +72,7 @@ left:0;
 width:100%;
 height:50px;
 
-background:linear-gradient(to bottom, #f7f5f5, transparent);
+background:linear-gradient(to bottom, #ffffff, transparent);
 
 z-index:2;
 pointer-events:none;
@@ -85,7 +85,7 @@ left:0;
 width:100%;
 height:50px;
 
-background:linear-gradient(to top, #f7f5f5, transparent);
+background:linear-gradient(to top, #ffffff, transparent);
 
 z-index:2;
 pointer-events:none;
@@ -107,7 +107,7 @@ pointer-events:none;
 /* ══ LARGE DESKTOP (1280px+) ══ */
 @media (min-width: 1280px) {
   .Main-review-div {
-    padding: 1px 40px !important;
+    padding: 1px 51px !important;
     margin: 0 auto !important;
   }
   .review-heading .heading-p {

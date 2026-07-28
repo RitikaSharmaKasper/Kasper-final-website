@@ -1,3 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+.clients-parent-section {
+  background-color: white;  /* change grey to white */
+}
+
+
+body{
+     background-color: white
+}
+:root {
+  background-color: white
+}

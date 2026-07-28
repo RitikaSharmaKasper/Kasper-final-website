@@ -40,14 +40,22 @@
   width: 404px;
   height: 198px;
   opacity: 1;
+  border-radius:6px;
+   transition: transform 0.3s ease;
+  will-change: transform;
+}
+.card-row img:hover {
+  transform: scale(1.08);
+  position: relative;
+  z-index: 10;
 }
 
 .scroll-left {
-  animation: scrollLeft 20s linear infinite;
+  animation: scrollLeft 40s linear infinite;
 }
 
 .scroll-right {
-  animation: scrollRight 20s linear infinite;
+  animation: scrollRight 40s linear infinite;
 }
 
 @keyframes scrollLeft {

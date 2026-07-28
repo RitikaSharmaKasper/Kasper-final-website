@@ -31,6 +31,7 @@ const icons = [
 
 const Wavestru = () => {
   return (
+    <div className="main-div-wavestructure">
     <div className="wave-main-div">
       <div className="snake-line"></div>
 
@@ -43,7 +44,7 @@ const Wavestru = () => {
           <img src={icon} alt={`icon-${index + 1}`} />
         </div>
       ))}
-    </div>
+    </div></div>
   );
 };
 

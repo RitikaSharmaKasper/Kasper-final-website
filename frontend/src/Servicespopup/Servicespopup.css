@@ -269,7 +269,7 @@ filter:none!important;
 /* 1280px – 1439px */
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .services-popup-modal {
-    margin-top: -43px !important;
+    margin-top: 47px !important;
   }
 }
 

@@ -50,7 +50,7 @@
 }
 
 /* --- Tablet + small laptop: flexible height, top alignment --- */
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .beams-dimensions {
     height: auto !important;
     min-height: 580px;
@@ -60,7 +60,16 @@
     padding-bottom: 40px;
   }
 }
-
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .beams-dimensions {
+    height: auto !important;
+    min-height: 580px;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+}
 @media (min-width: 1025px) and (max-width: 1440px) {
   .beams-dimensions {
     min-height: 680px;

@@ -19,8 +19,8 @@ const jobsData = [
   //     searchIntent: "Job Search",
   //     rankingGoal: "Top 10 Google",
   //   },
-  //   description:
-  //     "We are looking for a UI/UX who can design intuitive, modern, and user-focused digital products.",
+    // description:
+    //   "We are looking for a UI/UX who can design intuitive, modern, and user-focused digital products.",
   // },
   // {
   //   id: 2,
@@ -144,22 +144,35 @@ const departments = [
   ];
 
  const filteredJobs = useMemo(() => {
-  return jobsData.filter((job) => {
-    // This checks if 'All' is selected OR if the selection matches the title or department
-    const matchesDepartment =
-      selectedDepartment === "All Departments" ||
-      job.department === selectedDepartment ||
-      job.title === selectedDepartment;
+    const filtered = jobsData.filter((job) => {
+      const matchesDepartment =
+        selectedDepartment === "All Departments" ||
+        job.department === selectedDepartment ||
+        job.title === selectedDepartment;
 
-    const matchesSearch = job.title
-      .toLowerCase()
-      .includes(searchTerm.toLowerCase());
+      const matchesSearch = job.title
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase());
 
-    return matchesDepartment && matchesSearch;
-  });
+      return matchesDepartment && matchesSearch;
+    });
+
+const hasOpenings=filtered.length>0;
+localStorage.setItem('hasOpenings',JSON.stringify(hasOpenings));
+localStorage.setItem('totalJobs',filtered.length);
+return filtered;
+
+
+
+
+
 }, [selectedDepartment, searchTerm]);
 
-
+useEffect(()=>{
+  const hasOpenings=jobsData.length>0;
+  localStorage.setItem('hasOpenings',JSON.stringify(hasOpenings));
+    localStorage.setItem('totalJobs', jobsData.length);
+},[]);
 
   return (
     <>

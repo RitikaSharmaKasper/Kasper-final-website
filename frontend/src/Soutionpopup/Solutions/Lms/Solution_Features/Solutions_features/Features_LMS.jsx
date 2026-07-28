@@ -6,7 +6,7 @@ import "./Features.css";
 import iMAGE from "../../../../assets/images/iMAGE.svg";
 
 
-import ball from "../../../../assets/images/ball.svg";
+import ball from "../../../../assets/images2/ball.gif.gif";
 
 
 

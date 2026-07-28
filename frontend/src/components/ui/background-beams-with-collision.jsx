@@ -66,7 +66,7 @@ export const BackgroundBeamsWithCollision = ({
   return (
     <div
       ref={parentRef} 
-       style={{background:"linear-gradient(0deg, #FFF 0%, #F1F0EE 100%)"}}
+       style={{background:"linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(241, 240, 234) 100%)"}}
       className={cn(
 
         "beams-dimensions","relative flex items-center w-full justify-center overflow-hidden",

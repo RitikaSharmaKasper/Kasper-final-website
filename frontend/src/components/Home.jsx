@@ -12,6 +12,7 @@ import IndustriesServe from './IndustriesServe.jsx';
 import Blogs from './Blogs.jsx';
 import Reviews from './Reviews.jsx';
 import { Helmet } from "react-helmet-async";
+import "../App.css";
 
 const Home = () => {
   
@@ -54,12 +55,26 @@ const Home = () => {
 
 <BackgroundBeamsWithCollisionDemo/>
 <Services/>
-<ValuedClients/>
+<section className="clients-parent-section">   {/* ← grey background is here */}
+  <ValuedClients />
+</section>
+{/* <ValuedClients/> */}
+
+
+<section className="clients-parent-section">   {/* ← grey background is here */}
 <MovingCards/>
+</section>
+
+<section className="clients-parent-section">   {/* ← grey background is here */}
+
+
 <Wavestru/>
+
 <IndustriesServe/>
 <Blogs/>
 <Reviews/>
+
+</section>
 
   
       </>

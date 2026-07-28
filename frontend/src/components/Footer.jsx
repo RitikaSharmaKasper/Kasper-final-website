@@ -7,15 +7,66 @@ import link from "../assets/images/linke.svg";
 import twit from "../assets/images/twitter.svg";
 import phone from "../assets/images/phone.png.png";
 import soon from "../assets/images2/soon.svg";
-
-import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import followus from "../assets/images2/Followus.svg";
+import { useNavigate,useLocation } from "react-router-dom";
 import ContactsPopup from "@/Contactspopup/Contactspopup";
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu state
   const [isPopupOpen, setIsPopupOpen] = useState(false); // Popup Visibility
   const [activeTab, setActiveTab] = useState(""); // Track if "Solutions" or "Services" was clicked
   const [title, setTitle] = useState("");
+    const [hasOpenings, setHasOpenings] = useState(false);
   const navigate = useNavigate();
+  const location=useLocation();
+ 
+  
+
+
+  useEffect(()=>{
+    const checkJobStatus=()=>{
+      const stored=localStorage.getItem('hasOpenings');
+        if(stored!=null)
+        {
+          setHasOpenings(JSON.parse(stored));
+
+
+        }else{
+          setHasOpenings(false);
+
+        }
+      
+    };
+
+    checkJobStatus();
+    const handleStorageChange=(e)=>{
+      if(e.key=="hasOpenings")
+      {
+        setHasOpenings(JSON.parse(e.newValue));
+
+      }
+    };
+window.addEventListener('storage',handleStorageChange);
+return()=>window.removeEventListener('storage',handleStorageChange);
+
+
+
+
+  },[]);
+
+useEffect(()=>{
+  if(location.pathname==="/career"||location.pathname==="/carers")
+
+    {const stored=localStorage.getItem('hasOpenings');
+      if(stored!=null)
+      {
+        setHasOpenings(JSON.parse(stored));
+      }
+
+    }
+},[location.pathname]);
+
+
   const handleNavigation = (path) => {
     if (path) {
       navigate(path);
@@ -62,8 +113,15 @@ const Footer = () => {
               <li onClick={() => handleNavigation("/")}>Home</li>
               <li onClick={() => handleNavigation("/about")}>About Us</li>
               <li onClick={() => handleNavigation("/career")}>
-                Career <span className="hiring-tag">HIRING!</span>
+                Career   {/* 🟢 CONDITIONALLY SHOW HIRING TAG */}
+                {hasOpenings && <span className="hiring-tag">HIRING!</span>}
               </li>
+             
+             
+             
+             
+             
+           
               <li onClick={() => handleNavigation("/insightsblogs")}>
                 Insights & Blogs
               </li>
@@ -158,7 +216,8 @@ const Footer = () => {
         {/* Follow Section */}
         <div className="footer-follow">
           <div className="follow-wrapper">
-            <span className="follow-label">Follow Us</span>
+            {/* <span className="follow-label">Follow Us</span> */}
+            <img src={followus} alt="Soon" className="follow-label" />
 
             <div className="follow-icons">
               <a className="twitter"

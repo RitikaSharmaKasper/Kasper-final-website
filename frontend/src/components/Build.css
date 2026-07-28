@@ -1,4 +1,4 @@
-/* ══════════════════════════════════════════════
+/* /* ══════════════════════════════════════════════
    SERVICES CONNECTOR — Real HTML Elements Only
    Total cycle: 5s
    ══════════════════════════════════════════════
@@ -14,7 +14,7 @@
    2.7s → all done, pause until 5s, then repeat
 */
 
-/* ─── Wrapper that holds ALL connector pieces ─── */
+
 .services-connector {
   position: absolute;
   top: 0;
@@ -29,12 +29,11 @@
   .services-connector { display: block; }
 }
 
-/* ─── 1. Vertical STEM (top → horizontal bar) ─── */
 .svc-stem {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 105px;       /* just below "Services We Offer" heading */
+  top: 105px;     
   width: 2px;
   height: 100px;
   background: #ebebeb;
@@ -55,19 +54,19 @@
   26%, 100%    { top: 100px; opacity: 0; }
 }
 
-/* ─── 2. Horizontal BAR (Spreads Outward from Center) ─── */
+
 .svc-hbar {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 205px;         /* stem top(105) + stem height(100) = 205px */
-  width: 870px;       /* covers all 3 cards */
+  top: 205px;         
+  width: 870px;     
   height: 2px;
   background: #ebebeb;
   overflow: hidden;
 }
 
-/* Left-spreading comet (Center → Left) */
+
 .svc-hbar::before {
   content: "";
   position: absolute;
@@ -84,7 +83,6 @@
   61%, 100%   { left: -120px; opacity: 0; }
 }
 
-/* Right-spreading comet (Center → Right) */
 .svc-hbar::after {
   content: "";
   position: absolute;
@@ -101,20 +99,19 @@
   61%, 100%   { left: 870px; opacity: 0; }
 }
 
-/* ─── 3. Vertical DROPS (Fires AFTER middle horizontal line spreads) ─── */
 .svc-drop {
   position: absolute;
-  top: 207px;  /* hbar top(205) + hbar height(2) */
+  top: 207px;  
   width: 2px;
   height: 60px;
   background: #ebebeb;
   overflow: hidden;
 }
-/* Left drop — aligns with left card center */
+
 .services-connector .svc-drop:nth-child(3) { left: calc(50% - 435px); transform: translateX(-50%); }
-/* Center drop — aligns with center card */
+
 .services-connector .svc-drop:nth-child(4) { left: 50%; transform: translateX(-50%); }
-/* Right drop — aligns with right card center */
+
 .services-connector .svc-drop:nth-child(5) { left: calc(50% + 435px); transform: translateX(-50%); }
 
 .svc-drop::after {
@@ -126,7 +123,7 @@
   background: linear-gradient(180deg, transparent 0%, #fa0064 40%, #0a6cff 70%, #8907fb 100%);
 }
 
-/* All 3 bottom drops fire at 60% AFTER the middle horizontal spread finishes */
+
 .services-connector .svc-drop:nth-child(3)::after,
 .services-connector .svc-drop:nth-child(4)::after,
 .services-connector .svc-drop:nth-child(5)::after {
@@ -140,18 +137,18 @@
   91%, 100% { top: 60px;  opacity: 0; }
 }
 
-/* ─── Responsive: scale bar width to card layout ─── */
+
 @media (min-width: 1025px) and (max-width: 1279px) {
   .svc-stem  { top: 110px; height: 95px; }
   .svc-hbar  { top: 205px; width: 730px; }
   .svc-drop  { top: 207px; height: 65px; }
-  /* Scaled for smaller desktop */
+
   .services-connector .svc-drop:nth-child(3) { left: calc(50% - 350px); }
   .services-connector .svc-drop:nth-child(5) { left: calc(50% + 350px); }
-  /* update hbar comet keyframe endpoint to match new width */
-}
+ 
+} 
 
-/* ─── Hide old .services-line and .services-drops on desktop ─── */
+
 .services-line,
 .services-drops {
   display: none !important;
@@ -192,7 +189,7 @@
   border-radius: 4px;
   border: 1px solid #cdcdcd;
 }
-/* Card Container */
+
 .service-card {
   position: relative;
   background: #fafafa;
@@ -227,7 +224,6 @@
 }
 
 .service-card:hover .main-service-img {
-  /* Left shift - card ke andar aadhi chhupne ke liye */
   transform: translateX(-100px) scale(1.02);
 }
 
