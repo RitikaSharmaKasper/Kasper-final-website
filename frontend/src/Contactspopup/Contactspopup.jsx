@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import { useNavigate } from "react-router-dom";
 import "./Contact.css";
-import { FaUser, FaEnvelope, FaTimes } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaTimes, FaBriefcase, FaBuilding  } from "react-icons/fa";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
 import toast from "react-hot-toast";
@@ -233,13 +233,13 @@ const ContactsPopup = ({ isOpen, onClose }) => {
                   />
                 </div>
               </div>
-
+<div className="form-row">
               <div className="form-group">
                 <label>
                   Company Name<span>*</span>
                 </label>
                 <div className="input-with-icon">
-                  <FaUser className="input-icon" />
+                  <FaBuilding className="input-icon" />
                   <input
                     name="company"
                     value={storeData.company}
@@ -261,7 +261,7 @@ const ContactsPopup = ({ isOpen, onClose }) => {
                   Designation<span>*</span>
                 </label>
                 <div className="input-with-icon">
-                  <FaUser className="input-icon" />
+                  <FaBriefcase className="input-icon" />
                   <input
                     name="designation"
                     value={storeData.designation}
@@ -281,7 +281,7 @@ const ContactsPopup = ({ isOpen, onClose }) => {
                 </div>
               </div>
 
-
+</div>
 
 
               <div className="form-row">

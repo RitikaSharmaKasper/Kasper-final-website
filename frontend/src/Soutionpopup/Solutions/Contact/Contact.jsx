@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { FaUser, FaEnvelope } from "react-icons/fa";
+import { FaUser, FaEnvelope , FaBriefcase ,FaBuilding } from "react-icons/fa";
 
 
 import flag from "../../assets/images/flag.svg";

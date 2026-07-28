@@ -20,11 +20,10 @@
   justify-content: center;   
   align-items: center;
   order: 2;     
-  margin-top:45px;            /* FORCES IMAGE TO THE RIGHT */
+   margin-top:34px; 
 }
-
 .contact-right img {
-  width: 100%;              /* Scales with the container */
+  width: 70%;              /* Scales with the container */
   height: auto;
   display: block;
   border-radius: 20px;

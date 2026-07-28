@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { FaUser, FaEnvelope } from "react-icons/fa";
+import { FaUser, FaEnvelope , FaBriefcase, FaBuilding } from "react-icons/fa";
 import {useState,useEffect,useRef} from "react";
 import { Toaster } from "react-hot-toast";
 import img from "../../../assets/images/img.svg";
@@ -176,13 +176,14 @@ const [storeData, setStoreData] = useState({
                              />
                            </div>
                          </div>
-           
+      <div className="form-row">  
+                        <div className="form-row">  
                          <div className="form-group">
                            <label>
                              Company Name<span>*</span>
                            </label>
                            <div className="input-with-icon">
-                             <FaUser className="input-icon" />
+                             <FaBuilding className="input-icon" />
                              <input
                                name="company"
                                value={storeData.company}
@@ -204,7 +205,7 @@ const [storeData, setStoreData] = useState({
                              Designation<span>*</span>
                            </label>
                            <div className="input-with-icon">
-                             <FaUser className="input-icon" />
+                             <FaBriefcase className="input-icon" />
                              <input
                                name="designation"
                                value={storeData.designation}
@@ -224,7 +225,9 @@ const [storeData, setStoreData] = useState({
                            </div>
                          </div>
            
+           </div>   
            
+           </div>   
            
            
                          <div className="form-row">
