@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 35px; 
   border-bottom: 1px solid #d4d4d4;
 }
 
@@ -37,7 +37,7 @@
 
 .footer-btn {
   position: relative;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: 4px;
   cursor: pointer;
   background: white;
@@ -93,7 +93,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 8px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -208,7 +208,7 @@
 
 .footer-address h4,
 .footer-contact h4 {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   color: rgba(0, 6, 61, 1);
   font-weight: 400;
   font-size: 16px;
@@ -220,7 +220,7 @@
 .footer-contact p {
   font-size: 15px;
   color: #6b7280;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .footer-address p {
@@ -229,14 +229,14 @@
 
 .footer-contact p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 /* ===== FOLLOW US SECTION ===== */
 
 .footer-follow {
-  margin-top: 40px;
-  padding-top: 25px;
+  margin-top: 35px;
+  padding-top: 20px;
   border-top: 1px solid #d4d4d4;
 }
 
@@ -258,7 +258,7 @@
 
 .follow-icons {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   overflow: visible;
 }
 

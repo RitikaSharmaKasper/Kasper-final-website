@@ -61,7 +61,7 @@ const scrollToServices = () => {
   
 {/* Parent Container to hold both Text and Image side-by-side */}
 {/* Parent: flex-row with items-start to keep text at top */}
-<div className="flex flex-row md:flex-row flex-col items-start justify-between w-full max-w-[1922px] mx-auto px-4 md:px-8 lg:px-20 pt-2 overflow-visible">
+<div className="hero-grid-wrapper flex flex-row md:flex-row flex-col items-start justify-between w-full max-w-[1922px] mx-auto px-4 md:px-8 lg:px-20 pt-2 overflow-visible">
   
   {/* LEFT SIDE: Text Content */}
   {/* Changed w-full to w-fit so it only takes the space it needs for the single line */}

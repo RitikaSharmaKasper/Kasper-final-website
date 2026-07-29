@@ -38,7 +38,7 @@ text-align: center;
 /* --- Sizes 1000px - 800px --- */
 @media (max-width: 1000px) and (min-width: 801px) {
   .Badge-title {
-    font-size: 3.5rem !important;
+    font-size: 48px !important;
   }
   .Badge-container {
     padding-left: 40px !important;
@@ -80,11 +80,15 @@ text-align: center;
   }
   .btn-outline {
     padding: 10px 20px !important;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
   }
   .btn-primary {
     padding: 10px 20px !important;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight:400;
+
+
   }
 }
 
@@ -133,10 +137,13 @@ line-height: 120%;
   .btn-outline,  .google-reviews {
     width: 100% !important;
     justify-content: center;
+      font-weight: 400;
+     
   }
   .btn-primary {
     width: 100% !important;
     justify-content: center;
+    font-weight:400;
   }
 }
 .diamond-half-clip {
@@ -170,10 +177,12 @@ padding-left: 16px;
 }
 .btn-outline {
   border: 2px solid #002D2D !important;
-  color: #002D2D !important;
+  color: rgba(0, 6, 61, 1)!important;
   background-color: transparent !important;
   padding: 8px 25px;
+   font-size:16px;
   min-width: 140px;
+    font-weight: 400;
 }
 
 .btn-outline:hover {
@@ -230,7 +239,7 @@ padding-left: 16px;
   margin-left: 8px;   
   padding-top: 1px;       
   padding-bottom: 1px;    
-  color: #374151;         
+  color: rgba(0, 6, 61, 1);         
   font-size:16px;  
   font-weight: 400;      
 }
@@ -238,8 +247,8 @@ padding-left: 16px;
 /* The Image inside */
 .expertise-icon {
   margin-right: 0px;      
-  height: 34px;           
-  width: 34px;            
+  height: 29px;           
+  width: 29px;            
   object-fit: contain;    
 }
 /* Title Styling */
@@ -256,10 +265,10 @@ padding-left: 16px;
 
 /* Subtitle Styling */
 .Badge-subtitle {
-  color: #334155;           
+  color:rgba(0, 6, 61, 1);           
   font-size: 16px;       
   line-height: 1.75rem;     
-  margin-bottom: 10px;      
+  margin-bottom: 18px;      
   max-width: 56rem;          
   text-align: left;         
 }
@@ -287,9 +296,10 @@ padding-left: 16px;
 
 .btn-outline {
   border: 1px solid #002D2D;  
-  color: #002D2D;            
+  color: rgba(0, 6, 61, 1);          
   background-color: transparent;
        padding:8px 25px;
+         font-weight: 400;
       min-width: 140px;
 
 }
@@ -301,17 +311,20 @@ padding-left: 16px;
 
 /* Primary Button Variation */
 .btn-primary {
-  background-color: #FF5733;  
+  background-color: rgba(250, 64, 40, 1);  
   color: #ffffff;             
-  border: 2px solid #FF5733;  
+  border: 2px solid rgba(250, 64, 40, 1);  
   padding: 8px 16px;
-      
+      font-weight:400;
+
                
 }
 
 .btn-primary:hover {
-  background-color: #E64A19;  
-  border-color: #E64A19;
+  background-color: rgba(250, 64, 40, 1);  
+  border-color: rgba(250, 64, 40, 1);
+  font-weight:400;
+  
 }
 
 /* Container with Responsive Margins */
@@ -406,7 +419,7 @@ padding-left: 16px;
     font-size: 16px !important;
   }
   .image-wrapper {
-    width: 800px !important;
+    width: 700px !important;
     height: 480px !important;
   }
   .badge-image-container {
@@ -440,7 +453,7 @@ padding-left: 16px;
   .Badge-subtitle {
     text-align: center !important;
     font-size: 16px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 17px !important;
   }
 
   
@@ -504,8 +517,9 @@ padding-left: 16px;
   }
   
   .btn-primary {
-    font-size: 12px !important;
+    font-size: 14px !important;
     padding:6px 9px !important;
+    font-weight:400;
 }
 }
 
@@ -646,13 +660,14 @@ padding-left: 16px;
 
   .btn-outline {
     padding: 7px 24px !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
     min-width: unset !important;
   }
 
   .btn-primary {
     padding: 7px 14px !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
+    font-weight:400;
     min-width: unset !important;
   }
 
@@ -695,7 +710,7 @@ padding-left: 16px;
     width: auto !important;
     min-width: unset !important;
     padding: 8px 16px !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
     justify-content: center !important;
   }
 
@@ -703,8 +718,9 @@ padding-left: 16px;
   .btn-primary {
     width: auto !important;
     min-width: unset !important;
+    font-weight:400;
     padding: 8px 16px !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
     justify-content: center !important;
   }
   .google-reviews {
@@ -731,14 +747,15 @@ padding-left: 16px;
     min-width: unset !important;
     box-sizing: border-box !important;
     padding: 8px 14px !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 .btn-primary {
+  font-weight:400;
     width: auto !important;
     min-width: unset !important;
     box-sizing: border-box !important;
     padding: 8px 14px !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   .google-reviews {
     width: auto !important;
@@ -762,16 +779,17 @@ padding-left: 16px;
 
   .btn-primary {
     width: auto !important;
+    font-weight:400;
     min-width: unset !important;
     padding: 7px 12px !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
   } 
   .btn-outline
    {
     width: auto !important;
     min-width: unset !important;
     padding: 7px 12px !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
   }
 
 
@@ -795,8 +813,9 @@ padding-left: 16px;
   .btn-primary {
     width: auto !important;
     min-width: unset !important;
+    font-weight:400;
     padding: 6px 10px !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
   }
 
  
@@ -805,6 +824,7 @@ padding-left: 16px;
     min-width: unset !important;
     padding: 6px 10px !important;
     font-size: 11px !important;
+    font-weight: 400;
   }
   .google-reviews {
     width: auto !important;
@@ -842,15 +862,15 @@ padding-left: 16px;
    ══════════════════════════════ */
 @media (min-width: 1441px) {
   .Badge-container {
-    margin-left:45px !important;
+    margin-left:48px !important;
     margin-top: 10px !important;
   }
   .Badge-title {
-    font-size: 3rem !important;
+    font-size: 48px !important;
         margin-left:0px !important;
   }
   .image-wrapper {
-    width: 1200px !important;
+    width: 1140px !important;
     height: 584px !important;
   }
   
@@ -915,7 +935,7 @@ padding-left: 16px;
   .Badge-subtitle {
     font-size:16px !important;
     max-width: 460px !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 10px !important;
   }
   .badge-image-container {
     margin-left: 30px !important;
@@ -988,3 +1008,148 @@ padding-left: 16px;
     transform: translateY(-4px);
   }
 }
+
+
+
+
+/* Fix broken negative margins that only make sense in the old flex layout.
+   Scoped to .hero-grid-wrapper so mobile and anything outside the grid is untouched. */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .hero-grid-wrapper .Badge-container {
+    margin-top:95px!important;
+    margin-left: 9 !important;
+  }
+  .hero-grid-wrapper .badge-image-container {
+    margin-top: 70px !important;
+    margin-left: 0 !important;
+  }
+  .hero-grid-wrapper .image-wrapper {
+    width: 115% !important;
+    height: auto !important;
+    max-width: 606px;
+  }
+
+
+
+    .Badge-title {
+        font-size: 2.45rem !important;
+         margin-left: -5rem !important; 
+        white-space: normal !important;
+         width: 900px !important;
+  
+    }}
+
+@media (min-width: 1441px) {
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 40px !important;
+    margin-left: 15px !important;
+  }
+  .hero-grid-wrapper .badge-image-container {
+    margin-top: 40px !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 40px !important;
+    margin-left: 0 !important;
+  }
+  .hero-grid-wrapper .badge-image-container {
+    margin-top: 40px !important;
+    margin-left: 0 !important;
+  }
+}
+
+
+
+/* ══════════════════════════════════════════════
+   COMPLETE TABLET FIX (768px – 1024px)
+   Scoped to .hero-grid-wrapper, placed last so it
+   overrides all earlier conflicting tablet rules.
+   Mobile (<768px) and desktop (>1024px) untouched.
+   ══════════════════════════════════════════════ */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .hero-grid-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 280px !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding-top: 24px !important;
+  }
+
+  /* Text column */
+  .hero-grid-wrapper .Badge-container {
+    margin-left: 0 !important;
+    margin-top: 30px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .hero-grid-wrapper .badge-wrapper {
+    flex-wrap: wrap !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  .hero-grid-wrapper .Badge-title {
+    font-size: 2rem !important;
+    white-space: normal !important;
+    max-width: 100% !important;
+    margin: 8px 0 !important;
+  }
+
+  .hero-grid-wrapper .Badge-subtitle {
+    font-size: 0.95rem !important;
+    max-width: 100% !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero-grid-wrapper .Badge-actions {
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .hero-grid-wrapper .btn-outline,
+  .hero-grid-wrapper .btn-primary {
+    padding: 8px 50px !important;
+    font-weight:400;
+    font-size: 16px !important;
+    min-width: unset !important;
+  }
+
+  .hero-grid-wrapper .google-reviews {
+    font-size: 12px !important;
+    padding: 8px 12px !important;
+  }
+
+  /* Image column */
+  .hero-grid-wrapper .badge-image-container {
+     margin-left: 5px !important; 
+    width: 100% !important; 
+    margin-top:10px;
+margin-right:-49px;
+margin-bottom:-49px;
+    min-width: 0 !important;
+  }
+
+  .hero-grid-wrapper .image-wrapper {
+    width: 130% !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
+    max-width: 373px !important;
+    margin-left:5px;
+  }
+
+  .hero-grid-wrapper .diamond-half-clip {
+    width: 105% !important;
+    height: 96% !important;
+    object-fit: contain !important;
+    transform: rotate(-11deg) !important;
+    border-width: 6px !important;
+  }
+}
+

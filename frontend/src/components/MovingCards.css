@@ -15,7 +15,7 @@
 .cards-wrapper {
   position: relative;
   width: 2086px;
-  height: 636px;
+  height: 645px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,6 +122,7 @@
   -webkit-text-fill-color: transparent;
   font-family: Sora;
   font-weight: 600;
+  
   font-size: 32px;
   line-height: 100%;
   letter-spacing: 0%;

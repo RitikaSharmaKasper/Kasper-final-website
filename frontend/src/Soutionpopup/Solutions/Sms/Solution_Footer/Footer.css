@@ -191,14 +191,14 @@ min-height: 817px;
 .footer-contact p {
   font-size: 15px;
   color: #6b7280;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
  /* ===== FOLLOW US SECTION ===== */
 
 .footer-follow {
-  margin-top: 40px;
-  padding-top: 25px;
+  margin-top: 35px;
+  padding-top: 20px;
   border-top: 1px solid #d4d4d4;
 }
 

@@ -169,7 +169,7 @@
 .why-feature {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 10px;
 }
 
 .why-feature img {
@@ -199,7 +199,7 @@
   line-height: 1.4;
   width: 100%;
   margin: 0;
-  font-weight: 400;
+  font-weight: 400;margin-bottom:5px;
 }
 
 /* ================= VISIBILITY ================= */

@@ -18,7 +18,7 @@
     padding: 6px 12px;     /* lambe text (About Us) ke liye extra room, isi se cutting nahi hogi */
     box-sizing: border-box;
 
-    color: #00063D;
+    color: rgba(0, 6, 61, 1);
     font-family: "Sora", sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -198,14 +198,14 @@ background-color: white;
 
 
 .btn-demo {
-  background-color: #ea580c; 
+  background-color: rgba(250, 64, 40, 1); 
   color: white;  margin-left:10px;
   margin-right:15px;
     font-family: "Sora";
 }
 
 .btn-demo:hover {
-  background-color: #c2410c; 
+  background-color: rgba(250, 64, 40, 1); 
 }
 
 /* Responsive */

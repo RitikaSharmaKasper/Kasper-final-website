@@ -22,7 +22,7 @@
 /* HEADING */
 .hero-heading {
   font-family: "Sora", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 48px;
   /* line-height: ; */
   color: #1b1270;
@@ -339,8 +339,8 @@
 /* TITLE */
 .featured-title {
   font-family: "Sora", sans-serif;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 400;
   line-height: 1.4;
   color: #00063d;
   margin: 0 0 14px;

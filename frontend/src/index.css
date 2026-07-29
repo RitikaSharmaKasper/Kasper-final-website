@@ -59,9 +59,10 @@ body::-webkit-scrollbar {
 }
 
 .features-heading, .why-main-heading {
-  font-size: clamp(22px, 4vw, 36px) !important;
-  font-weight: 600 !important;
-  margin-bottom: clamp(30px, 5vw, 60px) !important;
+  font-size: "20px";
+color:rgba(0, 6, 61, 1);
+  font-weight: 400 !important;
+  margin-bottom: clamp(30px, 5vw, 30px) !important;
   text-align: center !important;
 }
 
@@ -80,9 +81,11 @@ body::-webkit-scrollbar {
 }
 
 .feature-card-title {
-  font-size: clamp(16px, 2vw, 18px) !important;
-  font-weight: 600 !important;
-  margin-bottom: 10px !important;
+ font-weight:400;
+  font-size:14px;
+  margin-top:7px;
+  color:rgba(58,43,43,1);
+  margin-bottom: 5px !important;
 }
 
 .feature-card-description {
@@ -98,13 +101,15 @@ body::-webkit-scrollbar {
 }
 
 .why-feature h4 {
-  font-size: clamp(17px, 2.5vw, 21px) !important;
-  font-weight: 600 !important;
+  font-size:"16px";
+  color:rgba(48, 43, 58, 1);
+  font-weight: 400 !important;
 }
 
 .why-feature p {
-  font-size: clamp(14px, 2vw, 16px) !important;
-  line-height: 1.6 !important;
+  font-size: "14px";
+  color:rgba(125, 125, 125, 1);
+  line-height: 1.5 !important;
 }
  
 /* 

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import { useNavigate } from "react-router-dom";
 import "./Demopopup.css";
-import { FaUser, FaEnvelope, FaTimes } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaTimes ,FaBriefcase, FaBuilding } from "react-icons/fa";
 import axios from "axios";
 import toast from "react-hot-toast";
 import demo from "../assets/images2/demo.png";
@@ -193,7 +193,7 @@ const Demopopup = ({ isOpen, onClose }) => {
                   />
                 </div>
               </div>
-
+<div className="form-row">
               <div className="form-group">
                 <label>Designation<span>*</span></label>
                 <div className="input-with-icon">
@@ -229,7 +229,7 @@ const Demopopup = ({ isOpen, onClose }) => {
                   />
                 </div>
               </div>
-
+</div>
               <div className="form-row">
                 <div className="form-group">
                   <label>Email Id<span>*</span></label>

@@ -107,12 +107,14 @@ pointer-events:none;
 /* ══ LARGE DESKTOP (1280px+) ══ */
 @media (min-width: 1280px) {
   .Main-review-div {
-    padding: 1px 51px !important;
+    padding: 20px 51px !important;
     margin: 0 auto !important;
   }
   .review-heading .heading-p {
     font-size: 18px !important;
-    margin-bottom: 40px !important;
+    margin-bottom: 28px !important;
+  
+    color:rgba(0, 6, 61, 1);
   }
   .review-container {
     grid-template-columns: repeat(5, 1fr) !important;
@@ -124,11 +126,13 @@ pointer-events:none;
 /* ══ SMALL DESKTOP (1025px – 1279px) ══ */
 @media (min-width: 1025px) and (max-width: 1279px) {
   .Main-review-div {
-    padding: 1px 32px !important;
+    padding: 20px 32px !important;
   }
   .review-heading .heading-p {
     font-size: 16px !important;
-    margin-bottom: 32px !important;
+    margin-bottom: 34px !important;
+      
+    color:rgba(0, 6, 61, 1);
   }
   .review-container {
     grid-template-columns: repeat(5, 1fr) !important;
@@ -140,11 +144,12 @@ pointer-events:none;
 /* ══ TABLET LANDSCAPE (900px – 1024px) ══ */
 @media (min-width: 900px) and (max-width: 1024px) {
   .Main-review-div {
-    padding: 2px 24px !important;
+    padding: 20px 24px !important;
   }
   .review-heading .heading-p {
     font-size: 16px !important;
-    margin-bottom: 28px !important;
+    margin-bottom: 27px !important;
+      color: rgba(0, 6, 61, 1);
   }
   .review-container {
     grid-template-columns: repeat(4, 1fr) !important;
@@ -160,11 +165,12 @@ pointer-events:none;
 /* ══ TABLET PORTRAIT (768px – 899px) ══ */
 @media (min-width: 768px) and (max-width: 899px) {
   .Main-review-div {
-    padding: 3px 20px !important;
+    padding: 20px 20px !important;
   }
   .review-heading .heading-p {
     font-size: 16px !important;
-    margin-bottom: 24px !important;
+    margin-bottom: 27px !important;
+    color:rgba(0, 6, 61, 1);
   }
   .review-container {
     grid-template-columns: repeat(3, 1fr) !important;
@@ -180,7 +186,7 @@ pointer-events:none;
 /* ══ MOBILE ALL SIZES — COMPLETE FIX ══ */
 @media (max-width: 767px) {
   .Main-review-div {
-    padding: 28px 10px !important;
+    padding: 29px 10px !important;
     width: 100% !important;
     overflow: hidden !important;
   }
@@ -242,7 +248,7 @@ pointer-events:none;
 /* ══ iPHONE 14 (390px – 430px) ══ */
 @media (max-width: 430px) and (min-width: 390px) {
   .Main-review-div {
-    padding: 24px 10px !important;
+    padding: 28px 10px !important;
   }
   .review-container {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -283,7 +289,7 @@ pointer-events:none;
 /* ══ SMALL PHONES (max 389px) ══ */
 @media (max-width: 389px) {
   .Main-review-div {
-    padding: 20px 8px !important;
+    padding: 23px 8px !important;
   }
   .review-container {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -323,7 +329,7 @@ pointer-events:none;
 /* ══ EXTRA SMALL (max 360px) ══ */
 @media (max-width: 360px) {
   .Main-review-div {
-    padding: 16px 6px !important;
+    padding: 19px 6px !important;
   }
   .review-container {
     grid-template-columns: repeat(2, 1fr) !important;
