@@ -63,7 +63,7 @@ const Blogs = () => {
 if(loading || blogs.length === 0) {
     return (
       <div className="Blog-main-div">
-        <p className="blog-heading">Insights & Blogs</p>
+           <p className="blog-heading">Latest Blogs</p>
         <div className="slider-wrapper">
           <div className="blog-scroll-container">
             {[1, 2, 3, 4].map((i) => (
@@ -85,7 +85,7 @@ if(loading || blogs.length === 0) {
 
   return (
     <div className="Blog-main-div">
-      <p className="blog-heading">Insights & Blogs</p>
+         <p className="blog-heading">Latest Blogs</p>
       <div className="slider-wrapper">
         <button className="arrow-left" onClick={scrollLeft}>
     ❮

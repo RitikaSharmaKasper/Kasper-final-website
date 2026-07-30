@@ -18,8 +18,10 @@
 .services-connector {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  max-width: 1280px;
   height: 0;
   pointer-events: none;
   z-index: 5;
@@ -60,7 +62,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 205px;         
-  width: 870px;     
+  width: calc(66.666% - 10.66px);     
   height: 2px;
   background: #ebebeb;
   overflow: hidden;
@@ -95,8 +97,8 @@
 @keyframes cometSpreadRight {
   0%, 24%     { left: 50%; transform: translateX(-50%); opacity: 0; }
   25%         { left: 50%; transform: translateX(-50%); opacity: 1; }
-  60%         { left: 870px; transform: translateX(0); opacity: 1; }
-  61%, 100%   { left: 870px; opacity: 0; }
+  60%         { left: 100%; transform: translateX(0); opacity: 1; }
+  61%, 100%   { left: 100%; opacity: 0; }
 }
 
 .svc-drop {
@@ -108,11 +110,11 @@
   overflow: hidden;
 }
 
-.services-connector .svc-drop:nth-child(3) { left: calc(50% - 435px); transform: translateX(-50%); }
+.services-connector .svc-drop:nth-child(3) { left: calc(16.666% + 5.33px); transform: translateX(-50%); }
 
 .services-connector .svc-drop:nth-child(4) { left: 50%; transform: translateX(-50%); }
 
-.services-connector .svc-drop:nth-child(5) { left: calc(50% + 435px); transform: translateX(-50%); }
+.services-connector .svc-drop:nth-child(5) { left: calc(83.333% - 5.33px); transform: translateX(-50%); }
 
 .svc-drop::after {
   content: "";
@@ -138,14 +140,10 @@
 }
 
 
-@media (min-width: 1025px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .svc-stem  { top: 110px; height: 95px; }
-  .svc-hbar  { top: 205px; width: 730px; }
+  .svc-hbar  { top: 205px; }
   .svc-drop  { top: 207px; height: 65px; }
-
-  .services-connector .svc-drop:nth-child(3) { left: calc(50% - 350px); }
-  .services-connector .svc-drop:nth-child(5) { left: calc(50% + 350px); }
- 
 } 
 
 

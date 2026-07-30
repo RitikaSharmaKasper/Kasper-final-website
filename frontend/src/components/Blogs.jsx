@@ -99,7 +99,30 @@ if(loading || blogs.length === 0) {
             <div className="blog-card" key={blog._id}>
               <Link to={`/blog/${blog.slug}`} className="blog-img-link">
               <div className="blog-img">
-                <img src={blog.thumbnail} alt={blog.title} />
+           <img 
+  src={blog.thumbnail} 
+  alt={blog.title} 
+  className="blog-image"
+  onError={(e) => {
+    // Hide the broken image and show alt text centered
+    e.target.style.display = 'flex';
+    e.target.style.alignItems = 'center';
+    e.target.style.justifyContent = 'center';
+    e.target.style.textAlign = 'center';
+    e.target.style.background = '#f5f5f5';
+    e.target.style.color = '#666';
+    e.target.style.fontFamily = "Sora";
+    e.target.style.fontSize = '14px';
+     e.target.style.padding = '16px';
+    e.target.style.minHeight = '200px';
+    e.target.style.width = '100%';
+    e.target.style.objectFit = 'none';
+    // Set the alt text as content
+    e.target.innerText = e.target.alt;
+    // Remove the src to prevent broken image icon
+    e.target.src = '';
+  }}
+/>
               </div></Link>
               
               <div className="blog-content">

@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
 .services-popup{
   max-width:1342px;
   width:100%;
@@ -33,7 +37,7 @@
 }
 
 .popup-image img{
-  width:100%;
+  /* width:100%; */
   height:auto;
   object-fit:contain;
 }
@@ -75,8 +79,9 @@
   display:flex;
   align-items:center;
   gap:6px;
+  font-weight: 400;
   text-decoration:none;
-  font-size:16px;
+  font-size:14px;
   color:rgba(0,6,61,1);
 }
 
@@ -109,9 +114,11 @@
 }
 
 .popup-card p{
-  font-size:14px;
+  font-size:13px;
   color:rgba(0,6,61,0.5);
   margin:10px 0;
+  line-height: 1.45;
+  margin-top: 2px;
 }
 
 
@@ -128,7 +135,7 @@
   align-items:center;
   gap:6px;
   text-decoration:none;
-  font-size:16px;
+  font-size:14px;
   color:rgba(0,6,61,1);
 }
 
@@ -213,7 +220,7 @@ filter:none!important;
 }
 
 .popup-image { width: 425px; }
-.popup-image img { width: 100%; height: auto; }
+.popup-image img { height: auto; }
 
 .popup-cards {
   display: grid;
@@ -235,7 +242,19 @@ filter:none!important;
 }
 
 
+/* For screens between 1537px and 1600px */
+@media (min-width: 1537px) and (max-width: 1600px) {
+    .services-popup-modal {
+        margin-top: -40px;
+    }
+}
 
+/* For screens above 1600px */
+@media (min-width: 1601px) {
+    .services-popup-modal {
+        margin-top: -140px;
+    }
+}
 
 
 
@@ -269,27 +288,66 @@ filter:none!important;
 /* 1280px – 1439px */
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .services-popup-modal {
-    margin-top: 47px !important;
+    margin-top: 41px !important;
   }
 }
 
 /* 1440px – 1536px */
 @media screen and (min-width: 1440px) and (max-width: 1536px) {
   .services-popup-modal {
-    margin-top: -106px !important;
+    margin-top: -62px !important;
   }
 }
 
 /* 1537px aur upar */
-@media (min-width: 1537px) {
+/* @media (min-width: 1537px) {
   .services-popup-modal {
     margin-top: -120px;
   }
+} */
+
+
+
+@keyframes sp-backdrop-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
+@keyframes sp-backdrop-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
+@keyframes sp-content-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.modal-backdrop {
+  animation: sp-backdrop-fade 0.5s ease-out forwards;
+}
 
+/* Modal box turant/instant aayega — koi animation nahi */
+.services-popup-modal {
+  /* animation yahan nahi */
+}
+
+/* In dono existing divs pe animation — koi naya div nahi banaya */
+.popup-top {
+  animation: sp-content-slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.popup-cards {
+  animation: sp-content-slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.08s;
+  /* thoda opacity 0 rakha jaye shuru mein taaki animation start hone se pehle na dikhe */
+  opacity: 0;
+}
 
 
 
@@ -367,7 +425,7 @@ filter:none!important;
 }
 
 .popup-image img{
-  width:100%;
+  /* width:100%; */
   height:auto;
   object-fit:contain;
 }
@@ -446,20 +504,20 @@ filter:none!important;
   height: 255px; /* Adjust as needed */
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+
 }
 
 /* Red Gradient + Grid Pattern Logic */
 .service-gradient-bg {
   width: 100%;
   height: 100%;
-  padding: 25px;
+  padding: 12px;
   position: relative;
   
   /* Layer 1: The Red Gradient */
   /* Layer 2: The Grid Lines (using repeating-linear-gradient) */
   background: 
-    linear-gradient(135deg, #e30613 0%, #9e040b 100%), /* Primary Red Gradient */
+    linear-gradient(135deg, #E90000 0%, #830000 100%), /* Primary Red Gradient */
     repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(255,255,255,0.05) 20px), /* Horizontal Grid */
     repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(255,255,255,0.05) 20px); /* Vertical Grid */
   
@@ -467,32 +525,48 @@ filter:none!important;
   display: flex;
   flex-direction: column;
 }
-
+.service-gradient-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images2/services-bg.svg");
+  background-size: cover;   /* ya "auto" agar tile pattern chahiye */
+  background-repeat: repeat; /* agar grid ek chhota tile hai to repeat rakho */
+  opacity: 0.9;             /* Figma jaisa hi 26% */
+  mix-blend-mode: plus-lighter;
+  pointer-events: none;      /* clicks ko block na kare */
+  z-index: 0;
+}
 /* Typography */
 .gradient-title {
   color: #ffffff;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 12px;
-  font-family: 'Sora', sans-serif;
+  font-size: 31.5px;
+  font-weight: 500;
+  line-height: 1.0;
+  margin-bottom: 9px;
+  font-family:'Unbounded',sans-serif;
   max-width: 80%;
 }
 
 .gradient-subtitle {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 13px;
-  line-height: 1.4;
-  max-width: 70%;
-  font-family: 'Sora', sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 1.2;
+  max-width: 60%;
+  margin-left:6px;
+  font-weight:400;
+  font-family: 'Sora';
 }
 
 /* Graphics Positioning (Bottom Right) */
-.graphics-container {
+.graphics-container {     
   position: absolute;
-  bottom: -10px;
-  right: -10px;
-  width: 220px; /* Adjust size based on your assets */
+  bottom: 4px;
+  right: 4px;
+  width: 209px; /* Adjust size based on your assets */
 }
 
 .img-frame {
@@ -501,28 +575,155 @@ filter:none!important;
   z-index: 1;
 }
 
-.img-computer {
-  width: 80%;
+
+.whiteimg-frame {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-45%, -55%); /* Isometric adjustment */
-  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  mix-blend-mode: color-dodge;
+  pointer-events: none;
+  filter: brightness(0.75);   /* NAYA — is line se background color "through" aayega */
+  opacity: 1;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
 }
 
+
+
+
+.img-computer {
+  width: 47%;
+  position: absolute;
+  top: 14%;
+  left: 25%;
+  
+ /* Isometric adjustment */
+  z-index: 3;
+}
 /* Contact Us Button (Bottom Left) */
 .contact-wrapper {
   position: absolute;
-  bottom: 20px;
-  left: 25px;
+  bottom: 23px;
+  background-color: #ffffff;
+  left: 15px;
+  
+  padding: 1px 1px 2px 2px;
+
+  
+  /* GPU acceleration - prevents blur */
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  
+  /* Smooth animation */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.3s ease;
+  transform-origin: bottom left;
+}
+
+.contact-wrapper:hover {
+  transform: scale(1.1) translate3d(0, 0, 0);
+  -webkit-transform: scale(1.1) translate3d(0, 0, 0);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .contact-img {
-  height: 35px; /* Matches the "Contact Us" pill size */
+  height: 35px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  display: block;
+  
+  /* Critical for no blur */
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  /* Better image rendering */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
-.contact-img:hover {
-  transform: translateY(-2px);
+
+
+
+
+
+
+
+/* Smooth transition ke liye pehle transition property daalo */
+.text-content {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  font-size: 36px;
+}
+
+.img-computer {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+
+.img-frame {
+  transform: scale(0.97);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+
+/* ===== HOVER EFFECTS — poore .service-gradient-bg pe hover hote hi sab react karenge ===== */
+
+.text-content {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: left center;   /* NAYA — left se scale hoga, isliye jagah nahi badlegi */
+}
+
+/* Text left+down move wala rule HATA DIYA — ab sirf scale hoga */
+.service-gradient-bg:hover .text-content {
+  transform: scaleX(1.05);   /* sirf horizontal scale, koi translate nahi */
+}
+/* Computer image bada hoga */
+.service-gradient-bg:hover .img-computer {
+  transform: scale(1.2);
+}
+
+/* Both frames (white blend mode frame & coloured frame) hover together */
+.service-gradient-bg:hover .whiteimg-frame {
+  transform: scale(0.88);
+}
+
+.service-gradient-bg:hover .img-frame {
+  transform: scale(0.85);
+}
+
+/* NAYA — poore image pe hover hote hi contact button bhi scale ho */
+.service-gradient-bg:hover .contact-wrapper {
+  transform: scale(1.1) translate3d(0, 0, 0);
+  -webkit-transform: scale(1.1) translate3d(0, 0, 0);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Purana .contact-wrapper:hover bhi rakh sakte ho — button pe directly hover karne pe bhi kaam karega */
+.contact-wrapper:hover {
+  transform: scale(1.1) translate3d(0, 0, 0);
+  -webkit-transform: scale(1.1) translate3d(0, 0, 0);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* NAYA — text ka font-size bhi bada hoga hover pe */
+.service-gradient-bg:hover .text-content .gradient-title {
+  font-size: 32.25px; 
+  padding:1px;  /* apne current title size se thoda zyada rakho */
+}
+
+
+
+
+.service-gradient-bg:hover .gradient-subtitle {
+  transform: translateX(-1px);
+  font-size: 9.5px;
+  letter-spacing: 0.5px;
+  opacity: 1;
 }

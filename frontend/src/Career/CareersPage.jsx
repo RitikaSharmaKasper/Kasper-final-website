@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState ,useRef} from "react";
 import "./CareersPage.css";
 import { Helmet } from "react-helmet-async";
-
+import search from "../assets/images2/search.svg";
 
 const jobsData = [
   // {
@@ -210,9 +210,7 @@ useEffect(()=>{
               Work on real products that solve real business problems.
             </p>
 
-            <div className="careers-filters">
-             <div className="careers-filters">
-  
+        <div className="careers-filters">
   {/* Custom Dropdown Start */}
   <div className="custom-product-select" ref={dropdownRef}>
     <div
@@ -220,10 +218,10 @@ useEffect(()=>{
       onClick={() => setShowDropdown((prev) => !prev)}
     >
       <span className="product-selected-label">
-       {selectedDepartment !== "All Departments" 
-    ? selectedDepartment 
-    : <span className="product-placeholder">Select Department</span>
-  }
+        {selectedDepartment !== "All Departments" 
+          ? selectedDepartment 
+          : <span className="product-placeholder">Select Department</span>
+        }
       </span>
       <span className={`product-arrow ${showDropdown ? "rotated" : ""}`}>▾</span>
     </div>
@@ -239,7 +237,6 @@ useEffect(()=>{
               setShowDropdown(false);
             }}
           >
-           
             <span className="product-name">{dept.label}</span>
             {selectedDepartment === dept.label && (
               <span className="product-check">✓</span>
@@ -259,16 +256,24 @@ useEffect(()=>{
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
     />
-    <button type="button" className="search-btn">🔍</button>
+<button type="button" className="search-btn" style={{ padding: '8px 12px' }}>
+  <img 
+    src={search} 
+    alt="search" 
+    style={{ 
+      width: '20px', 
+      height: '20px',
+      margin: '0 4px'  /* Add margin to icon */
+    }} 
+  />
+</button>
   </div>
+
+  {/* Online Assessment Button - NOW IN SAME LINE */}
+  <a target="#" href="https://kasperinfotech.co/register">
+    <button className="assessment-btn">Online Assessment</button>
+  </a>
 </div>
-
-              
-
-              <a target="#" href="https://kasperinfotech.co/register">
-                <button className="assessment-btn">Online Assessment</button>
-              </a>
-            </div>
           </section>
 
           <section className="jobs-section">

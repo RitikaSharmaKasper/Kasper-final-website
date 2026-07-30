@@ -108,101 +108,113 @@ padding-top: 6px;
   align-items: center;
 }
 
-/* LEFT LINE */
+/* --- CARD BORDER FLOW (Single Line per Side) --- */
+
+/* LEFT LINE: Center -> Top Left -> Bottom Left */
 .service-card::before {
   content: "";
   position: absolute;
-  left: 1px;
-  top: 12px;
+  left: 50%;
+  top: 1px;
   width: 1px;
-  height: 110px;
-  background: linear-gradient(180deg, #fa0064 0%, #0a6cff 50%, #8907fb 100%);
-  animation: borderLoop 5s linear infinite;
+  height: 1px;
+  background: linear-gradient(270deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+  animation: borderLeftFlow 4s linear infinite;
   z-index: 20;
   pointer-events: none;
 }
 
-@keyframes borderLoop {
-  /* left side: top -> bottom */
+/* RIGHT LINE: Center -> Top Right -> Bottom Right */
+.service-card::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 1px;
+  width: 1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+  animation: borderRightFlow 4s linear infinite;
+  z-index: 20;
+  pointer-events: none;
+}
+
+@keyframes borderLeftFlow {
   0% {
-    left: 1px;
-    top: 12px;
-    width: 1px;
-    height: 110px;
-    background: linear-gradient(180deg, #fa0064 0%, #0a6cff 50%, #8907fb 100%);
+    left: 50%; top: 1px; width: 1px; height: 1px;
+    background: linear-gradient(270deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+    opacity: 0;
   }
-
-  25% {
-    left: 1px;
-    top: calc(100% - 122px);
-    width: 1px;
-    height: 110px;
-    background: linear-gradient(180deg, #fa0064 0%, #0a6cff 50%, #8907fb 100%);
+  10% {
+    left: calc(50% - 110px); top: 1px; width: 110px; height: 1px;
+    background: linear-gradient(270deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+    opacity: 1;
   }
-
-  /* bottom side: left -> right */
-  26% {
-    left: 12px;
-    top: calc(100% - 2px);
-    width: 1px;
-    height: 1px;
-    background: linear-gradient(90deg, #fa0064 0%, #0a6cff 50%, #8907fb 100%);
+  40% {
+    left: 1px; top: 1px; width: 110px; height: 1px;
+    background: linear-gradient(270deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
   }
-
-  50% {
-    left: calc(100% - 122px);
-    top: calc(100% - 2px);
-    width: 110px;
-    height: 1px;
-    background: linear-gradient(90deg, #fa0064 0%, #0a6cff 50%, #8907fb 100%);
+  45% {
+    left: 1px; top: 1px; width: 1px; height: 1px;
+    background: linear-gradient(270deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
   }
-
-  /* right side: bottom -> top */
-  51% {
-    left: calc(100% - 1px);
-    top: calc(100% - 12px);
-    width: 1px;
-    height: 1px;
-    background: linear-gradient(180deg, #8907fb 0%, #0a6cff 50%, #fa0064 100%);
+  46% {
+    left: 1px; top: 1px; width: 1px; height: 1px;
+    background: linear-gradient(180deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
   }
-
-  75% {
-    left: calc(100% - 2px);
-    top: 12px;
-    width: 1px;
-    height: 110px;
-    background: linear-gradient(180deg, #8907fb 0%, #0a6cff 50%, #fa0064 100%);
+  55% {
+    left: 1px; top: 1px; width: 1px; height: 110px;
+    background: linear-gradient(180deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
   }
-
-  /* top side: right -> left */
-  76% {
-    left: calc(100% - 1px);
-    top: 1px;
-    width: 1px;
-    height: 1px;
-    background: linear-gradient(90deg, #8907fb 0%, #0a6cff 50%, #fa0064 100%);
+  90% {
+    left: 1px; top: calc(100% - 110px); width: 1px; height: 110px;
+    background: linear-gradient(180deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+    opacity: 1;
   }
-
   100% {
-    left: 12px;
-    top: 1px;
-    width: 110px;
-    height: 1px;
-    background: linear-gradient(90deg, #8907fb 0%, #0a6cff 50%, #fa0064 100%);
+    left: 1px; top: 100%; width: 1px; height: 1px;
+    background: linear-gradient(180deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+    opacity: 0;
   }
 }
 
-/* RIGHT LINE */
-/* .service-card::after{
-  content:"";
-  position:absolute;
-  right:0;
-  top:0;
-  width:1px;
-  height:110px;
-
-  background:linear-gradient(180deg,#FA0064 0%,#0A6CFF 50%,#8907FB 100%);
-} */
+@keyframes borderRightFlow {
+  0% {
+    right: 50%; top: 1px; width: 1px; height: 1px;
+    background: linear-gradient(90deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+    opacity: 0;
+  }
+  10% {
+    right: calc(50% - 110px); top: 1px; width: 110px; height: 1px;
+    background: linear-gradient(90deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+    opacity: 1;
+  }
+  40% {
+    right: 1px; top: 1px; width: 110px; height: 1px;
+    background: linear-gradient(90deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+  }
+  45% {
+    right: 1px; top: 1px; width: 1px; height: 1px;
+    background: linear-gradient(90deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+  }
+  46% {
+    right: 1px; top: 1px; width: 1px; height: 1px;
+    background: linear-gradient(180deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+  }
+  55% {
+    right: 1px; top: 1px; width: 1px; height: 110px;
+    background: linear-gradient(180deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+  }
+  90% {
+    right: 1px; top: calc(100% - 110px); width: 1px; height: 110px;
+    background: linear-gradient(180deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+    opacity: 1;
+  }
+  100% {
+    right: 1px; top: 100%; width: 1px; height: 1px;
+    background: linear-gradient(180deg, transparent, #fa0064 20%, #0a6cff 60%, #8907fb 90%, transparent);
+    opacity: 0;
+  }
+}
 
 .image-container-grow {
   display: grid;

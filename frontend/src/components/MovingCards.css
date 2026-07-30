@@ -144,7 +144,8 @@
     height: 72px !important;
     white-space: nowrap !important;
   }
-  .center-text p { font-size: 32px !important; }
+  .center-text p { font-size: 32px !important; font-weight: 600;
+   }
 }
 
 /* ══ SMALL DESKTOP  */

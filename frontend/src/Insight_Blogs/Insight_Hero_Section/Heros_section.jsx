@@ -8,7 +8,7 @@ const Heros_section = ({ latestBlog }) => {
   return (
     <section className="Heros_section">
       <div className="hero-top">
-        <h1 className="hero-heading">Insights & Blogs</h1>
+        <h1 className="hero-headinginside">Insights & Blogs</h1>
 
         <p className="hero-paragraph">
           Latest updates, strategies, and insights from tech and digital

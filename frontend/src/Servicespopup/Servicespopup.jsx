@@ -4,7 +4,9 @@ import "./Servicespopup.css";
 import Services_popupimg from "../assets/images/Services_popupimg.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import colouredserviceframe from "../assets/images2/coloured-serviceframe.svg";
-import servicescontact from "../assets/images2/services-contact.png";
+
+import whitecolouredserviceframe from "../assets/images2/whiteservice-bg.svg";
+import servicescontact from "../assets/images2/services-contact.svg";
 import computer  from "../assets/images2/Computer.svg"
 //  import servicesgradientimg from "../assets/images2/servicesgradientimg.svg"
 const Servicespopup = ({ isOpen, onClose, type }) => {
@@ -25,8 +27,9 @@ const Servicespopup = ({ isOpen, onClose, type }) => {
       <div className="modal-backdrop" onClick={onClose}></div>
 
       {/* 2. Content Box: Jo beech mein floating dikhega */}
-      <section className="services-popup-modal animate-in fade-in zoom-in duration-300">
-        
+      <section className="services-popup-modal ">
+   
+
         {/* Top Section */}
         <div className="popup-top">
           <div className="popup-image">
@@ -42,10 +45,11 @@ const Servicespopup = ({ isOpen, onClose, type }) => {
 
     {/* Graphics Layering */}
     <div className="graphics-container">
+       <img src={whitecolouredserviceframe} alt=""  className="whiteimg-frame"/>
       {/* Red Dashed Frame (Peeche) */}
       <img src={colouredserviceframe} alt="" className="img-frame" />
-      {/* Computer Isometric (Upar) */}
-      <img src={computer} alt="" className="img-computer" />
+   
+      <img src={computer} alt="" className="img-computer" /> 
     </div>
 
     {/* Contact Button Image (Bottom Left) */}
@@ -89,9 +93,9 @@ const Servicespopup = ({ isOpen, onClose, type }) => {
 
           {/* Card 1 */}
           <div className="popup-card">
-            <h3>Microsoft Dynamics 365 Implementation Services</h3>
+            <div className="text-[16px] text-[#00063D] font-[400]">Microsoft Dynamics 365 Implementation Services</div>
 
-            <p>
+            <p >
               Unify your sales, finance, and operations on a single intelligent platform.
             </p>
 
@@ -130,7 +134,7 @@ const Servicespopup = ({ isOpen, onClose, type }) => {
           {/* Card 2 */}
           <div className="popup-card">
 
-            <h3>Managed Services</h3>
+            <div className="text-[16px] text-[#00063D] font-[400]">Managed Services</div>
 
             <p>
               Seamless Microsoft Dynamics 365 implementation and managed services
@@ -164,7 +168,7 @@ const Servicespopup = ({ isOpen, onClose, type }) => {
           {/* Card 3 */}
           <div className="popup-card">
 
-            <h3>Advisory Services</h3>
+            <div className="text-[16px] text-[#00063D] font-[400]">Advisory Services</div>
 
             <p>
               Expert advisory and implementation services to deploy Microsoft
@@ -191,7 +195,7 @@ const Servicespopup = ({ isOpen, onClose, type }) => {
           {/* Card 4 */}
           <div className="popup-card">
 
-            <h3>Add-On Solutions</h3>
+            <div  className="text-[16px] text-[#00063D] font-[400]">Add-On Solutions</div>
 
             <p>
               Customized Dynamics 365 implementation with powerful add-on solutions.
@@ -218,6 +222,7 @@ const Servicespopup = ({ isOpen, onClose, type }) => {
           </div>
 
         </div>
+      
       </section>
     </div>
   );

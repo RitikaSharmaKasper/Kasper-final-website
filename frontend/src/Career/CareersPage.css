@@ -28,9 +28,9 @@ body {
 
 .careers-title {
   margin: 0;
-  font-size: 54px;
+  font-size: 48px;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 600;
   color: #0c1654;
 }
 
@@ -38,6 +38,7 @@ body {
   margin: 8px 0 0;
   font-size: 16px;
   color: #28356d;
+  font-weight:400px;
 }
 
 .careers-filters {
@@ -84,7 +85,7 @@ body {
   width: 46px;
   height: 100%;
   border: none;
-  border-left: 1px solid #d2d6dc;
+
   background: #fff;
   cursor: pointer;
   font-size: 15px;
@@ -94,9 +95,11 @@ body {
   height: 42px;
   padding: 0 18px;
   border: none;
+  font-weight :400px;
   background: #ff4a2f;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "Sora";
   cursor: pointer;
 }
 
@@ -237,9 +240,10 @@ body {
 }
 
 /* Custom Product Dropdown (from your snippet) */
+/* Custom Product Dropdown */
 .custom-product-select {
   position: relative;
-  width: 280px; /* Specific width for Career Page */
+  width: 280px;
 }
 
 .product-selected {
@@ -249,11 +253,12 @@ body {
   padding: 11px 16px;
   background: #ffffff;
   border: 1.5px solid #e2e8f0;
-  border-radius: 12px;
+  border-radius: 0; /* ← NO border-radius */
   cursor: pointer;
-  font-family: "Sora", sans-serif; /* Fixed typo from your snippet */
+  font-family: "Sora", sans-serif;
   font-size: 14px;
   font-weight: 500;
+   border: 1px solid #d2d6dc;
   color: #333;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   transition: all 0.25s ease;
@@ -267,9 +272,51 @@ body {
   z-index: 9999;
   background: #fff;
   border: 1px solid #e2e8f0;
-  border-radius: 14px;
+  border-radius: 0; /* ← NO border-radius */
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
   padding: 6px;
 }
+
+.product-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  font-size: 14px;
+  color: #333;
+  border-radius: 0; /* ← NO border-radius */
+  transition: background 0.15s ease;
+}
+
+.product-option:hover {
+  background: #f1f5f9;
+}
+
+.product-option.active {
+  background: #eef2ff;
+  color: #1f2a44;
+}
+
+.product-check {
+  color: #0d78ff;
+  font-weight: 600;
+}
+
+.product-placeholder {
+  color: #aaa;
+}
+
+.product-arrow {
+  transition: transform 0.25s ease;
+  font-size: 12px;
+  color: #888;
+}
+
+.product-arrow.rotated {
+  transform: rotate(180deg);
+}
+
 
 /* ... (keep the rest of your provided CSS) */

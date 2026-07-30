@@ -64,7 +64,7 @@ const Services = () => {
 
   return (
     <section className="py-20 bg-white text-center relative overflow-visible service-section">
-      <h2 className=" text-[#002D2D] mb-40 services-we-offer">
+      <h2 className=" text-[#00063D] mb-40 services-we-offer">
         Services We Offer
       </h2>
 

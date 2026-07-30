@@ -12,11 +12,11 @@ gap: 24px;
 
 /* --- Default Desktop Styles --- */
 .Badge-title {
- font-family: "Sora", sans-serif;
+ font-family: "Sora";
 font-weight: 600;
 font-style: SemiBold;
 font-size: 48px;
-
+color: #003131;
 line-height: 120%;
 letter-spacing: 0%;
 text-align: center;
@@ -1115,7 +1115,7 @@ padding-left: 16px;
 
   .hero-grid-wrapper .btn-outline,
   .hero-grid-wrapper .btn-primary {
-    padding: 8px 50px !important;
+    padding: 8px 57px !important;
     font-weight:400;
     font-size: 16px !important;
     min-width: unset !important;

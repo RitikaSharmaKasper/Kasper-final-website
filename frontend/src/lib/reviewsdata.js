@@ -59,7 +59,7 @@ export const reviews = [
   },
   {
     id: 8,
-    name: "Sopha william",
+    name: "Sophia william",
     image: "https://randomuser.me/api/portraits/women/36.jpg",
     text: "Kasper Infotech Pvt Ltd delivered excellent website development services . The team was professional, skilled, and clearly understood the client’s vision. A reliable and expert development partner.",
   },
@@ -152,7 +152,7 @@ export const reviews = [
   {
     id: 23,
     name: "Sophia Williams",
-    image:  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+    image:  "https://randomuser.me/api/portraits/women/36.jpg",
     text: "I am impressed by their transparency and reporting. Weekly updates and clear milestones made the entire development process stress-free.",
   },
   {

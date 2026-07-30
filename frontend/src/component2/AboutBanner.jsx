@@ -9,7 +9,7 @@ import orange from "../assets/images2/orange.png";
 const AboutBanner = () => {
   return (
     <div className="about-wrapper About-us-img">
-      <p className="about-text text-black">
+      <p className="about-text ">
         Engineering Digital Growth. Empowering Modern Businesses.
       </p>
       <div className="banner-outer-wrapper">

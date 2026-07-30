@@ -100,9 +100,9 @@ border: 1px solid #CDCDCD;
 
 
 .services-we-offer {
-  font-size: 16px;     
+  font-size: 20px;     
   font-weight: 400;       
-  color: #002D2D;  
+  color: #00063D;  
   font-family: 'sora';        
   margin-bottom: 160px;    
 
@@ -161,7 +161,7 @@ border: 1px solid #CDCDCD;
     padding-bottom: 80px !important;
   }
   .services-we-offer {
-    font-size: 16px !important;
+    font-size: 20px !important;
     margin-bottom: 160px !important;
   }
   .service-card {
@@ -177,9 +177,9 @@ border: 1px solid #CDCDCD;
 }
 
 /* ══════════════════════════════
-   SMALL DESKTOP (1025px – 1279px)
+   SMALL DESKTOP (1024px – 1279px)
    ══════════════════════════════ */
-@media (min-width: 1025px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .services-we-offer {
     font-size: 16px !important;
     margin-bottom: 140px !important;
@@ -204,9 +204,9 @@ border: 1px solid #CDCDCD;
 }
 
 /* ══════════════════════════════
-   TABLET (768px – 1024px)
+   TABLET (768px – 1023px)
    ══════════════════════════════ */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .service-section {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
@@ -392,7 +392,7 @@ border: 1px solid #CDCDCD;
 }
 
 /* ══ Tablet & Mobile: flex wrap so 3rd card centers ══ */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .service-grid-conatiner {
     display: flex !important;
     flex-wrap: wrap !important;

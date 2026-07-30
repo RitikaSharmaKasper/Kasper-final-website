@@ -132,6 +132,19 @@
   overflow: hidden;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* IMAGE */
 
 .Insightsblog-img {
@@ -144,6 +157,29 @@
   object-fit: cover;
   transition: transform 0.4s ease;
 }
+
+
+
+
+
+
+
+
+/* Style for when image fails to load (via JS) */
+.Insightsblog-image.error {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f5f5f5;
+  color: #666;
+  font-family: "Sora";
+  font-size: 14px;
+  padding: 16px;
+  min-height: 200px;
+  width: 100%;
+}
+
 
 .Insightsblog-img img:hover {
   transform: scale(1.2);

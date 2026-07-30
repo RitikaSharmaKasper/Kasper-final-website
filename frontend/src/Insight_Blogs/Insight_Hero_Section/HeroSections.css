@@ -20,12 +20,12 @@
 }
 
 /* HEADING */
-.hero-heading {
+.hero-headinginside {
   font-family: "Sora", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   /* line-height: ; */
-  color: #1b1270;
+  color: #1B1270;
   padding-top: 40px;
   margin: 0;
 }

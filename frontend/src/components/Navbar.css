@@ -308,7 +308,7 @@ background-color: white;
 
 
     .btn-demo {
-        padding:0px 6px;
+        padding:0px 5px;
         font-family: "Sora";
         font-size:"12px";
         margin: 0px -15px  0px 4px !important;
@@ -321,7 +321,7 @@ background-color: white;
     width: auto !important;
   }
   .menu-div {
-    gap: 1px !important;
+    gap: 0px !important;
   }
   /* hide buttons inside hamburger on tablet — desktop buttons are visible */
   .mobile-menu-buttons {
@@ -329,7 +329,7 @@ background-color: white;
     
   }
   .try-tag{
-    margin-left:-10px;
+    margin-left:-4px;
   }
 
 

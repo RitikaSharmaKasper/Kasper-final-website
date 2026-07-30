@@ -45,7 +45,7 @@ const Solutionspopup = ({ isOpen, onClose, type }) => {
     
       <div className="modal-backdrop " onClick={onClose}></div>
 
-      <div className="modal-content-box animate-in fade-in zoom-in duration-300 ">
+      <div className="modal-content-box  ">
         
        
         <div className="section-container">
