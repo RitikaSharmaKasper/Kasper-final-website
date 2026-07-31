@@ -64,7 +64,7 @@ const Services = () => {
 
   return (
     <section className="py-20 text-center relative overflow-visible service-section">
-      <h2 className=" text-[#00063D]  services-we-offer">
+      <h2 className=" text-[#00063D] heading-with-line services-we-offer">
         Services We Offer
       </h2>
 

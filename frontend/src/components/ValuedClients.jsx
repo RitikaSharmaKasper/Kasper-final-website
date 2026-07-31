@@ -14,7 +14,7 @@ const ValuedClients = () => {
   return (
     <div className="valued-clients">
   <p className="text-[16px] font-[Sora] font-normal ">Our Valued Clients</p>
-  <div className="heading-with-line"></div>
+  <div className="heading-with-lines"></div>
 
   <div className="clients-slider">
 

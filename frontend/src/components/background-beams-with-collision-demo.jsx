@@ -4,6 +4,8 @@ import "./background-beams-with-collision-demo.css";
 import { useState,useEffect,useRef,Suspense,lazy } from "react";
 import google from "../assets/images2/google.png";
 
+import BgGlow from "../assets/images2/BgGlow.svg";   // ← naya import, apna asset path daalo
+
 import Badgeimg from "../assets/images2/Badgeimg.svg";
 import { ArrowDown, ChevronDown } from "lucide-react";
 
@@ -108,6 +110,11 @@ const scrollToServices = () => {
   </div>
 
   {/* RIGHT SIDE: Diamond Shape Image */}
+
+   <img src={BgGlow} alt="" className="hero-bg-glow" aria-hidden="true" />
+
+  <div className="hero-grid-wrapper flex flex-row md:flex-row flex-col items-start justify-between w-full max-w-[1922px] mx-auto px-4 md:px-8 lg:px-20 pt-2 overflow-visible">
+    
   {/* We keep this relative to handle the absolute positioning of the large diamond */}
   <div className="badge-image-container">
     <div className=" image-wrapper">
@@ -121,6 +128,7 @@ const scrollToServices = () => {
 </div>
 <div className="scroll-down-arrow" onClick={scrollToServices}>
  <span>< ArrowDown  size={24} strokeWidth={1} /></span>
+</div>
 </div>
 </div>
 

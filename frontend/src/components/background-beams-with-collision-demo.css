@@ -146,20 +146,6 @@ line-height: 120%;
     font-weight:400;
   }
 }
-.diamond-half-clip {
-  
-border-radius:14px;
-opacity: 1;
-border:14px solid #E5E5E5;
-top: 40px;
-left: 1204px;
-width:1900px;
-  transform: rotate(-21deg) ;
-  
-
-  backface-visibility: hidden;
-  transition: transform 0.5s ease-in-out;
-}
 
 
 .Badge-Buttons{
@@ -193,8 +179,8 @@ padding-left: 16px;
  
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center !important;      /* pehle: flex-start */
+  text-align: center !important;       /* pehle: left */
   width: fit-content;
   z-index: 5;
   margin-top: 120px; 
@@ -270,16 +256,16 @@ padding-left: 16px;
   line-height: 1.75rem;     
   margin-bottom: 18px;      
   max-width: 56rem;          
-  text-align: left;         
+  text-align: center !important;       
 }
 
 .Badge-actions {
   display: flex;         
   flex-wrap: wrap;       
   align-items: center;  
+  justify-content: center !important;   /* naya add kiya */
   gap: 16px;            
 }
-
 
 .Badge-buttons {
   font-weight: 600;        
@@ -333,6 +319,7 @@ padding-left: 16px;
   flex: 1 1 0%;          
   margin-top: 20px;      
   margin-left: 80px;      
+  z-index: 2;
 }
 
 
@@ -364,7 +351,7 @@ padding-left: 16px;
  
 }
 
-.dashboard-img {
+/* .dashboard-img {
   width: 100%;            
   height: auto;           
   object-fit: cover;     
@@ -374,12 +361,30 @@ padding-left: 16px;
  
   filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
   
-  /* diamond-half-clip (Example Clip Path) */
+ 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%); 
 }
+ */
 
+.dashboard-img {
+  width: 100%;            
+  height: auto;           
+  object-fit: cover;     
+  z-index: 0;             
+  border-radius: 26px;    
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+  /* clip-path hata diya — ab straight image dikhegi */
+}
 
+.diamond-half-clip {
+  border-radius: 14px;
+  opacity: 1;
+  border: 14px solid #E5E5E5;
+  width: 100%;
 
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
 
 
 /* ════════════════════════════════════════
@@ -389,9 +394,24 @@ padding-left: 16px;
 /* ══════════════════════════════
    LARGE DESKTOP (1280px+)
    ══════════════════════════════ */
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .Badge-container {
     margin-left: 150px !important;
+    margin-top: 120px !important;
+  }
+  .Badge-title {
+    font-size: 48px !important;
+  }
+  .image-wrapper {
+    width: 1200px !important;
+    height: 600px !important;
+  }
+} */
+
+@media (min-width: 1280px) {
+  .Badge-container {
+    margin-left:45px !important;     
+    /* margin-right: auto !important;     */
     margin-top: 120px !important;
   }
   .Badge-title {
@@ -406,9 +426,30 @@ padding-left: 16px;
 /* ══════════════════════════════
    SMALL DESKTOP / LAPTOP (1025px – 1279px)
    ══════════════════════════════ */
-@media (min-width: 1025px) and (max-width: 1279px) {
+/* @media (min-width: 1025px) and (max-width: 1279px) {
   .Badge-container {
     margin-left: 60px !important;
+    margin-top: 90px !important;
+  }
+  .Badge-title {
+    font-size: 42px !important;
+    white-space: normal !important;
+  }
+  .Badge-subtitle {
+    font-size: 16px !important;
+  }
+  .image-wrapper {
+    width: 700px !important;
+    height: 480px !important;
+  }
+  .badge-image-container {
+    margin-left: 30px !important;
+  }
+} */
+ @media (min-width: 1025px) and (max-width: 1279px) {
+  .Badge-container {
+    margin-left: auto !important;    /* pehle: 60px */
+    margin-right: auto !important;   /* naya */
     margin-top: 90px !important;
   }
   .Badge-title {
@@ -437,17 +478,22 @@ padding-left: 16px;
   }
 
   .Badge-container {
-    margin-left: 0 !important;
-    margin-top: 40px !important;
-    width: 100% !important;
-    align-items: center !important;
-    text-align: center !important;
+   margin-left: auto !important;      /* pehle: 24px */
+    margin-right: auto !important;     /* naya */
+    margin-top: 60px !important;
+    width: auto !important;
+    align-items: center !important;    /* pehle: flex-start */
+    text-align: center !important; 
   }
 
   .Badge-title {
     font-size:30px !important;
     white-space: normal !important;
     text-align: center !important;
+      /* pehle: left */
+    margin-left: 0;
+    margin-right: 0;
+
   }
 
   .Badge-subtitle {
@@ -601,11 +647,12 @@ padding-left: 16px;
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .Badge-container {
-    margin-left: 24px !important;
+      margin-left: auto !important;      /* pehle: 24px */
+    margin-right: auto !important;     /* naya */
     margin-top: 60px !important;
     width: auto !important;
-    align-items: flex-start !important;
-    text-align: left !important;
+    align-items: center !important;    /* pehle: flex-start */
+    text-align: center !important;  
   }
 
   .badge-wrapper {
@@ -639,9 +686,12 @@ padding-left: 16px;
     white-space: normal !important;
     margin-bottom: 8px !important;
     margin-top: 8px;
-    margin-right: 1rem;
+    /* margin-right: 1rem;
     margin-left: 0rem;
-    text-align: left;
+    text-align: left; */
+    text-align: center;    /* pehle: left */
+    margin-left: 0;
+    margin-right: 0;
     max-width: 550px;
     width: 100%;
   }
@@ -862,7 +912,8 @@ padding-left: 16px;
    ══════════════════════════════ */
 @media (min-width: 1441px) {
   .Badge-container {
-    margin-left:48px !important;
+    margin-left: auto !important;    /* pehle: 48px */
+    margin-right: auto !important;   /* naya */
     margin-top: 10px !important;
   }
   .Badge-title {
@@ -883,7 +934,8 @@ padding-left: 16px;
    ══════════════════════════════ */
 @media (min-width: 1280px) and (max-width: 1440px) {
   .Badge-container {
-    margin-left: 40px !important;
+    margin-left: 45px !important;    
+    /* margin-right: auto !important;   */
     margin-top: -15rem !important;
 
   }
@@ -923,7 +975,8 @@ padding-left: 16px;
    ══════════════════════════════ */
 @media (min-width: 1025px) and (max-width: 1279px) {
   .Badge-container {
-    margin-left:20px !important;
+ margin-left: auto !important;    /* pehle: 20px */
+    margin-right: auto !important;   /* naya */
     margin-top: 10px !important;
   }
   .Badge-title {
@@ -1016,8 +1069,11 @@ padding-left: 16px;
    Scoped to .hero-grid-wrapper so mobile and anything outside the grid is untouched. */
 @media (min-width: 1280px) and (max-width: 1440px) {
   .hero-grid-wrapper .Badge-container {
+
     margin-top:95px!important;
-    margin-left: 9 !important;
+    margin-left: 45px !important;    /* pehle: 9 (invalid value tha) */
+     margin-right: 45px !important;   
+  
   }
   .hero-grid-wrapper .badge-image-container {
     margin-top: 70px !important;
@@ -1041,8 +1097,9 @@ padding-left: 16px;
 
 @media (min-width: 1441px) {
   .hero-grid-wrapper .Badge-container {
-    margin-top: 40px !important;
-    margin-left: 15px !important;
+      margin-top: 40px !important;
+    margin-left: auto !important;    /* pehle: 15px */
+    margin-right: auto !important;
   }
   .hero-grid-wrapper .badge-image-container {
     margin-top: 40px !important;
@@ -1053,7 +1110,8 @@ padding-left: 16px;
 @media (min-width: 1025px) and (max-width: 1279px) {
   .hero-grid-wrapper .Badge-container {
     margin-top: 40px !important;
-    margin-left: 0 !important;
+    margin-left: auto !important;    /* pehle: 0 */
+    margin-right: auto !important;
   }
   .hero-grid-wrapper .badge-image-container {
     margin-top: 40px !important;
@@ -1153,3 +1211,23 @@ margin-bottom:-49px;
   }
 }
 
+
+
+
+.hero-bg-glow {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;   /* clicks isse block na hon */
+  user-select: none;
+}
+
+.hero-grid-wrapper {
+  position: relative;
+  z-index: 1;
+}

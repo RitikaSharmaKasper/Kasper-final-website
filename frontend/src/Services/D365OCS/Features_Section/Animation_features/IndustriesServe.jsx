@@ -1,89 +1,51 @@
-
 import React from 'react'
-import  "./IndustriesServe.css"
-import industry1 from "../../../../assets/images2/industry1.svg"
+import "./IndustriesServe.css"
+import { useNavigate } from 'react-router-dom'
+import { 
+  Plane, HeartPulse, Building2, Tv, Users, ShoppingCart, 
+  GraduationCap, Landmark, Volleyball, Code2, Briefcase 
+} from 'lucide-react'
 
-import industry2 from "../../../../assets/images2/industry2.svg"
+const industries = [
+    { icon: Plane, label: "Travel & Tourism", path: "/solutions/travel-tourism", color: "#4F8EF7" },
+  { icon: HeartPulse, label: "Healthcare & Fitness", path: "/solutions/healthcare-fitness", color: "#F0506E" },
+  { icon: Building2, label: "Real Estate", path: "/solutions/real-estate", color: "#0EA5E9" },
+  { icon: Tv, label: "Media & Entertainment", path: "/solutions/media-entertainment", color: "#4F46E5" },
+    { icon: GraduationCap, label: "Education & E-learning", path: "/solutions/education-e-learning", color: "#06B6D4" },
+  { icon: Users, label: "Social Media & Networking", path: "/solutions/social-media-networking", color: "#2563EB" },
+  { icon: ShoppingCart, label: "E-commerce", path: "/solutions/e-commerce", color: "#6366F1" },
+    { icon: Landmark, label: "Banking & Finance", path: "/solutions/banking-finance", color: "#06B6D4" },
 
 
-import industry3 from "../../../../assets/images2/industry3.svg"
-import industry4 from "../../../../assets/images2/industry4.svg"
-import industry5 from "../../../../assets/images2/industry5.svg"
-import industry6 from "../../../../assets/images2/industry6.svg"
-import industry7 from "../../../../assets/images2/industry7.svg"
-import industry8 from "../../../../assets/images2/industry8.svg"
-import industry9 from "../../../../assets/images2/industry9.svg"
-import industry10 from "../../../../assets/images2/industry10.svg"
-import industry11 from "../../../../assets/images2/industry11.svg"
+  { icon: Volleyball, label: "Sports & Wellness", path: "/solutions/sports-wellness", color: "#3B82F6" },
+  { icon: Code2, label: "IT & ITES", path: "/solutions/it-ites", color: "#2563EB" },
+  { icon: Briefcase, label: "Business Services", path: "/solutions/business-services", color: "#6366F1" },
+]
 
-import { useNavigate } from 'react-router-dom';
-const IndustriesServe = () => {
-  const navigate = useNavigate();
-    const handleNavigation = (path) => {
-      if (path) {
-        navigate(path);
-        window.scrollTo(0, 0); // Optional: Scroll to top on navigation
-      }
-    };
+const Industries = () => {
+  const navigate = useNavigate()
+
   return (
-<div className='Industries-main-div'>
-  <p>Industries we serve</p>
+    <div className="Industries-main-div">
+      <p className="heading-with-line">Industries we serve</p>
 
-  <div className="industry-imagediv">
-
-    <div className="industry-card" onClick={() => handleNavigation("/solutions/travel-tourism")}>
-      <img src={industry1} alt=""   />
-      <p>Travel and Tourism</p>
+      <div className="industry-imagediv">
+        {industries.map(({ icon: Icon, label, path, color }) => (
+          <div
+            key={label}
+            className="industry-card"
+            onClick={() => navigate(path)}
+          >
+            <Icon className="industry-icon" style={{ color }} strokeWidth={1.5} />
+            <span className="industry-label">{label}</span>
+            <svg className="industry-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#8A8A8A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+        ))}
+      </div>
     </div>
-
-    <div className="industry-card" onClick={() => handleNavigation("/solutions/healthcare-fitness")}>
-      <img src={industry2} alt=""  />
-      <p>Healthcare & Fitness</p>
-    </div>
-
-    <div className="industry-card"  onClick={() => handleNavigation("/solutions/real-estate")}>
-      <img src={industry3} alt=""   />
-      <p>Real Estate</p>
-    </div>
-
-    <div className="industry-card" onClick={() => handleNavigation("/solutions/media-entertainment")} >
-      <img src={industry4} alt=""   />
-      <p>Media & Entertainment</p>
-    </div>
-
-    <div className="industry-card"  onClick={() => handleNavigation("/solutions/social-media-networking")}>
-      <img src={industry5} alt=""   />
-      <p>Social Media & Networking</p>
-    </div>
-    <div className="industry-card"  onClick={() => handleNavigation("/solutions/e-commerce")} >
-      <img src={industry6} alt=""  />
-      <p>E-commerce</p>
-    </div>
-    <div className="industry-card"  onClick={() => handleNavigation("/solutions/education-e-learning")} >
-      <img src={industry7} alt=""  />
-      <p>Education & E-learning</p>
-    </div>
-    <div className="industry-card"  onClick={() => handleNavigation("/solutions/banking-finance")} >
-      <img src={industry8} alt=""  />
-      <p>Banking & Finance</p>
-    </div>
-    <div className="industry-card" onClick={() => handleNavigation("/solutions/sports-wellness")} >
-      <img src={industry9} alt=""   />
-      <p>Sports & Wellness</p>
-    </div>
-     <div className="industry-card" onClick={() => handleNavigation("/solutions/it-ites")}>
-      <img src={industry10} alt=""    />
-      <p>IT & ITES</p>
-    </div>
-     <div className="industry-card"  onClick={() => handleNavigation("/solutions/business-services")}> 
-      <img src={industry11} alt=""   />
-      <p>Business Services</p>
-    </div>
-
-
-  </div>
-</div>
   )
 }
 
-export default IndustriesServe
+export default Industries;

@@ -19,14 +19,14 @@ return (
   src={review.image} 
   alt={review.name} 
   style={{
-    width: '52px',
+    width: '50px',
     padding:'3px',
-    height: '52px',
+    height: '50px',
     borderRadius: '5%',
     objectFit: 'cover',
 
 backgroundColor: '#E0E0E0',
-  opacity:'1' ,
+  opacity:'4' ,
 
   }}
 />

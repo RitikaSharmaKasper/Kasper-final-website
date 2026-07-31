@@ -93,7 +93,7 @@ border: 1px solid #CDCDCD;
 .service-section{
 
   display: block;          
-  padding-top: 80px;      
+  padding-top: 66px;      
   padding-bottom: 80px;   
   background-color: #FFFFFF;
   text-align: center;     
@@ -108,7 +108,7 @@ border: 1px solid #CDCDCD;
   font-weight: 400;       
   color: #00063D;  
   font-family: 'sora';        
-  margin-bottom: 146px;    
+  margin-bottom: 140px;    
 
 }
 
@@ -161,7 +161,7 @@ border: 1px solid #CDCDCD;
    ══════════════════════════════ */
 @media (min-width: 1280px) {
   .service-section {
-    padding-top: 80px !important;
+    padding-top: 66px !important;
     padding-bottom: 80px !important;
   }
   .services-we-offer {
@@ -186,7 +186,7 @@ border: 1px solid #CDCDCD;
 @media (min-width: 1024px) and (max-width: 1279px) {
   .services-we-offer {
     font-size: 16px !important;
-    margin-bottom: 146px !important;
+    margin-bottom: 140px !important;
   }
   .service-card {
     height: 460px !important;

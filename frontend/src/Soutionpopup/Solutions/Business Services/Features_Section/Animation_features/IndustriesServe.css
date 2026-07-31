@@ -1,180 +1,216 @@
-/* ================= GLOBAL ================= */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:"Sora",sans-serif;
-}
-
-section{
-width:100%;
-}
-
-/* ================= FEATURES SECTION ================= */
-
+/* ── HEADING — DO NOT CHANGE ── */
 .Industries-main-div{
-max-width:1440px;
-width:100%;
-margin:20px auto;
-padding:40px 50px;
-gap:24px;
+  width: 100% !important;
+  max-width: 1431px !important;   /* Blog-main-div se match */
+  height: auto;
+  margin: 60px auto;
+  padding: 60px 0;
+  opacity: 1;
+  box-sizing: border-box;
 }
 
 .Industries-main-div p{
-font-weight:400;
-font-size:20px;
-color:rgba(0,6,61,1);
-line-height:135%;
-text-align:center;
-padding-bottom:22px;
+  font-family: Sora;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  font-color:rgba(0, 6, 61, 1);
+  line-height: 135%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
-/* IMAGE GRID */
-
+/* ==========================================================================
+   CARD GRID — 4 per row large, matches blog width logic
+   ========================================================================== */
 .industry-imagediv{
-margin-top:25px;
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:39px;
-
-max-width:1149px;
-width:100%;
-margin:25px auto;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  width: 100% !important;
+  max-width: 1431px !important;
+  margin: 25px auto;
+  box-sizing: border-box;
 }
 
-/* CARD */
-
+/* ==========================================================================
+   FLAT ICON CARD — width now % based like blog-card, height/radius/shadow same
+   ========================================================================== */
 .industry-card{
-position:relative;
-overflow:hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  overflow: hidden;
+
+  flex-shrink: 0;
+  min-width: calc((100% - 72px) / 4) !important;   /* 4 cards, 3 gaps of 24px */
+  max-width: calc((100% - 72px) / 4) !important;
+  height: 80px;
+  padding: 20px;
+  background-color: #FFFFFF01;
+  border-radius: 12px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
 }
 
-/* IMAGE */
-
-.industry-card img{
-width:250px;
-height:150px;
-transition:transform 0.4s ease;
-border-radius:4px;
-object-fit:cover;
+.industry-card:hover{
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.1);
 }
 
-/* TEXT */
-
-.industry-card p{
-position:absolute;
-font-weight:400;
-font-size:15px;
-top:128px;
-left:13px;
-z-index:4;
-color:#fff;
-line-height:100%;
+.industry-icon{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
-/* GRADIENT */
-
-.industry-card::after{
-content:"";
-position:absolute;
-left:0;
-bottom:0;
-width:100%;
-height:60px;
-border-radius:4px;
-background:linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+.industry-label{
+  font-family: Sora;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(0, 6, 61, 1);
+  flex: 1;
+  white-space: nowrap;
 }
 
-/* HOVER */
-
-.industry-card img:hover{
-transform:scale(1.4);
+.industry-arrow{
+  flex-shrink: 0;
 }
 
-/* ================= TABLET ================= */
 
-@media (max-width:1024px){
+/* ════════════════════════════════════════
+   RESPONSIVE — 4 cards large, 3 cards small desktop/tablet, 1 mobile
+   ════════════════════════════════════════ */
 
-.why-container{
-  grid-template-columns:1fr;
-  gap:60px;
-  text-align:center;
+/* ══ LARGE DESKTOP (1280px+) → 4 per row ══ */
+@media (min-width: 1280px) {
+  .Industries-main-div{
+    padding: 35px 40px !important;
+  }
+  .industry-imagediv{
+    gap: 20px !important;
+  }
+  .industry-card{
+    min-width: calc((100% - 60px) / 4) !important;
+    max-width: calc((100% - 60px) / 4) !important;
+    height: 80px !important;
+  }
 }
 
-/* right content smaller */
-
-.why-right{
-  max-width:520px;
-  margin:auto;
-  padding:0 40px;
+/* ══ SMALL DESKTOP (1025px – 1279px) → 3 per row ══ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .Industries-main-div{
+    padding: 60px 32px !important;
+  }
+  .industry-imagediv{
+    gap: 16px !important;
+  }
+  .industry-card{
+    min-width: calc((100% - 32px) / 3) !important;
+    max-width: calc((100% - 32px) / 3) !important;
+    height: 76px !important;
+    padding: 18px !important;
+  }
+  .industry-icon{
+    width: 22px !important;
+    height: 22px !important;
+  }
+  .industry-label{
+    font-size: 14px !important;
+  }
 }
 
-.why-feature{
-  gap:14px;
+/* ══ TABLET LANDSCAPE (900px – 1024px) → 3 per row ══ */
+@media (min-width: 900px) and (max-width: 1024px) {
+  .Industries-main-div{
+    padding: 40px 24px !important;
+  }
+  .industry-imagediv{
+    gap: 14px !important;
+  }
+  .industry-card{
+    min-width: calc((100% - 28px) / 3) !important;
+    max-width: calc((100% - 28px) / 3) !important;
+    height: 74px !important;
+    padding: 16px !important;
+  }
+  .industry-icon{
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .industry-label{
+    font-size: 13px !important;
+  }
 }
 
+/* ══ TABLET PORTRAIT (768px – 899px) → 3 per row ══ */
+@media (min-width: 768px) and (max-width: 899px) {
+  .Industries-main-div{
+    padding: 40px 20px !important;
+  }
+  .industry-imagediv{
+    gap: 12px !important;
+  }
+  .industry-card{
+    min-width: calc((100% - 24px) / 3) !important;
+    max-width: calc((100% - 24px) / 3) !important;
+    height: 72px !important;
+    padding: 14px !important;
+  }
+  .industry-icon{
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .industry-label{
+    font-size: 13px !important;
+    white-space: normal !important;
+  }
 }
 
-/* ================= MOBILE ================= */
-
-@media (max-width:768px){
-
-.why-choose{
-  padding:35px 20px;
+/* ══ MOBILE (max 767px) → 1 per row ══ */
+@media (max-width: 767px) {
+  .Industries-main-div{
+    padding: 23px 10px !important;
+  }
+  .industry-imagediv{
+    gap: 12px !important;
+    padding: 0 12px !important;
+  }
+  .industry-card{
+    min-width: 100% !important;
+    max-width: 340px !important;
+    width: 100% !important;
+    height: 70px !important;
+    padding: 16px !important;
+  }
+  .industry-icon{
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .industry-label{
+    font-size: 13px !important;
+    white-space: normal !important;
+  }
+  .industry-arrow{
+    width: 14px !important;
+    height: 14px !important;
+  }
 }
 
-.why-main-heading{
-  font-size:18px;
-  margin-bottom:35px;
-}
-
-/* right section smaller */
-
-.why-right{
-  max-width:420px;
-  margin:auto;
-  padding:0 25px;
-  gap:14px;
-}
-
-.why-feature h4{
-  font-size:16px;
-}
-
-.why-feature p{
-  font-size:14px;
-}
-
-}
-
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width:480px){
-
-.why-main-heading{
-  font-size:16px;
-}
-
-/* more breathing space */
-
-.why-right{
-  max-width:360px;
-  padding:0 20px;
-  gap:12px;
-}
-
-.why-feature img{
-  width:20px;
-  height:20px;
-}
-
-.why-feature h4{
-  font-size:15px;
-}
-
-.why-feature p{
-  font-size:13px;
-}
-
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .industry-card{
+    height: 64px !important;
+    padding: 12px !important;
+  }
+  .industry-label{
+    font-size: 12px !important;
+  }
 }
