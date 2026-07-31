@@ -162,7 +162,7 @@ color:rgba(0, 6, 61, 1);
   display: block;
   width: 83px;
   height: 3px;
-  margin: 12px auto 0 auto;  /* Space between text and line */
+  margin: 9px auto 0 auto;  /* Space between text and line */
   background: linear-gradient(90deg, #FB00FF 0%, rgba(242, 0, 255, 0.28) 100%);
   -webkit-mask-image: linear-gradient(90deg, 
     black 0px, black 54px, 

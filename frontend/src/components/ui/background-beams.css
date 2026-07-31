@@ -57,7 +57,7 @@
     align-items: flex-start !important;
     justify-content: flex-start !important;
     padding-top: 24px;
-    padding-bottom: 40px;
+    padding-bottom: 1px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -67,7 +67,7 @@
     align-items: flex-start !important;
     justify-content: flex-start !important;
     padding-top: 24px;
-    padding-bottom: 40px;
+    padding-bottom:2px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {

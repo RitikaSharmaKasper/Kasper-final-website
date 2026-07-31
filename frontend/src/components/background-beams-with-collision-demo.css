@@ -190,17 +190,17 @@ padding-left: 16px;
 .badge-wrapper {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   width: fit-content;
   overflow: hidden;
-  margin-bottom: 8px; 
+  /* margin-bottom: 8px;  */
   
  
-  border: 1px solid #f3f4f6; 
-  border-radius: 0.125rem;   
+  /* border: 1px solid #f3f4f6;  */
+  /* border-radius: 0.125rem;    */
   
   /* Shadow-sm */
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); */
 }
 
 .badge-yrs {
@@ -1033,7 +1033,7 @@ padding-left: 16px;
     width: 100%;
     /* margin-top: -40px helps pull it up toward the image 
        if the image has a large bottom margin */
-    margin-top: -30px; 
+    margin-top: 16px; 
     padding-bottom: 25px;
     cursor: pointer;
     z-index: 10;
@@ -1216,7 +1216,7 @@ margin-bottom:-49px;
 
 .hero-bg-glow {
   position: absolute;
-  top: 300px;
+  top: 364px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -1231,3 +1231,352 @@ margin-bottom:-49px;
   position: relative;
   z-index: 1;
 }
+/* Dashboard visual: keep the blue SVG tied to the image at every breakpoint.
+   Badge-container styles are deliberately not touched here. */
+.hero-grid-wrapper .hero-visual {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 1140px);
+  margin: clamp(2rem, 5vw, 5rem) auto 0;
+  padding: 0 0 clamp(2rem, 5vw, 5rem);
+}
+
+.hero-grid-wrapper .hero-visual .hero-bg-glow {
+  position: absolute;
+  z-index: -1;
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  width: min(1920px, 170vw);
+  max-width: none;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.hero-grid-wrapper .hero-visual .badge-image-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.hero-grid-wrapper .hero-visual .image-wrapper {
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.hero-grid-wrapper .hero-visual .diamond-half-clip {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+  transform: none !important;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid-wrapper .hero-visual {
+    width: min(100%, 900px);
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-grid-wrapper .hero-visual {
+    width: calc(100% + 2rem);
+    margin-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    width: 235vw;
+    bottom: 0;
+  }
+}
+
+/* Keep the dashboard in its own full-width row on tablets. The older two-column
+   grid is for the previous side-by-side hero and must not size this visual. */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-grid-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .hero-grid-wrapper .hero-visual {
+    width: min(100%, 900px) !important;
+    grid-column: auto;
+  }
+}
+
+/* The glow starts after the dashboard edge, never through the dashboard image. */
+.hero-grid-wrapper .hero-visual {
+  margin: clamp(2rem, 5vw, 5rem) auto clamp(10rem, 22vw, 19rem);
+  padding-bottom: 0;
+}
+
+.hero-grid-wrapper .hero-visual .hero-bg-glow {
+  top: 100%;
+  bottom: auto;
+  width: min(1920px, 155vw);
+}
+
+@media (max-width: 767px) {
+  .hero-grid-wrapper .hero-visual {
+    width: calc(100% + 2rem);
+    margin: 2.5rem auto 12rem;
+    padding-bottom: 0;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    top: 100%;
+    bottom: auto;
+    width: 220vw;
+  }
+}
+/* Figma hero composition: the text must start at the top of the hero. Keeping
+   the parent centre-aligned was clipping it on wide screens. */
+@media (min-width: 1441px) {
+  .beams-dimensions {
+    height: 795px !important;
+    min-height: 795px !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 58px !important;
+  }
+
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 142px;
+  }
+}
+
+/* Match the reference: a soft glow sits behind the lower dashboard, with the
+   dashboard itself always above it. */
+.hero-grid-wrapper .hero-visual {
+  margin-bottom: clamp(5rem, 11vw, 10rem);
+}
+
+.hero-grid-wrapper .hero-visual .hero-bg-glow {
+  top: 28%;
+  bottom: auto;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    top: 32%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    top: 38%;
+  }
+}
+/* Final responsive hero layer: scope all legacy overrides to this one composition. */
+.hero-grid-wrapper .Badge-container {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 980px) !important;
+  max-width: 980px !important;
+  margin: 54px auto 0 !important;
+  padding: 0 16px !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.hero-grid-wrapper .badge-wrapper {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+}
+
+.hero-grid-wrapper .Badge-title {
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 10px 0 !important;
+  font-size: clamp(2rem, 3.3vw, 3rem) !important;
+  line-height: 1.2 !important;
+  white-space: normal !important;
+  text-align: center !important;
+}
+
+.hero-grid-wrapper .Badge-subtitle {
+  max-width: 760px !important;
+  margin: 0 auto 18px !important;
+  text-align: center !important;
+}
+
+.hero-grid-wrapper .hero-visual {
+  isolation: isolate;
+  overflow: hidden;
+  width: 100vw !important;
+  max-width: 1920px !important;
+  margin: clamp(4rem, 8vw, 9rem) calc(50% - 50vw) 0 !important;
+  padding: 0 !important;
+}
+
+.hero-grid-wrapper .hero-visual .badge-image-container {
+  width: min(100% - 32px, 912px) !important;
+  margin: 0 auto !important;
+}
+
+.hero-grid-wrapper .hero-visual .hero-bg-glow {
+  top: 22%;
+  left: 50%;
+  width: min(1920px, 100vw);
+  height: auto;
+  z-index: -1;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 44px !important;
+  }
+
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 72px !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    width: min(100% - 32px, 587px) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-grid-wrapper .Badge-container {
+    width: 100% !important;
+    margin-top: 28px !important;
+  }
+
+  .hero-grid-wrapper .badge-wrapper {
+    margin-top: 0 !important;
+  }
+
+  .hero-grid-wrapper .Badge-title {
+    font-size: 30px !important;
+  }
+
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 48px !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    width: 100% !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    top: 26%;
+    width: 145vw;
+  }
+}
+/* Keep hero content in normal flow. This prevents legacy tablet rules from
+   placing the dashboard over the text block. */
+.hero-grid-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.hero-grid-wrapper .Badge-container {
+  display: flex !important;
+  position: relative !important;
+  inset: auto !important;
+  order: 1;
+  flex: 0 0 auto !important;
+  min-height: 188px;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.hero-grid-wrapper .hero-visual {
+  order: 2;
+  flex: 0 0 auto !important;
+}
+
+.hero-grid-wrapper .scroll-down-arrow {
+  order: 3;
+}
+
+@media (max-width: 767px) {
+  .hero-grid-wrapper .Badge-container {
+    min-height: 0;
+  }
+}
+
+
+
+
+
+
+
+/* White backing directly behind the dashboard image only —
+   blocks the glow from showing through transparent SVG areas */
+.hero-grid-wrapper .hero-visual .image-wrapper {
+  position: relative;
+}
+
+.hero-grid-wrapper .hero-visual .image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.hero-grid-wrapper .hero-visual .diamond-half-clip {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .hero-grid-wrapper .hero-visual .image-wrapper::before {
+    border-radius: 7px;
+  }
+}
+
+
+/* Tablet (768px–1024px): glow ko hero-visual/beams ke bottom pe rakho,
+   par container ke andar hi contained rakho taaki solid block na bane */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-grid-wrapper .hero-visual {
+    overflow: visible;              /* hidden hata diya taaki glow crop na ho */
+    position: relative;
+    padding: 2rem 1.5rem 1rem; 
+      margin-bottom: -6rem !important;  
+    padding-bottom: 0;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+   top: 23%;    
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: min(1000px, 100%);
+    height: auto;
+    max-height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+  }
+}
+ @media (min-width: 1025x) and (max-width: 1900px) {
+.hero-grid-wrapper .hero-visual .badge-image-container {
+    position: relative;
+    z-index: 1;                    
+  }} 

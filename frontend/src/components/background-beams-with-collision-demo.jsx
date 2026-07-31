@@ -63,7 +63,7 @@ const scrollToServices = () => {
   
 {/* Parent Container to hold both Text and Image side-by-side */}
 {/* Parent: flex-row with items-start to keep text at top */}
-<div className="hero-grid-wrapper flex flex-row md:flex-row flex-col items-start justify-between w-full max-w-[1922px] mx-auto px-4 md:px-8 lg:px-20 pt-2 overflow-visible">
+<div className="hero-grid-wrapper flex flex-col items-center justify-start w-full max-w-[1922px] mx-auto px-4 md:px-8 lg:px-20 pt-2 overflow-visible">
   
   {/* LEFT SIDE: Text Content */}
   {/* Changed w-full to w-fit so it only takes the space it needs for the single line */}
@@ -111,25 +111,25 @@ const scrollToServices = () => {
 
   {/* RIGHT SIDE: Diamond Shape Image */}
 
-   <img src={BgGlow} alt="" className="hero-bg-glow" aria-hidden="true" />
+  {/* The glow belongs to the dashboard visual, not to the complete hero. */}
+  <div className="hero-visual">
+    <img src={BgGlow} alt="" className="hero-bg-glow" aria-hidden="true" />
 
-  <div className="hero-grid-wrapper flex flex-row md:flex-row flex-col items-start justify-between w-full max-w-[1922px] mx-auto px-4 md:px-8 lg:px-20 pt-2 overflow-visible">
-    
-  {/* We keep this relative to handle the absolute positioning of the large diamond */}
-  <div className="badge-image-container">
-    <div className=" image-wrapper">
-        <img 
-            src={Badgeimg}
-            alt="Dashboard" 
-           
-            className=" diamond-half-clip z-0 rounded-3xl" 
-        />
+    {/* We keep this relative to handle the absolute positioning of the large diamond */}
+    <div className="badge-image-container">
+      <div className=" image-wrapper">
+          <img
+              src={Badgeimg}
+              alt="Dashboard"
+              className=" diamond-half-clip z-0 rounded-3xl"
+          />
+      </div>
     </div>
-</div>
-<div className="scroll-down-arrow" onClick={scrollToServices}>
- <span>< ArrowDown  size={24} strokeWidth={1} /></span>
-</div>
-</div>
+  </div>
+
+  <div className="scroll-down-arrow" onClick={scrollToServices}>
+   <span>< ArrowDown  size={24} strokeWidth={1} /></span>
+  </div>
 </div>
 
     </BackgroundBeamsWithCollision>
