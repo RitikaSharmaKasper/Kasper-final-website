@@ -6,19 +6,20 @@ import client01 from "../assets/images2/client01.svg"
 import client1 from "../assets/images2/client1.svg"
 import client2 from "../assets/images2/client2.svg"
 import client3 from "../assets/images2/client3.svg"
-import client4 from "../assets/images2/client4.svg"
+
 import client5 from "../assets/images2/client5.svg"
 import client6 from "../assets/images2/client6.svg"
 import client7 from "../assets/images2/client7.svg"
 const ValuedClients = () => {
   return (
     <div className="valued-clients">
-  <p className="text-[16px] font-[Sora] font-normal">Our Valued Clients</p>
+  <p className="text-[16px] font-[Sora] font-normal ">Our Valued Clients</p>
+  <div className="heading-with-line"></div>
 
   <div className="clients-slider">
 
   {/* Left fixed logo */}
-  <img className="fixed-logo left" src={client0} alt="" />
+  {/* <img className="fixed-logo left" src={client0} alt="" /> */}
 
   {/* Scroll area */}
   <div className="scroll-wrapper">
@@ -26,21 +27,20 @@ const ValuedClients = () => {
       <img src={client1} alt="" />
       <img src={client2}  alt="" />
       <img src={client3}  alt="" />
-     <img src={client4}  alt="" />
+   
      <img src={client5}  alt="" />
      <img src={client6}  alt="" />
      <img src={client7}  alt="" />
        <img src={client1} alt="" />
       <img src={client2}  alt="" />
       <img src={client3}  alt="" />
-     <img src={client4}  alt="" />
      <img src={client5}  alt="" />
      <img src={client6}  alt="" />
      <img src={client7}  alt="" />
     </div>
   </div>
 
-  <img className="fixed-logo right" src={client01} alt="" />
+  {/* <img className="fixed-logo right" src={client01} alt="" /> */}
 
 </div>
 </div>

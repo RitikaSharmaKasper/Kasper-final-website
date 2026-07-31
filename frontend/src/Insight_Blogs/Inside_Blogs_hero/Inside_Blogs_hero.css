@@ -123,15 +123,25 @@
 /* CARD */
 
 .Insightsblog-card {
-  width: 100%;
-  max-width: 298px;
-  min-height: 356px;
+ 
   background: #fff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   overflow: hidden;
-}
 
+  width: 320px; /* Increase from previous value */
+  min-width: 300px;
+  max-width: 320px;
+  /* Rest of your existing styles */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure all cards are same height */
+
+
+
+
+
+}
 
 
 
@@ -187,9 +197,40 @@
 
 /* CONTENT */
 
+
 .Insightsblog-content {
-  padding: 16px;
+  flex: 1;
+  display: flex;
+  font-size:14px;
+  flex-direction: column;
+  padding: 14px;
+  /* Rest of your existing styles */
 }
+
+.Insightsblog-content p {
+  flex: 1; /* This pushes the date container to bottom */
+  margin-bottom: 12px;
+  font-size:14px;
+  color:#00063D;
+  /* Rest of your styles */
+}
+
+
+
+
+
+.Insightsblog-content > div:last-child {
+  margin-top: auto; /* Pushes this container to bottom */
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 12px;
+ 
+}
+
+
 
 .Insightsblog-tag {
   background: rgba(201, 245, 255, 1);
@@ -198,18 +239,21 @@
   font-weight: 500;
   padding: 4px 8px;
   border-radius: 4px;
-  display: inline-block;
+  display: inline-flex;
+  width: auto;
+  flex-shrink: 0; /* Prevents shrinking */
+  align-self: flex-start; /* Aligns to start instead of stretching */
 }
 
 /* TITLE */
 
 .title-Insightsblog {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora";
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 8px;
   line-height: 120%;
-  color: rgba(0, 6, 61, 1);
+  color:#00063D;
 }
 
 /* META */
@@ -244,7 +288,7 @@
   background: none;
 
   color: #1a4cff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   padding: 0;
@@ -252,12 +296,13 @@
 }
 
 .read-more-btn:hover {
-  text-decoration: underline;
+  text-decoration: none
+  ;
 }
 
 .read-more-btn:hover {
   color: #0d1ebb;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .read-more-btn:active {

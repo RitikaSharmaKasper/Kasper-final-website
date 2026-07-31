@@ -148,7 +148,7 @@ const Solutionspopup = ({ isOpen, onClose, type }) => {
       
         
         {/* The Text */}
-        <span className="truncate whitespace-nowrap">{name}</span>
+        <span className="truncate whitespace-nowrap text-[14px]">{name}</span>
       </Link>
     );
   })}

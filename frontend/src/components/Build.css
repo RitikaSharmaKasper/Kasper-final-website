@@ -36,9 +36,9 @@
   left: 50%;
   transform: translateX(-50%);
   top: 105px;     
-  width: 2px;
+  width: 2.35px;
   height: 100px;
-  background: #ebebeb;
+  background: #E5E5E5;
   overflow: hidden;
 }
 .svc-stem::after {
@@ -63,8 +63,8 @@
   transform: translateX(-50%);
   top: 205px;         
   width: calc(66.666% - 10.66px);     
-  height: 2px;
-  background: #ebebeb;
+  height: 2.35px;
+  background: #E5E5E5;
   overflow: hidden;
 }
 
@@ -104,9 +104,9 @@
 .svc-drop {
   position: absolute;
   top: 207px;  
-  width: 2px;
+  width: 2.45px;
   height: 60px;
-  background: #ebebeb;
+  background: #E5E5E5;
   overflow: hidden;
 }
 
@@ -191,8 +191,8 @@ padding-top: 6px;
 
 .service-card {
   position: relative;
-  background: #fafafa;
-  border: 1px solid #f3f4f6;
+  background: #FAFAFA;
+  border: 1.45px solid #f3f4f6;
   border-radius: 0.65rem;
   padding: 2rem;
   overflow: hidden;

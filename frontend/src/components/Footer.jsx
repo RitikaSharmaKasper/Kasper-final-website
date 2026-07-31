@@ -254,6 +254,7 @@ useEffect(()=>{
                 fontSize: "10px",
                 textAlign: "center",
                 marginTop: "14px",
+                color: "rgba(255, 255, 255, 0.7)",
               }}
             >
               <p>

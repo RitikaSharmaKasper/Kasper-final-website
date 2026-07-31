@@ -1,21 +1,43 @@
 /* ════════════════════════════════════════
    WAVE RESPONSIVE — All Screen Sizes
    ════════════════════════════════════════ */
+
+.main-div-wavestructure p{
+    font-family: Sora;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+font-color:rgba(0, 6, 61, 1);
+margin-bottom:0px;
+text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .main-div-wavestructure{
-  background:white;
+  background:#FFFFFF;
 }
 /* ══ Base fix ══ */
 .wave-main-div {
   position: relative;
   width: 100%;
-  padding: 80px 56px;
+  padding: 54px 45px;
   padding-left:10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 49px;
+  gap: 50px;
   flex-wrap: wrap;
-  background:white;
+  background:#FFFFFF;
   overflow: hidden;
 }
 
@@ -42,15 +64,15 @@
   transition: transform 0.3s ease, background 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* ═══ icon image - GREY by default ═══ */
+/* ═══ icon image - COLORED by default ═══ */
 .icon-div img {
   width: 62px;
   height: 62px;
   object-fit: contain;
   pointer-events: none;
   
-  /* Convert to grayscale - grey icon only, no circle */
-  filter: grayscale(100%) brightness(0.9) ;
+  /* Convert to colored by default */
+  filter: grayscale(0%) brightness(1) ;
   /* transition: filter 0.4s ease, transform 0.4s ease; */
   
   /* ⭐ CHANGED: Added bounce curve for smoother scale */
@@ -73,6 +95,11 @@
   transform: scale(1.1);
 }
 
+/* Make other icons grey when one is hovered */
+.wave-main-div:has(.icon-div:hover) .icon-div:not(:hover) img {
+  filter: grayscale(100%) brightness(0.9);
+}
+
 /* ═══ Parent hover = wave animation ═══ */
 .wave-main-div:hover .icon-div {
   animation: snakeWave 0.9s ease-in-out;
@@ -85,9 +112,7 @@
   box-shadow: 0 10px 20px rgba(172, 170, 170, 0.233);
 }
 
-.wave-main-div:hover .icon-div img {
-  filter: grayscale(0%) brightness(1);
-}
+/* removed the grayscale override on wave hover to let :has() handle it */
 
 /* wave motion from first to last */
 @keyframes snakeWave {
@@ -128,10 +153,6 @@
     /* background: rgba(255, 255, 255, 0.95) !important;
     box-shadow:  0 5px 5px rgba(231, 229, 229, 0.233); */
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  }
-  
-  .wave-main-div:hover .icon-div img {
-    filter: grayscale(0%) brightness(1);
   }
 }
 

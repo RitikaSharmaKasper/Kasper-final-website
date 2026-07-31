@@ -99,8 +99,8 @@ padding-top: 6px;
 
 .service-card {
   position: relative; 
- background: #FAFAFA;
-  border: 1px solid #f3f4f6;
+ background:#FAFAFA;
+  border: 1.45px solid #f3f4f6;
 
   border-radius: 0.65rem;
   padding: 2rem;

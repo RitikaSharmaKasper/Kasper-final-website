@@ -27,12 +27,13 @@ body::-webkit-scrollbar {
 
 /* Hero Paragraph Scaling */
 .hero_Paragraph p, .hero-inner p, .hero p {
-  font-size: clamp(14px, 2vw, 18px) !important;
-  line-height: 1.6 !important;
+  font-size: clamp(14px, 2vw, 16px) !important;
+  line-height: 1.4 !important;
   margin-top: 8px !important;
   text-align: center !important;
   max-width: 900px !important;
   margin-left: auto !important;
+  color:#00063D;
   margin-right: auto !important;
 }
 
@@ -89,7 +90,7 @@ color:rgba(0, 6, 61, 1);
 }
 
 .feature-card-description {
-  font-size: clamp(14px, 1.8vw, 15px) !important;
+  font-size: clamp(14px, 1.8vw, 14px) !important;
   width: 100% !important;
   line-height: 1.6 !important;
 }
@@ -123,13 +124,13 @@ color:rgba(0, 6, 61, 1);
 }  */
 
 .title-blog {
-  font-size: clamp(16px, 2vw, 19px) !important;
+  font-size: clamp(16px, 2vw, 16px) !important;
   font-weight: 600 !important;
   height: auto !important;
 }
 
 .date-content p, .blog-meta {
-  font-size: 14px !important; /* Fixed the 5px font size bug */
+  font-size: 12px !important; /* Fixed the 5px font size bug */
 }
 
 /* Small screen adjustments */
@@ -147,3 +148,40 @@ color:rgba(0, 6, 61, 1);
      margin: 0 auto !important;
   }
 }
+/* ==========================================================================
+   REUSABLE DECORATIVE GRADIENT LINE (for headings)
+   ========================================================================== */
+.heading-with-line {
+  position: relative;
+  display: inline-block; /* Ensure width wraps content so line centers under text if text is inline-block */
+  width: 100%;
+ /* or block depending on layout */
+}
+.heading-with-line::after {
+  content: "";
+  display: block;
+  width: 83px;
+  height: 3px;
+  margin: 12px auto 0 auto;  /* Space between text and line */
+  background: linear-gradient(90deg, #FB00FF 0%, rgba(242, 0, 255, 0.28) 100%);
+  -webkit-mask-image: linear-gradient(90deg, 
+    black 0px, black 54px, 
+    transparent 54px, transparent 59px,
+    black 59px, black 63px,
+    transparent 63px, transparent 68px,
+    black 68px, black 72px,
+    transparent 72px, transparent 77px,
+    black 77px, black 83px
+  );
+  mask-image: linear-gradient(90deg, 
+    black 0px, black 54px, 
+    transparent 54px, transparent 59px,
+    black 59px, black 63px,
+    transparent 63px, transparent 68px,
+    black 68px, black 72px,
+    transparent 72px, transparent 77px,
+    black 77px, black 83px
+  );
+}
+
+

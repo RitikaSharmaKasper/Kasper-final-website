@@ -72,8 +72,11 @@ const Home = () => {
 
 <IndustriesServe/>
 <Blogs/>
-<Reviews/>
 
+</section>
+
+<section className="clients-parent-section">
+<Reviews/>
 </section>
 
   

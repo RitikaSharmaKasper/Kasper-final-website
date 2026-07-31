@@ -63,12 +63,10 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-white text-center relative overflow-visible service-section">
-      <h2 className=" text-[#00063D] mb-40 services-we-offer">
+    <section className="py-20 text-center relative overflow-visible service-section">
+      <h2 className=" text-[#00063D]  services-we-offer">
         Services We Offer
       </h2>
-
-      <div className="services-line"></div>
 
       {/* Connector: stem → horizontal bar → 3 drops to cards */}
       <div className="services-connector">

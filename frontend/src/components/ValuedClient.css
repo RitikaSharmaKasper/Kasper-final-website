@@ -11,7 +11,8 @@ letter-spacing: 0%;
 text-align: center;
    color:rgba(0, 6, 61, 1);
   align-items:center;
-  padding:45px 0;
+  padding:30px 0;
+  
 }
 
 .valued-clients{
@@ -19,7 +20,7 @@ text-align: center;
 border-top:1px dashed hsla(0, 0%, 88%, 1);
   border-bottom:1px dashed  hsla(0, 0%, 88%, 1);
   padding:15px;
-background-color: white;
+background-color: #FFFFFF;
    width:70%;
    color:rgba(0, 6, 61, 1);
     margin:auto;
@@ -55,14 +56,21 @@ margin-bottom:25px;
 
 .clients-track{
   display:flex;
-  gap:45px; width:max-content;
+  gap:45px; 
+
+  width:max-content;
   animation: scroll 25s linear infinite;
 }
-
-.clients-track img{
-      height: 85px;
-    min-width: 200px;
-  object-fit:contain;
+.clients-track img {
+  height: clamp(65px, 10vw, 150px);
+  min-width: clamp(100px, 15vw, 200px);
+  width: clamp(100px, 15vw, 200px);
+  object-fit: contain;
+  margin-bottom: 10px;
+  background-color: #FAFAFA;
+  padding: clamp(6px, 1vw, 14px) clamp(4px, 0.8vw, 10px);
+  border-radius: clamp(6px, 1vw, 12px);
+  transition: all 0.3s ease;
 }
 
 @keyframes scroll{

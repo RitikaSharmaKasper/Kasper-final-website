@@ -60,7 +60,7 @@ border: 1px solid #CDCDCD;
 /* Card Container */
 .service-card {
   position: relative;
- background: #FAFAFA;  border: 1px solid #f3f4f6;
+ background: #FAFAFA;  border: 1.45px solid #f3f4f6;
   border-radius: 1rem;
   padding: 2rem;
   overflow: hidden;
@@ -71,6 +71,10 @@ border: 1px solid #CDCDCD;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
+
+
+
+
 
 
 .content-wrapper {
@@ -91,7 +95,7 @@ border: 1px solid #CDCDCD;
   display: block;          
   padding-top: 80px;      
   padding-bottom: 80px;   
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   text-align: center;     
   position: relative;      
   overflow: visible;      
@@ -104,7 +108,7 @@ border: 1px solid #CDCDCD;
   font-weight: 400;       
   color: #00063D;  
   font-family: 'sora';        
-  margin-bottom: 160px;    
+  margin-bottom: 146px;    
 
 }
 
@@ -182,7 +186,7 @@ border: 1px solid #CDCDCD;
 @media (min-width: 1024px) and (max-width: 1279px) {
   .services-we-offer {
     font-size: 16px !important;
-    margin-bottom: 140px !important;
+    margin-bottom: 146px !important;
   }
   .service-card {
     height: 460px !important;

@@ -17,7 +17,7 @@
 /* --- Specific Range: 1000px to 1700px --- */
 @media (max-width: 1850px) and (min-width: 1000px) {
   .beams-dimensions {
-    height: 762px;
+    height: 768px;
   }
 }
 
@@ -53,7 +53,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .beams-dimensions {
     height: auto !important;
-    min-height: 450px;
+    min-height: 475px;
     align-items: flex-start !important;
     justify-content: flex-start !important;
     padding-top: 24px;

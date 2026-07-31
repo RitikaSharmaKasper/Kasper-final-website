@@ -88,11 +88,11 @@
 /* TITLE */
 
 .why-feature h4 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 3px;
   font-weight: 400;
   line-height: 120%;
-  font-family: "Sora", sans-serif;
+  font-family: "Sora";
   color: rgba(48,43,58,1);
 }
 
@@ -100,9 +100,8 @@
 
 .why-feature p {
   color: #6b7280;
-  font-size: 15px;
-  font-family: "Sora", sans-serif;
-  line-height: 1.4;
+  font-size: 14px;
+  font-family: "Sora";  line-height: 1.4;
   width: 100%;
   margin: 0;
   font-weight: 400;margin-bottom:5px;

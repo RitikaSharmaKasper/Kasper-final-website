@@ -32,6 +32,7 @@ const icons = [
 const Wavestru = () => {
   return (
     <div className="main-div-wavestructure">
+         <p className="bg-[#FFFFFF] heading-with-line">Technologies we used</p>
     <div className="wave-main-div">
       <div className="snake-line"></div>
 

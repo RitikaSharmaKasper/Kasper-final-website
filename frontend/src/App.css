@@ -2,13 +2,13 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 .clients-parent-section {
-  background-color: white;  /* change grey to white */
+  background-color: #FFFFFF;
 }
 
 
 body{
-     background-color: white
+     background-color: #FFFFFF;
 }
 :root {
-  background-color: white
+  background-color: #FFFFFF;
 }

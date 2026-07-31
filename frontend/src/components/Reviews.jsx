@@ -12,7 +12,7 @@ reviews.forEach((review,index)=>{
    
     <div className="Main-review-div">
 <div className="review-heading">
- <p className="heading-p">Feedback & Reviews</p>
+ <p className="heading-p heading-with-line">Feedback & Reviews</p>
 </div>
 
  <div className='review-container'>

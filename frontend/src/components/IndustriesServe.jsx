@@ -23,7 +23,7 @@ const IndustriesServe = () => {
   };
   return (
     <div className="Industries-main-div">
-      <p>Industries we serve</p>
+      <p className="heading-with-line">Industries we serve</p>
 
   <div className="industry-imagediv">
 
