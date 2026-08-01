@@ -45,7 +45,7 @@
 /* --- Standard Mobile (Up to 480px) --- */
 @media (max-width: 480px) {
   .beams-dimensions {
-    height: 799px;
+    height: 755px;
   }
 }
 
@@ -61,8 +61,9 @@
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .beams-dimensions {
+  .beams-dimensions.overflow-hidden {
     height: auto !important;
+      overflow: visible !important;  
     min-height: 580px;
     align-items: flex-start !important;
     justify-content: flex-start !important;
@@ -71,7 +72,7 @@
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .beams-dimensions {
+  /* .beams-dimensions {
     min-height: 755px;
-  }
+  } */
 }

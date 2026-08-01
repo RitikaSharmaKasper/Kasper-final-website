@@ -1,12 +1,18 @@
 @import "tailwindcss";
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+
+
+* {
+  max-width: 100%;
+}
 html, body {
   margin: 0;
   padding: 0;
    /* stops vertical scroll */
    height:100%;
    font-family: Inter;
-
+ width: 100%;
   overflow-x: hidden;   /* optional: stops horizontal scroll */
 }
 body::-webkit-scrollbar {

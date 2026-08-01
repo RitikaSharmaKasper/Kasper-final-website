@@ -1,39 +1,35 @@
-.Badge-div{
-    display: flex;
-width: 935px;
-  max-width: 100%;  
-flex-direction: column;
-justify-content: center;
-margin-top:2px;
-align-items: flex-start;
-gap: 24px;
+.Badge-div {
+  display: flex;
+  width: 935px;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2px;
+  align-items: flex-start;
+  gap: 24px;
 }
-
 
 /* --- Default Desktop Styles --- */
 .Badge-title {
- font-family: "Sora";
-font-weight: 600;
-font-style: SemiBold;
-font-size: 48px;
-color: #076AFF;
-line-height: 120%;
-letter-spacing: 0%;
-text-align: center;
-
+  font-family: "Sora";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 48px;
+  color: #076aff;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 .Badge-subtitle {
- font-family:"Sora", sans-serif;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
 
-line-height: 120%;
-letter-spacing: 0%;
-text-align: center;
-
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
 }
-
 
 /* --- Sizes 1000px - 800px --- */
 @media (max-width: 1000px) and (min-width: 801px) {
@@ -44,29 +40,24 @@ text-align: center;
     padding-left: 40px !important;
   }
 }
-.Badge-yrs{
-
-  background-color: #7DFFA0; /* bg-[#7DFFA0] */
-  color: #000000;            /* text-black */
-  
+.Badge-yrs {
+  background-color: #7dffa0; /* bg-[#7DFFA0] */
+  color: #000000; /* text-black */
 
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
 
-  font-weight: 400;          
-  font-size: 14px;           
-  
-  margin-left: 4px;         
-  
+  font-weight: 400;
+  font-size: 14px;
+
+  margin-left: 4px;
 
   margin-top: 4px;
   margin-bottom: 4px;
 
-
   display: inline-block;
-
 }
 
 /* --- Sizes 800px - 600px --- */
@@ -86,9 +77,7 @@ text-align: center;
   .btn-primary {
     padding: 10px 20px !important;
     font-size: 16px;
-    font-weight:400;
-
-
+    font-weight: 400;
   }
 }
 
@@ -98,16 +87,14 @@ text-align: center;
     font-size: 2.2rem !important;
   }
   .Badge-subtitle {
-    
     font-family: Sora;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
 
-line-height: 120%;
-letter-spacing: 0%;
-text-align: center;
-
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .Badge-wrapper {
     flex-direction: column;
@@ -122,233 +109,213 @@ text-align: center;
     padding-right: 16px !important;
   }
   .Badge-title {
-    color: #076AFF;
-text-align: center;
-font-family: Sora;
-font-size: 48px;
-font-style: normal;
-font-weight: 600;
-line-height: 120%;
+    color: #076aff;
+    text-align: center;
+    font-family: Sora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
   }
   .Badge-actions {
     flex-direction: column;
     width: 100%;
   }
-  .btn-outline,  .google-reviews {
+  .btn-outline,
+  .google-reviews {
     width: 100% !important;
     justify-content: center;
-      font-weight: 400;
-     
+    font-weight: 400;
   }
   .btn-primary {
     width: 100% !important;
     justify-content: center;
-    font-weight:400;
+    font-weight: 400;
   }
 }
 
-
-.Badge-Buttons{
+.Badge-Buttons {
   width: 140;
-height: 40;
-border-width: 1px;
+  height: 40;
+  border-width: 1px;
 
-opacity: 1;
-padding-top: 12px;
-padding-right: 16px;
-padding-bottom: 12px;
-padding-left: 16px;
-
-
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
 }
 .btn-outline {
-  border: 2px solid #002D2D !important;
-  color: rgba(0, 6, 61, 1)!important;
+  border: 2px solid #002d2d !important;
+  color: rgba(0, 6, 61, 1) !important;
   background-color: transparent !important;
   padding: 8px 25px;
-   font-size:16px;
+  font-size: 16px;
   min-width: 140px;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .btn-outline:hover {
-  background-color: #002D2D !important;
+  background-color: #002d2d !important;
   color: #ffffff !important;
 }
-.Badge-container{
- 
+.Badge-container {
   display: flex;
   flex-direction: column;
-  align-items: center !important;      /* pehle: flex-start */
-  text-align: center !important;       /* pehle: left */
+  align-items: center !important; /* pehle: flex-start */
+  text-align: center !important; /* pehle: left */
   width: fit-content;
   z-index: 5;
-  margin-top: 120px; 
-  margin-left:150px;
-
+  margin-top: 120px;
+  margin-left: 150px;
 }
-.badge-wrapper {
+.image-wrapper {
   display: flex;
   align-items: center;
   /* background-color: #ffffff; */
   width: fit-content;
   overflow: hidden;
   /* margin-bottom: 8px;  */
-  
- 
+
   /* border: 1px solid #f3f4f6;  */
   /* border-radius: 0.125rem;    */
-  
+
   /* Shadow-sm */
   /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); */
 }
 
 .badge-yrs {
-  background-color: #076AFF; 
+  background-color: #076aff;
   color: #ffffff;
-  font-weight: 400;          
-  font-size: 0.875rem;      
-  
-  padding: 4px 8px;         
-  margin-left: 4px;         
-  margin-top: 2px;          
-  margin-bottom: 2px;       
-  
+  font-weight: 400;
+  font-size: 0.875rem;
+
+  padding: 4px 8px;
+  margin-left: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
   /* Layout */
-  display: inline-block;    
+  display: inline-block;
 }
 /* The Parent Span */
 .expertise-text {
   display: inline-flex;
   align-items: center;
   column-gap: 0px;
-  margin-left: 8px;   
-  padding-top: 1px;       
-  padding-bottom: 1px;    
-  color: rgba(0, 6, 61, 1);         
-  font-size:16px;  
-  font-weight: 400;      
+  margin-left: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: rgba(0, 6, 61, 1);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* The Image inside */
 .expertise-icon {
-  margin-right: 0px;      
-  height: 29px;           
-  width: 29px;            
-  object-fit: contain;    
+  margin-right: 0px;
+  height: 29px;
+  width: 29px;
+  object-fit: contain;
 }
 /* Title Styling */
 .Badge-title {
-  font-size:48px;           
-  font-weight: 600;          
-  color: #076AFF;
+  font-size: 48px;
+  font-weight: 600;
+  color: #076aff;
   line-height: 1.25;
-  margin-top:9px;         
-  margin-bottom: 9px;       
-  white-space: nowrap;  
-      
+  margin-top: 9px;
+  margin-bottom: 9px;
+  white-space: nowrap;
 }
 
 /* Subtitle Styling */
 .Badge-subtitle {
-  color:rgba(0, 6, 61, 1);           
-  font-size: 16px;       
-  line-height: 1.75rem;     
-  margin-bottom: 18px;      
-  max-width: 56rem;          
-  text-align: center !important;       
+  color: rgba(0, 6, 61, 1);
+  font-size: 16px;
+  line-height: 1.75rem;
+  margin-bottom: 18px;
+  max-width: 56rem;
+  text-align: center !important;
 }
 
 .Badge-actions {
-  display: flex;         
-  flex-wrap: wrap;       
-  align-items: center;  
-  justify-content: center !important;   /* naya add kiya */
-  gap: 16px;            
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center !important; /* naya add kiya */
+  gap: 16px;
 }
 
 .Badge-buttons {
-  font-weight: 600;        
-  padding: 8px 15px;     
-  white-space: nowrap;   
+  font-weight: 600;
+  padding: 8px 15px;
+  white-space: nowrap;
   cursor: pointer;
-  transition: all 0.3s ease;  
-    box-sizing: border-box; 
+  transition: all 0.3s ease;
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-
 .btn-outline {
-  border: 1px solid #002D2D;  
-  color: rgba(0, 6, 61, 1);          
+  border: 1px solid #002d2d;
+  color: rgba(0, 6, 61, 1);
   background-color: transparent;
-       padding:8px 25px;
-         font-weight: 400;
-      min-width: 140px;
-
+  padding: 8px 25px;
+  font-weight: 400;
+  min-width: 140px;
 }
 
 .btn-outline:hover {
-  background-color: #002D2D; 
-  color: #ffffff;            
+  background-color: #002d2d;
+  color: #ffffff;
 }
 
 /* Primary Button Variation */
 .btn-primary {
-  background-color: rgba(250, 64, 40, 1);  
-  color: #ffffff;             
-  border: 2px solid rgba(250, 64, 40, 1);  
+  background-color: rgba(250, 64, 40, 1);
+  color: #ffffff;
+  border: 2px solid rgba(250, 64, 40, 1);
   padding: 8px 16px;
-      font-weight:400;
-
-               
+  font-weight: 400;
 }
 
 .btn-primary:hover {
-  background-color: rgba(250, 64, 40, 1);  
+  background-color: rgba(250, 64, 40, 1);
   border-color: rgba(250, 64, 40, 1);
-  font-weight:400;
-  
+  font-weight: 400;
 }
 
 /* Container with Responsive Margins */
 .badge-image-container {
-  position: relative;     
-  flex: 1 1 0%;          
-  margin-top: 20px;      
-  margin-left: 80px;      
+  position: relative;
+  flex: 1 1 0%;
+  margin-top: 20px;
+  margin-left: 80px;
   z-index: 2;
 }
 
-
 @media (min-width: 1024px) {
   .badge-image-container {
-    margin-left: 50px;  
+    margin-left: 50px;
   }
 }
 
 /* Sized wrapper */
 .image-wrapper {
-  width: 1500px;       
-  height: 600px;   
-
-
-
-       
+  width: 1500px;
+  height: 600px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    .badge-image-container {
-        margin-left: 94px !important;
-        margin-top: 28px !important;
-    }
+  .badge-image-container {
+    margin-left: 94px !important;
+    margin-top: 28px !important;
+  }
 }
-.btn-outline
-
- {
-    border: 1px solid #002D2D !important;
- 
+.btn-outline {
+  border: 1px solid #002d2d !important;
 }
 
 /* .dashboard-img {
@@ -367,11 +334,11 @@ padding-left: 16px;
  */
 
 .dashboard-img {
-  width: 100%;            
-  height: auto;           
-  object-fit: cover;     
-  z-index: 0;             
-  border-radius: 26px;    
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 26px;
   filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
   /* clip-path hata diya — ab straight image dikhegi */
 }
@@ -379,13 +346,12 @@ padding-left: 16px;
 .diamond-half-clip {
   border-radius: 14px;
   opacity: 1;
-  border: 14px solid #E5E5E5;
+  border: 14px solid #e5e5e5;
   width: 100%;
 
   backface-visibility: hidden;
   transition: transform 0.5s ease-in-out;
 }
-
 
 /* ════════════════════════════════════════
    RESPONSIVE — All Screen Sizes
@@ -410,7 +376,7 @@ padding-left: 16px;
 
 @media (min-width: 1280px) {
   .Badge-container {
-    margin-left:45px !important;     
+    margin-left: 45px !important;
     /* margin-right: auto !important;     */
     margin-top: 120px !important;
   }
@@ -446,10 +412,10 @@ padding-left: 16px;
     margin-left: 30px !important;
   }
 } */
- @media (min-width: 1025px) and (max-width: 1279px) {
+@media (min-width: 1025px) and (max-width: 1279px) {
   .Badge-container {
-    margin-left: auto !important;    /* pehle: 60px */
-    margin-right: auto !important;   /* naya */
+    margin-left: auto !important; /* pehle: 60px */
+    margin-right: auto !important; /* naya */
     margin-top: 90px !important;
   }
   .Badge-title {
@@ -468,7 +434,6 @@ padding-left: 16px;
   }
 }
 
-
 /* ══════════════════════════════
    MOBILE (max 767px)
 /* ══ Mobile: stack vertically ══ */
@@ -478,22 +443,21 @@ padding-left: 16px;
   }
 
   .Badge-container {
-   margin-left: auto !important;      /* pehle: 24px */
-    margin-right: auto !important;     /* naya */
+    margin-left: auto !important; /* pehle: 24px */
+    margin-right: auto !important; /* naya */
     margin-top: 60px !important;
     width: auto !important;
-    align-items: center !important;    /* pehle: flex-start */
-    text-align: center !important; 
+    align-items: center !important; /* pehle: flex-start */
+    text-align: center !important;
   }
 
   .Badge-title {
-    font-size:30px !important;
+    font-size: 30px !important;
     white-space: normal !important;
     text-align: center !important;
-      /* pehle: left */
+    /* pehle: left */
     margin-left: 0;
     margin-right: 0;
-
   }
 
   .Badge-subtitle {
@@ -501,8 +465,6 @@ padding-left: 16px;
     font-size: 16px !important;
     margin-bottom: 17px !important;
   }
-
-  
 
   .badge-image-container {
     margin-left: 0 !important;
@@ -512,7 +474,7 @@ padding-left: 16px;
 
   .image-wrapper {
     width: 100% !important;
-    height: 310px!important;
+    height: 310px !important;
   }
 
   .diamond-half-clip {
@@ -520,7 +482,7 @@ padding-left: 16px;
     clip-path: none !important;
     width: 100% !important;
     border-radius: 7px !important;
-  border:4px solid #E5E5E5;
+    border: 4px solid #e5e5e5;
   }
 }
 
@@ -535,11 +497,11 @@ padding-left: 16px;
     font-size: 0.88rem !important;
   }
   .badge-yrs {
-    font-size:14px !important;
+    font-size: 14px !important;
     padding: 6px 10px !important;
   }
   .expertise-text {
-    font-size:14px !important;
+    font-size: 14px !important;
   }
   .expertise-icon {
     width: 28px !important;
@@ -552,7 +514,7 @@ padding-left: 16px;
    ══════════════════════════════ */
 @media (max-width: 360px) {
   .Badge-title {
-    font-size:30px !important;
+    font-size: 30px !important;
   }
   .Badge-subtitle {
     font-size: 0.82rem !important;
@@ -561,27 +523,26 @@ padding-left: 16px;
     font-size: 12px !important;
     padding: 6px 9px !important;
   }
-  
+
   .btn-primary {
     font-size: 14px !important;
-    padding:6px 9px !important;
-    font-weight:400;
-}
+    padding: 6px 9px !important;
+    font-weight: 400;
+  }
 }
 
-
-/* ══ Fix badge-wrapper stuck on navbar ══ */
+/* ══ Fix image-wrapper stuck on navbar ══ */
 @media (max-width: 767px) {
   .Badge-container {
     margin-top: 20px !important;
     padding-top: 16px !important;
-    height:auto;
+    height: auto;
     width: 100% !important;
     max-width: 100% !important;
     overflow: visible !important;
   }
 
-  .badge-wrapper {
+  .image-wrapper {
     width: auto !important;
     max-width: 95vw !important;
     overflow: visible !important;
@@ -593,7 +554,7 @@ padding-left: 16px;
 
   .badge-yrs {
     margin: 0 !important;
-    font-size: 16px!important;
+    font-size: 16px !important;
     padding: 0px 8px !important;
   }
 
@@ -605,7 +566,7 @@ padding-left: 16px;
     text-align: center !important;
     padding: 4px 6px !important;
     line-height: 1.4 !important;
-    font-size:14px;
+    font-size: 14px;
   }
 
   .expertise-icon {
@@ -620,7 +581,7 @@ padding-left: 16px;
     padding-top: 12px !important;
   }
 
-  .badge-wrapper {
+  .image-wrapper {
     max-width: 98vw !important;
   }
 
@@ -644,18 +605,17 @@ padding-left: 16px;
 /* ══════════════════════════════
    TABLET (768px – 1024px) — CLEAN SINGLE BLOCK
    ══════════════════════════════ */
-@media (min-width: 768px) and (max-width: 1024px) {
-
+/* @media (min-width: 768px) and (max-width: 1024px) {
   .Badge-container {
-      margin-left: auto !important;      /* pehle: 24px */
-    margin-right: auto !important;     /* naya */
+    margin-left: auto !important;
+    margin-right: auto !important;
     margin-top: 60px !important;
     width: auto !important;
-    align-items: center !important;    /* pehle: flex-start */
-    text-align: center !important;  
+    align-items: center !important;
+    text-align: center !important;
   }
 
-  .badge-wrapper {
+  .image-wrapper {
     flex-wrap: wrap !important;
     max-width: 100% !important;
     overflow: visible !important;
@@ -686,10 +646,8 @@ padding-left: 16px;
     white-space: normal !important;
     margin-bottom: 8px !important;
     margin-top: 8px;
-    /* margin-right: 1rem;
-    margin-left: 0rem;
-    text-align: left; */
-    text-align: center;    /* pehle: left */
+   
+    text-align: center; 
     margin-left: 0;
     margin-right: 0;
     max-width: 550px;
@@ -699,7 +657,7 @@ padding-left: 16px;
   .Badge-subtitle {
     font-size: 0.92rem !important;
     margin-bottom: 20px !important;
-    max-width: 500px;
+    max-width: 520px;
     width: 100%;
   }
 
@@ -717,7 +675,7 @@ padding-left: 16px;
   .btn-primary {
     padding: 7px 14px !important;
     font-size: 16px !important;
-    font-weight:400;
+    font-weight: 400;
     min-width: unset !important;
   }
 
@@ -743,7 +701,7 @@ padding-left: 16px;
     width: 100% !important;
     transform: rotate(-15deg) !important;
   }
-}
+} */
 /* ══ MOBILE (max 767px) ══ */
 @media (max-width: 767px) {
   .Badge-actions {
@@ -755,8 +713,7 @@ padding-left: 16px;
     gap: 10px !important;
   }
 
-  .btn-outline
-  {
+  .btn-outline {
     width: auto !important;
     min-width: unset !important;
     padding: 8px 16px !important;
@@ -764,11 +721,10 @@ padding-left: 16px;
     justify-content: center !important;
   }
 
-  
   .btn-primary {
     width: auto !important;
     min-width: unset !important;
-    font-weight:400;
+    font-weight: 400;
     padding: 8px 16px !important;
     font-size: 16px !important;
     justify-content: center !important;
@@ -799,8 +755,8 @@ padding-left: 16px;
     padding: 8px 14px !important;
     font-size: 14px !important;
   }
-.btn-primary {
-  font-weight:400;
+  .btn-primary {
+    font-weight: 400;
     width: auto !important;
     min-width: unset !important;
     box-sizing: border-box !important;
@@ -826,22 +782,19 @@ padding-left: 16px;
     padding: 0 !important;
   }
 
-
   .btn-primary {
     width: auto !important;
-    font-weight:400;
+    font-weight: 400;
     min-width: unset !important;
     padding: 7px 12px !important;
     font-size: 12px !important;
-  } 
-  .btn-outline
-   {
+  }
+  .btn-outline {
     width: auto !important;
     min-width: unset !important;
     padding: 7px 12px !important;
     font-size: 12px !important;
   }
-
 
   .google-reviews {
     width: auto !important;
@@ -859,16 +812,14 @@ padding-left: 16px;
     gap: 6px !important;
   }
 
-  
   .btn-primary {
     width: auto !important;
     min-width: unset !important;
-    font-weight:400;
+    font-weight: 400;
     padding: 6px 10px !important;
     font-size: 12px !important;
   }
 
- 
   .btn-primary {
     width: auto !important;
     min-width: unset !important;
@@ -883,50 +834,45 @@ padding-left: 16px;
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 1024px) {
-    .Badge-container {
-        margin-left: 18px !important;
-        margin-top: 3px !important;}}
-
+  .Badge-container {
+    margin-left: 18px !important;
+    margin-top: 3px !important;
+  }
+}
 
 @media (max-width: 767px) {
-
-
-.Badge-title {
+  .Badge-title {
     font-size: 3rem;
     font-weight: 600;
     color: #002d2d;
     line-height: 1.25;
     margin-bottom: 8px;
-    margin-top:8px;
+    margin-top: 8px;
     white-space: nowrap;
-}
-    .badge-yrs {
-        margin: 6px !important;
-}
+  }
+  .badge-yrs {
+    margin: 6px !important;
+  }
 }
 
-        /* ══════════════════════════════
+/* ══════════════════════════════
    LARGE DESKTOP (1440px+)
    ══════════════════════════════ */
 @media (min-width: 1441px) {
   .Badge-container {
-    margin-left: auto !important;    /* pehle: 48px */
-    margin-right: auto !important;   /* naya */
+    margin-left: auto !important; /* pehle: 48px */
+    margin-right: auto !important; /* naya */
     margin-top: 10px !important;
   }
   .Badge-title {
     font-size: 48px !important;
-        margin-left:0px !important;
+    margin-left: 0px !important;
   }
   .image-wrapper {
     width: 1140px !important;
     height: 584px !important;
   }
-  
-
-
 }
 
 /* ══════════════════════════════
@@ -934,16 +880,15 @@ padding-left: 16px;
    ══════════════════════════════ */
 @media (min-width: 1280px) and (max-width: 1440px) {
   .Badge-container {
-    margin-left: 45px !important;    
+    margin-left: 45px !important;
     /* margin-right: auto !important;   */
     margin-top: -15rem !important;
-
   }
   .Badge-title {
     font-size: 2.75rem !important;
-        margin-left:-2rem !important;
+    margin-left: -2rem !important;
     white-space: normal !important;
-  width:900px  !important;
+    width: 900px !important;
   }
   .Badge-subtitle {
     font-size: 16px !important;
@@ -952,11 +897,11 @@ padding-left: 16px;
   }
   .badge-image-container {
     margin-left: 120px !important;
-    margin-top:-25rem !important;
+    margin-top: -25rem !important;
   }
   .image-wrapper {
-    width:900px !important;
-    height:70px!important;
+    width: 900px !important;
+    height: 70px !important;
   }
 
   .badge-yrs {
@@ -967,7 +912,6 @@ padding-left: 16px;
     width: 30px !important;
     height: 30px !important;
   }
- 
 }
 
 /* ══════════════════════════════
@@ -975,18 +919,18 @@ padding-left: 16px;
    ══════════════════════════════ */
 @media (min-width: 1025px) and (max-width: 1279px) {
   .Badge-container {
- margin-left: auto !important;    /* pehle: 20px */
-    margin-right: auto !important;   /* naya */
+    margin-left: auto !important; /* pehle: 20px */
+    margin-right: auto !important; /* naya */
     margin-top: 10px !important;
   }
   .Badge-title {
     font-size: 2.4rem !important;
-     margin-left:-5rem !important;
+    margin-left: -5rem !important;
     white-space: normal !important;
     max-width: 560px !important;
   }
   .Badge-subtitle {
-    font-size:16px !important;
+    font-size: 16px !important;
     max-width: 460px !important;
     margin-bottom: 10px !important;
   }
@@ -1007,17 +951,13 @@ padding-left: 16px;
     width: 28px !important;
     height: 28px !important;
   }
-  
-
-
 }
-@media (min-width: 700px) and (max-width:790px) {
- .badge-image-container {
+@media (min-width: 700px) and (max-width: 790px) {
+  .badge-image-container {
     margin-left: 10px !important;
     margin-top: 0rem !important;
-  }}
-
-
+  }
+}
 
 /* Hide by default on Desktop/Tablet */
 .scroll-down-arrow {
@@ -1033,25 +973,29 @@ padding-left: 16px;
     width: 100%;
     /* margin-top: -40px helps pull it up toward the image 
        if the image has a large bottom margin */
-    margin-top: 16px; 
-    padding-bottom: 25px;
+    margin-top: 12px;
+
     cursor: pointer;
     z-index: 10;
   }
 
   .scroll-down-arrow span {
     display: flex;
-    font-size: 30px;   
-   
-      /* Size of the TiArrowDown icon */
-    color: #002d2d;          /* Matches your brand color */
+    font-size: 30px;
+
+    /* Size of the TiArrowDown icon */
+    color: #002d2d; /* Matches your brand color */
     animation: arrow-bounce 2s infinite;
   }
 }
 
 /* Simple vertical bounce animation */
 @keyframes arrow-bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -1062,18 +1006,13 @@ padding-left: 16px;
   }
 }
 
-
-
-
 /* Fix broken negative margins that only make sense in the old flex layout.
    Scoped to .hero-grid-wrapper so mobile and anything outside the grid is untouched. */
 @media (min-width: 1280px) and (max-width: 1440px) {
   .hero-grid-wrapper .Badge-container {
-
-    margin-top:95px!important;
-    margin-left: 45px !important;    /* pehle: 9 (invalid value tha) */
-     margin-right: 45px !important;   
-  
+    margin-top: 95px !important;
+    margin-left: 45px !important; /* pehle: 9 (invalid value tha) */
+    margin-right: 45px !important;
   }
   .hero-grid-wrapper .badge-image-container {
     margin-top: 70px !important;
@@ -1085,20 +1024,18 @@ padding-left: 16px;
     max-width: 606px;
   }
 
-
-
-    .Badge-title {
-        font-size: 2.45rem !important;
-         margin-left: -5rem !important; 
-        white-space: normal !important;
-         width: 900px !important;
-  
-    }}
+  .Badge-title {
+    font-size: 2.45rem !important;
+    margin-left: -5rem !important;
+    white-space: normal !important;
+    width: 900px !important;
+  }
+}
 
 @media (min-width: 1441px) {
   .hero-grid-wrapper .Badge-container {
-      margin-top: 40px !important;
-    margin-left: auto !important;    /* pehle: 15px */
+    margin-top: 40px !important;
+    margin-left: auto !important; /* pehle: 15px */
     margin-right: auto !important;
   }
   .hero-grid-wrapper .badge-image-container {
@@ -1110,7 +1047,7 @@ padding-left: 16px;
 @media (min-width: 1025px) and (max-width: 1279px) {
   .hero-grid-wrapper .Badge-container {
     margin-top: 40px !important;
-    margin-left: auto !important;    /* pehle: 0 */
+    margin-left: auto !important; /* pehle: 0 */
     margin-right: auto !important;
   }
   .hero-grid-wrapper .badge-image-container {
@@ -1119,8 +1056,6 @@ padding-left: 16px;
   }
 }
 
-
-
 /* ══════════════════════════════════════════════
    COMPLETE TABLET FIX (768px – 1024px)
    Scoped to .hero-grid-wrapper, placed last so it
@@ -1128,7 +1063,6 @@ padding-left: 16px;
    Mobile (<768px) and desktop (>1024px) untouched.
    ══════════════════════════════════════════════ */
 @media (min-width: 768px) and (max-width: 1024px) {
-
   .hero-grid-wrapper {
     display: grid !important;
     grid-template-columns: 1fr 280px !important;
@@ -1147,7 +1081,7 @@ padding-left: 16px;
     text-align: left !important;
   }
 
-  .hero-grid-wrapper .badge-wrapper {
+  .hero-grid-wrapper .image-wrapper {
     flex-wrap: wrap !important;
     width: auto !important;
     max-width: 100% !important;
@@ -1174,7 +1108,7 @@ padding-left: 16px;
   .hero-grid-wrapper .btn-outline,
   .hero-grid-wrapper .btn-primary {
     padding: 8px 57px !important;
-    font-weight:400;
+    font-weight: 400;
     font-size: 16px !important;
     min-width: unset !important;
   }
@@ -1186,11 +1120,11 @@ padding-left: 16px;
 
   /* Image column */
   .hero-grid-wrapper .badge-image-container {
-     margin-left: 5px !important; 
-    width: 100% !important; 
-    margin-top:10px;
-margin-right:-49px;
-margin-bottom:-49px;
+    margin-left: 5px !important;
+    width: 100% !important;
+    margin-top: 10px;
+    margin-right: -49px;
+    margin-bottom: -49px;
     min-width: 0 !important;
   }
 
@@ -1199,7 +1133,7 @@ margin-bottom:-49px;
     height: auto !important;
     aspect-ratio: 4 / 3 !important;
     max-width: 373px !important;
-    margin-left:5px;
+    margin-left: 5px;
   }
 
   .hero-grid-wrapper .diamond-half-clip {
@@ -1211,9 +1145,6 @@ margin-bottom:-49px;
   }
 }
 
-
-
-
 .hero-bg-glow {
   position: absolute;
   top: 364px;
@@ -1223,7 +1154,7 @@ margin-bottom:-49px;
   max-width: 1600px;
   height: auto;
   z-index: 0;
-  pointer-events: none;   /* clicks isse block na hon */
+  pointer-events: none; /* clicks isse block na hon */
   user-select: none;
 }
 
@@ -1340,7 +1271,7 @@ margin-bottom:-49px;
 @media (min-width: 1441px) {
   .beams-dimensions {
     height: 795px !important;
-    min-height: 795px !important;
+    min-height: 858px !important;
     align-items: flex-start !important;
     justify-content: flex-start !important;
   }
@@ -1399,7 +1330,7 @@ margin-bottom:-49px;
   text-align: center !important;
 }
 
-.hero-grid-wrapper .badge-wrapper {
+.hero-grid-wrapper .image-wrapper {
   margin-top: 0 !important;
   margin-bottom: 8px !important;
 }
@@ -1415,7 +1346,7 @@ margin-bottom:-49px;
 }
 
 .hero-grid-wrapper .Badge-subtitle {
-  max-width: 760px !important;
+  max-width: 771px !important;
   margin: 0 auto 18px !important;
   text-align: center !important;
 }
@@ -1430,7 +1361,7 @@ margin-bottom:-49px;
 }
 
 .hero-grid-wrapper .hero-visual .badge-image-container {
-  width: min(100% - 32px, 912px) !important;
+  width: min(100% - 32px, 865px) !important;
   margin: 0 auto !important;
 }
 
@@ -1462,7 +1393,7 @@ margin-bottom:-49px;
     margin-top: 28px !important;
   }
 
-  .hero-grid-wrapper .badge-wrapper {
+  .hero-grid-wrapper .image-wrapper {
     margin-top: 0 !important;
   }
 
@@ -1518,12 +1449,6 @@ margin-bottom:-49px;
   }
 }
 
-
-
-
-
-
-
 /* White backing directly behind the dashboard image only —
    blocks the glow from showing through transparent SVG areas */
 .hero-grid-wrapper .hero-visual .image-wrapper {
@@ -1550,20 +1475,25 @@ margin-bottom:-49px;
   }
 }
 
-
 /* Tablet (768px–1024px): glow ko hero-visual/beams ke bottom pe rakho,
    par container ke andar hi contained rakho taaki solid block na bane */
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero-grid-wrapper .hero-visual {
-    overflow: visible;              /* hidden hata diya taaki glow crop na ho */
+    overflow: visible;             
     position: relative;
     padding: 2rem 1.5rem 1rem; 
       margin-bottom: -6rem !important;  
     padding-bottom: 0;
+    isolation: isolate;
+   
+    position: relative;
+    padding: 2rem 1.5rem 1rem;
+    margin-bottom: -9rem !important;
+    padding-bottom: 0;
   }
 
   .hero-grid-wrapper .hero-visual .hero-bg-glow {
-   top: 23%;    
+    /* top: 23%;    
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -1572,11 +1502,274 @@ margin-bottom:-49px;
     height: auto;
     max-height: 300px;
     z-index: -1;
+    opacity: 0.9; */
+    position: absolute;
+    top: 7%; /* negative = glow peeks above the visual, not cropped */
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(
+      1100px,
+      130%
+    ); /* wider than container so left/right aren't clipped */
+    height: auto;
+    max-height: 320px;
+    z-index: -1;
     opacity: 0.9;
+    pointer-events: none;
   }
 }
- @media (min-width: 1025x) and (max-width: 1900px) {
-.hero-grid-wrapper .hero-visual .badge-image-container {
+@media (min-width: 1025px) and (max-width: 1900px) {
+  .hero-grid-wrapper .hero-visual .badge-image-container {
     position: relative;
-    z-index: 1;                    
-  }} 
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1445px) {
+   .hero-grid-wrapper .hero-visual {
+    position: relative !important;
+    overflow: visible !important;
+
+    min-height: 900px !important;
+  } 
+
+ 
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    position: absolute !important;
+    top: 0% !important;
+    right: 90% !important;
+    left: 50% !important;
+    width: 200vw !important; 
+    max-width: 1411px !important;
+    height: auto !important;
+    max-height: 800px !important;
+    z-index: -1 !important;
+    opacity: 0.9 !important;
+    pointer-events: none !important;
+  } 
+
+  
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    position: relative !important;
+    z-index: 2 !important;
+  } 
+
+
+
+
+   /* .hero-grid-wrapper .hero-visual {
+    position: relative !important;
+    overflow: visible !important;
+    min-height: 1000px !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+
+    width: 1411px !important;
+    max-width: none !important;
+
+    height: 1000px !important;
+    max-height: none !important;
+
+    object-fit: fill !important;
+
+    z-index: 0 !important;
+    opacity: 0.9 !important;
+    pointer-events: none !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    position: relative !important;
+    z-index: 2 !important;
+  } */
+
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .hero-grid-wrapper .hero-visual {
+    overflow: visible !important;
+    position: relative !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    position: absolute !important;
+    top: 11% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: min(1439px, 140%) !important;
+    height: auto !important;
+    max-height: 427px !important;
+    z-index: -1 !important;
+    opacity: 0.9 !important;
+    pointer-events: none !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    position: relative !important;
+    z-index: 1 !important;
+  }
+}
+
+/* Optional: very large screens beyond 1900px */
+@media (min-width: 1901px) {
+  .hero-grid-wrapper .hero-visual {
+    overflow: visible;
+    position: relative;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1600px, 150%);
+    height: auto;
+    max-height: 500px;
+    z-index: -1;
+    opacity: 0.9;
+    pointer-events: none;
+  }
+}
+
+/* mobile */
+@media (min-width: 376px) and (max-width: 767px) {
+  .hero-grid-wrapper .hero-visual {
+    overflow: visible !important;
+    position: relative !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    position: absolute !important;
+    top: 20% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 105vw !important;
+    max-width: none !important;
+    height: auto !important;
+    z-index: -1 !important;
+    opacity: 0.9 !important;
+    pointer-events: none !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    position: relative !important;
+    z-index: 1 !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-grid-wrapper .hero-visual {
+    overflow: visible !important;
+    position: relative !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .hero-bg-glow {
+    position: absolute !important;
+    top: 20% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 109vw !important;
+    max-width: none !important;
+    height: auto !important;
+    z-index: -1 !important;
+    opacity: 0.9 !important;
+    pointer-events: none !important;
+  }
+
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    position: relative !important;
+    z-index: 1 !important;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+  .badge-image-container {
+    margin-left: 0 !important;
+    margin-top: 90px !important;
+    width: 100% !important;
+    padding: 0 50px !important; /* ← naya: left-right dono side margin */
+    box-sizing: border-box !important;
+  }
+
+  .image-wrapper {
+    width: 100% !important;
+    height: 280px !important; /* ← thoda chhota kiya (310px se 280px) */
+  }
+
+  .diamond-half-clip {
+    transform: none !important;
+    clip-path: none !important;
+    width: 100% !important; /* ye ab container ke andar hi 100% hoga, jo padding ki wajah se already chhota hai */
+    border-radius: 7px !important;
+    border: 4px solid #e5e5e5;
+  }
+}
+
+@media (max-width: 375px) {
+  .badge-image-container {
+    margin-left: 0 !important;
+    margin-top: 90px !important;
+    width: 100% !important;
+    padding: 0 39px !important; /* ← naya: left-right dono side margin */
+    box-sizing: border-box !important;
+  }
+
+  .image-wrapper {
+    width: 100% !important;
+    height: 280px !important; /* ← thoda chhota kiya (310px se 280px) */
+  }
+
+  .diamond-half-clip {
+    transform: none !important;
+    clip-path: none !important;
+    width: 100% !important; /* ye ab container ke andar hi 100% hoga, jo padding ki wajah se already chhota hai */
+    border-radius: 7px !important;
+    border: 4px solid #e5e5e5;
+  }
+}  
+
+
+
+
+.image-wrapper{
+  border: 9px solid #e5e5e5;
+  border-radius:15px;
+}
+
+
+
+.image-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 1000px;
+
+  height: auto;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  z-index: 5;
+}
+
+/* White background behind image */
+.image-wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  z-index: 0;
+}
