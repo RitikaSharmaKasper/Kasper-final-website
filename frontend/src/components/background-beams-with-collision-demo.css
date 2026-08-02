@@ -226,7 +226,7 @@
   color: #076aff;
   line-height: 1.25;
   margin-top: 9px;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   white-space: normal;
 }
 
@@ -234,8 +234,8 @@
 .Badge-subtitle {
   color: rgba(0, 6, 61, 1);
   font-size: 16px;
-  line-height: 1.75rem;
-  margin-bottom: 18px;
+  line-height: 1.55rem;
+  margin-bottom: 20px;
   max-width: 56rem;
   text-align: center !important;
 }
@@ -464,7 +464,7 @@
   .Badge-subtitle {
     text-align: center !important;
     font-size: 16px !important;
-    margin-bottom: 17px !important;
+    margin-bottom: 19px !important;
   }
 
   .badge-image-container {
@@ -1060,14 +1060,14 @@
   line-height: 1.2 !important;
   white-space: normal !important;
   text-align: center !important;
-  margin: 10px 0 !important;
+  margin: 10px 3px !important;
   width: auto !important;
   max-width: 100% !important;
 }
 
 .hero-grid-wrapper .Badge-subtitle {
-  max-width: 700px !important;
-  margin: 0 auto 18px !important;
+  max-width: 780px !important;
+  margin: 0 auto 20px !important;
   text-align: center !important;
   font-size: 16px !important;
 }
@@ -1152,10 +1152,10 @@
     justify-content: flex-start !important;
   }
   .hero-grid-wrapper .Badge-container {
-    margin-top: 80px !important;
+    margin-top: 70px !important;
   }
   .hero-grid-wrapper .hero-visual {
-    margin-top: 2rem !important;
+    margin-top: 6rem !important;
     margin-bottom: 4rem !important;
   }
   .hero-grid-wrapper .hero-visual .badge-image-container {
@@ -1166,7 +1166,7 @@
 /* ── Wide Laptop 1280px–1440px ── */
 @media (min-width: 1280px) and (max-width: 1440px) {
   .hero-grid-wrapper .Badge-container {
-    margin-top: 80px !important;
+    margin-top: 102px !important;
   }
   .hero-grid-wrapper .hero-visual {
     margin-top: 3rem !important;
@@ -1197,7 +1197,7 @@
     justify-content: flex-start !important;
   }
   .hero-grid-wrapper .Badge-container {
-    margin-top: 50px !important;
+    margin-top: 68px !important;
     align-items: center !important;
     text-align: center !important;
   }
