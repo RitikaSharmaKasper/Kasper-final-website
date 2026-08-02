@@ -974,7 +974,7 @@
     width: 100%;
     /* margin-top: -40px helps pull it up toward the image 
        if the image has a large bottom margin */
-    margin-top: 12px;
+    margin-top: -25px;
 
     cursor: pointer;
     z-index: 10;
@@ -1169,8 +1169,8 @@
     margin-top: 80px !important;
   }
   .hero-grid-wrapper .hero-visual {
-    margin-top: 2rem !important;
-    margin-bottom: 4rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 0rem !important;
   }
 }
 
@@ -1205,8 +1205,8 @@
     font-size: 2rem !important;
   }
   .hero-grid-wrapper .hero-visual {
-    margin-top: 2rem !important;
-    margin-bottom: 3rem !important;
+    margin-top: 7rem !important;
+    margin-bottom: 0rem !important;
   }
   .hero-grid-wrapper .hero-visual .badge-image-container {
     width: min(100% - 32px, 587px) !important;
@@ -1233,8 +1233,8 @@
     font-size: 16px !important;
   }
   .hero-grid-wrapper .hero-visual {
-    margin-top: 1.5rem !important;
-    margin-bottom: 3rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
   }
   .hero-grid-wrapper .hero-visual .badge-image-container {
     width: 100% !important;
@@ -1256,6 +1256,6 @@
     min-height: 780px;
   }
   .hero-grid-wrapper .Badge-container {
-    margin-top: 20px !important;
+    margin-top: 16px !important;
   }
 }
