@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, Suspense, lazy } from "react";
+﻿import React, { useEffect, useRef, useState, Suspense, lazy } from "react";
 
 import { ArrowDown } from "lucide-react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";

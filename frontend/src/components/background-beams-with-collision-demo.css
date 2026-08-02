@@ -1,4 +1,4 @@
-.Badge-div {
+﻿.Badge-div {
   display: flex;
   width: 935px;
   max-width: 100%;
@@ -167,7 +167,8 @@
   width: fit-content;
   z-index: 5;
   margin-top: 120px;
-  margin-left: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .image-wrapper {
   display: flex;
@@ -226,7 +227,7 @@
   line-height: 1.25;
   margin-top: 9px;
   margin-bottom: 9px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 /* Subtitle Styling */
@@ -340,7 +341,7 @@
   z-index: 0;
   border-radius: 26px;
   filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
-  /* clip-path hata diya — ab straight image dikhegi */
+  /* clip-path hata diya ΓÇö ab straight image dikhegi */
 }
 
 .diamond-half-clip {
@@ -353,13 +354,13 @@
   transition: transform 0.5s ease-in-out;
 }
 
-/* ════════════════════════════════════════
-   RESPONSIVE — All Screen Sizes
-   ════════════════════════════════════════ */
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   RESPONSIVE ΓÇö All Screen Sizes
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 
-/* ══════════════════════════════
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
    LARGE DESKTOP (1280px+)
-   ══════════════════════════════ */
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 /* @media (min-width: 1280px) {
   .Badge-container {
     margin-left: 150px !important;
@@ -389,9 +390,9 @@
   }
 }
 
-/* ══════════════════════════════
-   SMALL DESKTOP / LAPTOP (1025px – 1279px)
-   ══════════════════════════════ */
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   SMALL DESKTOP / LAPTOP (1025px ΓÇô 1279px)
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 /* @media (min-width: 1025px) and (max-width: 1279px) {
   .Badge-container {
     margin-left: 60px !important;
@@ -434,9 +435,9 @@
   }
 }
 
-/* ══════════════════════════════
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
    MOBILE (max 767px)
-/* ══ Mobile: stack vertically ══ */
+/* ΓòÉΓòÉ Mobile: stack vertically ΓòÉΓòÉ */
 @media (max-width: 767px) {
   .flex.flex-col {
     flex-direction: column !important;
@@ -486,9 +487,9 @@
   }
 }
 
-/* ══════════════════════════════
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
    SMALL PHONES (max 480px)
-   ══════════════════════════════ */
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 @media (max-width: 480px) {
   .Badge-title {
     font-size: 30px !important;
@@ -509,9 +510,9 @@
   }
 }
 
-/* ══════════════════════════════
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
    EXTRA SMALL PHONES (max 360px)
-   ══════════════════════════════ */
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 @media (max-width: 360px) {
   .Badge-title {
     font-size: 30px !important;
@@ -531,7 +532,7 @@
   }
 }
 
-/* ══ Fix image-wrapper stuck on navbar ══ */
+/* ΓòÉΓòÉ Fix image-wrapper stuck on navbar ΓòÉΓòÉ */
 @media (max-width: 767px) {
   .Badge-container {
     margin-top: 20px !important;
@@ -602,9 +603,9 @@
   }
 }
 
-/* ══════════════════════════════
-   TABLET (768px – 1024px) — CLEAN SINGLE BLOCK
-   ══════════════════════════════ */
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   TABLET (768px ΓÇô 1024px) ΓÇö CLEAN SINGLE BLOCK
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 /* @media (min-width: 768px) and (max-width: 1024px) {
   .Badge-container {
     margin-left: auto !important;
@@ -702,7 +703,7 @@
     transform: rotate(-15deg) !important;
   }
 } */
-/* ══ MOBILE (max 767px) ══ */
+/* ΓòÉΓòÉ MOBILE (max 767px) ΓòÉΓòÉ */
 @media (max-width: 767px) {
   .Badge-actions {
     flex-direction: row !important;
@@ -737,7 +738,7 @@
   }
 }
 
-/* ══ iPHONE 14 (390px – 430px) ══ */
+/* ΓòÉΓòÉ iPHONE 14 (390px ΓÇô 430px) ΓòÉΓòÉ */
 @media (max-width: 430px) and (min-width: 390px) {
   .Badge-actions {
     flex-direction: row !important;
@@ -772,7 +773,7 @@
   }
 }
 
-/* ══ SMALL PHONES (max 389px) ══ */
+/* ΓòÉΓòÉ SMALL PHONES (max 389px) ΓòÉΓòÉ */
 @media (max-width: 389px) {
   .Badge-actions {
     flex-direction: row !important;
@@ -803,7 +804,7 @@
   }
 }
 
-/* ══ EXTRA SMALL (max 360px) ══ */
+/* ΓòÉΓòÉ EXTRA SMALL (max 360px) ΓòÉΓòÉ */
 @media (max-width: 360px) {
   .Badge-actions {
     flex-direction: row !important;
@@ -849,16 +850,16 @@
     line-height: 1.25;
     margin-bottom: 8px;
     margin-top: 8px;
-    white-space: nowrap;
+    white-space: normal;
   }
   .badge-yrs {
     margin: 6px !important;
   }
 }
 
-/* ══════════════════════════════
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
    LARGE DESKTOP (1440px+)
-   ══════════════════════════════ */
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 @media (min-width: 1441px) {
   .Badge-container {
     margin-left: auto !important; /* pehle: 48px */
@@ -875,9 +876,9 @@
   }
 }
 
-/* ══════════════════════════════
-   WIDE LAPTOP (1280px – 1440px)
-   ══════════════════════════════ */
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   WIDE LAPTOP (1280px ΓÇô 1440px)
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 @media (min-width: 1280px) and (max-width: 1440px) {
   .Badge-container {
     margin-left: 45px !important;
@@ -914,9 +915,9 @@
   }
 }
 
-/* ══════════════════════════════
-   STANDARD LAPTOP (1025px – 1279px)
-   ══════════════════════════════ */
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   STANDARD LAPTOP (1025px ΓÇô 1279px)
+   ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
 @media (min-width: 1025px) and (max-width: 1279px) {
   .Badge-container {
     margin-left: auto !important; /* pehle: 20px */
@@ -1008,451 +1009,111 @@
 
 /* Fix broken negative margins that only make sense in the old flex layout.
    Scoped to .hero-grid-wrapper so mobile and anything outside the grid is untouched. */
-@media (min-width: 1280px) and (max-width: 1440px) {
-  .hero-grid-wrapper .Badge-container {
-    margin-top: 95px !important;
-    margin-left: 45px !important; /* pehle: 9 (invalid value tha) */
-    margin-right: 45px !important;
-  }
-  .hero-grid-wrapper .badge-image-container {
-    margin-top: 70px !important;
-    margin-left: 0 !important;
-  }
-  .hero-grid-wrapper .image-wrapper {
-    width: 115% !important;
-    height: auto !important;
-    max-width: 606px;
-  }
 
-  .Badge-title {
-    font-size: 2.45rem !important;
-    margin-left: -5rem !important;
-    white-space: normal !important;
-    width: 900px !important;
-  }
-}
 
-@media (min-width: 1441px) {
-  .hero-grid-wrapper .Badge-container {
-    margin-top: 40px !important;
-    margin-left: auto !important; /* pehle: 15px */
-    margin-right: auto !important;
-  }
-  .hero-grid-wrapper .badge-image-container {
-    margin-top: 40px !important;
-    margin-left: 0 !important;
-  }
-}
+/* =============================================================
+   HERO LAYOUT — clean single block, no conflicts.
+   Controls: hero-grid-wrapper, hero-visual, glow, image,
+   badge-image-container, scroll arrow, responsive breakpoints.
+   Badge-container text/button styles above are NOT touched.
+   ============================================================= */
 
-@media (min-width: 1025px) and (max-width: 1279px) {
-  .hero-grid-wrapper .Badge-container {
-    margin-top: 40px !important;
-    margin-left: auto !important; /* pehle: 0 */
-    margin-right: auto !important;
-  }
-  .hero-grid-wrapper .badge-image-container {
-    margin-top: 40px !important;
-    margin-left: 0 !important;
-  }
-}
-
-/* ══════════════════════════════════════════════
-   COMPLETE TABLET FIX (768px – 1024px)
-   Scoped to .hero-grid-wrapper, placed last so it
-   overrides all earlier conflicting tablet rules.
-   Mobile (<768px) and desktop (>1024px) untouched.
-   ══════════════════════════════════════════════ */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-grid-wrapper {
-    display: grid !important;
-    grid-template-columns: 1fr 280px !important;
-    align-items: center !important;
-    gap: 24px !important;
-    padding-top: 24px !important;
-  }
-
-  /* Text column */
-  .hero-grid-wrapper .Badge-container {
-    margin-left: 0 !important;
-    margin-top: 30px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    align-items: flex-start !important;
-    text-align: left !important;
-  }
-
-  .hero-grid-wrapper .image-wrapper {
-    flex-wrap: wrap !important;
-    width: auto !important;
-    max-width: 100% !important;
-  }
-
-  .hero-grid-wrapper .Badge-title {
-    font-size: 2rem !important;
-    white-space: normal !important;
-    max-width: 100% !important;
-    margin: 8px 0 !important;
-  }
-
-  .hero-grid-wrapper .Badge-subtitle {
-    font-size: 0.95rem !important;
-    max-width: 100% !important;
-    margin-bottom: 16px !important;
-  }
-
-  .hero-grid-wrapper .Badge-actions {
-    gap: 10px !important;
-    flex-wrap: wrap !important;
-  }
-
-  .hero-grid-wrapper .btn-outline,
-  .hero-grid-wrapper .btn-primary {
-    padding: 8px 57px !important;
-    font-weight: 400;
-    font-size: 16px !important;
-    min-width: unset !important;
-  }
-
-  .hero-grid-wrapper .google-reviews {
-    font-size: 12px !important;
-    padding: 8px 12px !important;
-  }
-
-  /* Image column */
-  .hero-grid-wrapper .badge-image-container {
-    margin-left: 5px !important;
-    width: 100% !important;
-    margin-top: 10px;
-    margin-right: -49px;
-    margin-bottom: -49px;
-    min-width: 0 !important;
-  }
-
-  .hero-grid-wrapper .image-wrapper {
-    width: 130% !important;
-    height: auto !important;
-    aspect-ratio: 4 / 3 !important;
-    max-width: 373px !important;
-    margin-left: 5px;
-  }
-
-  .hero-grid-wrapper .diamond-half-clip {
-    width: 105% !important;
-    height: 96% !important;
-    object-fit: contain !important;
-    transform: rotate(-11deg) !important;
-    border-width: 6px !important;
-  }
-}
-
-.hero-bg-glow {
-  position: absolute;
-  top: 364px;
-  left: 50%;
-  transform: translateX(-50%);
+/* hero-section fills full beams width, sits at top */
+.hero-section {
   width: 100%;
-  max-width: 1600px;
-  height: auto;
-  z-index: 0;
-  pointer-events: none; /* clicks isse block na hon */
-  user-select: none;
+  align-self: flex-start;
 }
 
-.hero-grid-wrapper {
-  position: relative;
-  z-index: 1;
-}
-/* Dashboard visual: keep the blue SVG tied to the image at every breakpoint.
-   Badge-container styles are deliberately not touched here. */
-.hero-grid-wrapper .hero-visual {
-  position: relative;
-  isolation: isolate;
-  width: min(100%, 1140px);
-  margin: clamp(2rem, 5vw, 5rem) auto 0;
-  padding: 0 0 clamp(2rem, 5vw, 5rem);
-}
-
-.hero-grid-wrapper .hero-visual .hero-bg-glow {
-  position: absolute;
-  z-index: -1;
-  top: auto;
-  bottom: 0;
-  left: 50%;
-  width: min(1920px, 170vw);
-  max-width: none;
-  height: auto;
-  transform: translateX(-50%);
-}
-
-.hero-grid-wrapper .hero-visual .badge-image-container {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  margin: 0 !important;
-}
-
-.hero-grid-wrapper .hero-visual .image-wrapper {
-  width: 100% !important;
-  height: auto !important;
-  max-width: none !important;
-  margin: 0 !important;
-}
-
-.hero-grid-wrapper .hero-visual .diamond-half-clip {
-  display: block;
-  width: 100% !important;
-  height: auto !important;
-  object-fit: contain;
-  transform: none !important;
-}
-
-@media (max-width: 1024px) {
-  .hero-grid-wrapper .hero-visual {
-    width: min(100%, 900px);
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-grid-wrapper .hero-visual {
-    width: calc(100% + 2rem);
-    margin-top: 2.5rem;
-    padding-bottom: 2rem;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    width: 235vw;
-    bottom: 0;
-  }
-}
-
-/* Keep the dashboard in its own full-width row on tablets. The older two-column
-   grid is for the previous side-by-side hero and must not size this visual. */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-grid-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-  .hero-grid-wrapper .hero-visual {
-    width: min(100%, 900px) !important;
-    grid-column: auto;
-  }
-}
-
-/* The glow starts after the dashboard edge, never through the dashboard image. */
-.hero-grid-wrapper .hero-visual {
-  margin: clamp(2rem, 5vw, 5rem) auto clamp(10rem, 22vw, 19rem);
-  padding-bottom: 0;
-}
-
-.hero-grid-wrapper .hero-visual .hero-bg-glow {
-  top: 100%;
-  bottom: auto;
-  width: min(1920px, 155vw);
-}
-
-@media (max-width: 767px) {
-  .hero-grid-wrapper .hero-visual {
-    width: calc(100% + 2rem);
-    margin: 2.5rem auto 12rem;
-    padding-bottom: 0;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    top: 100%;
-    bottom: auto;
-    width: 220vw;
-  }
-}
-/* Figma hero composition: the text must start at the top of the hero. Keeping
-   the parent centre-aligned was clipping it on wide screens. */
-@media (min-width: 1441px) {
-  .beams-dimensions {
-    height: 795px !important;
-    min-height: 858px !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-  }
-
-  .hero-grid-wrapper .Badge-container {
-    margin-top: 58px !important;
-  }
-
-  .hero-grid-wrapper .hero-visual {
-    margin-top: 142px;
-  }
-}
-
-/* Match the reference: a soft glow sits behind the lower dashboard, with the
-   dashboard itself always above it. */
-.hero-grid-wrapper .hero-visual {
-  margin-bottom: clamp(5rem, 11vw, 10rem);
-}
-
-.hero-grid-wrapper .hero-visual .hero-bg-glow {
-  top: 28%;
-  bottom: auto;
-  z-index: -1;
-}
-
-@media (max-width: 1024px) {
-  .hero-grid-wrapper .hero-visual {
-    margin-top: 5rem;
-    margin-bottom: 6rem;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    top: 32%;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-grid-wrapper .hero-visual {
-    margin-top: 2.5rem;
-    margin-bottom: 5rem;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    top: 38%;
-  }
-}
-/* Final responsive hero layer: scope all legacy overrides to this one composition. */
-.hero-grid-wrapper .Badge-container {
-  position: relative;
-  z-index: 2;
-  width: min(100%, 980px) !important;
-  max-width: 980px !important;
-  margin: 54px auto 0 !important;
-  padding: 0 16px !important;
-  align-items: center !important;
-  text-align: center !important;
-}
-
-.hero-grid-wrapper .image-wrapper {
-  margin-top: 0 !important;
-  margin-bottom: 8px !important;
-}
-
-.hero-grid-wrapper .Badge-title {
-  width: auto !important;
-  max-width: 100% !important;
-  margin: 10px 0 !important;
-  font-size: clamp(2rem, 3.3vw, 3rem) !important;
-  line-height: 1.2 !important;
-  white-space: normal !important;
-  text-align: center !important;
-}
-
-.hero-grid-wrapper .Badge-subtitle {
-  max-width: 771px !important;
-  margin: 0 auto 18px !important;
-  text-align: center !important;
-}
-
-.hero-grid-wrapper .hero-visual {
-  isolation: isolate;
-  overflow: hidden;
-  width: 100vw !important;
-  max-width: 1920px !important;
-  margin: clamp(4rem, 8vw, 9rem) calc(50% - 50vw) 0 !important;
-  padding: 0 !important;
-}
-
-.hero-grid-wrapper .hero-visual .badge-image-container {
-  width: min(100% - 32px, 865px) !important;
-  margin: 0 auto !important;
-}
-
-.hero-grid-wrapper .hero-visual .hero-bg-glow {
-  top: 22%;
-  left: 50%;
-  width: min(1920px, 100vw);
-  height: auto;
-  z-index: -1;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-grid-wrapper .Badge-container {
-    margin-top: 44px !important;
-  }
-
-  .hero-grid-wrapper .hero-visual {
-    margin-top: 72px !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .badge-image-container {
-    width: min(100% - 32px, 587px) !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-grid-wrapper .Badge-container {
-    width: 100% !important;
-    margin-top: 28px !important;
-  }
-
-  .hero-grid-wrapper .image-wrapper {
-    margin-top: 0 !important;
-  }
-
-  .hero-grid-wrapper .Badge-title {
-    font-size: 30px !important;
-  }
-
-  .hero-grid-wrapper .hero-visual {
-    margin-top: 48px !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .badge-image-container {
-    width: 100% !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    top: 26%;
-    width: 145vw;
-  }
-}
-/* Keep hero content in normal flow. This prevents legacy tablet rules from
-   placing the dashboard over the text block. */
+/* wrapper is always flex-column so text is on top, image below */
 .hero-grid-wrapper {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   justify-content: flex-start !important;
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
+/* ── Badge-container (text block) ── */
 .hero-grid-wrapper .Badge-container {
-  display: flex !important;
-  position: relative !important;
-  inset: auto !important;
   order: 1;
   flex: 0 0 auto !important;
-  min-height: 188px;
-  visibility: visible !important;
-  opacity: 1 !important;
+  position: relative;
+  z-index: 2;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  text-align: center !important;
+  width: min(100%, 980px) !important;
+  max-width: 980px !important;
+  /* margin-top pushed down from navbar */
+  margin: 80px auto 0 !important;
+  padding: 0 16px !important;
+  box-sizing: border-box;
 }
 
+.hero-grid-wrapper .Badge-title {
+  font-size: clamp(1.875rem, 3.5vw, 3rem) !important;
+  font-weight: 600 !important;
+  color: #076aff !important;
+  line-height: 1.2 !important;
+  white-space: normal !important;
+  text-align: center !important;
+  margin: 10px 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+.hero-grid-wrapper .Badge-subtitle {
+  max-width: 700px !important;
+  margin: 0 auto 18px !important;
+  text-align: center !important;
+  font-size: 16px !important;
+}
+
+/* ── hero-visual: position:relative so glow (position:absolute) stays inside ── */
 .hero-grid-wrapper .hero-visual {
   order: 2;
   flex: 0 0 auto !important;
+  position: relative;     /* MUST be relative — glow img uses position:absolute */
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  margin: 2rem auto 3rem !important;
+  padding: 0 !important;
+  /* NO overflow:hidden here — that clips the rounded blurred glow shape */
 }
 
-.hero-grid-wrapper .scroll-down-arrow {
-  order: 3;
+/* ── glow SVG — inline styles in JSX already set position/top/left/width/height.
+      CSS must NOT override those. We only ensure it doesn't cause scroll. ── */
+.hero-grid-wrapper .hero-visual .hero-bg-glow {
+  pointer-events: none !important;
+  user-select: none !important;
+  /* inline style handles everything else */
 }
 
-@media (max-width: 767px) {
-  .hero-grid-wrapper .Badge-container {
-    min-height: 0;
-  }
+/* ── dashboard image container ── */
+.hero-grid-wrapper .hero-visual .badge-image-container {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 32px, 865px) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  box-sizing: border-box;
 }
 
-/* White backing directly behind the dashboard image only —
-   blocks the glow from showing through transparent SVG areas */
+/* ── image frame ── */
 .hero-grid-wrapper .hero-visual .image-wrapper {
   position: relative;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  border: 9px solid #e5e5e5 !important;
+  border-radius: 15px !important;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .hero-grid-wrapper .hero-visual .image-wrapper::before {
@@ -1464,312 +1125,137 @@
   z-index: 0;
 }
 
-.hero-grid-wrapper .hero-visual .diamond-half-clip {
+.hero-grid-wrapper .hero-visual .dashboard-img {
   position: relative;
   z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
 }
 
+/* ── scroll arrow: order 3, hidden on desktop/tablet ── */
+.hero-grid-wrapper .scroll-down-arrow {
+  order: 3;
+}
+
+/* =============================================================
+   RESPONSIVE — one breakpoint block each, no overlaps
+   ============================================================= */
+
+/* ── Large Desktop 1441px+ ── */
+@media (min-width: 1441px) {
+  .beams-dimensions {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 80px !important;
+  }
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 2rem !important;
+    margin-bottom: 4rem !important;
+  }
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    width: min(100% - 32px, 865px) !important;
+  }
+}
+
+/* ── Wide Laptop 1280px–1440px ── */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 80px !important;
+  }
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 2rem !important;
+    margin-bottom: 4rem !important;
+  }
+}
+
+/* ── Standard Laptop 1025px–1279px ── */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 60px !important;
+  }
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 2rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    width: min(100% - 32px, 760px) !important;
+  }
+}
+
+/* ── Tablet 768px–1024px ── */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .beams-dimensions {
+    height: auto !important;
+    min-height: 600px;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 50px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .hero-grid-wrapper .Badge-title {
+    font-size: 2rem !important;
+  }
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 2rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    width: min(100% - 32px, 587px) !important;
+  }
+}
+
+/* ── Mobile max 767px ── */
 @media (max-width: 767px) {
+  .beams-dimensions {
+    height: auto !important;
+    min-height: 700px;
+  }
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 28px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+  }
+  .hero-grid-wrapper .Badge-title {
+    font-size: 1.875rem !important;
+    color: #076aff !important;
+    white-space: normal !important;
+  }
+  .hero-grid-wrapper .Badge-subtitle {
+    font-size: 16px !important;
+  }
+  .hero-grid-wrapper .hero-visual {
+    margin-top: 1.5rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .hero-grid-wrapper .hero-visual .badge-image-container {
+    width: 100% !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
+  .hero-grid-wrapper .hero-visual .image-wrapper {
+    border-width: 4px !important;
+    border-radius: 10px !important;
+  }
   .hero-grid-wrapper .hero-visual .image-wrapper::before {
     border-radius: 7px;
   }
 }
 
-/* Tablet (768px–1024px): glow ko hero-visual/beams ke bottom pe rakho,
-   par container ke andar hi contained rakho taaki solid block na bane */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-grid-wrapper .hero-visual {
-    overflow: visible;             
-    position: relative;
-    padding: 2rem 1.5rem 1rem; 
-      margin-bottom: -6rem !important;  
-    padding-bottom: 0;
-    isolation: isolate;
-   
-    position: relative;
-    padding: 2rem 1.5rem 1rem;
-    margin-bottom: -9rem !important;
-    padding-bottom: 0;
+/* ── Small phones max 480px ── */
+@media (max-width: 480px) {
+  .beams-dimensions {
+    min-height: 780px;
   }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    /* top: 23%;    
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    width: min(1000px, 100%);
-    height: auto;
-    max-height: 300px;
-    z-index: -1;
-    opacity: 0.9; */
-    position: absolute;
-    top: 7%; /* negative = glow peeks above the visual, not cropped */
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(
-      1100px,
-      130%
-    ); /* wider than container so left/right aren't clipped */
-    height: auto;
-    max-height: 320px;
-    z-index: -1;
-    opacity: 0.9;
-    pointer-events: none;
+  .hero-grid-wrapper .Badge-container {
+    margin-top: 20px !important;
   }
-}
-@media (min-width: 1025px) and (max-width: 1900px) {
-  .hero-grid-wrapper .hero-visual .badge-image-container {
-    position: relative;
-    z-index: 1;
-  }
-}
-
-@media (min-width: 1445px) {
-   .hero-grid-wrapper .hero-visual {
-    position: relative !important;
-    overflow: visible !important;
-
-    min-height: 900px !important;
-  } 
-
- 
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    position: absolute !important;
-    top: 0% !important;
-    right: 90% !important;
-    left: 50% !important;
-    width: 200vw !important; 
-    max-width: 1411px !important;
-    height: auto !important;
-    max-height: 800px !important;
-    z-index: -1 !important;
-    opacity: 0.9 !important;
-    pointer-events: none !important;
-  } 
-
-  
-  .hero-grid-wrapper .hero-visual .badge-image-container {
-    position: relative !important;
-    z-index: 2 !important;
-  } 
-
-
-
-
-   /* .hero-grid-wrapper .hero-visual {
-    position: relative !important;
-    overflow: visible !important;
-    min-height: 1000px !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    position: absolute !important;
-
-    top: 0 !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
-
-    width: 1411px !important;
-    max-width: none !important;
-
-    height: 1000px !important;
-    max-height: none !important;
-
-    object-fit: fill !important;
-
-    z-index: 0 !important;
-    opacity: 0.9 !important;
-    pointer-events: none !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .badge-image-container {
-    position: relative !important;
-    z-index: 2 !important;
-  } */
-
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .hero-grid-wrapper .hero-visual {
-    overflow: visible !important;
-    position: relative !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    position: absolute !important;
-    top: 11% !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: min(1439px, 140%) !important;
-    height: auto !important;
-    max-height: 427px !important;
-    z-index: -1 !important;
-    opacity: 0.9 !important;
-    pointer-events: none !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .badge-image-container {
-    position: relative !important;
-    z-index: 1 !important;
-  }
-}
-
-/* Optional: very large screens beyond 1900px */
-@media (min-width: 1901px) {
-  .hero-grid-wrapper .hero-visual {
-    overflow: visible;
-    position: relative;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    position: absolute;
-    top: 29%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1600px, 150%);
-    height: auto;
-    max-height: 500px;
-    z-index: -1;
-    opacity: 0.9;
-    pointer-events: none;
-  }
-}
-
-/* mobile */
-@media (min-width: 376px) and (max-width: 767px) {
-  .hero-grid-wrapper .hero-visual {
-    overflow: visible !important;
-    position: relative !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    position: absolute !important;
-    top: 20% !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 105vw !important;
-    max-width: none !important;
-    height: auto !important;
-    z-index: -1 !important;
-    opacity: 0.9 !important;
-    pointer-events: none !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .badge-image-container {
-    position: relative !important;
-    z-index: 1 !important;
-  }
-}
-
-@media (max-width: 375px) {
-  .hero-grid-wrapper .hero-visual {
-    overflow: visible !important;
-    position: relative !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .hero-bg-glow {
-    position: absolute !important;
-    top: 20% !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 109vw !important;
-    max-width: none !important;
-    height: auto !important;
-    z-index: -1 !important;
-    opacity: 0.9 !important;
-    pointer-events: none !important;
-  }
-
-  .hero-grid-wrapper .hero-visual .badge-image-container {
-    position: relative !important;
-    z-index: 1 !important;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 767px) {
-  .badge-image-container {
-    margin-left: 0 !important;
-    margin-top: 90px !important;
-    width: 100% !important;
-    padding: 0 50px !important; /* ← naya: left-right dono side margin */
-    box-sizing: border-box !important;
-  }
-
-  .image-wrapper {
-    width: 100% !important;
-    height: 280px !important; /* ← thoda chhota kiya (310px se 280px) */
-  }
-
-  .diamond-half-clip {
-    transform: none !important;
-    clip-path: none !important;
-    width: 100% !important; /* ye ab container ke andar hi 100% hoga, jo padding ki wajah se already chhota hai */
-    border-radius: 7px !important;
-    border: 4px solid #e5e5e5;
-  }
-}
-
-@media (max-width: 375px) {
-  .badge-image-container {
-    margin-left: 0 !important;
-    margin-top: 90px !important;
-    width: 100% !important;
-    padding: 0 39px !important; /* ← naya: left-right dono side margin */
-    box-sizing: border-box !important;
-  }
-
-  .image-wrapper {
-    width: 100% !important;
-    height: 280px !important; /* ← thoda chhota kiya (310px se 280px) */
-  }
-
-  .diamond-half-clip {
-    transform: none !important;
-    clip-path: none !important;
-    width: 100% !important; /* ye ab container ke andar hi 100% hoga, jo padding ki wajah se already chhota hai */
-    border-radius: 7px !important;
-    border: 4px solid #e5e5e5;
-  }
-}  
-
-
-
-
-.image-wrapper{
-  border: 9px solid #e5e5e5;
-  border-radius:15px;
-}
-
-
-
-.image-wrapper {
-  position: relative;
-
-  width: 100%;
-  max-width: 1000px;
-
-  height: auto;
-
-  margin: 0 auto;
-
-  box-sizing: border-box;
-
-  z-index: 5;
-}
-
-/* White background behind image */
-.image-wrapper::before {
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  background: #ffffff;
-
-  border-radius: 16px;
-
-  z-index: 0;
 }

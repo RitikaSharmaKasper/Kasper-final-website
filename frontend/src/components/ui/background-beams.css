@@ -1,8 +1,8 @@
-/* --- Desktop --- */
+﻿/* --- Desktop --- */
 .beams-dimensions {
- 
-  max-width: 4000px; 
-  height: 870px;    
+  max-width: 4000px;
+  height: 870px;
+  overflow-x: hidden;  /* stop animated beams from causing horizontal scroll */
 }
 
 /* --- Large Screens (Up to 2000px) --- */
@@ -60,19 +60,14 @@
     padding-bottom: 1px;
   }
 }
+
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .beams-dimensions.overflow-hidden {
+  .beams-dimensions {
     height: auto !important;
-      overflow: visible !important;  
     min-height: 580px;
     align-items: flex-start !important;
     justify-content: flex-start !important;
     padding-top: 24px;
-    padding-bottom:2px;
+    padding-bottom: 2px;
   }
-}
-@media (min-width: 1025px) and (max-width: 1440px) {
-  /* .beams-dimensions {
-    min-height: 755px;
-  } */
 }
