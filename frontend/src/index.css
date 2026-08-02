@@ -5,15 +5,27 @@
 
 * {
   max-width: 100%;
+  box-sizing: border-box;
 }
 html, body {
   margin: 0;
   padding: 0;
-   /* stops vertical scroll */
-   height:100%;
-   font-family: Inter;
- width: 100%;
-  overflow-x: hidden;   /* optional: stops horizontal scroll */
+  height: 100%;
+  font-family: Inter;
+  width: 100%;
+  overflow-x: hidden;   /* stops horizontal scroll */
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Prevent horizontal overflow on the main content wrapper */
+main {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 body::-webkit-scrollbar {
   display: none;

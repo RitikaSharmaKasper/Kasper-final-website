@@ -2,7 +2,7 @@
 .beams-dimensions {
   max-width: 4000px;
   height: 870px;
-  overflow-x: hidden;  /* stop animated beams from causing horizontal scroll */
+  overflow: hidden;  /* clip animated beams — prevents horizontal scroll */
 }
 
 /* --- Large Screens (Up to 2000px) --- */

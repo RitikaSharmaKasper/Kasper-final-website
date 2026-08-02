@@ -86,7 +86,7 @@ export default function BackgroundBeamsWithCollisionDemo() {
                 <span className="badge-yrs">9+ Years</span>
                 <span className="expertise-text">
                   of expertise in delivering digital solutions
-                  <span>👑</span>
+                  <img src="./k.png" alt="crown" className="expertise-icon" />
                 </span>
               </div>
 
