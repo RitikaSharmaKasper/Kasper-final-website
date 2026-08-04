@@ -1,27 +1,27 @@
 /* ================= MAIN CONTAINER ================= */
-.contact {
-  max-width: 1600px;         /* Increased from 1440 for wide laptops */
+.contact { 
+  max-width: 1600px;       
   margin: 0 auto !important; 
   padding: 80px 60px;
   display: flex;
-  flex-direction: row;      /* FORCES SIDE-BY-SIDE */
+  flex-direction: row;     
   align-items: center;      
   justify-content: space-between; 
-  gap: 100px;               /* Large gap to keep it clean */
+  gap: 100px;              
   width: 100%;
   box-sizing: border-box;
 }
 
 /* ================= IMAGE CONTAINER (RIGHT SIDE) ================= */
-.contact-right {
-  flex: 1.5;                /* Image gets more "weight" than the form */
-  max-width: 1000px;         /* Significantly larger image */
+ .contact-right {
+  flex: 1.5;           
+  max-width: 1000px;        
   display: flex;
   justify-content: center;   
   align-items: center;
   order: 2;     
-  /* margin-top:34px; */
-}
+
+} 
 .contact-right img {
   width: 60%;              /* Scales with the container */
   height: auto;
@@ -31,14 +31,14 @@
 }
 
 /* ================= FORM CONTAINER (LEFT SIDE) ================= */
-.contact-left {
-  flex: 1;                  /* Form takes up less space than the image */
+ .contact-left {
+  flex: 1;                  
   max-width: 550px;          
-  display: flex;
+  display: flex;margin-left:118px;
   flex-direction: column;
-  align-items: flex-start;  /* Align text to left for desktop */
-  order: 1;                 /* FORCES FORM TO THE LEFT */
-}
+  align-items: flex-start;  
+  order: 1;               
+} 
 
 
 form {
@@ -662,7 +662,7 @@ textarea {
 
 /* /dropdown */
 /* -------- Custom Product Dropdown -------- */
-.custom-product-select {
+.custom-product-select-contact {
   position: relative;
   width: 100%;
 }

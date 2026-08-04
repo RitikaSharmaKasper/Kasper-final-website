@@ -15,7 +15,7 @@
   margin-top:-104px;
 }
 
-.hero-inner{
+.hero-inner-services{
   margin-top:105px;
   
 }
@@ -68,7 +68,7 @@
   }
 }
 
-.hero-inner {
+.hero-inner-services {
   max-width: 935px;
   width: 100%;
   margin: 0 auto;
@@ -88,7 +88,7 @@
   gap: 16px;
   flex-wrap: wrap;
   width: 494px;
-  max-width: 100%;margin-top:40px;
+  max-width: 100%;margin-top:70px;
 }
 
 .hero-tags span {
@@ -342,7 +342,7 @@
     height: 36px;
     padding: 10px 14px;
     font-size: 14px;
-  }       .hero-inner{padding-top:35px;}
+  }       .hero-inner-services{padding-top:35px;}
 }
 
 /* ================= MOBILE (768px) ================= */
@@ -351,7 +351,7 @@
     padding: 120px 20px 0;
   }
 
-  .hero-inner {
+  .hero-inner-services {
     gap: 18px;
   }
 

@@ -56,7 +56,7 @@ const Hero_Services = () => {
       >
       <div className="hero-overlay"></div>
 
-      <div className="hero-inner">
+      <div className="hero-inner-services">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-4xl font-semibold text-white">
           

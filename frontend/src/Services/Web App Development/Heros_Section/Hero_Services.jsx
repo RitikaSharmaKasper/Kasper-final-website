@@ -77,7 +77,7 @@ const Hero_Services = () => {
       >
       <div className="hero-overlay"></div>
 
-      <div className="hero-inner">
+      <div className="hero-inner-services">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-4xl font-semibold text-white">
            
@@ -96,7 +96,7 @@ const Hero_Services = () => {
           <div className="mt-7 flex justify-center">
             <button
               className="bg-red-500 hover:bg-red-600 text-white font-medium rounded cursor-pointer transition duration-300"
-              style={{ width: "148px", height: "60px", fontSize: "16px" }}
+              style={{ width: "142px", height: "48px", fontSize: "16px" }}
             >
               Book  a Demo
             </button>
@@ -106,7 +106,7 @@ const Hero_Services = () => {
 
       {/* Arrow — outside hero-inner, sticks to bottom of section */}
       <div
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-5xl cursor-pointer animate-bounce"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-5xl cursor-pointer animate-bounce  z-index-5"
         onClick={scrollDown}
       >
       <GoArrowDown />

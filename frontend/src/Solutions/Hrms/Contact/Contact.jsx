@@ -349,7 +349,7 @@ const [storeData, setStoreData] = useState({
                            <label>
                              Product<span>*</span>
                            </label>
-                           <div className="custom-product-select" ref={productDropdownRef}>
+                           <div className="custom-product-select-contact" ref={productDropdownRef}>
                              <div
                                className={`product-selected ${
                                  showProductDropdown ? "open" : ""

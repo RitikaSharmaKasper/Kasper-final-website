@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 .hero-heading h1, .hero-inner h1, .hero h1 {
   font-size: 48px;
   line-height: 1.2 !important;
-   padding-top: clamp(0px, 5vw, 1px) !important;
+   padding-top: clamp(0px, 5vw, 4px) !important;
   text-align: center !important;
 }
 
@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 .hero_Paragraph p, .hero-inner p, .hero p {
   font-size: clamp(14px, 2vw, 16px) !important;
   line-height: 1.4 !important;
-  margin-top: 8px !important;
+  margin-top: 5px !important;
   text-align: center !important;
   max-width: 900px !important;
   margin-left: auto !important;
@@ -57,13 +57,13 @@ body::-webkit-scrollbar {
 
 /* Hero Actions & Buttons */
 .hero-actions, .mt-7.flex {
-  margin-top: clamp(20px, 4vw, 40px) !important;
+  margin-top: clamp(20px, 4vw, 2px) !important;
 }
 
 .btnn-outline {
   width: auto !important;
-  min-width: clamp(120px, 15vw, 160px) !important;
-  height: clamp(40px, 8vw, 56px) !important;
+  min-width: clamp(120px, 15vw, 149px) !important;
+  height: clamp(40px, 8vw, 45px) !important;
   padding: 0 20px !important;
   font-size: clamp(14px, 1.5vw, 16px) !important;
   display: flex !important;
@@ -81,7 +81,8 @@ body::-webkit-scrollbar {
   font-size: "20px";
 color:rgba(0, 6, 61, 1);
   font-weight: 400 !important;
-  margin-bottom: clamp(30px, 5vw, 30px) !important;
+  font-family:"Sora";
+  margin-bottom: clamp(30px, 5vw, 45px) !important;
   text-align: center !important;
 }
 

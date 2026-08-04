@@ -136,7 +136,7 @@ export default function BackgroundBeamsWithCollisionDemo() {
                 className="hero-bg-glow"
                style={{
   position: "absolute",
-  top: -5,
+  top: 25,
   left: 0,
   width: "100%",
   height: "100%",
@@ -146,7 +146,7 @@ export default function BackgroundBeamsWithCollisionDemo() {
   borderTopLeftRadius: "900px",
   borderTopRightRadius: "900px",
 
-  filter: "blur(30px)",
+  filter: "blur(65px)",
   opacity: 0.7,
 }}
               />

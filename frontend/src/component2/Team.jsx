@@ -1,7 +1,7 @@
 import React from "react";
-import Team1 from "../assets/images2/Team-1.JPG";
+import Team1 from "../assets/images2/Team-1.png";
 import Team5 from "../assets/images2/Team5.jpg";
-import Team2 from "../assets/images2/Team-2.jpg";
+import Team2 from "../assets/images2/Team2.png";
 import alokTeam2 from "../assets/images2/alokTeam2.png";
 import Team4 from "../assets/images2/Team-4.png";
 import Test1 from "../assets/images2/Test1.jpg";
@@ -10,7 +10,7 @@ import alok from "../assets/images2/alok.png";
 import alokTeam from "../assets/images2/alokTeam.png";
 import developer from "../assets/images2/developer.png";
 import appdeveloper from "../assets/images2/appdeveloper.jpeg";
-import BacknedDeveloper from "../assets/images2/BacknedDeveloper.jpg";
+import BacknedDeveloper from "../assets/images2/AppDeveloper.jpg.png";
 import developer2 from "../assets/images2/patnaDeveloper1.jpeg"
 import developer3 from "../assets/images2/patnaDeveloper2.jpeg"
 import developer4 from "../assets/images2/patnaDeveloper3.jpeg"
@@ -33,11 +33,15 @@ const Team = () => {
           <p className="profile-name-leader">Ashish Kumar Singh</p>
           <p className="profile-role-leader">Finance Executive</p>
         </div>
+
+
+
         <div className="flex-team-column">
-          <img src={Team2} alt="Name 1" className="profile-img-leader" />
-          <p className="profile-name-leader">Monu Jangra</p>
-          <p className="profile-role-leader">Cyber Security Engineer</p>
+          <img src={alokTeam2} alt="Name 1" className="profile-img-leader" />
+          <p className="profile-name-leader">Adnan Nayyar</p>
+          <p className="profile-role-leader">Product Designer</p>
         </div>
+   
 
         <div className="flex-team-column">
           <img src={alok} alt="Name 1" className="profile-img-leader" />
@@ -49,11 +53,12 @@ const Team = () => {
           <p className="profile-name-leader">Priyanshu Pandey</p>
           <p className="profile-role-leader">Product Designer</p>
         </div>
-        <div className="flex-team-column">
-          <img src={alokTeam2} alt="Name 1" className="profile-img-leader" />
-          <p className="profile-name-leader">Adnan Nayyar</p>
+          <div className="flex-team-column">
+          <img src={Team2} alt="Name 1" className="profile-img-leader" />
+          <p className="profile-name-leader">Sheetal Uniyal</p>
           <p className="profile-role-leader">Product Designer</p>
         </div>
+      
         <div className="flex-team-column">
           <img src={developer} alt="Name 1" className="profile-img-leader" />
           <p className="profile-name-leader">AmanDeep Dhiman</p>
@@ -65,13 +70,13 @@ const Team = () => {
             alt="Name 1"
             className="profile-img-leader"
           />
-          <p className="profile-name-leader">Vansh Choudhary</p>
-          <p className="profile-role-leader">Backend Developer</p>
+          <p className="profile-name-leader">Shivam Kumar</p>
+          <p className="profile-role-leader">Mobile App Developer</p>
         </div>
         <div className="flex-team-column">
           <img src={appdeveloper} alt="Name 1" className="profile-img-leader" />
           <p className="profile-name-leader">Rahul Kumar</p>
-          <p className="profile-role-leader">App Developer</p>
+          <p className="profile-role-leader">Mobile App Developer</p>
         </div>
         <div className="flex-team-column">
           <img src={Test1} alt="Name 1" className="profile-img-leader" />

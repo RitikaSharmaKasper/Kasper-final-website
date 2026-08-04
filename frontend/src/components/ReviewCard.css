@@ -41,8 +41,8 @@ overflow-wrap:break-word;
 display:flex;
 align-items:center;
 margin-top:15px;
-gap:10px;
-width: 216px;
+gap:5px;
+width: 249px;
 margin-top:-15px;
 justify-content: space-between;
 
@@ -66,9 +66,10 @@ object-fit:cover;
 font-weight: 400;
 font-style: Regular;
 font-size: 14px;
-width: 143px;
+width: 170px;
 height: 18px;
-
+margin-top:30px;
+margin-left:2px;
 opacity: 1;
 
 line-height: 130%;

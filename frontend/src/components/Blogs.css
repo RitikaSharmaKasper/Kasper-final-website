@@ -280,12 +280,12 @@
    ════════════════════════════════════════ */
 @media (min-width: 1280px) {
   .Blog-main-div {
-    padding: 35px 40px !important;
+    padding: 18px 40px !important;
     margin: 0 auto !important;
   }
 
   .blog-heading {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 32px !important;
       color: rgba(0, 6, 61, 1);
   }

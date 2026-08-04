@@ -19,10 +19,10 @@ return (
   src={review.image} 
   alt={review.name} 
   style={{
-    width: '50px',
-    padding:'3px',
-    height: '50px',
-    borderRadius: '5%',
+    width: '55px',
+    padding:'2px',
+    height: '55px',
+    borderRadius: '50%',
     objectFit: 'cover',
 
 backgroundColor: '#E0E0E0',

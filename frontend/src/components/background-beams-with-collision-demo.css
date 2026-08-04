@@ -974,7 +974,7 @@
     width: 100%;
     /* margin-top: -40px helps pull it up toward the image 
        if the image has a large bottom margin */
-    margin-top: -25px;
+    margin-top: 39px;
 
     cursor: pointer;
     z-index: 10;
@@ -1109,7 +1109,7 @@
   width: 100% !important;
   max-width: 100% !important;
   height: auto !important;
-  margin: 0 !important;
+  margin: -24px 0 0 0  !important;
   border: 9px solid #e5e5e5 !important;
   border-radius: 15px !important;
   box-sizing: border-box;
@@ -1155,11 +1155,11 @@
     margin-top: 70px !important;
   }
   .hero-grid-wrapper .hero-visual {
-    margin-top: 6rem !important;
-    margin-bottom: 4rem !important;
+    margin-top: 7rem !important;
+    margin-bottom: 0rem !important;
   }
   .hero-grid-wrapper .hero-visual .badge-image-container {
-    width: min(100% - 32px, 865px) !important;
+    width: min(100% - 32px, 1052px) !important;
   }
 }
 
@@ -1233,7 +1233,7 @@
     font-size: 16px !important;
   }
   .hero-grid-wrapper .hero-visual {
-    margin-top: 1rem !important;
+    margin-top: 4rem !important;
     margin-bottom: 2rem !important;
   }
   .hero-grid-wrapper .hero-visual .badge-image-container {
@@ -1244,6 +1244,7 @@
   .hero-grid-wrapper .hero-visual .image-wrapper {
     border-width: 4px !important;
     border-radius: 10px !important;
+
   }
   .hero-grid-wrapper .hero-visual .image-wrapper::before {
     border-radius: 7px;
@@ -1256,6 +1257,6 @@
     min-height: 780px;
   }
   .hero-grid-wrapper .Badge-container {
-    margin-top: 16px !important;
+    margin-top: 100px !important;
   }
 }

@@ -27,7 +27,7 @@ const Industries = () => {
 
   return (
     <div className="Industries-main-div">
-      <p className="heading-with-line">Industries we serve</p>
+      <p >Industries we serve</p>
 
       <div className="industry-imagediv">
         {industries.map(({ icon: Icon, label, path, color }) => (

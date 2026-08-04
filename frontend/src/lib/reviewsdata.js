@@ -3,50 +3,51 @@ import review2 from "../assets/images2/review2.jpg"
 import review3 from "../assets/images2/review3.png"
 import review4 from "../assets/images2/review4.png"
 import review5 from "../assets/images2/review5.png"
-import user from "../assets/images2/user.png";
+import user from "../assets/images2/user.svg";
 import review6 from "../assets/images2/review6.png"
 import review7 from "../assets/images2/review7.png"
 import review8 from "../assets/images2/review8.png"
+import review9 from "../assets/images2/review9.png"
 export const reviews = [
  
   {
     id: 1,
     name: "Priyanshu Pandey",
-    image: user,
+    image: review7,
     text: "Kasper Infotech Pvt Ltd delivered excellent website development services . The team was professional, skilled, and clearly understood the client’s vision. A reliable and expert development partner.",
   },
     {
     id: 2,
     name: "Monu Jangra",
-    image: user,
+    image: review2,
     text: "Kasper Infotech Pvt. Ltd. is a reliable company that delivers strong results in both software development and cybersecurity. Their approach stands out because they don’t just focus on building applications—they also ensure those applications are secure and follow proper security standards.The team is skilled, responsive, and easy to collaborate with. Their development process is structured, and they actively integrate security into every stage of a project, which builds confidence in the final product. The overall professionalism, communication, and timely delivery make them a dependable partner for any technical or security-focused work.",
   },
 
   {
     id: 3,
     name: "Aiyan Ahmed",
-    image: user,
+    image: review1,
     text: "My cousins and I dropped by around 6 PM a few evenings ago and tried the Paneer Makhni Pizza (Medium), Penne White Sauce Pasta and Thick Cold Coffees. The pizza had a rich, flavorful base with perfectly cooked paneer and just the right hint of spice. The pasta was creamy but a little bland, a little spice will make it top notch that too paired with the coffee’s smooth, chocolaty kick.",
   },
 
   {
     id: 4,
     name: "Dikshit Raj Yadav",
-  image: user,
+  image: review3,
     text: "Kasper Infotech Pvt Ltd is undoubtedly the best software development company in Noida. Their team delivers top-notch solutions with exceptional attention to detail and quality. Highly recommend them for anyone seeking reliable and professional software development services.",
   },
 
     {
     id: 5,
     name: "Monu Jangra",
-    image: user,
+    image:  review2,
     text: "Kasper Infotech Pvt. Ltd. is a reliable company that delivers strong results in both software development and cybersecurity. Their approach stands out because they don’t just focus on building applications—they also ensure those applications are secure and follow proper security standards.The team is skilled, responsive, and easy to collaborate with.The overall professionalism, communication, and timely delivery make them a dependable partner for any technical or security-focused work.",
   },
 
   {
     id: 6,
     name: "Dikshit Raj Yadav",
-    image: user,
+    image: review3,
     text: "Kasper Infotech Pvt Ltd is undoubtedly the best software development company in Noida. Their team delivers top-notch solutions with exceptional attention to detail and quality. Highly recommend them for anyone seeking reliable and professional software development services.",
   },
 
@@ -54,7 +55,7 @@ export const reviews = [
    {
     id: 7,
     name: "Dikshit Raj Yadav",
-     image: user,
+     image: review3,
     text: "Kasper Infotech Pvt Ltd is undoubtedly the best software development company in Noida. Their team delivers top-notch solutions with exceptional attention to detail and quality. Highly recommend them for anyone seeking reliable and professional software development services.",
   },
   {
@@ -66,20 +67,20 @@ export const reviews = [
    {
     id: 9,
     name: "Kanan Bakshi",
-    image: user,
+    image: review5,
     text: "Kasper Private Limited is a [reliable/innovative/growing] software company with a solid foundation .Their approach to innovation has allowed them to stay competitive in a rapidly evolving market.",
   },
   {
     id: 10,
     name: "Raja Jha",
-  image: user,
+  image: review8,
     text: "I am extremely satisfied with the software development services provided by Kasper Infotech. Their team is highly professional, skilled, and attentive to every detail of my project. They delivered an excellent solution on time and exceeded my expectations with their innovative approach and technical expertise..",
   },
     
   {
     id: 11,
     name: "Sachin Katiyar",
-  image: user,
+  image: review9,
     text: "It is a awesome place for beginners who start career in it.Dedication, Sincerity and Discipline. I highly recommend their services and look forward to collaborating with them again!",
   },
 

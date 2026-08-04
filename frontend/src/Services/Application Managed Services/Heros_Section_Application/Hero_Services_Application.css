@@ -13,16 +13,26 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.3);
+ z-index: 1;
+
+  /* Makes the image slightly darker so white text is visible */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.60) 0%,
+    rgba(0, 0, 0, 0.40) 50%,
+    rgba(0, 0, 0, 0.50) 100%
+  );
 }
 
 /* container */
 
-.hero-inner {
+.hero-inner-services {
   position: relative;
   max-width: 1200px;
   width: 90%;
-  margin-top: 40px;
+  margin-top: 190px;
+  position: relative;
+  z-index:2;
 
   display: flex;
   flex-direction: column;
@@ -179,7 +189,7 @@ font-weight: 400;
 
 /* Large screens */
 @media (max-width:1200px){
-  .hero-inner{
+  .hero-inner-services{
     width: 95%;
     MARGIN-TOP:-48PX;
     
@@ -201,7 +211,7 @@ font-weight: 400;
 
 /* Tablets */
 @media (max-width:992px){
-  .hero-inner{
+  .hero-inner-services{
     margin-top: 100px;
   }
 
@@ -233,7 +243,7 @@ font-weight: 400;
     align-items: center;
   }
 
-  .hero-inner{
+  .hero-inner-services{
     margin-top:1px;
   }
 
@@ -283,7 +293,7 @@ font-weight: 400;
 
 /* Media query for screens 1024px and wider */
 @media screen and (max-width: 1024px) {
-  .hero-inner {
+  .hero-inner-services {
     margin-top: 20px;  /* Adjust this value as needed */
   }
 }

@@ -292,7 +292,7 @@ const Demopopup = ({ isOpen, onClose }) => {
 
               <div className="form-group">
                 <label>Product<span>*</span></label>
-                <div className="custom-product-select" ref={productDropdownRef}>
+                <div className="custom-product-select-contact" ref={productDropdownRef}>
                   <div className={`product-selected ${showProductDropdown ? "open" : ""}`} onClick={() => setShowProductDropdown(!showProductDropdown)}>
                     <span className="product-selected-label">
                       {storeData.queryType || <span className="product-placeholder">Select Product</span>}

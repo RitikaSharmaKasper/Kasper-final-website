@@ -65,7 +65,7 @@ body {
   display: flex;
   align-items: center;
   width: 250px;
-  height: 42px;
+  height: 46px;
   border: 1px solid #d2d6dc;
   background: #fff;
   overflow: hidden;
@@ -92,7 +92,7 @@ body {
 }
 
 .assessment-btn {
-  height: 42px;
+  height: 43px;
   padding: 0 18px;
   border: none;
   font-weight :400px;

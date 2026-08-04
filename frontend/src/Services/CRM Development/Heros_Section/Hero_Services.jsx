@@ -2,7 +2,7 @@ import React, { useRef,useEffect ,useState} from "react";
 import Demopopup from "@/Demo/Demopopup";
 import "./Hero_Services.css";
 import { GoArrowDown } from "react-icons/go";
-import heroBg from "/src/assets/images2/CRM Software.jpg.jpeg";
+import heroBg from "/src/assets/images2/CRM Software.jpg.jpg";
 import { Helmet } from "react-helmet-async";
 const Hero_Services = () => {
    const heroRef = useRef(null);
@@ -78,7 +78,7 @@ const Hero_Services = () => {
       >
       <div className="hero-overlay"></div>
 
-      <div className="hero-inner">
+      <div className="hero-inner-services">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-4xl font-semibold text-white">
             Smart CRM Solutions for Better Customer Management

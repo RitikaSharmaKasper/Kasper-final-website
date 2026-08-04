@@ -12,14 +12,15 @@
 /* MAIN HEADING */
 
 .why-main-heading {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora";
   font-size: 20px;
   font-weight: 400;
   line-height: 135%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   color: rgba(0,6,61,1);
 }
+
 
 /* ================= GRID ================= */
 
@@ -45,7 +46,7 @@
 
 .why-left img {
   width: 100%;
-  max-width: 454px;
+  max-width: 510px;
   height: auto;
   object-fit: contain;
   border-radius: 12px;

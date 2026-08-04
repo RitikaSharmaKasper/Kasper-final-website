@@ -18,17 +18,20 @@
 
 /* container */
 
-.hero-inner {
+
+.hero-inner-services {
   position: relative;
   max-width: 1200px;
   width: 90%;
-  margin-top: 40px;
-
-  display: flex;
+  margin-top: 190px;
+  position: relative;
+  z-index:2;display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
+
 
 /* heading */
 
@@ -68,8 +71,8 @@
 /* Laptop (max-width: 1280px) */
 @media (max-width: 1280px) {
   .btnn-outline {
-    width: 140px;
-    height: 56px;
+    width: 110px;
+    height: 40px;
     font-size: 15px;
   }
 }
@@ -77,8 +80,8 @@
 /* Tablet / iPad (max-width: 1024px) */
 @media (max-width: 1024px) {
   .btnn-outline {
-    width: 132px;
-    height: 52px;
+    width: 112px;
+    height: 45px;
     font-size: 15px;
   }
 }
@@ -162,8 +165,8 @@ font-weight: 400;
 }
 
 .btnn-outline{
-  width: 148px;
-  height: 90px;
+  width: 110px;
+  height: 29px;
   background: rgba(250,64,40,1);
   color: white;
   font-family: "Sora", sans-serif;
@@ -179,7 +182,7 @@ font-weight: 400;
 
 /* Large screens */
 @media (max-width:1200px){
-  .hero-inner{
+  .hero-inner-services{
     width: 95%;
     MARGIN-TOP:-48PX;
     
@@ -201,7 +204,7 @@ font-weight: 400;
 
 /* Tablets */
 @media (max-width:992px){
-  .hero-inner{
+  .hero-inner-services{
     margin-top: 100px;
   }
 
@@ -233,7 +236,7 @@ font-weight: 400;
     align-items: center;
   }
 
-  .hero-inner{
+  .hero-inner-services{
     margin-top:1px;
   }
 
@@ -283,7 +286,7 @@ font-weight: 400;
 
 /* Media query for screens 1024px and wider */
 @media screen and (max-width: 1024px) {
-  .hero-inner {
+  .hero-inner-services {
     margin-top: 20px !important;/* Adjust this value as needed */
   }
 }
