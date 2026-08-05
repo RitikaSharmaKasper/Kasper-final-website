@@ -2,7 +2,7 @@ import React from "react";
 import Banner0 from "../assets/images2/Banner0.svg";
 import leader1 from "../assets/images2/leader1.svg";
 
-import leader2 from "../assets/images2/leader2.svg";
+import leader2 from "../assets/images2/leader2.png";
 import leader3 from "../assets/images2/leader3.svg";
 import leader4 from "../assets/images2/leader4.jpg";
 import "./AboutText.css";
