@@ -1,8 +1,7 @@
 .all-Insightsblog-sections {
   width: 100%;
   padding: 0 20px;
-    background: #FFFFFF;
-  
+  background: white;
 }
 
 
@@ -99,12 +98,13 @@
 /* CONTAINER */
 
 .InsightsInsightsblog-main-div {
-  margin: 40px auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 1450px;
   gap: 75px;
-  padding-top: 70px;
-    /* background: #FFFFFF; */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: white;
 }
 
 
@@ -124,7 +124,7 @@
 
 .Insightsblog-card {
  
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   overflow: hidden;
@@ -317,7 +317,7 @@
   align-items: center;
   gap: 10px;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .pagination button {

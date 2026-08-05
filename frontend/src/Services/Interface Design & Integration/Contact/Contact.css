@@ -34,7 +34,7 @@
  .contact-left {
   flex: 1;                  
   max-width: 550px;          
-  display: flex;margin-left:118px;
+  display: flex;margin-left:125px;
   flex-direction: column;
   align-items: flex-start;  
   order: 1;               
@@ -348,6 +348,9 @@ textarea {
   .contact-left {
     max-width: 100% !important;
     width: 100% !important;
+
+     margin-left: 0 !important;    /* ← ADD - Remove margin on mobile */
+    margin-right: 0 !important; 
   }
   .contact-right {
     width: 100% !important;
@@ -374,6 +377,8 @@ textarea {
     max-width: 100% !important;
     width: 100% !important;
     margin-top:5px;
+      margin-left: 0 !important;    /* ← ADD - Remove margin on mobile */
+    margin-right: 0 !important;
   }
   .contact-right {
     width: 100% !important;

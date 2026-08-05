@@ -22,7 +22,7 @@ const BlogCard = ({
   const navigate = useNavigate();
 
   const handleEdit = () => {
-    navigate(`/blog-details/${slug || id}`);
+    navigate(`/adminsidebar/blog-details/${slug || id}`);
   };
 
   const handleView = () => {
@@ -41,8 +41,16 @@ const BlogCard = ({
     return image && image.trim() ? image : ThumbnailPlaceholder;
   };
 
-  const shortDescription =
-    cleanHTML.length > 150 ? `${cleanHTML.slice(0, 150)}...` : cleanHTML;
+const getPlainText = (html) => {
+  const div = document.createElement("div");
+  div.innerHTML = html;
+  return div.textContent || div.innerText || "";
+};
+
+const shortDescription = (() => {
+  const plain = getPlainText(cleanHTML);
+  return plain.length > 150 ? `${plain.slice(0, 150)}...` : plain;
+})();
 
   return (
     <div className="simple-blog-card">
@@ -84,9 +92,9 @@ const BlogCard = ({
 
       <div className="blogpreview-title">{title}</div>
 
-      <div className="blog-preview-description">
-        {previewOnly ? parse(shortDescription) : parse(cleanHTML)}
-      </div>
+ <div className="blog-preview-description">
+  {previewOnly ? shortDescription : parse(cleanHTML)}
+</div>
 
       {previewOnly && (
         <div className="read-more-wrapper">

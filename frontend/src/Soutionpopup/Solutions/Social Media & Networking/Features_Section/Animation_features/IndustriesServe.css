@@ -1,7 +1,7 @@
 /* ── HEADING — DO NOT CHANGE ── */
 .Industries-main-div{
   width: 100% !important;
-  max-width: 1431px !important;   /* Blog-main-div se match */
+  max-width: 1425px !important;   /* Blog-main-div se match */
   height: auto;
   margin: 60px auto;
   padding: 60px 0;
@@ -92,7 +92,7 @@
 /* ══ LARGE DESKTOP (1280px+) → 4 per row ══ */
 @media (min-width: 1280px) {
   .Industries-main-div{
-    padding: 0px 40px !important;
+    padding: 0px 30px !important;
   }
   .industry-imagediv{
     gap: 20px !important;

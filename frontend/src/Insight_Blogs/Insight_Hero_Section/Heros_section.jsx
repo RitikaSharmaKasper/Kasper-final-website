@@ -1,10 +1,36 @@
 import React from "react";
 import "./HeroSections.css";
+import axios from "axios";
+import BASE_URL from "../../Pages/Config/Config.js"; 
+import {useState, useEffect} from "react";
+const Heros_section = ({ latestBlog, onCategorySelect, activeCategory }) => {
+  const [categories, setCategories] = useState([]);
 
-const Heros_section = ({ latestBlog }) => {
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const { data } = await axios.get(
+          `${BASE_URL}/api/v1/category/all-categories`
+        );
+        if (data?.success && Array.isArray(data.category)) {
+          setCategories(data.category);
+        }
+      } catch (error) {
+        console.error("Error fetching categories:", error);
+      }
+    };
+    fetchCategories();
+  }, []);
+
   if (!latestBlog) {
     return null;
   }
+
+  const handleCategoryClick = (categoryId) => {
+    if (onCategorySelect) {
+      onCategorySelect(categoryId); // null/"all" for "All Blogs"
+    }
+  };
   return (
     <section className="Heros_section">
       <div className="hero-top">
@@ -16,7 +42,7 @@ const Heros_section = ({ latestBlog }) => {
         </p>
 
         {/* Category Buttons */}
-        <div className="hero-buttons">
+        {/* <div className="hero-buttons">
           {[
             "All Blogs",
             "Accounts",
@@ -32,7 +58,27 @@ const Heros_section = ({ latestBlog }) => {
               {item}
             </button>
           ))}
+        </div> */}
+
+           <div className="hero-buttons">
+          <button
+            className={`hero-btn ${!activeCategory || activeCategory === "all" ? "active" : ""}`}
+            onClick={() => handleCategoryClick("all")}
+          >
+            All Blogs
+          </button>
+
+          {categories.map((cat) => (
+            <button
+              key={cat._id}
+              className={`hero-btn ${activeCategory === cat._id ? "active" : ""}`}
+              onClick={() => handleCategoryClick(cat._id)}
+            >
+              {cat.title}
+            </button>
+          ))}
         </div>
+
       </div>
 
       {/* Featured Blog */}

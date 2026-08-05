@@ -7,12 +7,12 @@
   overflow: hidden;
 }
 
+/* 
 .footer-container {
   max-width: 100%;
   margin: 0;
   padding: 0 270px;
-}
-
+} */
 /* ===== TOP SECTION ===== */
 
 .footer-top {
@@ -522,8 +522,10 @@ filter: none !important;  transform: scale(1.08);
 
 
 
+
+  
 @media (max-width: 1500px) {
   .footer-grid {
     gap: 100px;
   }
-}
+} 

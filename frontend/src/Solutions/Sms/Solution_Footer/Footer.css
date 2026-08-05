@@ -195,7 +195,7 @@
   flex-wrap: wrap;
   gap: 60px;
   padding-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-brand {
@@ -307,38 +307,49 @@
   text-decoration: none;
 }
 
-.follow-icons a img {
+
+
+
+
+ .follow-icons a img {
   width: 30px;
   height: 30px;
-  filter: grayscale(100%) brightness(0) invert(1);
   transition: all 0.3s ease-in-out;
+  /* ✅ Normal state: Full colour */
+  filter: none !important;
+
 }
 
+/* When ANY icon is hovered, ALL icons become grey */
+.follow-icons:hover a img {
+   filter: grayscale(100%) brightness(80%) !important;
+}
 
-
-
-
+/* But the SPECIFIC icon being hovered becomes coloured */
 .follow-icons a:hover img {
   filter: none !important;
   transform: scale(1.08);
 }
 
-/* Active/Click State */
+/* Active/Click State - clicked icon becomes coloured, others stay grey */
 .follow-icons a:active img {
   transform: scale(0.9);
-  filter: brightness(50%) !important;
+  filter: none !important;
 }
 
-.follow-icons a.twitter img 
- {
-   filter: grayscale(100%) brightness(0) invert(1) !important;
-
+/* Twitter specific - grey when container hovered, colour on hover */
+.follow-icons:hover a.twitter img {
+  filter: grayscale(100%) brightness(0) invert(1) !important;
 }
 
 .follow-icons a.twitter:hover img {
-
-filter: none !important;  transform: scale(1.08);
+  filter: none !important;
+  transform: scale(1.08);
 }
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
 /* ============================================
    RESPONSIVE BREAKPOINTS
    ============================================ */

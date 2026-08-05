@@ -74,7 +74,7 @@
 /* Heading */
 .hero-heading {
   max-width: 834px;
-  font: 600 40px/120% "Sora", sans-serif;
+  font: 600 40px/120% "Sora";
   text-align: center;
   color: #00063d;
   padding-top: 30px;
@@ -83,7 +83,7 @@
 /* Paragraph */
 .hero-paragraph {
   max-width: 706px;
-  font: 400 14px/120% "Sora", sans-serif;
+  font: 400 14px/120% "Sora";
   text-align: center;
   color: #00063d;
 }

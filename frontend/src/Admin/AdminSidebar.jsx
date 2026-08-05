@@ -49,6 +49,7 @@ const [profile, setProfile] = useState(localStorage.getItem("profile"));
     "addcategory",
     "profile",
     "home",
+      "blog-details", 
       "demo-requests",
     "contact-messages"
   ].some((page) => location.pathname.includes(page));

@@ -4,7 +4,8 @@
   padding: 12px;
   border-radius: 6px;
   max-width: 360px;
-  width: 100%;
+ width: 100%;
+  height: 100%;      
   box-shadow: 2px 2px 8px #eee;
   display: flex;
   flex-direction: column;
@@ -75,7 +76,7 @@
 .read-more-wrapper {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px; 
+  margin-top: auto; 
 }
 
 .read-more-btn {

@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 50px;
   display: flex;
   gap: 40px;
   position: relative;
@@ -13,7 +13,7 @@
 
 /* Table of Contents */
 .Blog_Table_of_content {
-  width: 280px;
+  width:300px;
   position: sticky;
   top: 100px;
   left: 0;
@@ -28,7 +28,24 @@
   overflow-y: auto;
   transition: all 0.3s ease;
 }
+/* ===== HIGHLIGHT: CUSTOM SCROLLBAR FOR TABLE OF CONTENTS ===== */
+.Blog_Table_of_content::-webkit-scrollbar {  /* ← NEW */
+  width: 4px;
+}
 
+.Blog_Table_of_content::-webkit-scrollbar-track {  /* ← NEW */
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.Blog_Table_of_content::-webkit-scrollbar-thumb {  /* ← NEW */
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.Blog_Table_of_content::-webkit-scrollbar-thumb:hover {  /* ← NEW */
+  background: #94a3b8;
+}
 .table-heading {
   font-family: "Sora", sans-serif;
   font-weight: 600;
@@ -47,6 +64,16 @@
   width: 60px;
   height: 2px;
 }
+
+
+
+
+
+
+
+
+
+
 
 .table_data {
   display: flex;
@@ -77,14 +104,47 @@
 /* Blog Content */
 .Blog_Content_details {
   flex: 1;
-  width: calc(100% - 320px);
-  min-height: 800px;
+  width: calc(100% - 400px);
+  min-height: 920px;
   background: #fff;
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   overflow-y: auto;
+   max-height: calc(100vh - 120px); 
 }
+
+
+
+
+
+
+
+
+
+
+.Blog_Content_details::-webkit-scrollbar {  /* ← NEW */
+  width: 6px;
+}
+
+.Blog_Content_details::-webkit-scrollbar-track {  /* ← NEW */
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.Blog_Content_details::-webkit-scrollbar-thumb {  /* ← NEW */
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.Blog_Content_details::-webkit-scrollbar-thumb:hover {  /* ← NEW */
+  background: #94a3b8;
+}
+
+
+
+
+
 
 .content-wrapper {
   max-width: 900px;
@@ -137,7 +197,7 @@
 
 .blog-description h2 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   color: rgba(0, 6, 61, 1);
 
   scroll-margin-top: 100px;

@@ -7,12 +7,12 @@
   overflow: hidden;
 }
 
+/* 
 .footer-container {
   max-width: 100%;
   margin: 0;
   padding: 0 270px;
-}
-
+} */
 /* ===== TOP SECTION ===== */
 
 .footer-top {
@@ -522,8 +522,39 @@ filter: none !important;  transform: scale(1.08);
 
 
 
+
+  
 @media (max-width: 1500px) {
   .footer-grid {
     gap: 100px;
+  }
+} 
+
+
+/* ══ LARGE TABLET / SMALL DESKTOP (max 1200px) ══ */
+@media (max-width: 1200px) {
+  .footer-container {
+    padding: 0 120px;
+  }
+
+  .footer-grid {
+    gap: 80px;
+    margin-left: 0;
+  }
+}
+
+/* ══ NEW: 1024px – 1440px range ══ */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .footer-container {
+    padding: 0 150px;
+  }
+
+  .footer-grid {
+    gap: 100px;
+    margin-left: 0;
+  }
+
+  .footer-right {
+    gap: 60px;
   }
 }
